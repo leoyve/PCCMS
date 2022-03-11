@@ -1,0 +1,36 @@
+<template>
+	<div>
+	<h1>全民督工</h1>
+	<nav>
+		<router-link :to="{name:'WkutCloseReport'}">各機關統報案件統計表</router-link>	||
+		<router-link :to="{name:'WkutHandleDayReport'}">通報處理天數統計總表</router-link>	||
+		<router-link :to="{name:'WkutSatisfactionReport'}">通報案件滿意度統計表</router-link>	||
+		<router-link :to="{name:'CaseAggregateReport'}">通報案件查詢彙整總表</router-link>	||
+		<router-link :to="{name:'CaseCloseDayReport'}">依結案處理天數彙整總表</router-link>	||
+		<router-link :to="{name:'CaseAuditReport'}">通報案件查核統計總表</router-link>	||
+		<router-link :to="{name:'LineNotifyReport'}">啟用LINE通知統計總表</router-link>	||
+		<router-link :to="{name:'WkutGenderReport'}">通報民眾性別統計總表</router-link>	||
+		<router-link :to="{name:'WkutCityReport'}">通報縣市件數統計總表</router-link>	||
+		<router-link :to="{name:'CaseSourceReport'}">通報來源件數統計總表</router-link>	||
+		<router-link :to="{name:'WkutDeficiencyReport'}">通報缺失件數統計總表</router-link>	||
+		<router-link :to="{name:'WkutDivisionReport'}">主管機關分案天數統計</router-link>	||
+		<router-link :to="{name:'WkutCloseDayReport'}">主管機關結案天數統計</router-link>	||
+		<router-link :to="{name:'CaseCategoryReport'}">通報工程類別統計總表</router-link>	||
+		<router-link :to="{name:'PeopleInformReport'}">民眾通報件數統計總表</router-link>	||
+		<router-link :to="{name:'WebNotifyReport'}">啟用行動推播服務人數統計表(X)</router-link>	||
+		<router-link :to="{name:'WkutCompareReport'}">機關案件考核自評填寫統計表</router-link>	||
+		<router-link :to="{name:'InsOptionalReport'}">督工通報案件自選欄位報表</router-link>	||
+	</nav>
+	<router-view/>
+	</div>
+</template>
+
+
+<script>
+
+
+</script>
+
+<style>
+
+</style>
