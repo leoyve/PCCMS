@@ -3,11 +3,11 @@
     <nav>
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
-      <router-link to="/pro">創新</router-link> ||
-      <router-link to="/ins">全民督工</router-link> ||
-      <router-link to="/flo">重點防汛</router-link> ||
-      <router-link to="/ins/report">全民督工-報表</router-link> ||
-       <router-link to="/ins/report">品管訓練</router-link> ||
+      <router-link to="/pro">創新</router-link> |
+      <router-link to="/ins">全民督工</router-link> |
+      <router-link to="/flo">重點防汛</router-link> |
+      <router-link to="/ins/report">全民督工-報表</router-link> |
+       <router-link to="/ins/report">品管訓練</router-link> |
     </nav>
     <router-view/>
   </div>
