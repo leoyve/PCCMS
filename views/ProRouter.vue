@@ -5,7 +5,7 @@
 		<router-link :to="{name:'ProQuery'}">前台產品查詢</router-link>	||
 		<router-link :to="{name:'BackQuery'}">後台產品查詢</router-link> ||
 		<router-link :to="{name:'OpinionQuery'}">交流意見登錄查詢</router-link> ||
-		<router-link :to="{name:'HistoryQuery'}">歷史紀錄查詢</router-link> 
+		<router-link :to="{name:'HistoryQuery'}">歷史紀錄查詢</router-link> ||
 	</nav>
 	<router-view/>
 	</div>
