@@ -23,7 +23,7 @@
 			<b-container fluid>
 				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>110年度各主管機關通報案件結案處理天數統計表</strong></h4></b-form-row>
 				<b-form-row class="justify-content-end">
-				<b-table striped hover :items="items" :fields="fields" head-variant="warning">
+				<b-table striped hover :items="items" :fields="fields" head-variant="light">
 					<template #thead-top>
 						<b-tr>
 							<b-th colspan="2"></b-th>

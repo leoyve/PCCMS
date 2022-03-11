@@ -37,7 +37,7 @@
 			<b-container fluid>
 				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>各主管機關通報案件民眾通知結案後滿意度調查統計表</strong></h4></b-form-row>
 				<b-form-row class="justify-content-end">
-				<b-table striped hover :items="items" :fields="fields" head-variant="warning">
+				<b-table striped hover :items="items" :fields="fields" head-variant="light">
 					<template #cell(satA)="row">
 						<a href="#" variant="primary" @click="toSee(row)" >{{row.item.satANum}}</a>
 					</template>

@@ -11,8 +11,8 @@
 		<router-link :to="{name:'CaseInfoQuery'}">案件查詢/填報</router-link> ||
 		<router-link :to="{name:'CaseCloseQuery'}">審查結案</router-link> ||
 		<router-link :to="{name:'CaseAssessmentQuery'}">通報案件結案考核</router-link> ||
-		<!--<router-link :to="{name:'OpinionQuery'}">交流意見登錄查詢</router-link> ||
-		<router-link :to="{name:'HistoryQuery'}">歷史紀錄查詢</router-link> -->
+		<router-link :to="{name:'LineEnable'}">啟用LineAPP通知功能</router-link> ||
+		<router-link :to="{name:'LineDisable'}">停用LineAPP通知功能</router-link> ||
 	</nav>
 	<router-view/>
 	</div>

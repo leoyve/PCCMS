@@ -73,7 +73,7 @@
 				</b-form-group>
 			</b-form-row>
 			<b-form-row class="justify-content-end">
-				<b-button size="sm" variant="success" @click="queryHandler" >查詢</b-button>&nbsp;
+				<b-button size="sm" variant="success" @click="queryHandler" >產生報表</b-button>&nbsp;&nbsp;
 				<b-button size="sm" variant="outline-secondary" @click="reset">清除</b-button>
 			</b-form-row>
 		</b-container>
@@ -118,23 +118,20 @@ export default {
 			{ value: '6', text: '媒體' },
 		],
 	checkOptions: [
-      {	name:	'建築',	item:	'1',  },
-      {	name:	'道路運輸',	item:	'2',  },
-      {	name:	'軌道運輸',	item:	'3',  },
-      {	name:	'機場',	item:	'4',  },
-      {	name:	'港灣',	item:	'5',  },
-      {	name:	'水庫及蓄水',	item:	'6',   },
-      {	name:	'電業設備',	item:	'7',   },
-      {	name:	'水利',	item:	'8',   },
-      {	name:	'自來水',	item:	'9',   },
-      {	name:	'共同管道',	item:	'10',   },
-      {	name:	'下水道',	item:	'11',   },
-      {	name:	'焚化廠',	item:	'12',   },
-      {	name:	'垃圾掩埋場',	item:	'13',   },
-      {	name:	'土地開發',	item:	'14',   },
-      {	name:	'水土保持',	item:	'15',   },
-      {	name:	'其他',	item:	'16',   },
-
+      {	name:	'案件編號',	item:	'1',  },
+      {	name:	'通報日期',	item:	'2',  },
+      {	name:	'通報方式',	item:	'3',  },
+      {	name:	'性別',	item:	'4',  },
+      {	name:	'通報主題',	item:	'5',  },
+      {	name:	'具體內容',	item:	'6',   },
+      {	name:	'工程類別',	item:	'7',   },
+      {	name:	'施工告示牌標示通報工程名稱',	item:	'8',   },
+      {	name:	'標案系統標案編號',	item:	'9',   },
+      {	name:	'標案名稱',	item:	'10',   },
+      {	name:	'...',	item:	'11',   },
+      {	name:	'處理情形',	item:	'12',   },
+      {	name:	'民眾滿意度',	item:	'13',   },
+      {	name:	'考核結果',	item:	'14',   },
     ],
 	}
  },

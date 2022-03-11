@@ -259,6 +259,16 @@ const routes = [
         name: 'DirectorAssessmentFill',
         component: () => import(/* webpackChunkName: "about" */ '../views/ins/DirectorAssessmentFill.vue')
       },
+      {
+        path: 'lineEnable',
+        name: 'LineEnable',
+        component: () => import(/* webpackChunkName: "about" */ '../views/ins/LineEnable.vue')
+      },
+      {
+        path: 'lineDisable',
+        name: 'LineDisable',
+        component: () => import(/* webpackChunkName: "about" */ '../views/ins/LineDisable.vue')
+      },
     
     ],
     // route level code-splitting
