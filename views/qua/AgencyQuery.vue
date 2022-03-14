@@ -2,7 +2,7 @@
 	<div>
 		<b-container >
 			<b-form-row class="justify-content-end">
-				<b-button size="l" variant="success"  @click="queryHandler" >新增</b-button>
+				<b-button size="l" variant="success"  @click="gotoParam('AgencyEdit', {addFlag:true})" >新增</b-button>
 			</b-form-row>
 			<b-form-row>
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="交流狀態" label-align-md="right">
@@ -27,7 +27,7 @@
 				<b-form-row class="justify-content-end">
 					<b-table striped hover :items="items" :fields="fields" head-variant="light">
 						<template #cell(action)="row">
-							<b-button size="sm" variant="outline-secondary" @click="gotoParam('ProQuery', row.item)">明細</b-button>
+							<b-button size="sm" variant="outline-secondary" @click="gotoParam('AgencyDetail', row.item)">明細</b-button>
 						</template>
 					</b-table>
 					<b-pagination align="right"
