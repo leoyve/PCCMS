@@ -4,9 +4,9 @@ module.exports = [
     name: '品管人員訓練',
     children:[
       {
-        path: 'view',
-        name: 'ProView',
-        component: () => import(/* webpackChunkName: "about" */ '../views/ProView.vue')
+        path: 'agencyQuery',
+        name: 'AgencyQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/AgencyQuery.vue')
       },
     ],
     // route level code-splitting

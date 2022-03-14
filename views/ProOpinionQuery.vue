@@ -2,7 +2,7 @@
 	<div>
 		<b-container >
 			<b-form-row class="justify-content-end">
-				<b-button size="md" variant="success" @click="goNew" >新增</b-button>
+				<b-button size="md" variant="success" @click="goto('OpinionNewQuery')" >新增</b-button>
 			</b-form-row>
 			<br>
 			<b-form-row >
@@ -51,7 +51,7 @@
 			<b-container >
 				<b-table striped hover :items="items" :fields="fields" head-variant="dark">
 					<template #cell(action)="row">
-						<b-button size="sm" variant="outline-secondary" @click="toSee(row.item)">檢視</b-button>
+						<b-button size="sm" variant="outline-secondary" @click="gotoParam('OpinionView', row.item)">檢視</b-button>
 					</template>
 				</b-table>
 				<b-pagination align="right"
@@ -127,11 +127,6 @@ export default {
 	}
  },
  methods: {
-	toSee(item){
-		// alert(item.accpetType);
-		// console.log(item);
-		this.$router.push({name:'OpinionView', params:{acceptType:	item.accpetType}})
-	},
 	goNew()	{
 		this.$router.push({name:'OpinionNewQuery'})
 	},
@@ -139,15 +134,15 @@ export default {
 		this.items = [
 			{
 				id: 1, name: 'PCSR防水工法', category: '公開', vendorName: '元X工程有限公司',	wkutName: '工程會', status: '受理交流',	editStatus:	'公開',
-				comminicateDate: '110/12/12', pk: 5566, accpetType:	'Y'
+				comminicateDate: '110/12/12', pk: 5566, acceptType:	'Y'
 			},
 			{
 				id: 2, name: '無框架工法', category: '公開', vendorName: '易X工程有限公司',	wkutName: '行政院', status: '', editStatus:	'草稿',
-				comminicateDate: '110/12/12', pk: 7788, accpetType:	''
+				comminicateDate: '110/12/12', pk: 7788, accpetacceptTypeType:	''
 			},
 			{
 				id: 3, name: '創新工法', category: '公開', vendorName: '大X工程有限公司',	wkutName: '台北市政府', status: '不受理交流', editStatus:	'公開',
-				comminicateDate: '110/12/12', pk: 1133, accpetType:	'N'
+				comminicateDate: '110/12/12', pk: 1133, acceptType:	'N'
 			}
 		]
 	},

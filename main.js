@@ -9,6 +9,16 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 Vue.config.productionTip = false
 
+Vue.prototype.goto = function (str){
+    this.$router.push({name:str});
+}
+
+Vue.prototype.gotoParam = function (str, param){
+  console.log(param);
+  this.$router.push({name:str,  params:param});
+}
+
+
 new Vue({
   router,
   render: h => h(App)

@@ -3,7 +3,7 @@
 		<b-container >
 			<b-form-row >
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="創新產品名稱" label-align-md="right">
-					<b-form-input type="search"></b-form-input>
+					<b-form-input type="search" ></b-form-input>
 				</b-form-group>
 			</b-form-row>
 			<b-form-row>
