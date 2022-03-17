@@ -72,9 +72,9 @@
 						<b-col>{{ row.item.reviewDate	}} </b-col>
 					</b-row>
 					<b-row>
-							<b-col>{{ row.item.reviewDesc	}} </b-col>
-						</b-row>
-					</b-container>
+						<b-col>{{ row.item.reviewDesc	}} </b-col>
+					</b-row>
+				</b-container>
 			</template>
 			<template #cell(reviewStatus)="row">
 				<b-container>
@@ -170,7 +170,7 @@ export default {
 				submitDate:'110/3/5',	submitDesc:'原工程會已備查',  reviewDate:'110/3/5',	reviewDesc:'原工程會已備查',  status:'已備查',  isAdmin:true,	isValid:'是', pk: 5566
 			},
 			{
-				id: 2, mechanism: '中原大學', className: '	公共工程品質管理訓練班(土建)', classType: '品管', courseName:'單元二：第二章 統計分析方法與應用',	
+				id: 2, mechanism: '中原大學', className: '公共工程品質管理訓練班(土建)', classType: '品管', courseName:'單元二：第二章 統計分析方法與應用',	
 				submitDate:'110/5/5',	submitDesc:'原工程會已備查',  reviewDate:'110/3/5',	reviewDesc:'原工程會已備查',  status:'送審中',  isAdmin:false,	isValid:'是', pk: 5566
 			},
 			{
