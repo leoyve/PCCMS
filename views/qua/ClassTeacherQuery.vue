@@ -1,24 +1,18 @@
 <template>
 	<div>
 		<b-container >
-			<b-form-row class="justify-content-end">
-				<b-button size="l" variant="success"  @click="gotoParam('TeacherEdit', {addFlag:true})" >新增</b-button>&nbsp;&nbsp;
-				<b-button size="l" variant="info"  @click="upload()" >上傳EXCLE檔案</b-button>&nbsp;&nbsp;
-				<b-button size="l" variant="warning"  @click="gotoParam('PccmTeacherList', {addFlag:true})" >工程會提供之師資名單</b-button>
-			</b-form-row>
-			<br>
 			<b-form-row>
-				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="目前是否列入代訓機構聘請師資名冊" label-align-md="right">
+				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="查詢課程" label-align-md="right">
 					<b-form-radio-group
 						id="radio-group-1"
 						v-model="picked"
-						:options="options"
+						:options="courseOpt"
 						name="radio-options"
 					></b-form-radio-group>
 				</b-form-group>
 			</b-form-row>
 			<b-form-row>
-				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="是否核備" label-align-md="right">
+				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="訓練主題班別是否仍在運作" label-align-md="right">
 					<b-form-radio-group
 						id="radio-group-1"
 						v-model="picked"
@@ -28,17 +22,12 @@
 				</b-form-group>
 			</b-form-row>
 			<b-form-row>
-				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="代訓機構" label-align-md="right">
+				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="訓練主題班別" label-align-md="right">
 					<b-form-select :options="type"></b-form-select>
 				</b-form-group>
 			</b-form-row>
 			<b-form-row>
-				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="教師姓名" label-align-md="right">
-					<b-form-input type="search"></b-form-input>
-				</b-form-group>
-			</b-form-row>
-			<b-form-row>
-				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="身份證字號" label-align-md="right">
+				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="課程名稱" label-align-md="right">
 					<b-form-input type="search"></b-form-input>
 				</b-form-group>
 			</b-form-row>
@@ -51,15 +40,12 @@
 		
 		<div>
 			<b-container >
-				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>代訓機構聘用師資名冊表</strong></h4></b-form-row>
+				<!--依照使用者選的選項顯示品管/回訓-->
+				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>{{picked}}開班課程</strong></h4></b-form-row>
 				<b-form-row class="justify-content-end">
 					<b-table striped hover :items="items" :fields="fields" head-variant="light">
-						<template #cell(detail)="row">
-							<b-button size="sm" variant="outline-secondary" @click="gotoParam('TeacherInfo', row.item)">明細</b-button>
-						</template>
-						<template #cell(register)="row">
-							<b-button size="sm" variant="success" @click="checkIn(row.item)">移入</b-button>&nbsp;
-							<b-button size="sm" variant="warning" @click="checkOut(row.item)">移出</b-button>
+						<template #cell(course)="row">
+							<a href="#" variant="primary" @click="gotoParam('ClassTeacherList', row.item)" >{{row.item.courseName}}</a>
 						</template>
 					</b-table>
 					<b-pagination align="right"
@@ -81,11 +67,9 @@
 export default {
  data(){
 	return{
-		options: [
-			{	text:	'是',	value:	'A'},
-			{	text:	'否',	value:	'B'},
-			{	text:	'停用',	value:	'B'},
-			{	text:	'不限',	value:	'C'},
+		courseOpt: [
+			{	text:	'品管班',	value:	'A'},
+			{	text:	'回訓班',	value:	'B'},
 		],
 		options2: [
 			{	text:	'是',	value:	'A'},
@@ -94,10 +78,10 @@ export default {
 		],
 		type: [
 			{ value: '', text: '全部' },
-			{ value: '0', text: '中原大學' },
-			{ value: '1', text: '淡江大學' },
-			{ value: '2', text: '中央大學' },
-			{ value: '3', text: '成功大學' },
+			{ value: '0', text: '公共工程品質管理訓練班(機電) 【106年起適用】' },
+			{ value: '1', text: '公共工程品質管理訓練班(土建)' },
+			{ value: '2', text: '公共工程品質管理訓練班(土建) 【109年4月起適用】' },
+			{ value: '3', text: '公共工程品質管理訓練班(機電)' },
 		],
 		rows: 100,
 		perPage: 1,
@@ -109,52 +93,23 @@ export default {
 				label:	'流水號'
 			},
 			{
-				key:	'teacherName',
-				label:	'教師姓名'
+				key:	'className',
+				label:	'訓練主題班別'
 			},
 			{
-				key:	'serviceUnit',
-				label:	'服務單位名稱'
+				key:	'course',
+				label:	'開班課程'
 			} ,
-			{
-				key:	'title',
-				label: '職稱'
-			}, 
-			{
-				key:	'isRetire',
-				label:	'是否退休'
-			},
-			{
-				key:	'qualifications',
-				label:	'符合教師資格之類別'
-			},
-			{
-				key:	'isPccms',
-				label:	'工程會提供師資名單'
-			},
-			{
-				key:	'detail',
-				label:	'教師資料及教授課程'
-			},
-			{
-				key:	'register',
-				label:	'師資名冊',
-				thStyle: { width: "15%" },
-			},
-
-			],
+		],
 		items:	[
 			{
-				id: 1, teacherName: '王XX', serviceUnit: '代訓機構主管機關工程會', title: '科長', isRetire:'政府單位在職',	
-				qualifications:'機關、學校之薦任第九職等以上主管(含副主管)，且具專長相關實務經驗十五年以上',	isPccms:'',	pk: 5566
+				id: 1, className: '公共工程品質管理訓練班(土建) 【106年起適用】', courseName: '單元一：公共工程施工品質管理制度教育宣導片',	pk: 5566
 			},
 			{
-				id: 2,teacherName: '林XX', serviceUnit: '國立屏東科技大學', title: '教授', isRetire:'民間單位在職',	
-				qualifications:'大專院校專任助理教授以上，且具專長相關教學經驗五年以上',	isPccms:'是',	pk: 5566
+				id: 2,	className: '公共工程品質管理訓練班(土建) 【106年起適用】', courseName: '永續公共工程-節能減碳',	pk: 5566
 			},
 			{
-				id: 3, teacherName: '陳XX', serviceUnit: '社團法人高雄市土木技師公會', title: '經理', isRetire:'退休',	
-				qualifications:'其他經本會核定之專家',	isPccms:'',	pk: 5566
+				id: 3, className: '公共工程品質管理訓練班(土建) 【106年起適用】', courseName: '單元二：第四章 工程進料檢驗與管制',	pk: 5566
 			}
 		]
 	}

@@ -54,61 +54,61 @@
     </b-container>
     <br>
     <b-container fluid>
-      <b-form-row class="justify-content-center "><h2><strong>教授課程名稱</strong></h2></b-form-row>
-      <b-table striped hover :items="items" :fields="fields" head-variant="light">
-        <template #cell(submitInfo)="row">
-					<b-container>
-						<b-row>
-							<b-col>{{ row.item.submitDate	}} </b-col>
-						</b-row>
-						<b-row>
-							<b-col>{{ row.item.submitDesc	}} </b-col>
-						</b-row>
-					</b-container>
-				</template>
-        <template #cell(reviewInfo)="row">
-					<b-container>
-						<b-row>
-							<b-col>{{ row.item.reviewDate	}} </b-col>
-						</b-row>
-						<b-row>
+		<b-form-row class="justify-content-center "><h2><strong>教授課程名稱</strong></h2></b-form-row>
+		<b-table striped hover :items="items" :fields="fields" head-variant="light">
+			<template #cell(submitInfo)="row">
+				<b-container>
+					<b-row>
+						<b-col>{{ row.item.submitDate	}} </b-col>
+					</b-row>
+					<b-row>
+						<b-col>{{ row.item.submitDesc	}} </b-col>
+					</b-row>
+				</b-container>
+			</template>
+			<template #cell(reviewInfo)="row">
+				<b-container>
+					<b-row>
+						<b-col>{{ row.item.reviewDate	}} </b-col>
+					</b-row>
+					<b-row>
 							<b-col>{{ row.item.reviewDesc	}} </b-col>
 						</b-row>
 					</b-container>
-				</template>
-        <template #cell(reviewStatus)="row">
-						<b-container>
-              <!-- 工程會管理員才顯示按鈕-->
-							<b-row class="justify-content-center" v-show="row.item.isAdmin">
-								<b-button size="sm" variant="success" @click="gotoParam('TeacherReviewInfo', row.item)">{{row.item.status}}</b-button>&nbsp;
-							</b-row>
-							<b-row class="justify-content-center" v-show="!row.item.isAdmin">
-								<b-col>({{row.item.status}})</b-col>
-							</b-row>
-						</b-container>
-					</template>
-			</b-table>
-      <b-pagination align="right"
+			</template>
+			<template #cell(reviewStatus)="row">
+				<b-container>
+				<!-- 工程會管理員才顯示按鈕-->
+				<b-row class="justify-content-center" v-show="row.item.isAdmin">
+					<b-button size="sm" variant="success" @click="gotoParam('TeacherReviewInfo', row.item)">{{row.item.status}}</b-button>&nbsp;
+				</b-row>
+				<b-row class="justify-content-center" v-show="!row.item.isAdmin">
+					<b-col>({{row.item.status}})</b-col>
+				</b-row>
+				</b-container>
+			</template>
+		</b-table>
+		<b-pagination align="right"
 					v-model="currentPage"
 					:total-rows="rows"
 					:per-page="perPage"
 					first-number
-			></b-pagination>
+		></b-pagination>
     </b-container>
     <br>
     <b-container fluid>
-      <b-form-row class="justify-content-center "><h2><strong>最近2年開班期別內之授課情形</strong></h2></b-form-row>
-      <b-table striped hover :items="items2" :fields="fields2" head-variant="light">
-        <template #cell(openingDate)="row">
-					{{ row.item.startDate	}} ~ {{ row.item.endDate	}}
-				</template>
-			</b-table>
-      <b-pagination align="right"
+		<b-form-row class="justify-content-center "><h2><strong>最近2年開班期別內之授課情形</strong></h2></b-form-row>
+		<b-table striped hover :items="items2" :fields="fields2" head-variant="light">
+		<template #cell(openingDate)="row">
+			{{ row.item.startDate	}} ~ {{ row.item.endDate	}}
+		</template>
+		</b-table>
+		<b-pagination align="right"
 					v-model="currentPage"
 					:total-rows="rows"
 					:per-page="perPage"
 					first-number
-			></b-pagination>
+		></b-pagination>
     </b-container>
   </div>
 </template>
