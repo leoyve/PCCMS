@@ -17,25 +17,32 @@
         </b-row>
         <b-row class="border border-dark">
           <b-col class="col-md-2 "><font color="red">*</font>在職情形</b-col>
-          <b-col class="col-md-4 text-left"><b-form-input></b-form-input></b-col>
+          <b-col class="col-md-4 text-left">
+            <b-form-radio-group
+              id="radio-group-1"
+              v-model="picked"
+              :options="options2"
+              name="radio-options"
+            ></b-form-radio-group>
+          </b-col>
           <b-col class="col-md-2 "><font color="red">*</font>可公開之連絡電話</b-col>
           <b-col class="col-md-4 text-left"><b-form-input></b-form-input></b-col>
         </b-row>
         <b-row class="border border-dark">
           <b-col class="col-md-2 "><font color="red">*</font>主要專長類別1</b-col>
-          <b-col class="col-md-4 text-left"><b-form-input></b-form-input></b-col>
+          <b-col class="col-md-4 text-left"><b-form-select :options="type"></b-form-select></b-col>
           <b-col class="col-md-2 "><font color="red">*</font>主要專長內容1</b-col>
           <b-col class="col-md-4 text-left"><b-form-textarea></b-form-textarea></b-col>
         </b-row>
         <b-row class="border border-dark">
           <b-col class="col-md-2 ">主要專長類別2</b-col>
-          <b-col class="col-md-4 text-left"><b-form-input></b-form-input></b-col>
+          <b-col class="col-md-4 text-left"><b-form-select :options="type"></b-form-select></b-col>
           <b-col class="col-md-2 ">主要專長內容2</b-col>
           <b-col class="col-md-4 text-left"><b-form-textarea></b-form-textarea></b-col>
         </b-row>
         <b-row class="border border-dark">
           <b-col class="col-md-2 ">次要專長類別</b-col>
-          <b-col class="col-md-4 text-left"><b-form-input></b-form-input></b-col>
+          <b-col class="col-md-4 text-left"><b-form-select :options="type"></b-form-select></b-col>
           <b-col class="col-md-2 ">次要專長內容</b-col>
           <b-col class="col-md-4 text-left"><b-form-textarea></b-form-textarea></b-col>
         </b-row>
@@ -83,7 +90,7 @@ export default {
       ],
       addFlag: this.$route.params.addFlag == null ? false:this.$route.params.addFlag,
       updateFlag: this.$route.params.updateFlag == null ? false:this.$route.params.updateFlag,
-      options: [
+    options: [
 			{	text:	'曾任或現任中央機關或其所屬(轄)機關、學校之薦任第九職等以上主管(含副主管)，且具專長(主要或次要)相關實務經驗十五年(含未滿第九職等及民間機構之年資)以上者',	value:	'A'},
 			{	text:	'曾任或現任地方機關或其所屬(轄)機關、學校之薦任第八職等以上主管(含副主管)，且具專長(主要或次要)相關實務經驗十五年(含未滿第八職等及民間機構之年資)以上者',	value:	'B'},
 			{	text:	'曾任或現任公營事業相當於薦任第八職等以上之主管(含副主管)，且具專長(主要或次要)相關實務經驗十五年(含未滿第八職等及民間機構之年資)以上者',	value:	'B'},
@@ -96,6 +103,18 @@ export default {
       {	text:	'具博士學位，且具所學專長(主要或次要)相關專職實務或研究經驗七年以上者',	value:	'C'},
       {	text:	'具碩士學位，且具所學專長(主要或次要)相關專職實務或研究經驗十年以上者',	value:	'C'},
 		],
+    options2: [
+			{	text:	'退休',	value:	'A'},
+			{	text:	'政府單位在職',	value:	'B'},
+			{	text:	'民間單位在職',	value:	'B'},
+			{	text:	'停用',	value:	'C'},
+		],
+    type:[
+      {	text:	'土木',	value:	'A'},
+			{	text:	'結構',	value:	'B'},
+			{	text:	'水利',	value:	'B'},
+			{	text:	'環工',	value:	'C'},
+    ]
   }
  },
  methods:  {

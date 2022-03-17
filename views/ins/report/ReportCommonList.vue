@@ -56,7 +56,7 @@
 							<b-col><strong>處理天數:</strong> {{ row.item.handleDay	}} </b-col>
 						</b-row>
 						<b-row>
-							<b-col><strong>逾期天數:</strong> {{ row.item.delayDay	}} </b-col>
+							<b-col ><strong>逾期天數:</strong> {{ row.item.delayDay	}} </b-col>
 						</b-row>
 					</b-container>
 				</template>

@@ -4,7 +4,7 @@
 	<nav>
 		<router-link :to="{name:'AgencyQuery'}">代訓機構資料管理</router-link>	||
 		<router-link :to="{name:'AddTeacherQuery'}">建立代訓機構之教師名冊</router-link> ||
-		<router-link :to="{name:'FloYearEventQuery'}">年度事件查詢/填報</router-link>  ||
+		<router-link :to="{name:'ClassTeacherQuery'}">依課程名稱搜尋教師名冊</router-link>  ||
 		<router-link :to="{name:'BIAS'}">大宗資材</router-link> 
 	</nav>
 	<router-view/>
