@@ -7,6 +7,7 @@
 		<router-link :to="{name:'ClassTeacherQuery'}">依課程名稱搜尋教師名冊</router-link>  ||
 		<router-link :to="{name:'QuicklyTeacherReview'}">快速審核師資授課之更新</router-link> ||
 		<router-link :to="{name:'ReviseStudentRecordQuery'}">修正學員參訓之歷次紀錄</router-link> ||
+		<router-link :to="{name:'AnnualAppraisalRecord'}">代訓機構歷年評鑑紀錄表</router-link> ||
 	</nav>
 	<router-view/>
 	</div>
