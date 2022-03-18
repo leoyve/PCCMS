@@ -1,0 +1,153 @@
+<template>
+	<div>
+		<b-container fluid>
+		<b-form-row class="justify-content-center "><h2><strong>變更開班期別學員相關資料</strong></h2></b-form-row>
+			<b-container class="border border-dark" fluid>
+				<b-row class="border border-dark">
+					<b-col class="col-md-2 ">訓練主題班別</b-col>
+					<b-col class="col-md-10 text-left text-dark">公共工程品質管理訓練班(土建) 【106年起適用】</b-col>
+				</b-row>
+				<b-row class="border border-dark">
+					<b-col class="col-md-2 ">訓練主題班別類別</b-col>
+					<b-col class="col-md-10 text-left text-dark">	品管</b-col>
+				</b-row>
+				<b-row class="border border-dark">
+					<b-col class="col-md-2 ">開班期別</b-col>
+					<b-col class="col-md-10 text-left text-dark">	DE10902</b-col>
+				</b-row>
+				<b-row class="border border-dark">
+					<b-col class="col-md-2 ">學員身份證字號</b-col>
+					<b-col class="col-md-10 text-left"><b-input value="DXXXXXXXXX"></b-input></b-col>
+				</b-row>
+				<b-row class="border border-dark">
+					<b-col class="col-md-2 ">學員姓名</b-col>
+					<b-col class="col-md-10 text-left"><b-input value="王XX"></b-input></b-col>
+				</b-row>
+				<b-row class="border border-dark">
+					<b-col class="col-md-2 ">座號</b-col>
+					<b-col class="col-md-10 text-left"><b-input value="DE1090218"></b-input></b-col>
+				</b-row>
+				<b-row class="border border-dark">
+					<b-col class="col-md-2 ">報名資格</b-col>
+					<b-col class="col-md-10 text-left text-dark">
+						<b-form-radio-group
+							id="radio-group-1"
+							v-model="picked"
+							:options="options"
+							name="radio-options">
+						</b-form-radio-group>
+					</b-col>
+				</b-row>
+				<b-row class="border border-dark">
+					<b-col class="col-md-2 ">期末測驗成績</b-col>
+					<b-col class="col-md-10 text-left"><b-input value="70"></b-input></b-col>
+				</b-row>
+				<b-row class="border border-dark">
+					<b-col class="col-md-2 ">第一次補考成績</b-col>
+					<b-col class="col-md-10 text-left"><b-input value=""></b-input></b-col>
+				</b-row>
+				<b-row class="border border-dark">
+					<b-col class="col-md-2 ">第二次補考成績</b-col>
+					<b-col class="col-md-10 text-left"><b-input value=""></b-input></b-col>
+				</b-row>
+				<b-row class="border border-dark">
+					<b-col class="col-md-2 ">總成績</b-col>
+					<b-col class="col-md-10 text-left"><b-input value="75"></b-input></b-col>
+				</b-row>
+				<b-row class="border border-dark">
+					<b-col class="col-md-2 ">是否合格</b-col>
+					<b-col class="col-md-10 text-left text-dark">
+						<b-form-radio-group
+							id="radio-group-1"
+							v-model="picked"
+							:options="options2"
+							name="radio-options">
+						</b-form-radio-group>
+					</b-col>
+				</b-row>
+				<b-row class="border border-dark">
+					<b-col class="col-md-2 ">結訓證書年月</b-col>
+					<!-- 只要到年月?-->
+					<b-col class="col-md-10 text-left"><b-datepicker></b-datepicker></b-col>
+				</b-row>
+				<b-row class="border border-dark">
+					<b-col class="col-md-2 ">結訓證書字號</b-col>
+					<b-col class="col-md-10 text-left"><b-input value="DE1090211"></b-input></b-col>
+				</b-row>
+				<b-row class="border border-dark">
+					<b-col class="col-md-2 ">主管機關核准日期</b-col>
+					<b-col class="col-md-10 text-left"><b-datepicker :value="dd"></b-datepicker></b-col>
+				</b-row>
+				<b-row class="border border-dark">
+					<b-col class="col-md-2 ">主管機關核准文號</b-col>
+					<b-col class="col-md-10 text-left"><b-input value="工程管字第1090014530號"></b-input></b-col>
+				</b-row>
+				<b-row class="border border-dark">
+					<b-col class="col-md-2 ">備註</b-col>
+					<b-col class="col-md-10 text-left"><b-input ></b-input></b-col>
+				</b-row>
+				<b-row class="border border-dark">
+					<b-col class="col-md-2 ">實際開訓日期</b-col>
+					<b-col class="col-md-10 text-left"><b-datepicker :value="dd"></b-datepicker></b-col>
+				</b-row>
+				<b-row class="border border-dark">
+					<b-col class="col-md-2 ">實際結訓日期</b-col>
+					<b-col class="col-md-10 text-left"><b-datepicker :value="dd"></b-datepicker></b-col>
+				</b-row>
+			</b-container>
+			<b-row class="col-sm row justify-content-end" >
+				<b-button size="sm" variant="success" @click="add">確定</b-button>&ensp; 
+				<b-button size="sm" variant="outline-secondary" @click="reset">取消</b-button>
+			</b-row>
+		</b-container>
+	</div>
+</template>
+
+
+<script>
+
+
+export default {
+ data(){
+	return{
+	options: [
+		{	text:	'取得公共工程類科專業技師或建築師證書者（含消防設備師）',	value:	'A'},
+		{	text:	'大專以上學校土木、水利、環工、建築、營建、電機、機械、電子、化工及工程相關科系畢業，並於畢業後有二年（含）以上工程實務經驗者',	value:	'B'},
+		{	text:	'高級工業職業學校土木、水利、環工、建築、營建、電機、機械、電子、化工、建築製圖、電工科及工程相關科別畢業，並於畢業後有三年（含）以上工程實務經驗者',	value:	'B'},
+		{	text:	'普通考試或相當於普通考試以上之特種考試土木、建築、電機、化工及工程相關類科考試(含消防設備士)及格，或具有委任（派）職務，並於及格後或擔任委任（派）職務有二年（含）以上工程實務經驗者',	value:	'C'},
+		{	text:	'領有建築、機電及工程相關職類乙級技術士以上或甲種電匠，並於取得証照後有三年以上工程實務經驗者',	value:	'C'},
+		{	text:	'營造(機水電)業登記之負責人（含土木包工業、甲級工程承裝業），並於取得負責人資格後有三年以上工程實務經驗者',	value:	'C'},
+		{	text:	'領有內政部核發之工地主任結業證書者',	value:	'C'},
+		{	text:	'具有七年（含）以上之工程實務經驗者',	value:	'C'},
+	],
+	options2: [
+		{	text:	'是',	value:	'A'},
+		{	text:	'否',	value:	'B'},
+		{	text:	'退訓 ',	value:	'B'},
+		{	text:	'延訓',	value:	'C'},
+		{	text:	'其他已確認不予核發結業證書',	value:	'C'},
+		{	text:	'撤銷結業證書',	value:	'C'},
+	],
+	dd: new Date,
+	}
+ },
+ methods: {
+
+ }
+}
+
+
+</script>
+
+<style>
+.col-md-2 {
+  background-color: rgb(50, 91, 224);
+  color: white;
+  text-align: left;
+}
+.col-md-10 {
+  background-color: rgb(240, 229, 214);
+  color: white;
+  text-align: left;
+}
+</style>

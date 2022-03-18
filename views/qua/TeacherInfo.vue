@@ -1,9 +1,9 @@
 <template>
   <div>
     <b-container fluid>
-      <b-form-row class="justify-content-end">
-				<b-button size="l" variant="success"  @click="gotoParam('TeacherEdit', {updateFlag:true})" >補正教師個人資料</b-button>&nbsp;&nbsp;
-			</b-form-row>
+		<b-form-row class="justify-content-end">
+			<b-button size="l" variant="success"  @click="gotoParam('TeacherEdit', {updateFlag:true})" >補正教師個人資料</b-button>&nbsp;&nbsp;
+		</b-form-row>
       <b-form-row class="justify-content-center "><h2><strong>教師人員基本資料表</strong></h2></b-form-row>
       <b-container class="border border-dark" fluid>
         <b-row class="border border-dark">
@@ -89,10 +89,10 @@
 			</template>
 		</b-table>
 		<b-pagination align="right"
-					v-model="currentPage"
-					:total-rows="rows"
-					:per-page="perPage"
-					first-number
+			v-model="currentPage"
+			:total-rows="rows"
+			:per-page="perPage"
+			first-number
 		></b-pagination>
     </b-container>
     <br>

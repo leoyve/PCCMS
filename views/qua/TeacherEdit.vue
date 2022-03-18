@@ -61,7 +61,8 @@
           <b-col class="col-md-2 ">工程會提供師資名單</b-col>
           <b-col class="col-md-10 text-left">
             <b-form-radio-group v-model="check1" :options="check" name="radio-validation" :disabled="disabledFlag">
-            </b-form-radio-group></b-col>
+            </b-form-radio-group>
+          </b-col>
         </b-row>
       </b-container>
     </b-container>
