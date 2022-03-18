@@ -78,15 +78,15 @@ export default {
 		items:	[
 			{
 				id: 1, agencyName: '中原大學', evaluationYear: '110', evaluation: '88', grade:'第一級',	
-				qualifications:'機關、學校之薦任第九職等以上主管(含副主管)，且具專長相關實務經驗十五年以上',	isPccms:'',	updateFlag:true,	pk: 5566
+				postDate:'110/10/08',	postNum:'工程管字第1090301364號',	updateFlag:true,	pk: 5566
 			},
 			{
 				id: 2,agencyName: '國立中央大學', evaluationYear: '110', evaluation: '0', grade:'第四級',	
-				qualifications:'大專院校專任助理教授以上，且具專長相關教學經驗五年以上',	isPccms:'是',	updateFlag:true,	pk: 5566
+				postDate:'110/10/08',	postNum:'工程管字第1090301364號',	updateFlag:true,	pk: 5566
 			},
 			{
 				id: 3, agencyName: '財團法人中國生產力中心台北服務處', evaluationYear: '110', evaluation: '78', grade:'第三級',	
-				qualifications:'其他經本會核定之專家',	isPccms:'',	updateFlag:true,	pk: 5566
+				postDate:'110/10/08',	postNum:'工程管字第1090301364號',	updateFlag:true,	pk: 5566
 			}
 		]
 
