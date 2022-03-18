@@ -152,7 +152,7 @@ export default {
 			},
 			{
 				key:	'action',
-				label:	'備註'
+				label:	''
 			},
 
 		],

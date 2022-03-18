@@ -71,9 +71,9 @@ export default {
 		],
 		items:	[
 			//待分文要顯示紅字，結案日期也是
-			{ id: 1, divisionDay: '0', informNum: '200', rate: '83.68',	pk: 5566 },
-			{ id: 2, divisionDay: '1', informNum: '30', rate: '12.55',	pk: 5566 },
-			{ id: 3, divisionDay: '2', informNum: '9', rate: '3.77',	pk: 5566 },
+			{ id: 1, divisionDay: '0', divisionNum: '200', rate: '83.68',	pk: 5566 },
+			{ id: 2, divisionDay: '1', divisionNum: '30', rate: '12.55',	pk: 5566 },
+			{ id: 3, divisionDay: '2', divisionNum: '9', rate: '3.77',	pk: 5566 },
 		],
 		avgDay:'0.2',
 		totalNum:'239',
