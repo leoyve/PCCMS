@@ -84,8 +84,8 @@ export default {
 				label:	'流水號'
 			},
 			{
-				key:	'year',
-				label:	'年度'
+				key:	'site',
+				label:	'訓練地區'
 			},
 			{
 				key:	'totalOpening',
@@ -118,13 +118,13 @@ export default {
 			],
 		items:	[
 			{
-				id: 1, year: '109', totalOpening: '80', joinPopulation: '2312', totalClose:'44',	closePopulation:'1423',	qualifiedNum:'780',	qualifiedRate:'89%',	pk: 5566
+				id: 1, site: '新北市', totalOpening: '80', joinPopulation: '2312', totalClose:'44',	closePopulation:'1423',	qualifiedNum:'780',	qualifiedRate:'89%',	pk: 5566
 			},
 			{
-				id: 2,year: '110', totalOpening: '112', joinPopulation: '4567', totalClose:'80',	closePopulation:'3578',	qualifiedNum:'2344',	qualifiedRate:'99.5%',	pk: 5566
+				id: 2,	site: '宜蘭縣', totalOpening: '112', joinPopulation: '4567', totalClose:'80',	closePopulation:'3578',	qualifiedNum:'2344',	qualifiedRate:'99.5%',	pk: 5566
 			},
 			{
-				id: 3, year: '111', totalOpening: '	20', joinPopulation: '897', totalClose:'12',	closePopulation:'456',	qualifiedNum:'324',	qualifiedRate:'90%',	pk: 5566
+				id: 3, site: '桃園市', totalOpening: '	20', joinPopulation: '897', totalClose:'12',	closePopulation:'456',	qualifiedNum:'324',	qualifiedRate:'90%',	pk: 5566
 			}
 		],
 		agencyType: [
