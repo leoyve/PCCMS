@@ -23,11 +23,11 @@
 			<b-container fluid>
 				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>110年度各主管機關通報案件結案處理天數統計表</strong></h4></b-form-row>
 				<b-form-row class="justify-content-end">
-				<b-table striped hover :items="items" :fields="fields" head-variant="light">
+				<b-table striped hover :items="items" :fields="fields" head-variant="">
 					<template #thead-top>
 						<b-tr>
 							<b-th colspan="2"></b-th>
-							<b-th class="border border-light" variant="secondary" colspan="2">第一季</b-th>
+							<b-th class="border " variant="secondary" colspan="2">第一季</b-th>
 							<b-th class="border border-light " variant="primary" colspan="2">第二季</b-th>
 							<b-th class="border border-light " variant="success" colspan="2">第三季</b-th>
 							<b-th class="border border-light " variant="info" colspan="2">第四季</b-th>

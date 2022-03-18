@@ -10,6 +10,7 @@
 		<router-link :to="{name:'AnnualAppraisalRecord'}">代訓機構歷年評鑑紀錄表</router-link> ||
 		<router-link :to="{name:'ClassPopulationYeadReport'}">開班人數年度統計表</router-link> ||
 		<router-link :to="{name:'ClassPopulationSiteReport'}">開班人數地區統計表</router-link> ||
+		<router-link :to="{name:'BackTrainingHisReport'}">歷年學員回訓情形統計表</router-link> ||
 	</nav>
 	<router-view/>
 	</div>
