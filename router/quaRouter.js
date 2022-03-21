@@ -143,6 +143,21 @@ module.exports = [
         name: 'QueryStudentRecord',
         component: () => import(/* webpackChunkName: "about" */ '../views/qua/QueryStudentRecord.vue')
       },
+      {
+        path: 'classAndCourseQuery',
+        name: 'ClassAndCourseQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/ClassAndCourseQuery.vue')
+      },
+      {
+        path: 'classDetailInfo',
+        name: 'ClassDetailInfo',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/ClassDetailInfo.vue')
+      },
+      {
+        path: 'agencyCourseInfo',
+        name: 'AgencyCourseInfo',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/AgencyCourseInfo.vue')
+      },
     ],
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
