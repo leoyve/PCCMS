@@ -15,6 +15,7 @@
 		<router-link :to="{name:'OpeningNotice'}">預告開班及檢視洽詢民眾</router-link> ||
 		<router-link :to="{name:'QueryStudentRecord'}">查詢學員歷次參訓紀錄</router-link> ||
 		<router-link :to="{name:'ClassAndCourseQuery'}">查詢訓練主題班別及課程</router-link> ||
+		<router-link :to="{name:'GraduationCheckReport'}">品管班結業學員查核統計</router-link> ||
 	</nav>
 	<router-view/>
 	</div>
