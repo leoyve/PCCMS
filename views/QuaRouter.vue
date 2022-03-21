@@ -16,6 +16,7 @@
 		<router-link :to="{name:'QueryStudentRecord'}">查詢學員歷次參訓紀錄</router-link> ||
 		<router-link :to="{name:'ClassAndCourseQuery'}">查詢訓練主題班別及課程</router-link> ||
 		<router-link :to="{name:'GraduationCheckReport'}">品管班結業學員查核統計</router-link> ||
+		<router-link :to="{name:'FinalExamPassReport'}">品管班參訓學員期末測驗通過人數統計表</router-link> ||
 	</nav>
 	<router-view/>
 	</div>
