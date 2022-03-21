@@ -123,6 +123,21 @@ module.exports = [
         name: 'ClassSexReporty',
         component: () => import(/* webpackChunkName: "about" */ '../views/qua/ClassSexReporty.vue')
       },
+      {
+        path: 'openingNotice',
+        name: 'OpeningNotice',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/OpeningNotice.vue')
+      },
+      {
+        path: 'newOpeningEdit',
+        name: 'NewOpeningEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/NewOpeningEdit.vue')
+      },
+      {
+        path: 'openingInfoDetail',
+        name: 'OpeningInfoDetail',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/OpeningInfoDetail.vue')
+      },
     ],
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
