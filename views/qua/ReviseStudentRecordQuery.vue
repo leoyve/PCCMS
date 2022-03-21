@@ -164,11 +164,17 @@ export default {
 				certificateDate:'113年06月17日',	comment:'test',	stage:'DE10902',	pk: 5566
 			},
 			{
-				id: 2,	className: '公共工程品質管理訓練班(土建) 【106年起適用】', courseName: '永續公共工程-節能減碳',	pk: 5566
+				id: 2, studentName: '張XX', mechanism: '中原大學',	classType:'品管',	className:'公共工程品質管理訓練班(土建) 【109年起適用】',	classHour:'60',	
+				qualified:'取得公共工程類科專業技師或建築師證書者（含消防設備師）',	testScore:'73',	makeUpScore1:'58',	makeUpScore2:'60',
+				overallResult:'70',	isQualified:'是',	graduationDate:'10908',	graduationNum:'LR111012',	directorDate:'1090818',	directorNum:'工程管字第1090014530號',
+				certificateDate:'113年06月17日',	comment:'test',	stage:'LR11102',	pk: 5566
 			},
 			{
-				id: 3, className: '公共工程品質管理訓練班(土建) 【106年起適用】', courseName: '單元二：第四章 工程進料檢驗與管制',	pk: 5566
-			}
+				id: 3, studentName: '張XX', mechanism: '中原大學',	classType:'品管',	className:'公共工程品質管理訓練班(土建) 【106年起適用】',	classHour:'84',	
+				qualified:'取得公共工程類科專業技師或建築師證書者（含消防設備師）',	testScore:'73',	makeUpScore1:'58',	makeUpScore2:'60',
+				overallResult:'70',	isQualified:'是',	graduationDate:'10908',	graduationNum:'DE1090211',	directorDate:'1090818',	directorNum:'工程管字第1090014530號',
+				certificateDate:'113年06月17日',	comment:'test',	stage:'DE10902',	pk: 5566
+			},
 		]
 	}
  },

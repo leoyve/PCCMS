@@ -13,6 +13,7 @@
 		<router-link :to="{name:'BackTrainingHisReport'}">歷年學員回訓情形統計表</router-link> ||
 		<router-link :to="{name:'ClassSexReporty'}">品管暨回訓班性別統計表</router-link> ||
 		<router-link :to="{name:'OpeningNotice'}">預告開班及檢視洽詢民眾</router-link> ||
+		<router-link :to="{name:'QueryStudentRecord'}">查詢學員歷次參訓紀錄</router-link> ||
 	</nav>
 	<router-view/>
 	</div>
