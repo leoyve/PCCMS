@@ -1,5 +1,8 @@
 <template>
 	<div>
+		<br>
+		<h3><strong><font color="brown">依課程名稱搜尋教師名冊</font></strong></h3>
+		<br>
 		<b-container >
 			<b-form-row>
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="查詢課程" label-align-md="right">

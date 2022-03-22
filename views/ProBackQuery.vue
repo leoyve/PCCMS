@@ -1,5 +1,8 @@
 <template>
 	<div>
+		<br>
+		<h3><strong><font color="brown">產品查詢</font></strong></h3>
+		<br>
 		<b-container >
 			<b-form-row class="justify-content-end">
 				<b-button size="md" variant="success"  @click="goNew" >新增</b-button>

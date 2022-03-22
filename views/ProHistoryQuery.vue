@@ -1,5 +1,8 @@
 <template>
 	<div>
+		<br>
+		<h3><strong><font color="brown">歷史紀錄查詢</font></strong></h3>
+		<br>
 		<b-container >
 			<br>
 			<b-form-row >

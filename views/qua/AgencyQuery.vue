@@ -1,5 +1,7 @@
 <template>
 	<div>
+		<br>
+		<h3><strong><font color="brown">代訓機構資料管理</font></strong></h3>
 		<b-container >
 			<b-form-row class="justify-content-end">
 				<b-button size="l" variant="success"  @click="gotoParam('AgencyEdit', {addFlag:true})" >新增</b-button>

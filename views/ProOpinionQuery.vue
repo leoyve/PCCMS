@@ -1,5 +1,8 @@
 <template>
 	<div>
+		<br>
+		<h3><strong><font color="brown">交流意見登錄</font></strong></h3>
+		<br>
 		<b-container >
 			<b-form-row class="justify-content-end">
 				<b-button size="md" variant="success" @click="goto('OpinionNewQuery')" >新增</b-button>

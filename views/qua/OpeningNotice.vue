@@ -1,5 +1,7 @@
 <template>
 	<div>
+		<br>
+		<h3><strong><font color="brown">預告開班及檢視洽詢民眾</font></strong></h3>
 		<b-container >
 			<b-form-row class="justify-content-end">
 				<b-button size="l" variant="success"  @click="gotoParam('NewOpeningEdit', {addFlag:true})" >新增</b-button>&nbsp;&nbsp;

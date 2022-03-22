@@ -193,6 +193,11 @@ module.exports = [
         name: 'ClassTeacherTimesList',
         component: () => import(/* webpackChunkName: "about" */ '../views/qua/ClassTeacherTimesList.vue')
       },
+      {
+        path: 'classTrainingDayReport',
+        name: 'ClassTrainingDayReport',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/ClassTrainingDayReport.vue')
+      },
     ],
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route

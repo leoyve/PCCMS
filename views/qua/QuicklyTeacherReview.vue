@@ -1,32 +1,36 @@
 <template>
 	<div>
+		<br>
+		<h3><strong><font color="brown">快速審核師資授課之更新</font></strong></h3>
+		<br>
 		<b-container fluid>
-			<h3>教師授課課程審核項目勾選一覽表</h3>
-			<br>
-			<b-table striped hover :items="items" :fields="fields" head-variant="dark">
-				<template #cell(checkBar)="row">
-					<b-checkbox v-model="model"	@value="row.item.id"></b-checkbox>
-				</template>
-				<template #cell(teacher)="row">
-					<a href="#" variant="primary" @click="gotoParam('TeacherInfo', row.item)" >{{row.item.teacherName}}</a>
-				</template>
-				<template #cell(submitInfo)="row">
-					<b-container>
-						<b-row>
-							<b-col>{{ row.item.submitDate	}} </b-col>
-						</b-row>
-						<b-row>
-							<b-col>{{ row.item.submitDesc	}} </b-col>
-						</b-row>
-					</b-container>
-				</template>
-			</b-table>
-			<b-pagination align="right"
-				v-model="currentPage"
-				:total-rows="rows"
-				:per-page="perPage"
-				first-number
-			></b-pagination>
+			<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>教師授課課程審核項目勾選一覽表</strong></h4></b-form-row>
+			<b-form-row class="justify-content-end">
+				<b-table striped hover :items="items" :fields="fields" head-variant="dark">
+					<template #cell(checkBar)="row">
+						<b-checkbox v-model="model"	@value="row.item.id"></b-checkbox>
+					</template>
+					<template #cell(teacher)="row">
+						<a href="#" variant="primary" @click="gotoParam('TeacherInfo', row.item)" >{{row.item.teacherName}}</a>
+					</template>
+					<template #cell(submitInfo)="row">
+						<b-container>
+							<b-row>
+								<b-col>{{ row.item.submitDate	}} </b-col>
+							</b-row>
+							<b-row>
+								<b-col>{{ row.item.submitDesc	}} </b-col>
+							</b-row>
+						</b-container>
+					</template>
+				</b-table>
+				<b-pagination align="right"
+					v-model="currentPage"
+					:total-rows="rows"
+					:per-page="perPage"
+					first-number
+				></b-pagination>
+			</b-form-row>
 		</b-container>
 		<br>
 		<b-container>
