@@ -30,36 +30,9 @@
 		
 		<div>
 			<b-container fluid>
-				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>品管班參訓學員期末測驗通過人數統計表</strong></h4></b-form-row>
+				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>品管班參訓學員期末測驗及補考通過人數統計表</strong></h4></b-form-row>
 				<b-form-row class="justify-content-end">
 					<b-table striped hover :items="items" :fields="fields" >
-						<template #thead-top>
-							<b-tr>
-								<b-th colspan="3"></b-th>
-								<b-th class="border " variant="secondary" colspan="3">期末測驗</b-th>
-								<b-th class="border border-light " variant="primary" colspan="3">第1次補考</b-th>
-								<b-th class="border border-light " variant="success" colspan="3">第2次補考</b-th>
-								<b-th class="border border-light " variant="info" colspan="3">總計</b-th>
-							</b-tr>
-						</template>
-						<template #custom-foot>
-							<b-tr>
-								<b-th colspan="2">總計</b-th>
-								<b-th >19</b-th>
-								<b-th >382</b-th>
-								<b-th >555</b-th>
-								<b-th >87.88</b-th>
-								<b-th >382</b-th>
-								<b-th >555</b-th>
-								<b-th >87.88</b-th>
-								<b-th >382</b-th>
-								<b-th >555</b-th>
-								<b-th >87.88</b-th>
-								<b-th >382</b-th>
-								<b-th >555</b-th>
-								<b-th >87.88</b-th>
-							</b-tr>
-						</template>
 					</b-table>
 				</b-form-row>
 			</b-container>
