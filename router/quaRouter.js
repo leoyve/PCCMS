@@ -238,6 +238,16 @@ module.exports = [
         name: 'OpinionEdit',
         component: () => import(/* webpackChunkName: "about" */ '../views/qua/OpinionEdit.vue')
       },
+      {
+        path: 'questionQuery',
+        name: 'QuestionQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/QuestionQuery.vue')
+      },
+      {
+        path: 'questionEdit',
+        name: 'QuestionEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/QuestionEdit.vue')
+      },
     ],
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
