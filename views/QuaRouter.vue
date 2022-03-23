@@ -29,7 +29,8 @@
 					<b-dropdown-item  @click="gotoParam('FinalExamAndMakeUpReport')">品管班參訓學員期末測驗及補考通過人數統計表</b-dropdown-item>
 					<b-dropdown-item  @click="gotoParam('ClassTeacherReport')">訓練主題班別師資統計</b-dropdown-item>
 					<b-dropdown-item  @click="gotoParam('ClassTrainingDayReport')">品管班訓練期程天數統計</b-dropdown-item>
-					<b-dropdown-item  @click="gotoParam('TeachingHoursReport')">師資授課時數統計</b-dropdown-item>
+					<b-dropdown-item  @click="gotoParam('TeachingHoursReport')">訓練主題班別師資授課時數統計</b-dropdown-item>
+					<b-dropdown-item  @click="gotoParam('EndTrainingReport')">訓練主題班別結訓人數</b-dropdown-item>
 				</b-nav-item-dropdown>
 
 				<b-nav-item-dropdown text="測驗題庫" left>
