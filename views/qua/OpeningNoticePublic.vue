@@ -1,12 +1,9 @@
 <template>
 	<div>
 		<br>
-		<h3><strong><font color="brown">預告開班及檢視洽詢民眾</font></strong></h3>
+		<h3><strong><font color="brown">查詢代訓機構新開班資訊</font></strong></h3>
+		<br>
 		<b-container >
-			<b-form-row class="justify-content-end">
-				<b-button size="l" variant="success"  @click="gotoParam('NewOpeningEdit', {addFlag:true})" >新增</b-button>&nbsp;&nbsp;
-			</b-form-row>
-			<br>
 			<b-form-row>
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="代訓機構" label-align-md="right">
 					<b-form-select :options="type"></b-form-select>
@@ -45,9 +42,7 @@
 				<b-form-row class="justify-content-end">
 					<b-table striped hover :items="items" :fields="fields" head-variant="light">
 						<template #cell(action)="row">
-							<b-button size="sm" variant="outline-secondary" @click="gotoParam('OpeningInfoDetail', row.item)">明細</b-button>&nbsp;
-							<b-button size="sm" variant="success" @click="gotoParam('NewOpeningEdit', {updateFlag:true})">修改</b-button>&nbsp;
-							<b-button size="sm" variant="danger" @click="checkOut(row.item)">刪除</b-button>
+							<b-button size="sm" variant="outline-secondary" @click="gotoParam('OpeningInfoPublicDetail', row.item)">明細</b-button>&nbsp;
 						</template>
 					</b-table>
 					<b-pagination align="right"
@@ -132,10 +127,6 @@ export default {
 				label:	'開課種類',
 			},
 			{
-				key:	'interested',
-				label:	'有興趣人數',
-			},
-			{
 				key:	'action',
 				label:	'',
 			},
@@ -143,14 +134,14 @@ export default {
 		items:	[
 			{
 				id: 1, stage: 'LE11101', agency: '淡江大學', className: '公共工程品質管理訓練班(土建) 【109年4月起適用】', classType:'品管',	city:'台北市',	
-				openingDate:'111/03/23',closeDate:'111/09/09',openingPeriod:'夜間',openingType:'實體',interested:'23',	pk: 5566
+				openingDate:'111/03/23',closeDate:'111/09/09',openingPeriod:'夜間',openingType:'實體',	pk: 5566
 			},
 			{
 				id: 2,stage: 'LR11101', agency: '淡江大學', className: '公共工程品質管理訓練班(土建)', classType:'品管',	city:'台北市',	
-				openingDate:'111/05/06',closeDate:'111/10/11',openingPeriod:'假日',openingType:'實體',interested:'3',	pk: 5566	},
+				openingDate:'111/05/06',closeDate:'111/10/11',openingPeriod:'假日',openingType:'實體',	pk: 5566	},
 			{
 				id: 3, stage: 'LG11104', agency: '淡江大學', className: '公共工程品質管理訓練班(土建)', classType:'回訓',	city:'台北市',
-				openingDate:'111/07/09',closeDate:'111/10/23',openingPeriod:'專案',openingType:'視訊',interested:'2',	pk: 5566
+				openingDate:'111/07/09',closeDate:'111/10/23',openingPeriod:'專案',openingType:'視訊',	pk: 5566
 			}
 		]
 	}
