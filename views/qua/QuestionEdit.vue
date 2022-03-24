@@ -71,6 +71,18 @@
             ></b-form-radio-group>
           </b-col>
         </b-row>
+        <!--預設為是-->
+        <b-row class="border border-dark">
+          <b-col class="col-md-4 "><font color="red">*</font>是否公開</b-col>
+          <b-col class="col-md-8 text-left">
+            <b-form-radio-group
+              id="radio-group-1"
+              v-model="picked"
+              :options="options"
+              name="radio-options"
+            ></b-form-radio-group>
+          </b-col>
+        </b-row>
       </b-container>
     </b-container>
     <br>

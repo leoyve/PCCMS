@@ -36,6 +36,7 @@
 
 				<b-nav-item-dropdown text="測驗題庫" left>
 					<b-dropdown-item  @click="gotoParam('QuestionQuery')">測驗題庫增修作業</b-dropdown-item>
+					<b-dropdown-item  @click="gotoParam('PropositionQuery')">測驗自動命題作業</b-dropdown-item>
 				</b-nav-item-dropdown>
 			</b-navbar-nav>
 		</b-navbar>

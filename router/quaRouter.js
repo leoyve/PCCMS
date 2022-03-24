@@ -248,6 +248,36 @@ module.exports = [
         name: 'QuestionEdit',
         component: () => import(/* webpackChunkName: "about" */ '../views/qua/QuestionEdit.vue')
       },
+      {
+        path: 'propositionQuery',
+        name: 'PropositionQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/PropositionQuery.vue')
+      },
+      {
+        path: 'examConditionEdit',
+        name: 'ExamConditionEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/ExamConditionEdit.vue')
+      },
+      {
+        path: 'propositionView',
+        name: 'PropositionView',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/PropositionView.vue')
+      },
+      {
+        path: 'examEventEdit',
+        name: 'ExamEventEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/ExamEventEdit.vue')
+      },
+      {
+        path: 'examDetail',
+        name: 'ExamDetail',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/ExamDetail.vue')
+      },
+      {
+        path: 'ExamChange',
+        name: 'ExamChange',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/ExamChange.vue')
+      },
     ],
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route

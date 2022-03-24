@@ -153,6 +153,10 @@ export default {
 				tdClass: 'text-left',
 			},
 			{
+				key:	'classType',
+				label: '班別種類'
+			},
+			{
 				key:	'course',
 				label:	'課程名稱',
 				tdClass: 'text-left',
@@ -184,10 +188,6 @@ export default {
 			{
 				key:	'propositionDate',
 				label: '命題日期'
-			},
-			{
-				key:	'classType',
-				label: '班別種類'
 			},
 			{
 				key:	'isVaild',
