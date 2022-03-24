@@ -14,7 +14,7 @@
 				</b-nav-item-dropdown>
 
 				<b-nav-item-dropdown text="資料查詢" left>
-					<b-dropdown-item  @click="gotoParam('ReviseStudentRecordQuery')">修正學員參訓之歷次紀錄</b-dropdown-item>
+					<b-dropdown-item  @click="gotoParam('QueryStudentRecord')">查詢學員歷次參訓紀錄</b-dropdown-item>
 					<b-dropdown-item  @click="gotoParam('ClassAndCourseQuery')">查詢訓練主題班別及課程</b-dropdown-item>
 					<b-dropdown-item  @click="gotoParam('ClassTeacherQuery')">依課程名稱搜尋教師名冊</b-dropdown-item>
 				</b-nav-item-dropdown>
@@ -41,6 +41,7 @@
 
 				<b-nav-item-dropdown text="前台" left>
 					<b-dropdown-item  @click="gotoParam('OpeningNoticePublic')">查詢代訓機構新開班資訊</b-dropdown-item>
+					<b-dropdown-item  @click="gotoParam('QueryStudentRecordPublic')">查詢學員歷次參訓紀錄</b-dropdown-item>
 				</b-nav-item-dropdown>
 			</b-navbar-nav>
 		</b-navbar>

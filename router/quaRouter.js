@@ -288,6 +288,11 @@ module.exports = [
         name: 'OpeningInfoPublicDetail',
         component: () => import(/* webpackChunkName: "about" */ '../views/qua/OpeningInfoPublicDetail.vue')
       },
+      {
+        path: 'queryStudentRecordPublic',
+        name: 'QueryStudentRecordPublic',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/QueryStudentRecordPublic.vue')
+      },
     ],
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route

@@ -6,11 +6,21 @@
 		<b-container >
 			<b-form-row>
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="學員身分證字號" label-align-md="right">
-					<b-input type="search"></b-input>
+					<b-input type="password"></b-input>
 				</b-form-group>
 			</b-form-row>
 			<b-form-row>
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="學員姓氏" label-align-md="right">
+					<b-input type="search"></b-input>
+				</b-form-group>
+			</b-form-row>
+			<b-form-row>
+				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="代訓機構" label-align-md="right">
+					<b-form-select :options="type"></b-form-select>
+				</b-form-group>
+			</b-form-row>
+			<b-form-row>
+				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="受訓期別" label-align-md="right">
 					<b-input type="search"></b-input>
 				</b-form-group>
 			</b-form-row>
@@ -67,6 +77,13 @@
 export default {
  data(){
 	return{
+		type: [
+			{ value: '', text: '全部' },
+			{ value: '0', text: '中原大學' },
+			{ value: '1', text: '淡江大學' },
+			{ value: '2', text: '中央大學' },
+			{ value: '3', text: '成功大學' },
+		],
 		rows: 100,
 		perPage: 1,
 		currentPage: 1,
@@ -120,11 +137,6 @@ export default {
 				thStyle: { width: "5%" },
 			},
 			{
-				key:	'certificateDate',
-				label:	'證書可應用有效日期',
-				thStyle: { width: "5%" },
-			},
-			{
 				key:	'comment',
 				label:	'備註'
 			},
@@ -133,7 +145,7 @@ export default {
 			{
 				id: 1, studentName: '張XX', mechanism: '中原大學',	classType:'品管',	className:'公共工程品質管理訓練班(土建) 【106年起適用】',	classHour:'84',	
 				city:'台北市',	isGraduation:'是',	graduationDate:'10908',	graduationNum:'DE1090211',	directorDate:'1090818',	directorNum:'工程管字第1090014530號',
-				certificateDate:'113年06月17日',	comment:'test',	stage:'DE10902',	trainPeriod:'111/03/03~111/05/06',pk: 5566
+				comment:'test',	stage:'DE10902',	trainPeriod:'111/03/03~111/05/06',pk: 5566
 			},
 		]
 	}
