@@ -298,6 +298,16 @@ module.exports = [
         name: 'PropositionPublicQuery',
         component: () => import(/* webpackChunkName: "about" */ '../views/qua/PropositionPublicQuery.vue')
       },
+      {
+        path: 'satisfactionFillQuery',
+        name: 'SatisfactionFillQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/SatisfactionFillQuery.vue')
+      },
+      {
+        path: 'satisfactionFill',
+        name: 'SatisfactionFill',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/SatisfactionFill.vue')
+      },
     ],
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route

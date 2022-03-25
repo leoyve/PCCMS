@@ -43,6 +43,7 @@
 					<b-dropdown-item  @click="gotoParam('OpeningNoticePublic')">查詢代訓機構新開班資訊</b-dropdown-item>
 					<b-dropdown-item  @click="gotoParam('QueryStudentRecordPublic')">查詢學員歷次參訓紀錄</b-dropdown-item>
 					<b-dropdown-item  @click="gotoParam('PropositionPublicQuery')">測驗題目公開作業</b-dropdown-item>
+					<b-dropdown-item  @click="gotoParam('SatisfactionFillQuery')">訓練學員滿意度調查</b-dropdown-item>
 				</b-nav-item-dropdown>
 			</b-navbar-nav>
 		</b-navbar>
