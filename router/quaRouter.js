@@ -308,6 +308,96 @@ module.exports = [
         name: 'SatisfactionFill',
         component: () => import(/* webpackChunkName: "about" */ '../views/qua/SatisfactionFill.vue')
       },
+      {
+        path: 'openPeriodQuery',
+        name: 'OpenPeriodQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/OpenPeriodQuery.vue')
+      },
+      {
+        path: 'openPeriodNoticeQuery',
+        name: 'OpenPeriodNoticeQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/OpenPeriodNoticeQuery.vue')
+      },
+      {
+        path: 'agencyStageEdit',
+        name: 'AgencyStageEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/AgencyStageEdit.vue')
+      },
+      {
+        path: 'openPeriodDetail',
+        name: 'OpenPeriodDetail',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/OpenPeriodDetail.vue')
+      },
+      {
+        path: 'agencyStageDetail',
+        name: 'AgencyStageDetail',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/AgencyStageDetail.vue')
+      },
+      {
+        path: 'agencyStageTeacherDetail',
+        name: 'AgencyStageTeacherDetail',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/AgencyStageTeacherDetail.vue')
+      },
+      {
+        path: 'courseTeacherEdit',
+        name: 'CourseTeacherEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/CourseTeacherEdit.vue')
+      },
+      {
+        path: 'agencyStageStudentDetail',
+        name: 'AgencyStageStudentDetail',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/AgencyStageStudentDetail.vue')
+      },
+      {
+        path: 'stageStudentEdit',
+        name: 'StageStudentEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/StageStudentEdit.vue')
+      },
+      {
+        path: 'agencyStageScoreDetail',
+        name: 'AgencyStageScoreDetail',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/AgencyStageScoreDetail.vue')
+      },
+      {
+        path: 'stageScoreEdit',
+        name: 'StageScoreEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/StageScoreEdit.vue')
+      },
+      {
+        path: 'agencyStageMakeUpDetail',
+        name: 'AgencyStageMakeUpDetail',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/AgencyStageMakeUpDetail.vue')
+      },
+      {
+        path: 'stageMakeUpEdit',
+        name: 'StageMakeUpEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/StageMakeUpEdit.vue')
+      },
+      {
+        path: 'stageMakeUpSubmit',
+        name: 'StageMakeUpSubmit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/StageMakeUpSubmit.vue')
+      },
+      {
+        path: 'stage1Submit',
+        name: 'Stage1Submit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/Stage1Submit.vue')
+      },
+      {
+        path: 'stage2Submit',
+        name: 'Stage2Submit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/Stage2Submit.vue')
+      },
+      {
+        path: 'stage1Review',
+        name: 'Stage1Review',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/Stage1Review.vue')
+      },
+      {
+        path: 'stage2Review',
+        name: 'Stage2Review',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/Stage2Review.vue')
+      },
     ],
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
