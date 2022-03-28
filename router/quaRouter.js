@@ -408,6 +408,21 @@ module.exports = [
         name: 'InvigilationEdit',
         component: () => import(/* webpackChunkName: "about" */ '../views/qua/InvigilationEdit.vue')
       },
+      {
+        path: 'openAndEndNoticeQuery',
+        name: 'OpenAndEndNoticeQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/OpenAndEndNoticeQuery.vue')
+      },
+      {
+        path: 'openAndEndNoticeNewQuery',
+        name: 'OpenAndEndNoticeNewQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/OpenAndEndNoticeNewQuery.vue')
+      },
+      {
+        path: 'openEndNoticeEdit',
+        name: 'OpenEndNoticeEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/OpenEndNoticeEdit.vue')
+      },
     ],
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route

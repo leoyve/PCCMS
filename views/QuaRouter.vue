@@ -13,6 +13,7 @@
 					<b-dropdown-item  @click="gotoParam('ReviseStudentRecordQuery')">修正學員參訓之歷次紀錄</b-dropdown-item>
 					<b-dropdown-item  @click="gotoParam('QuicklyTeacherReview')">快速審核師資授課之更新</b-dropdown-item>
 					<b-dropdown-item  @click="gotoParam('InvigilationMaintance')">監考人員維護</b-dropdown-item>
+					<b-dropdown-item  @click="gotoParam('OpenAndEndNoticeQuery')">開訓/結訓通知單</b-dropdown-item>
 				</b-nav-item-dropdown>
 
 				<b-nav-item-dropdown text="資料查詢" left>
