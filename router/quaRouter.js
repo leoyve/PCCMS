@@ -433,6 +433,26 @@ module.exports = [
         name: 'StageDateEdit',
         component: () => import(/* webpackChunkName: "about" */ '../views/qua/StageDateEdit.vue')
       },
+      {
+        path: 'openAndEndSubmitQuery',
+        name: 'OpenAndEndSubmitQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/OpenAndEndSubmitQuery.vue')
+      },
+      {
+        path: 'openEndNoticeSubmitEdit',
+        name: 'OpenEndNoticeSubmitEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/OpenEndNoticeSubmitEdit.vue')
+      },
+      {
+        path: 'stageDataSubmitQuery',
+        name: 'StageDataSubmitQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/StageDataSubmitQuery.vue')
+      },
+      {
+        path: 'stageDateSubmitEdit',
+        name: 'StageDateSubmitEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/StageDateSubmitEdit.vue')
+      },
     ],
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route

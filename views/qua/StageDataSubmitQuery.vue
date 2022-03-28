@@ -1,13 +1,9 @@
 <template>
 	<div>
 		<br>
-		<h3><strong><font color="brown">開班期別基本資料異動申請</font></strong></h3>
+		<h3><strong><font color="brown">審查開班期別基本資料異動申請</font></strong></h3>
 		<br>
 		<b-container >
-			<b-form-row class="justify-content-end">
-				<b-button size="l" variant="success"  @click="gotoParam('StageDateEdit', )" >新增</b-button>&nbsp;&nbsp;
-			</b-form-row>
-			<br>
 			<b-form-row>
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="異動申請單號" label-align-md="right">
 					<b-form-input type="search"></b-form-input>
@@ -16,6 +12,11 @@
 			<b-form-row>
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="期別" label-align-md="right">
 					<b-form-input type="search"></b-form-input>
+				</b-form-group>
+			</b-form-row>
+			<b-form-row>
+				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="代訓機構" label-align-md="right">
+					<b-form-select :options="agencyType"></b-form-select>
 				</b-form-group>
 			</b-form-row>
 			<b-form-row>
@@ -55,7 +56,7 @@
 				<b-form-row class="justify-content-end">
 					<b-table striped hover :items="items" :fields="fields" head-variant="light">
 						<template #cell(action)="row">
-							<b-button size="sm" variant="info" @click="gotoParam('StageDateEdit', {updateFlag:true,...row.item})">明細</b-button>&nbsp;
+							<b-button size="sm" variant="success" @click="gotoParam('StageDateSubmitEdit', row.item)">審查</b-button>&nbsp;
 						</template>
 					</b-table>
 					<b-pagination align="right"
@@ -89,6 +90,13 @@ export default {
 			{ value: '2', text: '已核准' },
 			{ value: '3', text: '已駁回' },
 		],
+		agencyType:[
+			{ value: '', text: '全部' },
+			{ value: '0', text: '中原大學' },
+			{ value: '1', text: '淡江大學' },
+			{ value: '2', text: '中央大學' },
+			{ value: '3', text: '成功大學' },
+		],
 		rows: 100,
 		perPage: 1,
 		currentPage: 1,
@@ -105,6 +113,10 @@ export default {
 			{
 				key:	'submitDate',
 				label: '申請日期'
+			},
+			{
+				key:	'agency',
+				label:	'代訓機構',
 			},
 			{
 				key:	'stage',
@@ -131,15 +143,15 @@ export default {
 		items:	[
 			{
 				id: 1, submitNum: 'R11000000001', submitDate: '110/01/03',stage:'FE11001',classType:'品管',
-				changeType:'期別',status:'未完成',pk: 5566, 
+				changeType:'期別',status:'未完成',pk: 5566, agency:'淡江大學',
 			},
 			{
 				id: 2,submitNum: 'R11000000002',submitDate: '110/02/09',stage:'FE11002',classType:'品管',
-				changeType:'地址',status:'送審中',pk: 5566
+				changeType:'地址',status:'送審中',pk: 5566,agency:'工程會',
 			},
 			{
 				id: 3, submitNum: 'R11100000002', submitDate: '111/03/06', stage:'LR11101',classType:'回訓',
-				changeType:'授課資訊',status:'已核准',pk: 5566
+				changeType:'授課資訊',status:'已核准',pk: 5566,agency:'中原大學',
 			}
 		]
 	}

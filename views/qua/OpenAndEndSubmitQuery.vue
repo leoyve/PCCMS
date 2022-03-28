@@ -1,21 +1,22 @@
 <template>
 	<div>
 		<br>
-		<h3><strong><font color="brown">開班期別基本資料異動申請</font></strong></h3>
+		<h3><strong><font color="brown">審查開訓/結訓通知單</font></strong></h3>
 		<br>
 		<b-container >
-			<b-form-row class="justify-content-end">
-				<b-button size="l" variant="success"  @click="gotoParam('StageDateEdit', )" >新增</b-button>&nbsp;&nbsp;
-			</b-form-row>
-			<br>
 			<b-form-row>
-				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="異動申請單號" label-align-md="right">
+				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="通知單號" label-align-md="right">
 					<b-form-input type="search"></b-form-input>
 				</b-form-group>
 			</b-form-row>
 			<b-form-row>
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="期別" label-align-md="right">
 					<b-form-input type="search"></b-form-input>
+				</b-form-group>
+			</b-form-row>
+			<b-form-row>
+				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="代訓機構" label-align-md="right">
+					<b-form-select :options="agencyType"></b-form-select>
 				</b-form-group>
 			</b-form-row>
 			<b-form-row>
@@ -39,6 +40,16 @@
 				</b-form-group>
 			</b-form-row>
 			<b-form-row>
+				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="申請種類" label-align-md="right">
+					<b-form-radio-group
+						id="radio-group-1"
+						v-model="picked"
+						:options="options2"
+						name="radio-options"
+					></b-form-radio-group>
+				</b-form-group>
+			</b-form-row>
+			<b-form-row>
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="狀態" label-align-md="right">
 					<b-form-select :options="classType"></b-form-select>
 				</b-form-group>
@@ -51,11 +62,15 @@
 		<br>
 		<div>
 			<b-container fluid>
-				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>異動申請單一覽表</strong></h4></b-form-row>
+				<b-form-row class="justify-content-end"><h4><strong><b-button size="lg" variant="success"  @click="queryHandler" >匯出</b-button></strong></h4></b-form-row>
+				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>測驗題目一覽表</strong></h4></b-form-row>
 				<b-form-row class="justify-content-end">
 					<b-table striped hover :items="items" :fields="fields" head-variant="light">
+						<template #cell(checkBar)="row">
+							<b-checkbox v-model="model"	@value="row.id"></b-checkbox>
+						</template>
 						<template #cell(action)="row">
-							<b-button size="sm" variant="info" @click="gotoParam('StageDateEdit', {updateFlag:true,...row.item})">明細</b-button>&nbsp;
+							<b-button size="sm" variant="success" @click="gotoParam('OpenEndNoticeSubmitEdit', row.item)">審查</b-button>&nbsp;
 						</template>
 					</b-table>
 					<b-pagination align="right"
@@ -77,6 +92,11 @@
 export default {
  data(){
 	return{
+		options2: [
+			{	text:	'開訓',	value:	'A'},
+			{	text:	'結訓',	value:	'B'},
+			{	text:	'不限',	value:	'C'},
+		],
 		options3:[
 			{	text:	'全部',	value:	'A'},
 			{	text:	'品管',	value:	'B'},
@@ -89,11 +109,22 @@ export default {
 			{ value: '2', text: '已核准' },
 			{ value: '3', text: '已駁回' },
 		],
+		agencyType:[
+			{ value: '', text: '全部' },
+			{ value: '0', text: '中原大學' },
+			{ value: '1', text: '淡江大學' },
+			{ value: '2', text: '中央大學' },
+			{ value: '3', text: '成功大學' },
+		],
 		rows: 100,
 		perPage: 1,
 		currentPage: 1,
 		// 這邊有給KEY的話，items也要換成KEY，否則取值會是undefined，這邊是要顯示的欄位，不顯示的放在ITEMS裡面就好
 		fields: [
+			{
+				key:	'checkBar',
+				label:	'勾選'
+			},
 			{
 				key:	'id',
 				label:	'流水號'
@@ -107,6 +138,10 @@ export default {
 				label: '申請日期'
 			},
 			{
+				key:	'agency',
+				label: '代訓機構'
+			},
+			{
 				key:	'stage',
 				label:	'期別',
 			},
@@ -116,8 +151,8 @@ export default {
 				thStyle: { width: "10%"},
 			},
 			{
-				key:	'changeType',
-				label: '異動種類',	
+				key:	'submitType',
+				label: '申請種類',	
 			},
 			{
 				key:	'status',
@@ -130,16 +165,16 @@ export default {
 		],
 		items:	[
 			{
-				id: 1, submitNum: 'R11000000001', submitDate: '110/01/03',stage:'FE11001',classType:'品管',
-				changeType:'期別',status:'未完成',pk: 5566, 
+				id: 1, submitNum: 'E11000000001', submitDate: '110/01/03',agency:'淡江大學',stage:'FE11001',
+				classType:'品管',submitType:'開訓',status:'未完成',pk: 5566, 
 			},
 			{
-				id: 2,submitNum: 'R11000000002',submitDate: '110/02/09',stage:'FE11002',classType:'品管',
-				changeType:'地址',status:'送審中',pk: 5566
+				id: 2,submitNum: 'E11000000002',submitDate: '110/02/09',agency:'工程會',stage:'FE11002',
+				classType:'品管',submitType:'結訓',status:'送審中',pk: 5566
 			},
 			{
-				id: 3, submitNum: 'R11100000002', submitDate: '111/03/06', stage:'LR11101',classType:'回訓',
-				changeType:'授課資訊',status:'已核准',pk: 5566
+				id: 3, submitNum: 'E11100000002', submitDate: '111/03/06',agency:'台電訓練中心',stage:'LR11101',
+				classType:'回訓',submitType:'結訓',status:'已核准',pk: 5566
 			}
 		]
 	}

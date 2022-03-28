@@ -10,6 +10,8 @@
 
         <b-nav-item  @click="gotoParam('品管人員訓練')"><h3>品管人員訓練</h3></b-nav-item>
 
+        <b-nav-item  @click="gotoParam('重點防汛')"><h3>重點防汛</h3></b-nav-item>
+
       </b-navbar-nav>
     </b-navbar>
     <router-view/>
