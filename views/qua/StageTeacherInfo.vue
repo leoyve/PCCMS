@@ -4,16 +4,16 @@
       <b-form-row class="justify-content-center text-light bg-primary"><h4><strong>授課教師名單表</strong></h4></b-form-row>
       <b-form-row class="justify-content-center ">
         <b-table striped hover :items="items" :fields="fields" head-variant="light">
-						<template #cell(action)="row">
-							<b-button size="sm" variant="success" @click="gotoParam('CourseTeacherEdit', row.item)" v-show="editableFlag">編輯</b-button>&nbsp;
-						</template>
-					</b-table>
-					<b-pagination align="right"
-						v-model="currentPage"
-						:total-rows="rows"
-						:per-page="perPage"
-						first-number
-					></b-pagination>
+			<template #cell(action)="row">
+				<b-button size="sm" variant="success" @click="gotoParam('CourseTeacherEdit', row.item)" v-show="editableFlag">編輯</b-button>&nbsp;
+			</template>
+		</b-table>
+		<b-pagination align="right"
+			v-model="currentPage"
+			:total-rows="rows"
+			:per-page="perPage"
+			first-number
+		></b-pagination>
       </b-form-row>
     </b-container>
     <br>
@@ -28,7 +28,7 @@ export default {
   props: ["editableFlag"],
   data(){
     return{
-    rows: 20,
+    	rows: 20,
 		perPage: 1,
 		currentPage: 1,
 		// 這邊有給KEY的話，items也要換成KEY，否則取值會是undefined，這邊是要顯示的欄位，不顯示的放在ITEMS裡面就好

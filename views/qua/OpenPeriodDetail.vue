@@ -33,6 +33,7 @@
 								<b-button size="sm" variant="success" @click="gotoParam('Stage1Submit', )">送審</b-button>&nbsp;
 								<!--看要不要固定按鈕文字，用其他紅字顯示狀況-->
 								<b-button size="sm" variant="info" @click="gotoParam('Stage1Review', )">審查</b-button>&nbsp;
+								<b-button size="sm" variant="warning" @click="gotoParam('StageDataChengeQuery', )">資料異動</b-button>&nbsp;
 							</b-th>
 						</b-tr>
 						<b-tr>
