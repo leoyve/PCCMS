@@ -28,7 +28,7 @@ export default {
   props: ["editableFlag"],
   data(){
     return{
-    	rows: 20,
+		rows: 20,
 		perPage: 1,
 		currentPage: 1,
 		// 這邊有給KEY的話，items也要換成KEY，否則取值會是undefined，這邊是要顯示的欄位，不顯示的放在ITEMS裡面就好
