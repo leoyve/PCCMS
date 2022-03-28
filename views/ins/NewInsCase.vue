@@ -56,15 +56,16 @@
           <b-col class="col-md-2 "><font color="red">*</font>通報內容</b-col>
           <b-col class="col-md-10 text-left">
             <b-form-checkbox-group
-            v-model="selected"
-            :options="checkOptions"
-            class="mb-2"
-            value-field="item"
-            text-field="name"
-            :disabled="disabledFlag"
-            name="flavour-1a"
-            inline
-          ></b-form-checkbox-group></b-col>
+              v-model="selected"
+              :options="checkOptions"
+              class="mb-2"
+              value-field="item"
+              text-field="name"
+              :disabled="disabledFlag"
+              name="flavour-1a"
+              inline
+            ></b-form-checkbox-group>
+          </b-col>
         </b-row>
         <b-row class="border border-dark">
           <b-col class="col-md-2 "><font color="red">*</font>具體內容</b-col>
