@@ -18,6 +18,14 @@ Vue.prototype.gotoParam = function (str, param){
   this.$router.push({name:str,  params:param});
 }
 
+Vue.prototype.deleteCheck = function (param){
+  console.log(param);
+  confirm("是否刪除此筆資料?");
+}
+
+Vue.prototype.goBack = function (){
+  this.$router.back(-1);
+}
 
 new Vue({
   router,
