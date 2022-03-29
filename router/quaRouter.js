@@ -463,6 +463,66 @@ module.exports = [
         name: 'PersonHoursReportDetail',
         component: () => import(/* webpackChunkName: "about" */ '../views/qua/PersonHoursReportDetail.vue')
       },
+      {
+        path: 'trainingClassQuery',
+        name: 'TrainingClassQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/TrainingClassQuery.vue')
+      },
+      {
+        path: 'trainingClassEdit',
+        name: 'TrainingClassEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/TrainingClassEdit.vue')
+      },
+      {
+        path: 'trainingClassDetail',
+        name: 'TrainingClassDetail',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/TrainingClassDetail.vue')
+      },
+      {
+        path: 'courseEdit',
+        name: 'CourseEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/CourseEdit.vue')
+      },
+      {//備用
+        path: 'teacherCourseListEdit',
+        name: 'TeacherCourseListEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/TeacherCourseListEdit.vue')
+      },
+      {
+        path: 'trainingClassSubmit',
+        name: 'TrainingClassSubmit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/TrainingClassSubmit.vue')
+      },
+      {
+        path: 'trainingClassReview',
+        name: 'TrainingClassReview',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/TrainingClassReview.vue')
+      },
+      {
+        path: 'courseTeacherQuery',
+        name: 'CourseTeacherQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/CourseTeacherQuery.vue')
+      },
+      {
+        path: 'teacherCourseEdit',
+        name: 'TeacherCourseEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/TeacherCourseEdit.vue')
+      },
+      {
+        path: 'teacherCourseReview',
+        name: 'TeacherCourseReview',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/TeacherCourseReview.vue')
+      },
+      {
+        path: 'courseClassQuery',
+        name: 'CourseClassQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/CourseClassQuery.vue')
+      },
+      {
+        path: 'trainingOpenDetail',
+        name: 'TrainingOpenDetail',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/TrainingOpenDetail.vue')
+      },
     ],
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route

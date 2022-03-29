@@ -4,8 +4,8 @@
     <b-container>
       <b-row class="col-sm row justify-content-end" >     
         <b-button size="sm" variant="success" @click="gotoParam('AgencyStageEdit',)">修改</b-button>&ensp; 
-        <b-button size="sm" variant="danger" @click="add">刪除</b-button>&ensp; 
-        <b-button size="sm" variant="outline-secondary" @click="gotoParam('OpenPeriodDetail',)">回上一頁</b-button>
+        <b-button size="sm" variant="danger" @click="deleteCheck()">刪除</b-button>&ensp; 
+        <b-button size="sm" variant="outline-secondary" @click="goBack()">回上一頁</b-button>
       </b-row>
     </b-container>
     <br>

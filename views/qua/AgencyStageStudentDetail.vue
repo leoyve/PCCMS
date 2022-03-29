@@ -15,17 +15,17 @@
       <b-form-row class="justify-content-center text-light bg-primary"><h4><strong>受訓學員名單一覽表</strong></h4></b-form-row>
       <b-form-row class="justify-content-center ">
         <b-table striped hover :items="items" :fields="fields" head-variant="light">
-						<template #cell(action)="row">
-							<b-button size="sm" variant="success" @click="gotoParam('StageStudentEdit', {updateFlag:true, ...row.item})">編輯</b-button>&nbsp;
-              <b-button size="sm" variant="danger" @click="gotoParam('CourseTeacherEdit', row.item)">刪除</b-button>&nbsp;
-						</template>
-					</b-table>
-					<b-pagination align="right"
-						v-model="currentPage"
-						:total-rows="rows"
-						:per-page="perPage"
-						first-number
-					></b-pagination>
+			<template #cell(action)="row">
+				<b-button size="sm" variant="success" @click="gotoParam('StageStudentEdit', {updateFlag:true, ...row.item})">編輯</b-button>&nbsp;
+				<b-button size="sm" variant="danger" @click="gotoParam('CourseTeacherEdit', row.item)">刪除</b-button>&nbsp;
+			</template>
+			</b-table>
+			<b-pagination align="right"
+				v-model="currentPage"
+				:total-rows="rows"
+				:per-page="perPage"
+				first-number
+			></b-pagination>
       </b-form-row>
     </b-container>
   </div>

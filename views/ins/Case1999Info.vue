@@ -1,5 +1,7 @@
 <template>
   <div>
+      <br>
+      <br>
       <b-container class="border border-dark">
         <b-row class="border border-dark">
           <b-col class="col-md-2 ">案件編號</b-col>

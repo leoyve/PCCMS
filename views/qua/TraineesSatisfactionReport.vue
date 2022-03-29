@@ -61,7 +61,6 @@
 							</b-tr>
 						</template>
 					</b-table>
-
 				</b-form-row>
 			</b-container>
 		</div>

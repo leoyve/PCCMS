@@ -1,31 +1,15 @@
 <template>
 	<div>
-		<b-container >
-			<b-form-row>
-				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="地方主管機關" label-align-md="right">
-					<b-form-input v-model="wkut" type="search" disabled="true"></b-form-input>
-				</b-form-group>
-			</b-form-row>
-			<b-form-row >
-				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="通報日期" label-align-md="right">
-					<b-container>
-						<b-row>
-							<b-col><b-form-datepicker id="example-datepicker1" v-model="value1" class="mb-2" disabled="true"></b-form-datepicker></b-col>~
-							<b-col><b-form-datepicker id="example-datepicker2" v-model="value2" class="mb-2" disabled="true"></b-form-datepicker></b-col>
-						</b-row>
-					</b-container>
-				</b-form-group>
-			</b-form-row>
-		</b-container>
 		<br>
-		
+		<h3><strong>地方1999通報案件</strong></h3>
+		<br>
 		<div>
-			<b-container >
+			<b-container fluid>
 				<h3>地方縣市1999通報案件一覽表</h3>
 				<br>
 				<b-table striped hover :items="items" :fields="fields" head-variant="dark">
 					<template #cell(action)="row">
-						<b-button size="sm" variant="success" @click="toEdit(row.item)">修改</b-button>
+						<b-button size="sm" variant="success" @click="toEdit(row.item)">修改</b-button>&nbsp;
 						<b-button size="sm" variant="danger" @click="toDelete(row.item)">刪除</b-button>
 					</template>
 				</b-table>
@@ -37,7 +21,6 @@
 				></b-pagination>
 			</b-container>
 		</div>
-
 	</div>
 </template>
 

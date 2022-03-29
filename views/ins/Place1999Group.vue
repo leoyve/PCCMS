@@ -1,6 +1,14 @@
 <template>
 	<div>
+		<br>
+		<h3><strong>地方1999通報案件</strong></h3>
+		<br>
 		<b-container >
+			<b-form-row class="justify-content-end">
+				<b-button size="sm" variant="success" @click="place1999New" >新增</b-button> &nbsp; &nbsp;
+				<b-button size="sm" variant="success" @click="batchReview" >上傳案件</b-button>
+			</b-form-row>
+			<br>
 			<b-form-row >
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="通報日期" label-align-md="right">
 					<b-container>
@@ -21,10 +29,6 @@
 			<b-container >
 				<h3>地方縣市1999通報案件統計表</h3>
 				<br>
-				<b-form-row class="justify-content-start">
-					<b-button size="sm" variant="success" @click="place1999New" >新增</b-button> &nbsp; &nbsp;
-					<b-button size="sm" variant="success" @click="batchReview" >上傳案件</b-button>
-				</b-form-row>
 				<br>
 				<b-table striped hover :items="items" :fields="fields" head-variant="dark">
 					<template #cell(action)="row">

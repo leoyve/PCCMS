@@ -11,8 +11,8 @@
 			<br>
 		<b-container fluid class="border border-dark">
 			<b-row class="border border-dark">
-			<b-col class="col-md-2 ">命題版本編號</b-col>
-			<b-col class="col-md-10 text-left">1090001</b-col>
+				<b-col class="col-md-2 ">命題版本編號</b-col>
+				<b-col class="col-md-10 text-left">1090001</b-col>
 			</b-row>
 			<b-row class="border border-dark">
 			<b-col class="col-md-2 "><font color="red">*</font>訓練主題班別</b-col>

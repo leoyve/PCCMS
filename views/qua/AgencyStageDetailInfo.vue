@@ -1,8 +1,8 @@
 <template>
   <div>
-    <b-container>
+    <b-container fluid>
       <b-form-row class="justify-content-center "><h2><strong>開班期別基本資料表</strong></h2></b-form-row>
-      <b-container class="border border-dark">
+      <b-container class="border border-dark" fluid>
         <b-row class="border border-dark">
           <b-col class="col-md-2 ">開班期別名稱</b-col>
           <b-col class="col-md-10 text-left">LR11001</b-col>

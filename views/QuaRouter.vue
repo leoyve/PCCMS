@@ -5,6 +5,7 @@
 			<b-navbar-nav>
 				<!-- Navbar dropdowns -->
 				<b-nav-item-dropdown text="代訓機構與訓練班別" left>
+					<b-dropdown-item  @click="gotoParam('TrainingClassQuery')">審核訓練主題班別及開班</b-dropdown-item>
 					<b-dropdown-item  @click="gotoParam('OpenPeriodQuery')">開班期別審核申辦資料</b-dropdown-item>
 					<b-dropdown-item  @click="gotoParam('AgencyQuery')">代訓機構資料管理</b-dropdown-item>
 					<b-dropdown-item  @click="gotoParam('AddTeacherQuery')">建立代訓機構之教師名冊</b-dropdown-item>

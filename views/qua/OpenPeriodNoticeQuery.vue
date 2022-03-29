@@ -5,6 +5,7 @@
 		<br>
 		<b-form-row class="justify-content-end">
 			<b-button size="l" variant="success"  @click="gotoParam('AgencyStageEdit', {addFlag:true})" >新增</b-button>&nbsp;&nbsp;
+			<b-button size="l" variant="outline-secondary"  @click="goBack()" >回上一頁</b-button>&nbsp;&nbsp;
 		</b-form-row>
 		<br>
 		<div>
