@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<br>
-		<h3><strong><font color="brown">訓練學員滿意度調查</font></strong></h3>
+		<h3><strong><font color="brown">訓練學員滿意度調查(皆要填)</font></strong></h3>
 		<br>
 		<b-container >
 			<b-form-row>

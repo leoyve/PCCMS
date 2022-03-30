@@ -20,7 +20,7 @@
     <b-container>
       <b-row class="col-sm row justify-content-end" >
         <b-button size="sm" variant="success" @click="add">送出</b-button>&ensp; 
-        <b-button size="sm" variant="outline-secondary" @click="reset">回上一頁</b-button>
+        <b-button size="sm" variant="outline-secondary" @click="goBack()">回上一頁</b-button>
       </b-row>
     </b-container>
     <h3><strong><font color="red">壹、開班預告</font></strong></h3>
