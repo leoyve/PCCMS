@@ -4,7 +4,7 @@
 		<h3><strong><font color="brown">監考人員維護</font></strong></h3>
 		<br>
 		<b-container fluid>
-			<b-form-row class="justify-content-end "><h4><strong><b-button size="lg" variant="success" @click="gotoParam('InvigilationEdit',{addFlae:true})">新增</b-button></strong></h4></b-form-row>
+			<b-form-row class="justify-content-end "><h4><strong><b-button size="lg" variant="success" @click="gotoParam('InvigilationEdit',{addFlag:true})">新增</b-button></strong></h4></b-form-row>
 			<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>監考人員清單一覽表</strong></h4></b-form-row>
 			<b-form-row class="justify-content-end">
 				<b-table striped hover :items="items" :fields="fields" >

@@ -3,7 +3,7 @@
     <br>
     <br>
     <b-container>
-      <b-form-row class="justify-content-center "><h2><strong>學員滿意度調查表單</strong></h2></b-form-row>
+      <b-form-row class="justify-content-center "><h2><strong>開訓/結訓通知表單</strong></h2></b-form-row>
       <b-container class="border border-dark">
         <b-row class="border border-dark">
           <b-col class="col-md-4 ">通知單號:</b-col>
@@ -43,12 +43,12 @@
     <br>
     <b-container>
       <b-row class="col-sm row justify-content-end" >
-        <b-button size="sm" variant="success" @click="gotoParam('OpenAndEndNoticeQuery', )" v-show="addFlag">新增</b-button>&ensp; 
+        <b-button size="sm" variant="success" @click="add()" v-show="addFlag">新增</b-button>&ensp; 
         <b-button size="sm" variant="success" @click="update" v-show="updateFlag">修改</b-button>&ensp; 
         <b-button size="sm" variant="success" @click="update" v-show="updateFlag">送審</b-button>&ensp; 
         <b-button size="sm" variant="danger" @click="update" v-show="updateFlag">作廢</b-button>&ensp; 
         <b-button size="sm" variant="info" @click="update" v-show="updateFlag">列印</b-button>&ensp; 
-        <b-button size="sm" variant="outline-secondary" @click="reset">取消</b-button>
+        <b-button size="sm" variant="outline-secondary" @click="goBack()">取消</b-button>
       </b-row>
     </b-container>
     <br>
@@ -76,7 +76,10 @@ export default {
   }
  },
  methods:  {
-   
+   add(){
+     alert('新增表單完成');
+     this.gotoParam('OpenAndEndNoticeQuery', );
+   }
   },
 
 }

@@ -61,7 +61,7 @@
 		<br>
 		<div>
 			<b-container fluid>
-				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>測驗題目一覽表</strong></h4></b-form-row>
+				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>開訓/結訓通知單一覽表</strong></h4></b-form-row>
 				<b-form-row class="justify-content-end">
 					<b-table striped hover :items="items" :fields="fields" head-variant="light">
 						<template #cell(action)="row">

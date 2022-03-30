@@ -5,7 +5,7 @@
 		<br>
 		<b-container >
 			<b-form-row class="justify-content-end">
-				<b-button size="l" variant="success"  @click="gotoParam('OpenAndEndNoticeQuery', )" >回上一頁</b-button>&nbsp;&nbsp;
+				<b-button size="l" variant="outline-secondary"  @click="gotoParam('OpenAndEndNoticeQuery', )" >回上一頁</b-button>&nbsp;&nbsp;
 			</b-form-row>
 			<br>
 			<b-form-row>
