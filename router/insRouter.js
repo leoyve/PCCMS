@@ -203,7 +203,21 @@ module.exports = [
         name: 'LineDisable',
         component: () => import(/* webpackChunkName: "about" */ '../views/ins/LineDisable.vue')
       },
-    
+      {
+        path: 'notifyPage',
+        name: 'NotifyPage',
+        component: () => import(/* webpackChunkName: "about" */ '../views/ins/NotifyPage.vue')
+      },
+      {
+        path: 'caseInfoCommonQuery',
+        name: 'CaseInfoCommonQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/ins/CaseInfoCommonQuery.vue')
+      },
+      {
+        path: 'caseInfoCommonDetail',
+        name: 'CaseInfoCommonDetail',
+        component: () => import(/* webpackChunkName: "about" */ '../views/ins/CaseInfoCommonDetail.vue')
+      },
     ],
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route

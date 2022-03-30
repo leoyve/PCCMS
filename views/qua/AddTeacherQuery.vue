@@ -2,6 +2,7 @@
 	<div>
 		<br>
 		<h3><strong><font color="brown">建立代訓機構之教師名冊</font></strong></h3>
+		<br>
 		<b-container >
 			<b-form-row class="justify-content-end">
 				<b-button size="l" variant="success"  @click="gotoParam('TeacherEdit', {addFlag:true})" >新增</b-button>&nbsp;&nbsp;

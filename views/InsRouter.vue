@@ -49,6 +49,11 @@
 			<b-dropdown-item @click="gotoParam('LineEnable')">啟用LineAPP通知功能</b-dropdown-item>
 			<b-dropdown-item @click="gotoParam('LineDisable')">停用LineAPP通知功能</b-dropdown-item>
         </b-nav-item-dropdown>
+
+		<b-nav-item-dropdown text="前台" left fill>
+			<b-dropdown-item @click="gotoParam('NotifyPage')">民眾通報</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('CaseInfoCommonQuery')">一般查詢</b-dropdown-item>
+        </b-nav-item-dropdown>
       </b-navbar-nav>
     </b-navbar>
     <router-view/>
