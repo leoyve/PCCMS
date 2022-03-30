@@ -4,12 +4,15 @@
 		<b-navbar type="dark" variant="info">
 			<b-navbar-nav>
 				<!-- Navbar dropdowns -->
-				<b-nav-item-dropdown text="代訓機構與訓練班別" left>
-					<b-dropdown-item  @click="gotoParam('TrainingClassQuery')">審核訓練主題班別及開班</b-dropdown-item>
-					<b-dropdown-item  @click="gotoParam('OpenPeriodQuery')">開班期別審核申辦資料</b-dropdown-item>
+				<b-nav-item-dropdown text="代訓機構" left>
 					<b-dropdown-item  @click="gotoParam('AgencyQuery')">代訓機構資料管理</b-dropdown-item>
 					<b-dropdown-item  @click="gotoParam('AddTeacherQuery')">建立代訓機構之教師名冊</b-dropdown-item>
 					<b-dropdown-item  @click="gotoParam('AnnualAppraisalRecord')">代訓機構歷年評鑑紀錄表</b-dropdown-item>
+				</b-nav-item-dropdown>
+
+				<b-nav-item-dropdown text="訓練班別" left>
+					<b-dropdown-item  @click="gotoParam('TrainingClassQuery')">審核訓練主題班別及開班</b-dropdown-item>
+					<b-dropdown-item  @click="gotoParam('OpenPeriodQuery')">開班期別審核申辦資料</b-dropdown-item>
 					<b-dropdown-item  @click="gotoParam('OpeningNotice')">預告開班及檢視洽詢民眾</b-dropdown-item>
 					<b-dropdown-item  @click="gotoParam('ReviseStudentRecordQuery')">修正學員參訓之歷次紀錄</b-dropdown-item>
 					<b-dropdown-item  @click="gotoParam('QuicklyTeacherReview')">快速審核師資授課之更新</b-dropdown-item>

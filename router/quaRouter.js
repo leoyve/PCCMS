@@ -523,6 +523,21 @@ module.exports = [
         name: 'TrainingOpenDetail',
         component: () => import(/* webpackChunkName: "about" */ '../views/qua/TrainingOpenDetail.vue')
       },
+      {
+        path: 'endTrainingQuery',
+        name: 'EndTrainingQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/EndTrainingQuery.vue')
+      },
+      {
+        path: 'endTrainingDetail',
+        name: 'EndTrainingDetail',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/EndTrainingDetail.vue')
+      },
+      {
+        path: 'makeUpQuery',
+        name: 'MakeUpQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/qua/MakeUpQuery.vue')
+      },
     ],
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route

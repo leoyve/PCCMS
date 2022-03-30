@@ -86,10 +86,10 @@
 							<b-button size="sm" variant="info" @click="gotoParam('CourseClassQuery', row.item)">查詢</b-button>&nbsp;
 						</template>
 						<template #cell(action4)="row">
-							<b-button size="sm" variant="outline-secondary" @click="gotoParam('OpenPeriodDetail', row.item)">查詢</b-button>&nbsp;
+							<b-button size="sm" variant="info" @click="gotoParam('EndTrainingQuery', row.item)">查詢</b-button>&nbsp;
 						</template>
 						<template #cell(action5)="row">
-							<b-button size="sm" variant="outline-secondary" @click="gotoParam('OpenPeriodDetail', row.item)">查詢</b-button>&nbsp;
+							<b-button size="sm" variant="info" @click="gotoParam('MakeUpQuery', row.item)">查詢</b-button>&nbsp;
 						</template>
 					</b-table>
 					<b-pagination align="right"
