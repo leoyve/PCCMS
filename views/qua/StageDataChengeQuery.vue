@@ -6,6 +6,7 @@
 		<b-container >
 			<b-form-row class="justify-content-end">
 				<b-button size="l" variant="success"  @click="gotoParam('StageDateEdit', )" >新增</b-button>&nbsp;&nbsp;
+				<b-button size="sm" variant="outline-secondary" @click="gotoParam('OpenPeriodDetail')">回上一頁</b-button>
 			</b-form-row>
 			<br>
 			<b-form-row>

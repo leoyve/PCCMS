@@ -68,7 +68,7 @@
 				</b-form-group>
 			</b-form-row>
 			<b-form-row class="justify-content-end">
-				<b-button size="sm" variant="success"  @click="queryHandler" >查詢</b-button>
+				<b-button size="sm" variant="success"  @click="queryHandler" >查詢</b-button>&nbsp;
                 <b-button size="sm" variant="outline-secondary" @click="reset">清除</b-button>
 			</b-form-row>
 		</b-container>
@@ -203,7 +203,7 @@ export default {
  },
  methods: {
 	checkIn(row){
-		confirm("確定是否將該期別歸檔?(後續不能作申請異動) " + row.pk);
+		confirm("確定是否將該期別歸檔?(後續不能作申請異動) " + row.id);
 	},
  }
 }

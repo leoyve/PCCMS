@@ -13,7 +13,7 @@
         </b-row>
         <b-row class="border border-dark">
           <b-col class="col-md-2 ">異動類別:</b-col>
-          <!--選了授課資訊後-->
+          <!--選了授課資訊後，才會跑入下面的表格?-->
           <b-col class="col-md-10 text-left"><b-form-select :options="changeType"></b-form-select></b-col>
         </b-row>
         <b-row class="border border-dark">
@@ -42,7 +42,7 @@
         <b-table striped hover :items="items" :fields="fields" head-variant="light">
           <template #cell(action)="row">
             <!--點了異動將資訊帶到上面-->
-            <b-button size="sm" variant="warning" @click="gotoParam('', row.item)">異動</b-button>&nbsp;
+            <b-button size="sm" variant="warning" @click="change(row)">異動</b-button>&nbsp;
           </template>
         </b-table>
       </b-form-row>
@@ -120,14 +120,8 @@ export default {
   }
  },
  methods:  {
-    reset(){
-
-    },
-    add(){
-
-    },
-    update(){
-
+    change(){
+      alert("代入資訊到原欄位資訊(只有異動類別選授課資訊才有)");
     }
   },
 

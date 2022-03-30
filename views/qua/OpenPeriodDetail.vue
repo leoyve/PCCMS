@@ -5,6 +5,9 @@
 		<br>
 		<div>
 			<b-container fluid>
+				<b-form-row class="justify-content-end">
+					<b-button size="sm" variant="outline-secondary" @click="gotoParam('OpenPeriodQuery')">回上一頁</b-button>
+				</b-form-row>
 				<b-table-simple hover small caption-top responsive>
 					<caption><h3>{{this.$route.params.stageNum}} 期別申辦情形一覽表</h3></caption>
 					<b-thead head-variant="dark">
