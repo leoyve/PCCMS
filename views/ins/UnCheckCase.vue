@@ -1,5 +1,8 @@
 <template>
 	<div>
+		<br>
+		<h3><strong><font color="brown">尚未成功立案管理</font></strong></h3>
+		<br>
 		<b-container >
 			<b-form-row >
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="通報者姓名" label-align-md="right">
@@ -27,7 +30,7 @@
 				</b-form-group>
 			</b-form-row>
 			<b-form-row class="justify-content-end">
-				<b-button size="sm" variant="success" @click="queryHandler" >查詢</b-button>
+				<b-button size="sm" variant="success" @click="queryHandler" >查詢</b-button>&nbsp;
 				<b-button size="sm" variant="outline-secondary" @click="reset">清除</b-button>
 			</b-form-row>
 		</b-container>
@@ -37,7 +40,7 @@
 			<b-container >
 				<b-table striped hover :items="items" :fields="fields" head-variant="dark">
 					<template #cell(action)="row">
-						<b-button size="sm" variant="outline-secondary" @click="toSee(row.item)">明細</b-button>
+						<b-button size="sm" variant="outline-secondary" @click="gotoParam('CreateInsCase',row.item)">明細</b-button>
 					</template>
 				</b-table>
 				<b-pagination align="right"
@@ -102,17 +105,7 @@ export default {
 	}
  },
  methods: {
-	toSee(item){
-		//alert(item.pk);
-		console.log(item);
-		this.$router.push({name:'CreateInsCase'})
-	},
-  queryHandler(){
-
-  },
-  reset(){
-
-  }
+	
  }
 }
 

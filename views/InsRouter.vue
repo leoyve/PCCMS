@@ -4,7 +4,7 @@
 	<b-navbar type="dark" variant="info">
       <b-navbar-nav >
         <b-nav-item-dropdown text="案件通報" left>
-			<b-dropdown-item @click="gotoParam('NewInsCase')">新增督工通報案件</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('DuconCaseEdit', {addFlag:true})">新增督工通報案件</b-dropdown-item>
 			<b-dropdown-item @click="gotoParam('UnCheckCase')">尚未成功立案管理</b-dropdown-item>
 			<b-dropdown-item @click="gotoParam('Place1999Group')">地方1999通報案件</b-dropdown-item>
         </b-nav-item-dropdown>

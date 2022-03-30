@@ -5,7 +5,7 @@
 		<br>
 		<b-container >
 			<b-form-row class="justify-content-end">
-				<b-button size="sm" variant="success" @click="place1999New" >新增</b-button> &nbsp; &nbsp;
+				<b-button size="sm" variant="success" @click="gotoParam('Case1999Info',{addFlag:true})" >新增</b-button> &nbsp; &nbsp;
 				<b-button size="sm" variant="success" @click="batchReview" >上傳案件</b-button>
 			</b-form-row>
 			<br>
@@ -20,21 +20,21 @@
 				</b-form-group>
 			</b-form-row>
 			<b-form-row class="justify-content-end">
-				<b-button size="sm" variant="success" @click="queryHandler" >查詢</b-button>
+				<b-button size="sm" variant="success" @click="queryHandler" >查詢</b-button>&nbsp;
 				<b-button size="sm" variant="outline-secondary" @click="reset">清除</b-button>
 			</b-form-row>
 		</b-container>
 		<br>
 		<div>
 			<b-container >
-				<h3>地方縣市1999通報案件統計表</h3>
-				<br>
-				<br>
-				<b-table striped hover :items="items" :fields="fields" head-variant="dark">
-					<template #cell(action)="row">
-						<b-button size="sm" variant="outline-secondary" @click="toSee(row.item)">查詢</b-button>
-					</template>
-				</b-table>
+				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>地方縣市1999通報案件統計表</strong></h4></b-form-row>
+				<b-form-row class="justify-content-end">
+					<b-table striped hover :items="items" :fields="fields" head-variant="dark">
+						<template #cell(action)="row">
+							<b-button size="sm" variant="outline-secondary" @click="gotoParam('Place1999List',row.item)">查詢</b-button>
+						</template>
+					</b-table>
+				</b-form-row>
 			</b-container>
 		</div>
 
@@ -71,20 +71,7 @@ export default {
 				label:	''
 			},
 			],
-		items:	undefined,
-	}
- },
- methods: {
-	toSee(item){
-		//alert(item.pk);
-		console.log(item);
-		this.$router.push({name:'Place1999List'})
-	},
-	place1999New(){
-		this.$router.push({name:'Case1999Info',	params:{disabledFlag:	false,	isNew:	true,	isEdit:	false,	isDelete:	false}})
-	},
-	queryHandler(){
-		this.items = [
+		items:[
 			{ id: 1, wkutName:	'行政院公共工程委員會',	announcerNumber:'3',	avgDay:	'1.5',	pk: 5566 },
 			{ id: 2, wkutName:	'金門縣政府',	announcerNumber:'',	avgDay:	'',	pk: 5566 },
 			{ id: 3, wkutName:	'臺北市政府',	announcerNumber:'',	avgDay:	'',	pk: 5566 },
@@ -92,8 +79,11 @@ export default {
 			{ id: 5, wkutName:	'臺中市政府',	announcerNumber:'10',	avgDay:	'3.5',	pk: 5566 },
 			{ id: 6, wkutName:	'臺南市政府',	announcerNumber:'',	avgDay:	'',	pk: 5566 },
 			{ id: 7, wkutName:	'高雄市政府',	announcerNumber:'',	avgDay:	'',	pk: 5566 },
-		]
+		],
 	}
+ },
+ methods: {
+
   },
 
 }

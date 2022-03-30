@@ -1,24 +1,23 @@
 <template>
 	<div>
 		<br>
-		<h3><strong>地方1999通報案件</strong></h3>
-		<br>
 		<div>
 			<b-container fluid>
-				<h3>地方縣市1999通報案件一覽表</h3>
-				<br>
-				<b-table striped hover :items="items" :fields="fields" head-variant="dark">
-					<template #cell(action)="row">
-						<b-button size="sm" variant="success" @click="toEdit(row.item)">修改</b-button>&nbsp;
-						<b-button size="sm" variant="danger" @click="toDelete(row.item)">刪除</b-button>
-					</template>
-				</b-table>
-				<b-pagination align="right"
-					v-model="currentPage"
-					:total-rows="rows"
-					:per-page="perPage"
-					first-number
-				></b-pagination>
+				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>地方縣市1999通報案件一覽表</strong></h4></b-form-row>
+				<b-form-row class="justify-content-end">
+					<b-table striped hover :items="items" :fields="fields" head-variant="dark">
+						<template #cell(action)="row">
+							<b-button size="sm" variant="success" @click="gotoParam('Case1999Info',{updateFlag:true, ...row.item})">修改</b-button>&nbsp;
+							<b-button size="sm" variant="danger" @click="deleteCheck(row.item)">刪除</b-button>
+						</template>
+					</b-table>
+					<b-pagination align="right"
+						v-model="currentPage"
+						:total-rows="rows"
+						:per-page="perPage"
+						first-number
+					></b-pagination>
+				</b-form-row>
 			</b-container>
 		</div>
 	</div>
@@ -109,16 +108,8 @@ export default {
 	}
  },
  methods: {
-	toEdit(){
-		//console.log(item);
-		this.$router.push({name:'Case1999Info',	params:{disabledFlag:	false,	isNew:	false,	isEdit:	true,	isDelete:	false}})
-	},
-	toDelete(){
-		this.$router.push({name:'Case1999Info',	params:{disabledFlag:	true,	isNew:	false,	isEdit:	false,	isDelete:	true}})
-  },
-  reset(){
 
-  }
+
  },
 
 }

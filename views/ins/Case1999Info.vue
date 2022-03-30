@@ -1,8 +1,9 @@
 <template>
   <div>
       <br>
+      <h3><strong>地方縣市1999通報案件資料表單畫面</strong></h3>
       <br>
-      <b-container class="border border-dark">
+      <b-container>
         <b-row class="border border-dark">
           <b-col class="col-md-2 ">案件編號</b-col>
           <b-col class="col-md-4 text-left">{{  caseNumber  }}</b-col>
@@ -36,10 +37,10 @@
           <b-col class="col-md-3 text-left"><b-form-input :disabled="disabledFlag"></b-form-input></b-col>
         </b-row>
         <br>
-        <b-row>
-          <b-col class="col-md"><b-button size="sm" variant="success" @click="queryHandler" v-show="isNew">新增</b-button></b-col>
-          <b-col class="col-md"><b-button size="sm" variant="success" @click="queryHandler" v-show="isEdit">儲存</b-button></b-col>
-          <b-col class="col-md"><b-button size="sm" variant="danger" @click="queryHandler" v-show="isDelete">刪除</b-button></b-col>
+        <b-row class="row justify-content-end">
+          <b-button size="sm" variant="success" @click="add" v-show="addFlag">新增</b-button>&ensp; 
+          <b-button size="sm" variant="success" @click="update" v-show="updateFlag">修改</b-button>&ensp; 
+          <b-button size="sm" variant="outline-secondary" @click="goBack()">取消</b-button>
         </b-row>
       </b-container>
       <br>
@@ -51,10 +52,8 @@
 export default {
   data(){
     return{
-      disabledFlag: this.$route.params.disabledFlag,
-      isNew: this.$route.params.isNew,
-      isEdit: this.$route.params.isEdit,
-      isDelete: this.$route.params.isDelete,
+      addFlag: this.$route.params.addFlag == null ? false:this.$route.params.addFlag,
+      updateFlag: this.$route.params.updateFlag == null ? false:this.$route.params.updateFlag,
       caseNumber: '11000000001'
 
   }
@@ -63,12 +62,11 @@ export default {
 
   },
   mounted(){  //ready已經不被使用了
-      console.log(this.showFlag);
 
-      if(this.isNew){
+      if(this.addFlag){
         this.caseNumber = '新增'
       }
-     // this.disabledFlag =  this.$route.params.disabledFlag;
+    
   }
 }
 </script>

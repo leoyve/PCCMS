@@ -98,9 +98,11 @@
         </b-row>
       </b-container>
     </b-container>
+    <br>
     <b-container>
-      <b-row class="col-sm row justify-content-end" >
-        <b-button size="sm" variant="success" @click="queryHandler">新增</b-button>&ensp; 
+      <b-row class="row justify-content-end" >
+        <b-button size="sm" variant="success" @click="add" v-show="addFlag">新增</b-button>&ensp; 
+        <b-button size="sm" variant="success" @click="update" v-show="updateFlag">修改</b-button>&ensp; 
         <b-button size="sm" variant="outline-secondary" @click="reset">取消</b-button>
       </b-row>
     </b-container>
@@ -115,6 +117,8 @@
 export default {
   data(){
     return{
+      addFlag: this.$route.params.addFlag == null ? false:this.$route.params.addFlag,
+      updateFlag: this.$route.params.updateFlag == null ? false:this.$route.params.updateFlag,
       status: [
         { value: '1', text: '電話'},
         { value: '2', text: '傳真' },

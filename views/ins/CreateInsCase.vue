@@ -1,5 +1,9 @@
 <template>
   <div>
+     
+    <br>
+		<h3><strong><font color="brown">民眾通報但尚未成功立案之案件查詢及處理畫面</font></strong></h3>
+		<br>
        <b-container class="border border-dark">
          <b-row class="border border-dark">
           <b-col class="col-md-2  bg-secondary">案件編號</b-col>
@@ -66,7 +70,7 @@
       <b-container>
         <b-row class="col-sm row justify-content-end"> 
           <b-button size="sm" variant="success" @click="queryHandler" >立案</b-button>&ensp; 
-          <b-button size="sm" variant="outline-secondary" @click="reset">取消</b-button>
+          <b-button size="sm" variant="outline-secondary" @click="goBack()">取消</b-button>
         </b-row>
       </b-container>
       <br>

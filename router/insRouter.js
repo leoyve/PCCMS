@@ -4,9 +4,9 @@ module.exports = [
     name: '全民督工',
     children:[
       {
-        path: 'newInsCase',
-        name: 'NewInsCase',
-        component: () => import(/* webpackChunkName: "about" */ '../views/ins/NewInsCase.vue')
+        path: 'duconCaseEdit',
+        name: 'DuconCaseEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/ins/DuconCaseEdit.vue')
       },
       {
         path: 'unCheckCase',
@@ -102,11 +102,6 @@ module.exports = [
         path: 'caseInfoEdit',
         name: 'CaseInfoEdit',
         component: () => import(/* webpackChunkName: "about" */ '../views/ins/CaseInfoEdit.vue')
-      },
-      {
-        path: 'editInsCase',
-        name: 'EditInsCase',
-        component: () => import(/* webpackChunkName: "about" */ '../views/ins/EditInsCase.vue')
       },
       {
         path: 'caseRecord',
