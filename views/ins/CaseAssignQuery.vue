@@ -1,5 +1,8 @@
 <template>
 	<div>
+		<br>
+		<h3><strong>督工案件分文</strong></h3>
+		<br>
 		<b-container >
 			<b-form-row >
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="通報案件編號" label-align-md="right">
@@ -32,19 +35,20 @@
 				</b-form-group>
 			</b-form-row>
 			<b-form-row class="justify-content-end">
-				<b-button size="sm" variant="success" @click="queryHandler" >查詢</b-button>
+				<b-button size="sm" variant="success" @click="queryHandler" >查詢</b-button>&nbsp;
 				<b-button size="sm" variant="outline-secondary" @click="reset">清除</b-button>
 			</b-form-row>
 		</b-container>
 		<br>
 		
 		<div>
-			<b-container >
-				<b-form-row class="justify-content-center text-light bg-dark"><h4><strong>民眾通報督工案件分文情形查詢結果表</strong></h4></b-form-row>
+			<b-container fluid>
+				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>民眾通報督工案件分文情形查詢結果表</strong></h4></b-form-row>
 				<b-form-row class="justify-content-end">
-				<b-table striped hover :items="items" :fields="fields" head-variant="dark">
+				<b-table striped hover :items="items" :fields="fields" head-variant="light">
 					<template #cell(action)="row">
-						<b-button size="sm" variant="outline-secondary" @click="toSee(row.item)">分文</b-button>
+						<b-button size="sm" variant="info" @click="toSee(row.item)" v-show="row.item.adminFlag">分文</b-button>
+						<b-button size="sm" variant="warning" @click="toSee(row.item)" v-show="!row.item.adminFlag">分文</b-button>
 					</template>
 				</b-table>
 				</b-form-row>
@@ -112,11 +116,11 @@ export default {
 		items:	[
 			//待分文要顯示紅字
 			{ id: 1, number: '11000000001', submitDate: '110/03/03', name: '林XX',	workName: '內政部營建署南區工程處空調設備節能改善',	title: '施工區域不明確', wkut:	'行政院工程會',
-				assignDate:	'110/08/08',pk: 5566 },
-			{ id: 2, number: '11000000001', submitDate: '110/08/08', name: '陳XX',	workName: '前金區東金公園改造工程',	title: '工程進度緩慢', wkut:	'臺中市政府',
-				assignDate:	'110/07/07',	pk: 5566 },
+				assignDate:	'110/08/08',pk: 5566,adminFlag:true },
+			{ id: 2, number: '11000000001', submitDate: '110/08/08', name: '陳XX',	workName: '前金區東金公園改造工程',	title: '工程進度緩慢', wkut:'臺中市政府',
+				assignDate:	'110/07/07',	pk: 5566,adminFlag:false },
 			{ id: 3, number: '11000000001', submitDate: '110/10/10', name: '吳XX',	workName: '汐止區江長抽水站星座公園兒童遊戲新建工程',	title: '行人無法過馬路', wkut:	'新北市政府',
-				assignDate:	'待分文',	pk: 5566 },
+				assignDate:	'待分文',	pk: 5566,adminFlag:false },
 		],
 		checkAssign:	[
 			{	value: '', text: '全部'	},

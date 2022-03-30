@@ -1,5 +1,6 @@
 <template>
   <div>
+    <br>
     <b-container>
       <b-container>
         <b-row>
@@ -32,12 +33,12 @@
       <br>
       <b-container>
         <b-row class="col-sm row justify-content-start">
-          <b-button size="sm" variant="info" @click="queryCmdCase" >查詢所屬標案</b-button>&ensp; 
-          <b-button size="sm" variant="info" @click="queryNearby" >檢視鄰近通報地點標案位置圖</b-button>&ensp; 
+          <b-button size="sm" variant="info" @click="queryCmdCase()" >查詢所屬標案</b-button>&ensp; 
+          <b-button size="sm" variant="info" @click="queryNearby()" >檢視鄰近通報地點標案位置圖</b-button>&ensp; 
         </b-row>
         <b-row class="col-sm row justify-content-center"> 
           <b-button size="sm" variant="success" @click="queryHandler" >進行分文</b-button>&ensp; 
-          <b-button size="sm" variant="outline-secondary" @click="reset">取消</b-button>
+          <b-button size="sm" variant="outline-secondary" @click="gotoParam('CaseAssignQuery')">取消</b-button>
         </b-row>
       </b-container>
       <br>
@@ -88,10 +89,14 @@ export default {
  },
  methods:  {
     queryCmdCase(){
-      this.$router.push({name:'CmdCaseQuery'})
+      //新開視窗
+      let routeUrl = this.$router.resolve({name:'CmdCaseQuery'})
+      window.open(routeUrl.href, '_blank'); 
+
     },
     queryNearby(){
-      this.$router.push({name:'NearbyCase'})
+      let routeUrl = this.$router.resolve({name:'NearbyCase'})
+      window.open(routeUrl.href, '_blank'); 
     },
     reset(){
 

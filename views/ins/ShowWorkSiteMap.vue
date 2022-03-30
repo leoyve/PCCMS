@@ -1,8 +1,9 @@
 <template>
 	<div>
+		<br>
 		<b-container>
 			<b-row class="justify-content-end">
-				<b-button size="sm" variant="success" v-promise-btn="{ promise: dataPromise }" @click="queryHandler" >回上一頁</b-button>&ensp; 
+				<b-button size="sm" variant="outline-secondary" v-promise-btn="{ promise: dataPromise }" @click="goBack()" >回上一頁</b-button>&ensp; 
 			</b-row>
 			<b-row>
 				<h2 class="text-center"><font color="red">[旱溪排水水環境及鄰近區域設施改善(第一標)]施工位置詳細圖</font></h2>

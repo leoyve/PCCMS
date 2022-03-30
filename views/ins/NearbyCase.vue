@@ -13,12 +13,6 @@
 						<b-button size="sm" variant="outline-secondary" @click="toSee(row.item)">檢視</b-button>
 					</template>
 				</b-table>
-				<b-pagination align="right"
-					v-model="currentPage"
-					:total-rows="rows"
-					:per-page="perPage"
-					first-number
-				></b-pagination>
 			</b-container>
 		</div>
 
