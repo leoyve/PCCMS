@@ -2,6 +2,10 @@
   <div>
     <h3><strong><font color="red">壹、開班預告</font></strong></h3>
     <b-container>
+      <b-form-row class="justify-content-end">
+				<b-button size="sm" variant="outline-secondary" @click="gotoParam('OpeningNotice')">回上一頁</b-button>
+			</b-form-row>
+      <br>
       <b-container class="border border-dark">
         <b-row class="border border-dark">
           <b-col class="col-md-2 "><font color="red">*</font>開班期別</b-col>

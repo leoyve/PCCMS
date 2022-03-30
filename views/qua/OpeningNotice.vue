@@ -33,7 +33,7 @@
 				</b-form-group>
 			</b-form-row>
 			<b-form-row class="justify-content-end">
-				<b-button size="sm" variant="success"  @click="queryHandler" >查詢</b-button>
+				<b-button size="sm" variant="success"  @click="queryHandler" >查詢</b-button>&nbsp;
                 <b-button size="sm" variant="outline-secondary" @click="reset">清除</b-button>
 			</b-form-row>
 		</b-container>
@@ -47,7 +47,7 @@
 						<template #cell(action)="row">
 							<b-button size="sm" variant="outline-secondary" @click="gotoParam('OpeningInfoDetail', row.item)">明細</b-button>&nbsp;
 							<b-button size="sm" variant="success" @click="gotoParam('NewOpeningEdit', {updateFlag:true})">修改</b-button>&nbsp;
-							<b-button size="sm" variant="danger" @click="checkOut(row.item)">刪除</b-button>
+							<b-button size="sm" variant="danger" @click="deleteCheck(row)">刪除</b-button>
 						</template>
 					</b-table>
 					<b-pagination align="right"
