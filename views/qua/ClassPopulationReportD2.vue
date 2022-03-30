@@ -4,6 +4,7 @@
 
 <template>
 	<div>
+		<br>
 		<b-container fluid>
 			<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>品管班開班及人數統計表</strong></h4></b-form-row>
 			<b-form-row class="justify-content-end">
@@ -18,7 +19,7 @@
 							<b-th >5643</b-th>
 							<b-th >3241</b-th>
 							<b-th >92%</b-th>
-							<b-th ><b-button size="sm" variant="outline-secondary" @click="gotoParam('ClassPopulationReportD3', row.item)">明細</b-button></b-th>
+							<b-th ><b-button size="sm" variant="outline-secondary" @click="gotoParam('ClassPopulationReportD3', )">明細</b-button></b-th>
 						</b-tr>
 					</template>
 				</b-table>

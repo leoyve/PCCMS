@@ -7,7 +7,7 @@
 			<b-form-row class="justify-content-end">
 				<b-button size="l" variant="success"  @click="gotoParam('QuestionEdit', {addFlag:true})" >新增</b-button>&nbsp;
 				<!--點下查詢之後才有匯出的按鈕-->
-				<b-button size="l" variant="info"  @click="gotoParam('', {addFlag:true})" >匯出</b-button>&nbsp;
+				<b-button size="l" variant="info"  @click="exportData()" >匯出</b-button>&nbsp;
 				<b-button size="l" variant="warning"  @click="gotoParam('', {addFlag:true})" >匯入</b-button>
 			</b-form-row>
 			<br>
@@ -85,7 +85,7 @@
 					<b-table striped hover :items="items" :fields="fields" head-variant="light">
 						<template #cell(action)="row">
 							<b-button size="sm" variant="success" @click="gotoParam('QuestionEdit', {updateFlag:true, ...row.item})">編輯</b-button>&nbsp;
-							<b-button size="sm" variant="danger" @click="gotoParam('', row.item)">刪除</b-button>
+							<b-button size="sm" variant="danger" @click="deleteCheck(row)">刪除</b-button>
 						</template>
 					</b-table>
 					<b-pagination align="right"
@@ -219,7 +219,9 @@ export default {
 	}
  },
  methods: {
-
+	exportData(){
+		alert('請查詢後再進行匯出作業');
+	}
  }
 }
 

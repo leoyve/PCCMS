@@ -3,6 +3,7 @@
 
 <template>
 	<div>
+		<br>
 		<b-container fluid>
 			<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>品管班開班及人數統計表</strong></h4></b-form-row>
 			<b-form-row class="justify-content-end">

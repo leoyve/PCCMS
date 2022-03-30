@@ -5,14 +5,17 @@
 		<br>	
 		<div>
 			<b-container fluid>
+				<b-form-row class="justify-content-end">
+					<b-button size="l" variant="outline-secondary"  @click="gotoParam('PropositionView', )" >回上一頁</b-button>
+				</b-form-row>
 				<b-row class="col-sm row justify-content-start" >
 					<font color="red"><h5>以下測驗卷請審慎列印使用，切勿任意外流！(建議於Chrome瀏覽器列印，並取消頁首頁尾之網址資訊，以維最佳版面及資訊安全)</h5></font>
 				</b-row>
 				<b-row class="col-sm row justify-content-start" >
-					<b-button size="sm" variant="success" @click="add" >A卷</b-button>&ensp; 
-					<b-button size="sm" variant="success" @click="update">B卷</b-button>&ensp; 
-					<b-button size="sm" variant="success" @click="reset">C卷</b-button>&ensp; 
-					<b-button size="sm" variant="warning" @click="reset">答案</b-button>
+					<b-button size="sm" variant="success" @click="report('A卷')" >A卷</b-button>&ensp; 
+					<b-button size="sm" variant="success" @click="report('B卷')">B卷</b-button>&ensp; 
+					<b-button size="sm" variant="success" @click="report('C卷')">C卷</b-button>&ensp; 
+					<b-button size="sm" variant="warning" @click="report('答案')">答案</b-button>
 				</b-row>
 			</b-container>
 			<br>
@@ -22,7 +25,7 @@
 					<b-table striped hover :items="items" :fields="fields" head-variant="light">
 						<template #cell(action)="row">
 							<b-button size="sm" variant="success" @click="gotoParam('ExamChange', row.item)">更換</b-button>&nbsp;
-							<b-button size="sm" variant="warning" @click="gotoParam('QuestionEdit', row.item)">修改</b-button>
+							<b-button size="sm" variant="warning" @click="gotoParam('QuestionEdit', {updateFlag:true,...row.item})">修改</b-button>
 						</template>
 					</b-table>
 					<b-pagination align="right"
@@ -120,7 +123,9 @@ export default {
 	}
  },
  methods: {
-
+	report(str){
+		alert(str+' 供列印網頁');
+	}
  }
 }
 

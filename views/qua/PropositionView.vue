@@ -3,10 +3,13 @@
 		<br>
 		<h3><strong><font color="brown">品管班測驗命題版本管理畫面</font></strong></h3>
 		<br>
+		<b-row class="col-sm row justify-content-end" >
+			<b-button size="sm" variant="outline-secondary" @click="gotoParam('PropositionQuery')">回上一頁</b-button>
+		</b-row>
 		<b-container fluid>
 			<b-form-row >
 				<b-col class="col-md-10 text-left"><h2><strong>壹、測驗命題條件基本資料表</strong></h2></b-col>
-				<b-col class="col-md-1"><b-button size="lg" variant="success" @click="gotoParam('ExamConditionEdit', {version:'1090001'})">修改</b-button></b-col>
+				<b-col class="col-md-1"><b-button size="xs" variant="success" @click="gotoParam('ExamConditionEdit', {version:'1090001', updateFlag:true})">修改</b-button></b-col>
 			</b-form-row>
 			<br>
 		<b-container fluid class="border border-dark">
@@ -89,7 +92,7 @@
 		<br>
 		<b-form-row >
 			<b-col class="col-md-10 text-left"><h2><strong>貳、課程科目命題數資料</strong></h2></b-col>
-			<b-col class="col-md-1"><b-button size="lg" variant="success" @click="gotoParam('ExamEventEdit', {version:'1090001'})">修改</b-button></b-col>
+			<b-col class="col-md-1"><b-button size="xs" variant="success" @click="gotoParam('ExamEventEdit', )">修改</b-button></b-col>
 		</b-form-row>
 		<br>
 		<b-container fluid>
@@ -99,7 +102,7 @@
 		<br>
 		<b-form-row >
 			<b-col class="col-md-10 text-left"><h2><strong>參、課程科目命題數資料</strong></h2></b-col>
-			<b-col class="col-md-1"><b-button size="xl" variant="success" @click="create">產生測驗卷</b-button></b-col>
+			<b-col class="col-md-1"><b-button size="xl" variant="success" @click="create()">產生測驗卷</b-button></b-col>
 		</b-form-row>
 		<br>
 		<b-container fluid>
@@ -137,7 +140,7 @@
 					<b-button size="sm" variant="info" @click="gotoParam('ExamDetail', {examName:'期末', ...row.item})">期末</b-button>&nbsp;
 					<b-button size="sm" variant="warning" @click="gotoParam('ExamDetail', {examName:'第1次補考', ...row.item})">補考1</b-button>&nbsp;
 					<b-button size="sm" variant="warning" @click="gotoParam('ExamDetail', {examName:'第2次補考', ...row.item})">補考2</b-button>&nbsp;
-					<b-button size="sm" variant="danger" @click="gotoParam('', row.item)">刪除</b-button>
+					<b-button size="sm" variant="danger" @click="deleteCheck(row)">刪除</b-button>
 				</template>
 			</b-table>
 		</b-container>
@@ -230,7 +233,9 @@ export default {
 	}
  },
  methods: {
-
+	create(){
+		alert('已產生新版測驗卷');
+	}
  }
 }
 

@@ -1,5 +1,6 @@
 <template>
 	<div>
+		<br>
 		<b-container fluid>
 			<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>{{this.$route.params.className}}課程教師授課次數統計表</strong></h4></b-form-row>
 			<b-form-row class="justify-content-end">

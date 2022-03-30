@@ -54,7 +54,7 @@
 				<b-form-row class="justify-content-end">
 					<b-table striped hover :items="items" :fields="fields" head-variant="light">
 						<template #cell(action)="row">
-							<b-button size="sm" variant="success" @click="gotoParam('PropositionView', row.item)">更換</b-button>&nbsp;
+							<b-button size="sm" variant="success" @click="change(row)">更換</b-button>&nbsp;
 						</template>
 					</b-table>
 					<b-pagination align="right"
@@ -171,7 +171,10 @@ export default {
 	}
  },
  methods: {
-
+	change(){
+		alert('更換題目');
+		this.gotoParam('ExamDetail');
+	}
  }
 }
 

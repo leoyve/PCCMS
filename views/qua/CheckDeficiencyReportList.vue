@@ -1,6 +1,7 @@
 <!-- 參數:查核分數-->
 <template>
 	<div>
+		<br>
 		<b-container fluid>
 			<!--帶入選項值-->
 			<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>{{picked}}學員工程查核情形一覽表</strong></h4></b-form-row>
