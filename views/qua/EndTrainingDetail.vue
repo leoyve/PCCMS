@@ -10,6 +10,11 @@
 		</b-container>
 		<stageScoreInfo/>
 		<br>
+		<b-form-row class="justify-content-start">
+			<!--備查是工程會管理員的權限-->
+			<b-button size="lg" variant="info" @click="gotoParam('Stage2Submit', )">送審</b-button>&nbsp;
+			<b-button size="lg" variant="success" @click="gotoParam('Stage2Review', )">備查(已備查、送審未備查...)</b-button>&nbsp;
+		</b-form-row >
 	</div>
 </template>
 

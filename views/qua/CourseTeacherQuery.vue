@@ -7,7 +7,7 @@
       <b-row class="col-sm row justify-content-end" >     
         <b-button size="sm" variant="success" @click="gotoParam('TeacherCourseEdit', {addFlag:true})">新增</b-button>&ensp; 
         <b-button size="sm" variant="warning" @click="add">上傳EXCEL</b-button>&ensp; 
-        <b-button size="sm" variant="outline-secondary" @click="gotoParam('OpenPeriodDetail',)">回上一頁</b-button>
+        <b-button size="sm" variant="outline-secondary" @click="gotoParam('TrainingClassQuery',)">回上一頁</b-button>
       </b-row>
       <br>
       <b-form-row>
@@ -32,25 +32,25 @@
     </b-container>
     <br>
     <b-container fluid>
-				<!--依照使用者選的選項顯示品管/回訓-->
-				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>{{picked}}開班課程</strong></h4></b-form-row>
-				<b-form-row class="justify-content-end">
-					<b-table striped hover :items="items" :fields="fields" head-variant="light">
-						<template #cell(action)="row">
-              <!--工程會管理員才有審查按鈕，且其他按鈕常駐可編輯-->
-							<b-button size="sm" variant="success"  @click="gotoParam('TeacherCourseEdit', {updateFlag:true, ...row.item})" >修改</b-button>&nbsp;
-              <b-button size="sm" variant="danger"  @click="deleteCheck(row.item)" >刪除</b-button>&nbsp;
-              <b-button size="sm" variant="warning"  @click="gotoParam('TeacherCourseReview',row.item)" >審查</b-button>&nbsp;
-						</template>
-					</b-table>
-					<b-pagination align="right"
-						v-model="currentPage"
-						:total-rows="rows"
-						:per-page="perPage"
-						first-number
-					></b-pagination>
-				</b-form-row>
-			</b-container>
+		<!--依照使用者選的選項顯示品管/回訓-->
+		<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>{{picked}}開班課程</strong></h4></b-form-row>
+		<b-form-row class="justify-content-end">
+			<b-table striped hover :items="items" :fields="fields" head-variant="light">
+				<template #cell(action)="row">
+					<!--工程會管理員才有審查按鈕，且其他按鈕常駐可編輯-->
+					<b-button size="sm" variant="success"  @click="gotoParam('TeacherCourseEdit', {updateFlag:true, ...row.item})" >修改</b-button>&nbsp;
+					<b-button size="sm" variant="danger"  @click="deleteCheck(row.item)" >刪除</b-button>&nbsp;
+					<b-button size="sm" variant="warning"  @click="gotoParam('TeacherCourseReview',row.item)" >審查</b-button>&nbsp;
+				</template>
+			</b-table>
+			<b-pagination align="right"
+				v-model="currentPage"
+				:total-rows="rows"
+				:per-page="perPage"
+				first-number
+			></b-pagination>
+		</b-form-row>
+	</b-container>
   </div>
 </template>
 

@@ -13,6 +13,7 @@
         </b-row>
         <b-row class="border border-dark">
           <b-col class="col-md-2 ">異動類別:</b-col>
+          <!--選了授課資訊後-->
           <b-col class="col-md-10 text-left"><b-form-select :options="changeType"></b-form-select></b-col>
         </b-row>
         <b-row class="border border-dark">
@@ -31,7 +32,7 @@
         <b-button size="sm" variant="success" @click="update" >送審</b-button>&ensp; 
         <b-button size="sm" variant="danger" @click="update" v-show="updateFlag">作廢</b-button>&ensp; 
         <b-button size="sm" variant="info" @click="update" v-show="updateFlag">列印</b-button>&ensp; 
-        <b-button size="sm" variant="outline-secondary" @click="reset">取消</b-button>
+        <b-button size="sm" variant="outline-secondary" @click="goBack()">取消</b-button>
       </b-row>
     </b-container>
     <br>
@@ -40,15 +41,10 @@
       <b-form-row class="justify-content-center ">
         <b-table striped hover :items="items" :fields="fields" head-variant="light">
           <template #cell(action)="row">
-            <b-button size="sm" variant="warning" @click="gotoParam('CourseTeacherEdit', row.item)">異動</b-button>&nbsp;
+            <!--點了異動將資訊帶到上面-->
+            <b-button size="sm" variant="warning" @click="gotoParam('', row.item)">異動</b-button>&nbsp;
           </template>
         </b-table>
-        <b-pagination align="right"
-          v-model="currentPage"
-          :total-rows="rows"
-          :per-page="perPage"
-          first-number
-        ></b-pagination>
       </b-form-row>
     </b-container>
   </div>

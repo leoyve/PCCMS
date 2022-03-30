@@ -28,7 +28,7 @@
     <b-container>
       <b-row class="col-sm row justify-content-end" >
         <b-button size="sm" variant="success" @click="update" >提交主管機關審核</b-button>&ensp; 
-        <b-button size="sm" variant="outline-secondary" @click="gotoParam('TrainingClassDetail',)">取消</b-button>
+        <b-button size="sm" variant="outline-secondary" @click="goBack()">取消</b-button>
       </b-row>
     </b-container>
   </div>

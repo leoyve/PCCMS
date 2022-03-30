@@ -5,7 +5,7 @@
     <br>
     <b-container >
 			<b-form-row class="justify-content-end">
-				<b-button size="l" variant="success"  @click="gotoParam('TrainingClassDetail', )">回上一頁</b-button>&nbsp;&nbsp;
+				<b-button size="l" variant="outline-secondary"  @click="gotoParam('TrainingClassDetail',)">回上一頁</b-button>&nbsp;&nbsp;
 			</b-form-row>
 			<br>
 			<b-form-row>
@@ -20,29 +20,29 @@
 		</b-container>
     <br>
     <div>
-			<b-container fluid>
-				<!--帶入選項值-->
-        <b-form-row class="justify-content-end"><b-button size="l" variant="success"  @click="gotoParam('StageDateEdit', )">新增</b-button></b-form-row>
-        <br>
-				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>{{picked}}課程科目新增授課教師勾選一覽表</strong></h4></b-form-row>
-				<b-form-row class="justify-content-end">
-					<b-table striped hover :items="items" :fields="fields" >
-            <template #cell(checkBar)="row">
-              <b-checkbox v-model="model"	@value="row.item.id"></b-checkbox>
-            </template>
-						<template #cell(action)="row">
-							<b-button size="sm" variant="outline-secondary" @click="gotoParam('TraineesSatisfactionList', row.item)">明細</b-button>
-						</template>
-					</b-table>
-          <b-pagination align="right"
-						v-model="currentPage"
-						:total-rows="rows"
-						:per-page="perPage"
-						first-number
-					></b-pagination>
-				</b-form-row>
-			</b-container>
-		</div>
+		<b-container fluid>
+		<!--將勾選的值代入授課教師-->
+			<b-form-row class="justify-content-end"><b-button size="l" variant="success"  @click="add()">新增</b-button></b-form-row>
+			<br>
+			<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>{{picked}}課程科目新增授課教師勾選一覽表</strong></h4></b-form-row>
+			<b-form-row class="justify-content-end">
+				<b-table striped hover :items="items" :fields="fields" >
+					<template #cell(checkBar)="row">
+						<b-checkbox v-model="model"	@value="row.item.id"></b-checkbox>
+					</template>
+					<template #cell(action)="row">
+						<b-button size="sm" variant="outline-secondary" @click="gotoParam('TraineesSatisfactionList', row.item)">明細</b-button>
+					</template>
+				</b-table>
+			<b-pagination align="right"
+				v-model="currentPage"
+				:total-rows="rows"
+				:per-page="perPage"
+				first-number
+			></b-pagination>
+			</b-form-row>
+		</b-container>
+	</div>
   </div>
 </template>
 
@@ -113,7 +113,8 @@ export default {
 
     },
     add(){
-
+		alert("新增授課教師!");
+		this.gotoParam('TrainingClassDetail', );
     },
     update(){
 

@@ -2,6 +2,9 @@
 	<div>
 		<br>
 		<h3><strong><font color="brown">訓練主題班別詳細資料</font></strong></h3>
+		<b-form-row class="justify-content-end">
+			<b-button size="xs" variant="outline-secondary" @click="gotoParam('TrainingClassQuery')">回上一頁</b-button>&nbsp;
+		</b-form-row >
 		<b-container fluid>
 			<b-form-row >
 				<b-col class="col-md-10 text-left"><h2><strong>壹、基本資料</strong></h2></b-col>

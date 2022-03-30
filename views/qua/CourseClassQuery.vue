@@ -38,7 +38,7 @@
 				<!--工程會管理員且屬於回訓才有匯出回訓學員報表按鈕-->
 				<template #cell(action)="row">
 					<b-button size="sm" variant="warning"  @click="gotoParam('TrainingOpenDetail',row.item)" >明細</b-button>&nbsp;
-					<b-button size="sm" variant="info"  @click="gotoParam('TrainingOpenDetail',row.item)" >匯出回訓學員報表</b-button>&nbsp;
+					<b-button size="sm" variant="info"  @click="gotoParam('')" >匯出回訓學員報表</b-button>&nbsp;
 				</template>
 			</b-table>
 			<b-pagination align="right"

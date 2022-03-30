@@ -4,15 +4,15 @@
       <b-form-row class="justify-content-center "><h2><strong>開班期別結訓成果主管機關審核資料表</strong></h2></b-form-row>
       <b-container class="border border-dark">
         <b-row class="border border-dark">
-          <b-col class="col-md-2 "><font color="red">*</font>主管機關審核許可日期</b-col>
+          <b-col class="col-md-2 ">主管機關審核許可日期</b-col>
           <b-col class="col-md-10 text-left"><b-datepicker></b-datepicker></b-col>
         </b-row>
         <b-row class="border border-dark">
-          <b-col class="col-md-2 "><font color="red">*</font>主管機關審核許可文號</b-col>
+          <b-col class="col-md-2 ">主管機關審核許可文號</b-col>
           <b-col class="col-md-10 text-left"><b-form-input></b-form-input></b-col>
         </b-row>
         <b-row class="border border-dark">
-          <b-col class="col-md-2 "><font color="red">*</font>審查狀態註記</b-col>
+          <b-col class="col-md-2 ">審查狀態註記</b-col>
           <b-col class="col-md-10 text-left">
             <b-form-radio-group
               id="radio-group-1"
@@ -23,7 +23,7 @@
           </b-col>
         </b-row>
         <b-row class="border border-dark">
-          <b-col class="col-md-2 "><font color="red">*</font>申辦結訓成果資料上鎖日期</b-col>
+          <b-col class="col-md-2 ">申辦結訓成果資料上鎖日期</b-col>
           <b-col class="col-md-10 text-left"><b-datepicker></b-datepicker></b-col>
         </b-row>
       </b-container>

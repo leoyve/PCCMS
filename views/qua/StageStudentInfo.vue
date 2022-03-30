@@ -7,7 +7,7 @@
         <b-table striped hover :items="items" :fields="fields" head-variant="light">
 			<template #cell(action)="row">
 				<b-button size="sm" variant="success" @click="gotoParam('StageStudentEdit', {updateFlag:true, ...row.item})">編輯</b-button>&nbsp;
-				<b-button size="sm" variant="danger" @click="gotoParam('CourseTeacherEdit', row.item)">刪除</b-button>&nbsp;
+				<b-button size="sm" variant="danger" @click="deleteCheck()">刪除</b-button>&nbsp;
 			</template>
 			</b-table>
 			<b-pagination align="right"

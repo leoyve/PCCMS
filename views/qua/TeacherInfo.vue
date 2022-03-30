@@ -1,8 +1,11 @@
 <template>
   <div>
+	<br>
+	<br>
     <b-container fluid>
 		<b-form-row class="justify-content-end">
 			<b-button size="l" variant="success"  @click="gotoParam('TeacherEdit', {updateFlag:true})" >補正教師個人資料</b-button>&nbsp;&nbsp;
+			<b-button size="l" variant="outline-secondary"  @click="goBack()" >回上一頁</b-button>&nbsp;&nbsp;
 		</b-form-row>
       <b-form-row class="justify-content-center "><h2><strong>教師人員基本資料表</strong></h2></b-form-row>
       <b-container class="border border-dark" fluid>
