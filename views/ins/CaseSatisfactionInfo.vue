@@ -34,7 +34,7 @@ export default {
 				key:	'satisfactionComment',
 				label:	'滿意/不滿意原因'
 			}, 
-      {
+			{
 				key:	'dealWith',
 				label:	'機關回復說明'
 			},

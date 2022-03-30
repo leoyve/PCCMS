@@ -53,6 +53,7 @@
 		<b-nav-item-dropdown text="前台" left fill>
 			<b-dropdown-item @click="gotoParam('NotifyPage')">民眾通報</b-dropdown-item>
 			<b-dropdown-item @click="gotoParam('CaseInfoCommonQuery')">一般查詢</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('PeopleIdentify')">查詢個案及填寫滿意度表</b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>
     </b-navbar>

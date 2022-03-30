@@ -218,6 +218,21 @@ module.exports = [
         name: 'CaseInfoCommonDetail',
         component: () => import(/* webpackChunkName: "about" */ '../views/ins/CaseInfoCommonDetail.vue')
       },
+      {
+        path: 'caseInfoIdentifyQuery',
+        name: 'CaseInfoIdentifyQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/ins/CaseInfoIdentifyQuery.vue')
+      },
+      {
+        path: 'caseInfoIdentifyDetail',
+        name: 'CaseInfoIdentifyDetail',
+        component: () => import(/* webpackChunkName: "about" */ '../views/ins/CaseInfoIdentifyDetail.vue')
+      },
+      {
+        path: 'peopleIdentify',
+        name: 'PeopleIdentify',
+        component: () => import(/* webpackChunkName: "about" */ '../views/ins/PeopleIdentify.vue')
+      },
     ],
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route

@@ -14,12 +14,12 @@
 			<b-row class="border border-dark" v-show="true">
 				<b-col class="col-md-2 ">滿意/不滿意原因:</b-col>
 				<!-- 預設代入:督工系統管理者代為新增！-->
-				<b-col class="col-md-8 text-left"><b-form-textarea v-model="text"></b-form-textarea></b-col>
+				<b-col class="col-md-8 text-left"><b-form-textarea v-model="this.$route.params.defaultText"></b-form-textarea></b-col>
 			</b-row>
 			<br>
 			<b-form-row class="justify-content-center">
-				<b-button size="sm" variant="success" @click="queryHandler" >確認展延</b-button>&ensp; &ensp; &ensp; &ensp; 
-				<b-button size="sm" variant="secondary" @click="toSee">取消</b-button>
+				<b-button size="sm" variant="success" @click="queryHandler" >新增</b-button>&ensp; &ensp; &ensp; &ensp; 
+				<b-button size="sm" variant="secondary" @click="goBack()">取消</b-button>
 			</b-form-row>
 		</b-container>
 		<br>
