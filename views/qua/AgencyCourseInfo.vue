@@ -1,7 +1,8 @@
 <template>
   <div>
+	<br>
     <b-container>
-		<b-table striped hover :items="items" :fields="fields" head-variant="warning" :per-page="perPage" :current-page="currentPage">
+		<b-table striped hover :items="items" :fields="fields" head-variant="dark" :per-page="perPage" :current-page="currentPage">
 			<template #cell(action)="row" >
 				<b-button size="sm" variant="secondary" @click="gotoParam('ClassDetailInfo', row.item)" v-show="detailFlag||detailPflag">明細</b-button>
 			</template>
@@ -62,7 +63,6 @@ export default {
 			},
 		],
 		items:	[
-			//待分文要顯示紅字，結案日期也是
 			{ id: 1, agency: '中原大學', className: '公共工程品質管理訓練班(土建)', classType: '品管',	approvedStatus: '同意備查',	isLive: '是', totalHours:	'90',	
 				courseAndHour:'政府採購全生命週期概論(1); 最新政策與法規(1); 電氣設備工程品質管理實務(11); 道路工程施工安全管理(12); 施工圖的管理﹑繪製﹑判識重點與案例分析(11);', pk: 5566 },
 			{ id: 2, agency: '中原大學', className: '電氣施工品質及道路施工安全暨施工圖繪製之管理【109年5月起適用】', classType: '回訓',	approvedStatus: '尚未送審',	isLive: '是', totalHours:	'60',

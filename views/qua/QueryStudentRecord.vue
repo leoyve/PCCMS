@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<br>
-		<h3><strong><font color="brown">查詢學員歷次參訓紀錄</font></strong></h3>
+		<h3><strong><font color="brown">查詢學員歷次參訓紀錄(需兩個都填才查得道資料)</font></strong></h3>
 		<br>
 		<b-container >
 			<b-form-row>
@@ -15,7 +15,7 @@
 				</b-form-group>
 			</b-form-row>
 			<b-form-row class="justify-content-end">
-				<b-button size="sm" variant="success"  @click="queryHandler" >查詢</b-button>
+				<b-button size="sm" variant="success"  @click="queryHandler" >查詢</b-button>&nbsp;
                 <b-button size="sm" variant="outline-secondary" @click="reset">清除</b-button>
 			</b-form-row>
 		</b-container>

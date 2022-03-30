@@ -1,18 +1,13 @@
 <template>
   <div>
+	<br>
     <b-container>
-				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>邊坡工程品質管理實務【109年5月起適用】訓練主題班別課程一覽表</strong></h4></b-form-row>
-				<b-form-row class="justify-content-end">
-					<b-table striped hover :items="items" :fields="fields" head-variant="light">
-					</b-table>
-					<b-pagination align="right"
-						v-model="currentPage"
-						:total-rows="rows"
-						:per-page="perPage"
-						first-number
-					></b-pagination>
-				</b-form-row>
-		</b-container>
+		<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>邊坡工程品質管理實務【109年5月起適用】訓練主題班別課程一覽表</strong></h4></b-form-row>
+		<b-form-row class="justify-content-end">
+			<b-table striped hover :items="items" :fields="fields" head-variant="light">
+			</b-table>
+		</b-form-row>
+	</b-container>
   </div>
 </template>
 

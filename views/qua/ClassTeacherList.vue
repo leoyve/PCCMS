@@ -1,5 +1,6 @@
 <template>
 	<div>
+		<br>
 		<b-container >
 			<!-- 帶入課程名稱 -->
 			<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>{{this.$route.params.courseName}}師資名冊表</strong></h4></b-form-row>
