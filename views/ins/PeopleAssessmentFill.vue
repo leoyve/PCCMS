@@ -49,9 +49,12 @@
 				<b-col class="border  border-dark col-md-2 bg-primary text-light"><h5>考核意見<font color="red">(如應繼續改善，請填寫具體意見)</font></h5></b-col>
 				<b-col class="border  border-dark col-md-10 bg-primary"><b-textarea></b-textarea></b-col>
 			</b-row>
+			<br>
+			<b-row class="row justify-content-end" >
+				<b-button size="sm" variant="success" @click="add" >送出考核結果</b-button>&ensp; 
+				<b-button size="sm" variant="outline-secondary" @click="goBack()">取消</b-button>
+			</b-row>
 		</b-container>
-		<br>
-		<wkutPeopleInfo/>
 		<br>
 		<caseHandleInfo/>
 		<br>
@@ -72,7 +75,6 @@ import caseHandleInfo from './CaseHandleInfo.vue';
 import closeCaseRecordList from './CloseCaseRecordList.vue';
 import caseSatisfactionInfo from './CaseSatisfactionInfo.vue';
 import caseMapInfo from './CaseMapInfo.vue';
-import wkutPeopleInfo from './WkutPeopleInfo.vue';
 
 
 export default {
@@ -96,7 +98,7 @@ export default {
 
  },
  components: {
-    caseInfo,	caseHandleInfo,	closeCaseRecordList,	caseSatisfactionInfo,	caseMapInfo,	wkutPeopleInfo
+    caseInfo,	caseHandleInfo,	closeCaseRecordList,	caseSatisfactionInfo,	caseMapInfo,
   },
 }
 

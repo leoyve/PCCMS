@@ -1,6 +1,6 @@
 <template>
   <div>
-      <b-container class="border border-dark">
+      <b-container class="border border-dark" fluid>
         <b-row class="border border-dark">
           <b-col class="col-md-2  bg-secondary">通報日期</b-col>
           <b-col class="col-md-4 text-left">110/11/30</b-col>
@@ -34,14 +34,12 @@
         <b-row class="border border-dark">
           <b-col class="col-md-2 bg-secondary">工程名稱</b-col>
           <b-col class="col-md-10 text-left">
-            <b-container>
               <b-row>
-                <b-col class="col-md-12 text-left">	內政部營建署南區工程處空調設備節能改善</b-col>
+                <b-col class="text-left">	內政部營建署南區工程處空調設備節能改善</b-col>
               </b-row>
               <b-row>
-                <b-col class="col-md-12 text-left">	<font color="red">[標案管理系統之工程名稱--內政部營建署南區工程處空調設備節能改善]</font></b-col>
+                <b-col class="text-left">	<font color="red">[標案管理系統之工程名稱--內政部營建署南區工程處空調設備節能改善]</font></b-col>
               </b-row>
-            </b-container>
           </b-col>
           <br>
         </b-row>

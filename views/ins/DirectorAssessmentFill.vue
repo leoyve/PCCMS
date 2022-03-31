@@ -103,9 +103,12 @@
 					></b-form-radio-group>
 				</b-col>
 			</b-row>
+			<br>
+			<b-row class="row justify-content-end" >
+				<b-button size="sm" variant="success" @click="add" >送出考核結果</b-button>&ensp; 
+				<b-button size="sm" variant="outline-secondary" @click="goBack()">取消</b-button>
+			</b-row>
 		</b-container>
-		<br>
-		<wkutPeopleInfo/>
 		<br>
 		<caseHandleInfo/>
 		<br>
@@ -121,7 +124,6 @@
 
 
 <script>
-import wkutPeopleInfo from './WkutPeopleInfo.vue';
 import caseInfo from './CaseInfo.vue';
 import caseHandleInfo from './CaseHandleInfo.vue';
 import closeCaseRecordList from './CloseCaseRecordList.vue';
@@ -150,7 +152,7 @@ export default {
 
  },
  components: {
-    caseInfo,	caseHandleInfo,	closeCaseRecordList,	caseSatisfactionInfo,	caseMapInfo,	wkutPeopleInfo
+    caseInfo,	caseHandleInfo,	closeCaseRecordList,	caseSatisfactionInfo,	caseMapInfo,
   },
 }
 

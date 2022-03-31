@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-container>
+    <b-container fluid>
       <h2 class="text-left"><font color="red">通報案件相關照片</font></h2>
       <br>
       <b-row>
