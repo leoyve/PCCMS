@@ -17,7 +17,7 @@
         </b-row>
         <b-row class="border border-dark">
           <b-col class="col-md-2 "><font color="red">*</font>在職情形</b-col>
-          <b-col class="col-md-4 text-left">
+          <b-col class="col-md-4 text-left text-dark">
             <b-form-radio-group
               id="radio-group-1"
               v-model="picked"
@@ -138,5 +138,9 @@ export default {
   color: white;
   text-align: left;
 }
-
+.col-md-4 {
+  background-color: white;
+  color: white;
+  text-align: left;
+}
 </style>

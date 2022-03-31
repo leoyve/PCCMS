@@ -16,17 +16,17 @@
 						id="radio-group-1"
 						v-model="picked"
 						:options="options"
-						name="radio-options"
+						name="radio-options1"
 					></b-form-radio-group>
 				</b-form-group>
 			</b-form-row>
 			<b-form-row>
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="是否核備" label-align-md="right">
 					<b-form-radio-group
-						id="radio-group-1"
+						id="radio-group-2"
 						v-model="picked"
 						:options="options2"
-						name="radio-options"
+						name="radio-options2"
 					></b-form-radio-group>
 				</b-form-group>
 			</b-form-row>

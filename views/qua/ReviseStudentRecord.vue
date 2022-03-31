@@ -94,6 +94,10 @@
 					<b-col class="col-md-2 ">實際結訓日期</b-col>
 					<b-col class="col-md-10 text-left"><b-datepicker :value="dd"></b-datepicker></b-col>
 				</b-row>
+				<b-row class="border border-dark">
+					<b-col class="col-md-2 ">證書有效日期</b-col>
+					<b-col class="col-md-10 text-left"><b-datepicker :value="dd"></b-datepicker></b-col>
+				</b-row>
 			</b-container>
 			<br>
 			<b-row class="col-sm row justify-content-end" >
@@ -143,11 +147,6 @@ export default {
 <style>
 .col-md-2 {
   background-color: rgb(50, 91, 224);
-  color: white;
-  text-align: left;
-}
-.col-md-10 {
-  background-color: rgb(240, 229, 214);
   color: white;
   text-align: left;
 }
