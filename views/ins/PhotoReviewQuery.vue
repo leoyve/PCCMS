@@ -1,5 +1,8 @@
 <template>
 	<div>
+		<br>
+		<h3><strong>上傳照片審查管理</strong></h3>
+		<br>
 		<b-container >
 			<b-form-row >
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="通報日期" label-align-md="right">
@@ -47,7 +50,7 @@
 				</b-form-group>
 			</b-form-row>
 			<b-form-row class="justify-content-end">
-				<b-button size="sm" variant="success" @click="queryHandler" >查詢</b-button>
+				<b-button size="sm" variant="success" @click="queryHandler" >查詢</b-button>&nbsp;
 				<b-button size="sm" variant="outline-secondary" @click="reset">清除</b-button>
 			</b-form-row>
 		</b-container>

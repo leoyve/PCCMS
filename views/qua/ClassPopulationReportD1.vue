@@ -20,7 +20,7 @@
 							<b-th >5643</b-th>
 							<b-th >3241</b-th>
 							<b-th >92%</b-th>
-							<b-th ><b-button size="sm" variant="outline-secondary" @click="gotoParam('ClassPopulationReportD2', row.item)">明細</b-button></b-th>
+							<b-th ><b-button size="sm" variant="outline-secondary" @click="gotoParam('ClassPopulationReportD2', )">明細</b-button></b-th>
 						</b-tr>
 					</template>
 				</b-table>
