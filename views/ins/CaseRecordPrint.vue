@@ -1,6 +1,9 @@
 <template>
 	<div>
-		<b-container >
+		<br>
+		<h3><strong>處理情形列印畫面</strong></h3>
+		<br>
+		<b-container fluid>
 			<caseInfoSimple/>
 			<caseHandleInfo/>
 			<div style="text-align:left;"><h2 ><font color="red">滿意度之調查資料</font></h2></div>

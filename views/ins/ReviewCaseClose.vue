@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<b-container >
+		<b-container fluid>
 			<h2><strong>通報案件審查結案（案件編號：11000000340）</strong></h2>
 			<b-row>
 				<font color='red'><strong>1.主管機關辦理審查結案作業，請檢視主辦機關登錄處理情形及上傳處理照片之完整度。</strong></font>
@@ -19,7 +19,7 @@
 			</b-row>	
 		</b-container>
 		<br>
-		<b-container >
+		<b-container fluid>
 			<b-row class="border border-dark">
 				<b-col class="col-md-2 ">處理機關</b-col>
 				<b-col class="col-md-8 text-left">桃園市政府</b-col>
@@ -46,11 +46,11 @@
 				<b-col class="col-md-8 text-left"><b-form-textarea></b-form-textarea></b-col>
 			</b-row>
 			<br>
-			<b-row class="justify-content-center">
+			<b-row class="justify-content-end">
 				<!-- 有ID且撈出來有資料就進行修改，無ID也無資料直接新增 -->
 				<b-button size="sm" variant="info" @click="toPrint">處理情形列印畫面</b-button>&ensp; &ensp; 
 				<b-button size="sm" variant="success" @click="queryHandler">完成審查</b-button>&ensp; &ensp; 
-				<b-button size="sm" variant="secondary" @click="toSee">取消</b-button>
+				<b-button size="sm" variant="outline-secondary" @click="toSee">取消</b-button>
 			</b-row>
 		</b-container>
 		<br>
@@ -100,6 +100,12 @@ export default {
 		//新開視窗
 		let routeUrl = this.$router.resolve({name:'CaseRecordPrint'})
 		window.open(routeUrl.href, '_blank'); 
+	},
+	aa(){
+		//新開視窗
+		let routeUrl = this.$router.resolve({name:'CmdCaseQuery'})
+		window.open(routeUrl.href, '_blank'); 
+
 	},
  },
  components: {

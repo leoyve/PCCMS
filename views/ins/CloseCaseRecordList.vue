@@ -2,9 +2,9 @@
 	<div>
 		<!-- 有資料才顯示 -->
 		<b-container fluid>
-			<b-form-row class="justify-content-center text-light bg-dark"><h4><strong>結案申請及審查歷次紀錄一覽表</strong></h4></b-form-row>
+			<b-form-row class="justify-content-center text-light bg-secondary"><h4><strong>結案申請及審查歷次紀錄一覽表</strong></h4></b-form-row>
 			<b-form-row class="justify-content-center">
-				<b-table striped hover :items="items" :fields="fields" head-variant="dark">
+				<b-table striped hover :items="items" :fields="fields" head-variant="light">
 					<template #cell(action)="row" >
 						<!-- 只有在申請結案 && 結案申請還未被審查的時候才會出現-->
 						<b-button size="sm" variant="danger" @click="toSee(row.item)" v-show="showFlag">撤回</b-button>

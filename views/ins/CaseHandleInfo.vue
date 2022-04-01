@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-container >
+    <b-container fluid>
       <b-row class="justify-content-center text-light bg-secondary">
         <h4><strong>主辦機關處理情形紀錄一覽表</strong></h4>
       </b-row>
