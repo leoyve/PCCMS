@@ -6,10 +6,10 @@
         <b-nav-item-dropdown text="關鍵公共設施" left fill>
 			<b-dropdown-item @click="gotoParam('RankReport',)">維管排名</b-dropdown-item>
 			<b-dropdown-item @click="gotoParam('PublicFacilityEdit', {addFlag:true})">建立機關關鍵公共設施</b-dropdown-item>
-			<b-dropdown-item @click="gotoParam('Place1999Group')">維護機關關鍵公共設施</b-dropdown-item>
-			<b-dropdown-item @click="gotoParam('Place1999Group')">機關/類別報表</b-dropdown-item>
-			<b-dropdown-item @click="gotoParam('Place1999Group')">統計分析</b-dropdown-item>
-			<b-dropdown-item @click="gotoParam('Place1999Group')">查詢機關刪除資料</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('')">維護機關關鍵公共設施</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('')">機關/類別報表</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('')">統計分析</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('')">查詢機關刪除資料</b-dropdown-item>
         </b-nav-item-dropdown>
 
         
