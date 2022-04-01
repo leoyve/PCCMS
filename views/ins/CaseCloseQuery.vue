@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<br>
-		<h3><strong>案件查詢/填報</strong></h3>
+		<h3><strong>案件結案審查</strong></h3>
 		<br>
 		<b-container >
 			<b-form-row >

@@ -1,7 +1,14 @@
 <template>
 	<div>
+		<br>
+		<h3><strong>通報案件查詢彙整總表</strong></h3>
+		<br>
 		<b-container fluid>
-			<h2><font color="blue">通報案件查詢彙整</font></h2>
+			<b-form-row>
+				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="主辦機關名稱關鍵字" label-align-md="right">
+					<b-form-input type="search"></b-form-input>
+				</b-form-group>
+			</b-form-row>
 			<b-form-row>
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="通報案件編號關鍵字" label-align-md="right">
 					<b-form-input type="search"></b-form-input>
@@ -49,7 +56,7 @@
 			</b-form-row>
 			<b-form-row>
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="納入督工有效統計案件" label-align-md="right">
-					<b-form-radio-group v-model="check2" :options="checkAssign2" name="radio-validation-1"></b-form-radio-group>
+					<b-form-radio-group v-model="check2" :options="checkAssign2" name="radio-validation-3"></b-form-radio-group>
 				</b-form-group>
 			</b-form-row>
 			<b-form-row>
@@ -57,8 +64,18 @@
 					<b-form-select :options="type"></b-form-select>
 				</b-form-group>
 			</b-form-row>
+			<b-form-row>
+				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="結案處理天數" label-align-md="right">
+					<b-container>
+						<b-row>
+							<b-col><b-form-input type="search"></b-form-input></b-col>~
+							<b-col><b-form-input type="search"></b-form-input></b-col>
+						</b-row>
+					</b-container>
+				</b-form-group>
+			</b-form-row>
 			<b-form-row class="justify-content-end">
-				<b-button size="sm" variant="success" @click="queryHandler" >查詢</b-button>
+				<b-button size="sm" variant="success" @click="queryHandler" >查詢</b-button>&nbsp;
 				<b-button size="sm" variant="outline-secondary" @click="reset">清除</b-button>
 			</b-form-row>
 		</b-container>

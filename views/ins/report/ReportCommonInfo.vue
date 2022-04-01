@@ -1,24 +1,30 @@
 <template>
 	<div>
-		<h3><strong><font color="red">通報案件基本資料</font></strong></h3>
-		<caseInfo :disabledFlag="true"/>
 		<br>
-		<h3><strong><font color="red">通報缺失位置地圖</font></strong></h3>
-		<caseMapInfo/>
-		<br>
-		<h3><strong><font color="red">通報案件相關照片</font></strong></h3>
-		<casePhotoInfo/>
-		<br>
-		<h3><strong><font color="red">通報案件處理資料</font></strong></h3>
-		<caseHandleInfo/>
-		<br>
-		<closeCaseRecordList/>
-		<br>
-		<caseSatisfactionInfo/>
-		<br>
-		<wkutAssessmentInfo/>
-		<br>
-		<directorAssessmentInfo/>
+		<b-container fluid>
+			<b-form-row class="justify-content-end">
+				<b-button size="sm" variant="outline-secondary" @click="goBack()">回上一頁</b-button>
+			</b-form-row>
+			<h3><strong><font color="red">通報案件基本資料</font></strong></h3>
+			<caseInfo :disabledFlag="true"/>
+			<br>
+			<h3><strong><font color="red">通報缺失位置地圖</font></strong></h3>
+			<caseMapInfo/>
+			<br>
+			<h3><strong><font color="red">通報案件相關照片</font></strong></h3>
+			<casePhotoInfo/>
+			<br>
+			<h3><strong><font color="red">通報案件處理資料</font></strong></h3>
+			<caseHandleInfo/>
+			<br>
+			<closeCaseRecordList/>
+			<br>
+			<caseSatisfactionInfo/>
+			<br>
+			<wkutAssessmentInfo/>
+			<br>
+			<directorAssessmentInfo/>
+		</b-container>
 	</div>
 </template>
 

@@ -18,6 +18,7 @@
 <!-- 通報民眾 ipeo-->
 <template>
 	<div>
+		<br>
 		<b-container fluid>
 			<b-form-row class="justify-content-center text-light bg-primary" v-show="this.$route.params.wkutName != null"><h4><strong>{{ this.$route.params.wkutName }}所屬通報案件處理結案情形一覽表</strong></h4></b-form-row>
 			<b-form-row class="justify-content-center text-light bg-primary" v-show="this.$route.params.wkutName == null"><h4><strong>各主管機關通報案件處理結案情形一覽表</strong></h4></b-form-row>
@@ -26,7 +27,7 @@
 				<template #cell(action)="row">
 					<!-- 傳遞的參數應該是機關代碼和查詢條件-->
 					<!-- 最下面那一列應該為合計，技術上還未研究 -->
-					<b-button size="sm" variant="success" @click="toSee(row)" >檢視</b-button>
+					<b-button size="sm" variant="success" @click="gotoParam('ReportCommonInfo', row.item)" >檢視</b-button>
 				</template>
 				<template #cell(informInfo)="row">
 					<b-container>
@@ -164,7 +165,8 @@ export default {
 			},
 			{
 				key:	'action',
-				label:	''
+				label:	'',
+				thStyle: { width: "5%" },
 			},
 
 		],

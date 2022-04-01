@@ -1,8 +1,9 @@
 <template>
 	<div>
+		<br>
+		<h3><strong>各主管機關通報案件民眾通知結案後滿意度調查統計表</strong></h3>
+		<br>
 		<b-container fluid>
-			<h2><font color="blue">各主管機關通報案件民眾通知結案後滿意度調查統計表</font></h2>
-			<br>
 			<b-form-row>
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="通報案件限辦日期" label-align-md="right">
 					<b-container>
@@ -15,7 +16,7 @@
 			</b-form-row>
 			<b-form-row>
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="納入工程會督工報告有效統計案件" label-align-md="right">
-					<b-form-radio-group v-model="check2" :options="checkAssign" name="radio-validation-1"></b-form-radio-group>
+					<b-form-radio-group v-model="check2" :options="checkAssign" name="radio-validation-2"></b-form-radio-group>
 				</b-form-group>
 			</b-form-row>
 			<b-form-row>
@@ -23,11 +24,8 @@
 					<b-form-radio-group v-model="check2" :options="checkClosed" name="radio-validation-1"></b-form-radio-group>
 				</b-form-group>
 			</b-form-row>
-			<b-form-row>
-				<h4><font color="red">民眾於系統通知結案後所填寫之滿意度調查資料，方納入本表統計數據。</font></h4>
-			</b-form-row>
 			<b-form-row class="justify-content-end">
-				<b-button size="sm" variant="success" @click="queryHandler" >查詢</b-button>
+				<b-button size="sm" variant="success" @click="queryHandler" >查詢</b-button>&nbsp;
 				<b-button size="sm" variant="outline-secondary" @click="reset">清除</b-button>
 			</b-form-row>
 		</b-container>
@@ -35,6 +33,9 @@
 		
 		<div>
 			<b-container fluid>
+				<b-form-row>
+					<h4><font color="red">民眾於系統通知結案後所填寫之滿意度調查資料，方納入本表統計數據。</font></h4>
+				</b-form-row>
 				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>各主管機關通報案件民眾通知結案後滿意度調查統計表</strong></h4></b-form-row>
 				<b-form-row class="justify-content-end">
 				<b-table striped hover :items="items" :fields="fields" head-variant="light">

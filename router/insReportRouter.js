@@ -39,11 +39,6 @@ module.exports = [
         component: () => import(/* webpackChunkName: "about" */ '../views/ins/report/CaseAggregateReport.vue')
       },
       {
-        path: 'caseCloseDayReport',
-        name: 'CaseCloseDayReport',
-        component: () => import(/* webpackChunkName: "about" */ '../views/ins/report/CaseCloseDayReport.vue')
-      },
-      {
         path: 'caseAuditReport',
         name: 'CaseAuditReport',
         component: () => import(/* webpackChunkName: "about" */ '../views/ins/report/CaseAuditReport.vue')

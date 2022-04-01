@@ -20,7 +20,7 @@
         </b-nav-item-dropdown>
 
 		<b-nav-item-dropdown text="案件結案" left fill>
-			<b-dropdown-item @click="gotoParam('CaseCloseQuery')">審查結案</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('CaseCloseQuery')">案件結案審查</b-dropdown-item>
 			<b-dropdown-item @click="gotoParam('CaseAssessmentQuery')">通報案件結案考核</b-dropdown-item>
         </b-nav-item-dropdown>
 		
@@ -29,7 +29,6 @@
 			<b-dropdown-item @click="gotoParam('WkutHandleDayReport')">通報處理天數統計總表</b-dropdown-item>
 			<b-dropdown-item @click="gotoParam('WkutSatisfactionReport')">通報案件滿意度統計表</b-dropdown-item>
 			<b-dropdown-item @click="gotoParam('CaseAggregateReport')">通報案件查詢彙整總表</b-dropdown-item>
-			<b-dropdown-item @click="gotoParam('CaseCloseDayReport')">依結案處理天數彙整總表</b-dropdown-item>
 			<b-dropdown-item @click="gotoParam('CaseAuditReport')">通報案件查核統計總表</b-dropdown-item>
 			<b-dropdown-item @click="gotoParam('LineNotifyReport')">啟用LINE通知統計總表</b-dropdown-item>
 			<b-dropdown-item @click="gotoParam('WkutGenderReport')">通報民眾性別統計總表</b-dropdown-item>

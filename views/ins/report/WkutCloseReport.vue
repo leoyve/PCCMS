@@ -1,7 +1,9 @@
 <template>
 	<div>
+		<br>
+		<h3><strong>各主管機關通報案件處理結案情形統計表</strong></h3>
+		<br>
 		<b-container fluid>
-			<h2><font color="blue">各主管機關通報案件處理結案情形統計表</font></h2>
 			<b-form-row>
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="通報案件限辦日期" label-align-md="right">
 					<b-container>
@@ -23,7 +25,7 @@
 				</b-form-group>
 			</b-form-row>
 			<b-form-row class="justify-content-end">
-				<b-button size="sm" variant="success" @click="queryHandler" >查詢</b-button>
+				<b-button size="sm" variant="success" @click="queryHandler" >查詢</b-button>&nbsp;
 				<b-button size="sm" variant="outline-secondary" @click="reset">清除</b-button>
 			</b-form-row>
 		</b-container>
@@ -39,12 +41,11 @@
 						<template #cell(action)="row">
 							<!-- 傳遞的參數應該是機關代碼和查詢條件-->
 							<!-- 最下面那一列為合計-->
-							<!-- 改成BUTTON-->
-							<b-button size="sm" variant="primary" @click="toSee(row)" >{{row.item.wkut}}</b-button>
+							<b-button size="sm" variant="outline-secondary" @click="gotoParam('ReportCommonList',{wkutName:	row.item.wkut})" >明細</b-button>
 						</template>
 						<template #custom-foot>
 							<b-tr>
-								<b-th colspan="2"><b-button size="sm" variant="primary" @click="toSee(row)" >合計</b-button></b-th>
+								<b-th colspan="2">合計</b-th>
 								<b-th >{{total1}}</b-th>
 								<b-th >{{total2}}</b-th>
 								<b-th >{{total3}}</b-th>
@@ -54,6 +55,7 @@
 								<b-th >{{total7}}</b-th>
 								<b-th >{{total8}}</b-th>
 								<b-th >{{total9}}</b-th>
+								<b-th><b-button size="sm" variant="outline-secondary" @click="gotoParam('ReportCommonList',{wkutName:'全部'})" >明細</b-button></b-th>
 							</b-tr>
 						</template>
 					</b-table>
@@ -87,7 +89,7 @@ export default {
 				label:	'流水號'
 			},
 			{
-				key:	'action',
+				key:	'wkut',
 				label:	'主管機關',
 				thStyle: { width: "15%" },
 			},
@@ -126,6 +128,10 @@ export default {
 			{
 				key:	'delayNum2',
 				label:	'未結案-逾期項數'
+			},
+			{
+				key:	'action',
+				label:	''
 			},
 
 		],

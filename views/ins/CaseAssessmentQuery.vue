@@ -1,5 +1,8 @@
 <template>
 	<div>
+		<br>
+		<h3><strong>通報案件結案考核</strong></h3>
+		<br>
 		<b-container >
 			<b-form-row >
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="通報案件主題" label-align-md="right">
@@ -64,7 +67,7 @@
 		<br>
 		
 		<div>
-			<b-container >
+			<b-container fluid>
 				<h3>民眾通報案件結案考核情形查詢結果表</h3>
 				<br>
 				<b-table striped hover :items="items" :fields="fields" head-variant="dark">
