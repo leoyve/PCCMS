@@ -57,7 +57,7 @@
 		<br>
 		
 		<div>
-			<b-container >
+			<b-container fluid>
 				<h3>通報案件上傳照片審查情形一覽表</h3>
 				<br>
 				<b-table striped hover :items="items" :fields="fields" head-variant="dark">
@@ -68,12 +68,12 @@
 						<b-img src="https://www.mdnkids.com/upload/images/20210703-06-09.jpg"	width='100'	height='100'></b-img>
 					</template>
 					<template #cell(action)="row">
-						<b-button size="sm" variant="outline-secondary" @click="toSee(row.item)">審核</b-button>
-						<b-button size="sm" variant="outline-secondary" @click="toSee(row.item)">更換</b-button>
+						<b-button size="sm" variant="success" @click="gotoParam('PhotoReview', row.item)">審核</b-button>&nbsp;
+						<b-button size="sm" variant="outline-secondary" @click="gotoParam('PhotoChange', row.item)">更換</b-button>
 					</template>
 				</b-table>
 				<b-form-row class="justify-content-start">
-					<b-button size="sm" variant="success" @click="batchReview" >批次審核</b-button>
+					<b-button size="sm" variant="success" @click="gotoParam('PhotoReviewBatch')" >批次審核</b-button>
 				</b-form-row>
 				<b-pagination align="right"
 					v-model="currentPage"
@@ -173,17 +173,6 @@ export default {
 	}
  },
  methods: {
-	toSee(item){
-		//alert(item.pk);
-		console.log(item);
-		this.$router.push({name:'PhotoReview'})
-	},
-	batchReview(){
-		this.$router.push({name:'PhotoReviewBatch'})
-  },
-  reset(){
-
-  }
  },
 
 }

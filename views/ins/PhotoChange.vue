@@ -1,34 +1,18 @@
 <template>
   <div>
+      <br>
+      <h3><strong>更換照片</strong></h3>
+      <br>
       <b-container>
-        <h3>上傳照片資料</h3>
-        <b-row class="border border-dark">
-          <b-col class="col-md-2 ">上傳機關</b-col>
-          <b-col class="col-md ">民眾</b-col>
-        </b-row>
         <b-row class="border border-dark">
           <b-col class="col-md-2 ">照片</b-col>
           <b-col class="col-md"><b-img src="https://www.mdnkids.com/upload/images/20210703-06-09.jpg" width="200"/>(點選可放大照片)
           <input type="file"/>
           </b-col>
         </b-row>
-        <b-row class="border border-dark">
-          <b-col class="col-md-2 ">照片說明</b-col>
-          <b-col class="col-md"><b-form-input></b-form-input></b-col>
-        </b-row>
-        <b-row class="border border-dark">
-          <b-col class="col-md-2 ">督工照片審查結果</b-col>
-          <b-col class="col-md"><b-form-radio-group v-model="check2" :options="reviewResult" name="radio-validation-1"></b-form-radio-group></b-col>
-        </b-row>
-          <b-row class="border border-dark">
-          <b-col class="col-md-2 ">審核不通過理由</b-col>
-          <b-col class="col-md ">
-              <b-form-radio-group v-model="check2" :options="reviewReason" name="radio-stacked" stacked></b-form-radio-group>
-          </b-col>
-        </b-row>
         <br>
         <b-form-row class="justify-content-end">
-          <b-button size="sm" variant="success" @click="queryHandler" >送出審查結果</b-button>&nbsp;
+          <b-button size="sm" variant="success" @click="queryHandler" >更換</b-button>&nbsp;
           <b-button size="sm" variant="outline-secondary" @click="goBack()" >取消</b-button>
         </b-form-row>
       </b-container>

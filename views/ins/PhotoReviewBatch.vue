@@ -11,8 +11,9 @@
 						<b-img src="https://www.mdnkids.com/upload/images/20210703-06-09.jpg"	width='100'	height='100'></b-img>
 					</template>
 				</b-table>
-				<b-form-row class="justify-content-start">
-					<b-button size="sm" variant="success" @click="queryHandler" >送出審查結果</b-button>
+				<b-form-row class="justify-content-end">
+					<b-button size="sm" variant="success" @click="queryHandler" >送出批次審查結果</b-button>&nbsp;
+					<b-button size="sm" variant="outline-secondary" @click="goBack()" >取消</b-button>
 				</b-form-row>
 			</b-container>
 	</div>

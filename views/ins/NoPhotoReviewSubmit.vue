@@ -1,7 +1,9 @@
 <template>
   <div>
+      <br>
+      <h3><strong>申請免須上傳改善照片檔案</strong></h3>
+      <br>
       <b-container>
-        <h3><strong>申請免須上傳改善照片檔案</strong></h3>
         <b-row class="border border-dark">
           <b-col class="col-md-2 ">處理機關</b-col>
           <!-- 系統依照登入帳號自動代入:處理機關、姓名、電話、E-MAIL-->
@@ -26,7 +28,7 @@
         <br>
         <b-form-row class="justify-content-end">
           <b-button size="sm" variant="success" @click="queryHandler" >送出申請</b-button>&ensp; 
-          <b-button size="sm" variant="secondary" @click="queryHandler" >取消</b-button>
+          <b-button size="sm" variant="outline-secondary" @click="goBack()" >取消</b-button>
         </b-form-row>
       </b-container>
       <br>
@@ -43,12 +45,6 @@ export default {
   }
  },
  methods:  {
-    queryHandler(){
-      this.$router.push({name:'UploadCasePhoto'})
-    },
-    reset(){
-
-    }
   },
   mounted(){  //ready已經不被使用了
     //  console.log(this.showFlag);

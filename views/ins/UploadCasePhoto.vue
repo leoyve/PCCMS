@@ -7,7 +7,7 @@
 			</b-form-row>
 			<b-form-row class="justify-content-start">
 				<b-button size="sm" variant="success" @click="gotoParam('ChangePhotoReview',{addFlag:true})" >上傳處理照片</b-button>&ensp;
-				<b-button size="sm" variant="success" @click="goTo(null, 'NoPhotoReviewSubmit')">申請免需上傳改善照片檔案</b-button>
+				<b-button size="sm" variant="success" @click="gotoParam('NoPhotoReviewSubmit')">申請免需上傳改善照片檔案</b-button>
 			</b-form-row>
 			<br>
 			<b-form-row class="justify-content-start">

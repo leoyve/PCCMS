@@ -1,7 +1,9 @@
 <template>
   <div>
+      <br>
+      <h3><strong>上傳照片資料</strong></h3>
+      <br>
       <b-container>
-        <h3>上傳照片資料</h3>
         <b-row class="border border-dark">
           <b-col class="col-md-2 ">申請日期</b-col>
           <b-col class="col-md text-left">110/04/09</b-col>
@@ -28,7 +30,7 @@
         </b-row>
         <b-row class="border border-dark">
           <b-col class="col-md-2 ">審查結果</b-col>
-          <b-col class="col-md ">
+          <b-col class="col-md text-left">
               <b-form-radio-group v-model="check2" :options="reviewReason" name="radio-stacked" ></b-form-radio-group>
           </b-col>
         </b-row>
@@ -38,7 +40,8 @@
         </b-row>
         <br>
         <b-form-row class="justify-content-end">
-          <b-button size="sm" variant="success" @click="queryHandler" >送出審查結果</b-button>
+          <b-button size="sm" variant="success" @click="queryHandler" >送出審查結果</b-button>&nbsp;
+          <b-button size="sm" variant="outline-secondary" @click="goBack()" >取消</b-button>
         </b-form-row>
       </b-container>
       <br>

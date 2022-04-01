@@ -1,5 +1,8 @@
 <template>
 	<div>
+		<br>
+		<h3><strong>免需上傳照片審查</strong></h3>
+		<br>
 		<b-container >
 			<b-form-row >
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="通報案件編號" label-align-md="right">
@@ -27,14 +30,14 @@
 				</b-form-group>
 			</b-form-row>
 			<b-form-row class="justify-content-end">
-				<b-button size="sm" variant="success" @click="queryHandler" >查詢</b-button>
+				<b-button size="sm" variant="success" @click="queryHandler" >查詢</b-button>&nbsp;
 				<b-button size="sm" variant="outline-secondary" @click="reset">清除</b-button>
 			</b-form-row>
 		</b-container>
 		<br>
 		
 		<div>
-			<b-container >
+			<b-container fluid>
 				<h3>申請免需上傳改善照片檔案督工案件一覽表</h3>
 				<br>
 				<b-table striped hover :items="items" :fields="fields" head-variant="dark">
@@ -42,7 +45,7 @@
 						<b-checkbox v-model="model"	@value="row.item.id"></b-checkbox>
 					</template>
 					<template #cell(action)="row">
-						<b-button size="sm" variant="outline-secondary" @click="toSee(row.item)">審核</b-button>
+						<b-button size="sm" variant="success" @click="toSee(row.item)">審核</b-button>
 					</template>
 					<template #cell(situation)="row">
 						<b-container>
