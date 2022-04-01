@@ -23,6 +23,11 @@ module.exports = [
         name: 'RankReportScale',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa3/RankReportScale.vue')
       },
+      {
+        path: 'publicFacilityEdit',
+        name: 'PublicFacilityEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa3/PublicFacilityEdit.vue')
+      },
       
     ],
     // route level code-splitting
