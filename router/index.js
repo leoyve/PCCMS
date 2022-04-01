@@ -10,6 +10,7 @@ import insRouter from './insRouter.js'
 import floRouter from './floRouter.js'
 import insReportRouter from './insReportRouter.js'
 import quaRouter from './quaRouter.js'
+import fa3Router from './fa3Router.js'
 
 
 const routes = [
@@ -19,6 +20,7 @@ const routes = [
   ...floRouter,
   ...insReportRouter,
   ...quaRouter,
+  ...fa3Router,
 ]
 
 const router = new VueRouter({

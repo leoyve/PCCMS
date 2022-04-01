@@ -1,0 +1,33 @@
+module.exports = [
+  {
+    path: '/fa3',
+    name: '公共設施維護管理資訊',
+    children:[
+      {
+        path: 'rankReport',
+        name: 'RankReport',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa3/RankReport.vue')
+      },
+      {
+        path: 'rankReportTotal',
+        name: 'RankReportTotal',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa3/RankReportTotal.vue')
+      },
+      {
+        path: 'rankReportPublic',
+        name: 'RankReportPublic',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa3/RankReportPublic.vue')
+      },
+      {
+        path: 'rankReportScale',
+        name: 'RankReportScale',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa3/RankReportScale.vue')
+      },
+      
+    ],
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/Fa3Router.vue')
+  }
+]

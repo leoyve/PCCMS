@@ -1,0 +1,30 @@
+<template>
+	<div>
+	<h1>公共設施維護管理資訊</h1>
+	<b-navbar type="dark" variant="info">
+      <b-navbar-nav >
+        <b-nav-item-dropdown text="關鍵公共設施" left fill>
+			<b-dropdown-item @click="gotoParam('RankReport',)">維管排名</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('UnCheckCase')">建立機關關鍵公共設施</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('Place1999Group')">維護機關關鍵公共設施</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('Place1999Group')">機關/類別報表</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('Place1999Group')">統計分析</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('Place1999Group')">查詢機關刪除資料</b-dropdown-item>
+        </b-nav-item-dropdown>
+
+        
+      </b-navbar-nav>
+    </b-navbar>
+    <router-view/>
+	</div>
+</template>
+
+
+<script>
+
+
+</script>
+
+<style>
+
+</style>
