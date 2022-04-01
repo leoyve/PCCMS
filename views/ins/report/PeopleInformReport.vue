@@ -1,7 +1,9 @@
 <template>
 	<div>
+		<br>
+		<h3><strong>民眾通報案件及滿意度調查統計表</strong></h3>
+		<br>
 		<b-container fluid>
-			<h2><font color="blue">民眾通報案件及滿意度調查統計表</font></h2>
 			<b-form-row>
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="通報日期" label-align-md="right">
 					<b-container>
@@ -13,7 +15,7 @@
 				</b-form-group>
 			</b-form-row>
 			<b-form-row class="justify-content-end">
-				<b-button size="sm" variant="success" @click="queryHandler" >查詢</b-button>
+				<b-button size="sm" variant="success" @click="queryHandler" >查詢</b-button>&nbsp;
 				<b-button size="sm" variant="outline-secondary" @click="reset">清除</b-button>
 			</b-form-row>
 		</b-container>

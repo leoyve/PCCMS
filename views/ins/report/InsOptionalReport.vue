@@ -1,7 +1,9 @@
 <template>
 	<div>
+		<br>
+		<h3><strong>督工通報案件自選欄位查詢</strong></h3>
+		<br>
 		<b-container fluid>
-			<h2><font color="blue">督工通報案件自選欄位查詢</font></h2>
 			<b-form-row>
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="通報案件編號關鍵字" label-align-md="right">
 					<b-form-input type="search"></b-form-input>

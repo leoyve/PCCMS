@@ -39,7 +39,8 @@
 			<b-dropdown-item @click="gotoParam('WkutCloseDayReport')">主管機關結案天數統計</b-dropdown-item>
 			<b-dropdown-item @click="gotoParam('CaseCategoryReport')">通報工程類別統計總表</b-dropdown-item>
 			<b-dropdown-item @click="gotoParam('PeopleInformReport')">民眾通報件數統計總表</b-dropdown-item>
-			<b-dropdown-item @click="gotoParam('WebNotifyReport')">啟用行動推播服務人數統計表(X)</b-dropdown-item>
+			<!-- 先註解
+			<b-dropdown-item @click="gotoParam('WebNotifyReport')">啟用行動推播服務人數統計表(X)</b-dropdown-item>-->
 			<b-dropdown-item @click="gotoParam('WkutCompareReport')">機關案件考核自評填寫統計表</b-dropdown-item>
 			<b-dropdown-item @click="gotoParam('InsOptionalReport')">督工通報案件自選欄位報表</b-dropdown-item>
         </b-nav-item-dropdown>

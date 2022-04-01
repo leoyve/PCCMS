@@ -27,7 +27,7 @@
 			<br>
 			<caseSatisfactionInfo/>
 			<b-form-row class="justify-content-end">
-				<b-button size="md" variant="success" @click="uploadPhoto()">新增</b-button>
+				<b-button size="md" variant="success" @click="gotoParam('ChangePhotoReview',{addFlag:true})">新增</b-button>
 			</b-form-row>
 			<br>
 			<casePhotoInfo/>

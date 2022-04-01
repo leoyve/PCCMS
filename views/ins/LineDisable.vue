@@ -1,5 +1,8 @@
 <template>
   <div>
+    <br>
+    <h3><strong>停用LineAPP通知</strong></h3>
+    <br>
     <b-container>
       <b-form-row class="justify-content-center text-light bg-primary"><h4><strong>LineAPP通知接收帳號一覽表</strong></h4></b-form-row>
       <b-form-row>
