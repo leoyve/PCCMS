@@ -1,5 +1,8 @@
 <template>
 	<div>
+		<br>
+		<h3><strong>啟用LineAPP通知服務人數統計表</strong></h3>
+		<br>
 		<b-container fluid>
 			<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>各主管機關啟用LineAPP通知服務人數統計表</strong></h4></b-form-row>
 			<b-form-row class="justify-content-end">

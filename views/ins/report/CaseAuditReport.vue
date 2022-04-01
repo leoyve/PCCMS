@@ -1,7 +1,10 @@
 <template>
 	<div>
+		<br>
+		<h3><strong>通報案件查核統計總表</strong></h3>
+		<br>
 		<b-container fluid>
-			<h2><font color="blue">各主管機關通報案件於通報後60天內辦理查核統計表</font></h2>
+			<h2><font color="blue"></font></h2>
 			<b-form-row>
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="通報日期" label-align-md="right">
 					<b-container>
@@ -28,7 +31,7 @@
 				</b-form-group>
 			</b-form-row>
 			<b-form-row class="justify-content-end">
-				<b-button size="sm" variant="success" @click="queryHandler" >查詢</b-button>
+				<b-button size="sm" variant="success" @click="queryHandler" >查詢</b-button>&nbsp;
 				<b-button size="sm" variant="outline-secondary" @click="reset">清除</b-button>
 			</b-form-row>
 		</b-container>
@@ -40,22 +43,22 @@
 				<b-form-row class="justify-content-end">
 				<b-table striped hover :items="items" :fields="fields" head-variant="warning">
 					<template #cell(submitCase)="row">
-						<a href="#" variant="primary" @click="toSee(row)" >{{row.item.submitCaseNum}}</a>
+						<a href="#" variant="primary" @click="gotoParam('ReportAuditList', {classFlag:false, ...row.item})" >{{row.item.submitCaseNum}}</a>
 					</template>
 					<template #cell(auditTotal)="row">
-						<a href="#" variant="primary" @click="toSee(row)" >{{row.item.auditNum}}</a>
+						<a href="#" variant="primary" @click="gotoParam('ReportAuditList', {classFlag:true, ...row.item})" >{{row.item.auditNum}}</a>
 					</template>
 					<template #cell(auditA)="row">
-						<a href="#" variant="primary" @click="toSee(row)" >{{row.item.auditANum}}</a>
+						<a href="#" variant="primary" @click="gotoParam('ReportAuditList', {classFlag:true, ...row.item})" >{{row.item.auditANum}}</a>
 					</template>
 					<template #cell(auditB)="row">
-						<a href="#" variant="primary" @click="toSee(row)" >{{row.item.auditBNum}}</a>
+						<a href="#" variant="primary" @click="gotoParam('ReportAuditList', {classFlag:true, ...row.item})" >{{row.item.auditBNum}}</a>
 					</template>
 					<template #cell(auditC)="row">
-						<a href="#" variant="primary" @click="toSee(row)" >{{row.item.auditCNum}}</a>
+						<a href="#" variant="primary" @click="gotoParam('ReportAuditList', {classFlag:true, ...row.item})" >{{row.item.auditCNum}}</a>
 					</template>
 					<template #cell(auditD)="row">
-						<a href="#" variant="primary" @click="toSee(row)" >{{row.item.auditDNum}}</a>
+						<a href="#" variant="primary" @click="gotoParam('ReportAuditList', {classFlag:true, ...row.item})" >{{row.item.auditDNum}}</a>
 					</template>
 				</b-table>
 				</b-form-row>
@@ -88,7 +91,7 @@ export default {
 				label:	'流水號'
 			},
 			{
-				key:	'action',
+				key:	'wkut',
 				label:	'主管機關',
 				thStyle: { width: "15%" },
 			},
@@ -146,12 +149,6 @@ export default {
 	}
  },
  methods: {
-	toSee(row){
-		//alert(item.pk);
-		console.log(row.item.wkut);
-		this.$router.push({name:'ReportCommonList',  params:{wkutName:	row.item.wkut}})
-		
-	},
  },
 
 }
