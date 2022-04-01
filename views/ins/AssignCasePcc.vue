@@ -1,7 +1,7 @@
 <template>
   <div>
     <br>
-    <b-container>
+    <b-container fluid>
       <b-container>
         <b-row>
           <b-col class="col-md-2 "><font color="red">*</font>主管機關</b-col>

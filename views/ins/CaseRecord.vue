@@ -2,8 +2,11 @@
 	<div>
 		<b-container >
 			<h2>登錄處理情形</h2>
-			<b-form-row class="justify-content-center">
-				<b-button size="sm" variant="info" @click="toPrint" >處理情形資料列印畫面</b-button>&ensp; &ensp; &ensp; &ensp; 
+			<b-form-row class="justify-content-end">
+				<b-button size="sm" variant="outline-secondary" @click="gotoParam('CaseInfoEdit')" >回上一頁</b-button>
+			</b-form-row>
+			<b-form-row class="justify-content-start">
+				<b-button size="sm" variant="info" @click="toPrint" >處理情形資料列印畫面</b-button>&ensp;
 				<b-button size="sm" variant="success" @click="test">產生處理情形資料檔案</b-button>
 			</b-form-row>
 			<br>
@@ -19,15 +22,15 @@
 		<div>
 			<b-container >
 				<b-form-row class="justify-content-end">
-					<b-button size="sm" variant="success" @click="toSee" >新增</b-button>
+					<b-button size="sm" variant="success" @click="gotoParam('CaseRecordEdit', {addFlag:true})" >新增</b-button>
 				</b-form-row>
 				<br>
-				<b-form-row class="justify-content-center text-light bg-dark"><h4><strong>主辦機關處理情形紀錄一覽表</strong></h4></b-form-row>
+				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>主辦機關處理情形紀錄一覽表</strong></h4></b-form-row>
 				<b-form-row class="justify-content-center">
 					<b-table striped hover :items="items" :fields="fields" head-variant="dark">
 						<template #cell(action)="row">
-							<b-button size="sm" variant="success" @click="toSee(row.item)">修改</b-button> &ensp; 
-							<b-button size="sm" variant="danger" @click="toSee(row.item)">刪除</b-button>
+							<b-button size="sm" variant="success" @click="gotoParam('CaseRecordEdit', {updateFlag:true, ...row.item})">修改</b-button> &ensp; 
+							<b-button size="sm" variant="danger" @click="deleteCheck(row.item)">刪除</b-button>
 						</template>
 						<template #cell(situation)="row">
 							<b-container>

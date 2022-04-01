@@ -1,7 +1,9 @@
 <template>
 	<div>
+		<br>
+		<h3><strong>展延結案日期</strong></h3>
+		<br>
 		<b-container >
-			<h2>展延結案日期</h2>
 			<b-row class="border border-dark">
 				<b-col class="col-md-2 ">原結案期限</b-col>
 				<b-col class="col-md-6 text-left">110年04月12日</b-col>
@@ -16,9 +18,9 @@
 				<b-col class="col-md-8 text-left"><b-form-textarea></b-form-textarea></b-col>
 			</b-row>
 			<br>
-			<b-form-row class="justify-content-center">
+			<b-form-row class="justify-content-end">
 				<b-button size="sm" variant="success" @click="queryHandler" >確認展延</b-button>&ensp; &ensp; &ensp; &ensp; 
-				<b-button size="sm" variant="secondary" @click="toSee">取消</b-button>
+				<b-button size="sm" variant="outline-secondary" @click="toSee">取消</b-button>
 			</b-form-row>
 		</b-container>
 		<br>

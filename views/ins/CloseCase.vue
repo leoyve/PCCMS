@@ -1,11 +1,21 @@
 <template>
 	<div>
-		<b-container >
-			<h2>申請結案</h2>
+		<br>
+		<h3><strong>申請結案</strong></h3>
+		<br>
+		<b-container fluid>
+			<b-form-row class="justify-content-end">
+				<!--新增按鈕民眾滿意度調查記錄(全都看的到)，讓機關可以進去回應，申請結案的時候幫他檢查這邊有沒有回覆-->
+				<b-button size="sm" variant="success" @click="gotoParam('SatisfactionList')" >民眾滿意度調查</b-button>&nbsp;
+				<b-button size="sm" variant="outline-secondary" @click="gotoParam('CaseInfoEdit')" >回上一頁</b-button>
+			</b-form-row>
+			<b-form-row class="justify-content-start">
+				<h5><font color='red'>請先就民眾滿意度調查紀錄資料中，表示不滿意、很不滿意或非常不滿意之原因，填寫回應說明。</font></h5>
+			</b-form-row>
 			<b-row class="border border-dark">
 				<b-col class="col-md-2 ">工程名稱</b-col>
 				<b-col class="col-md-6 text-left"><b-form-input></b-form-input></b-col>
-				<b-col class="col-md-4 text-left"><b-button size="sm" variant="success" @click="aa">查詢所屬標案</b-button></b-col>
+				<b-col class="col-md-4 text-left"><b-button size="sm" variant="info" @click="aa">查詢所屬標案</b-button></b-col>
 			</b-row>
 			<!-- 處理機關(由登入的使用者機關待入)-->
 			<b-row class="border border-dark">
@@ -37,7 +47,8 @@
 						v-model="picked"
 						:options="options"
 						name="radio-options"
-					></b-form-radio-group></b-col>
+					></b-form-radio-group>
+				</b-col>
 			</b-row>
 			<b-row class="border border-dark" v-show="true">
 				<b-col class="col-md-2 "><font color="red">*</font>通報民眾熱心程度評價(1.熱心配合協助辦理改善作業2.提供可資辨識之佐證資料3.通報後積極追蹤改善情形)：</b-col>
@@ -53,7 +64,7 @@
 			<b-form-row class="justify-content-center">
 				<!-- 有ID且撈出來有資料就進行修改，無ID也無資料直接新增 -->
 				<b-button size="sm" variant="success" @click="queryHandler" >送出申請</b-button>&ensp; &ensp; &ensp; &ensp; 
-				<b-button size="sm" variant="secondary" @click="toSee">取消</b-button>
+				<b-button size="sm" variant="outline-secondary" @click="reset">取消</b-button>
 			</b-form-row>
 		</b-container>
 		<br>
@@ -131,8 +142,13 @@ export default {
 </script>
 
 <style>
-.col-form-label {
-  background-color: #737373;
+.col-md-2{
+	background-color:blue;
+  color: white;
+  font-weight: bolder;
+}
+.col-md-4 {
+  background-color:white;
   color: white;
   font-weight: bolder;
 }

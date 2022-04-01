@@ -8,14 +8,12 @@
           <b-button size="md" variant="success" @click="gotoParam('CaseRecord')">登錄處理情況</b-button>&ensp;
           <b-button size="md" variant="success" @click="gotoParam('UploadCasePhoto')">上傳處理照片</b-button>&ensp; 
           <b-button size="md" variant="success" @click="gotoParam('CloseCase')">申請結案作業</b-button>&ensp; 
-          <!--新增按鈕民眾滿意度調查記錄(全都看的到)，讓機關可以進去回應，申請結案的時候幫他檢查這邊有沒有回覆-->
-          <b-button size="md" variant="success" @click="gotoParam('SatisfactionList')">民眾滿意度調查記錄</b-button>&ensp; 
           <!--展延結案日期:主管機關、工程會-->
           <!--修改通報案件、刪除通報案件、補新增滿意度:工程會-->
           <b-button size="md" variant="success" @click="gotoParam('ExtendCloseDate')">展延結案日期</b-button>&ensp; 
           <b-button size="md" variant="success" @click="gotoParam('AddSatisfaction',{defaultText:'督工系統管理者代為新增！'})">補新增滿意度</b-button>&ensp;
           <b-button size="md" variant="danger" @click="deleteCheck()">刪除通報案件</b-button>&ensp;
-          <b-button size="md" variant="outline-secondary" @click="goBack()">回上一頁</b-button>&ensp;
+          <b-button size="md" variant="outline-secondary" @click="gotoParam('CaseInfoQuery')">回上一頁</b-button>&ensp;
         </b-form-row>
         <br>
         <b-form-row class="justify-content-start">

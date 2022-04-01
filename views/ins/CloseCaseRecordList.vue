@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<!-- 有資料才顯示 -->
-		<b-container >
+		<b-container fluid>
 			<b-form-row class="justify-content-center text-light bg-dark"><h4><strong>結案申請及審查歷次紀錄一覽表</strong></h4></b-form-row>
 			<b-form-row class="justify-content-center">
 				<b-table striped hover :items="items" :fields="fields" head-variant="dark">
@@ -72,7 +72,7 @@ export default {
 	toSee(item){
 		//alert(item.pk);
 		console.log(item);
-		confirm('確認是否撤回?');
+		confirm('確認是否撤回?(只有在申請結案 && 結案申請還未被審查的時候才會出現)');
 	},
  },
 

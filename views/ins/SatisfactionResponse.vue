@@ -25,7 +25,7 @@
         <br>
         <b-form-row class="justify-content-end">
           <b-button size="sm" variant="success" @click="queryHandler" >送出填寫結果</b-button>&ensp;
-          <b-button size="sm" variant="secondary" @click="queryHandler" >取消</b-button>
+          <b-button size="sm" variant="outline-secondary" @click="goBack()" >取消</b-button>
         </b-form-row>
       </b-container>
       <br>

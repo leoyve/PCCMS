@@ -1,19 +1,20 @@
 <template>
 	<div>
+		<br>
+		<h3><strong>民眾滿意度調查一覽表</strong></h3>
+		<br>
 		<!-- 有資料才顯示 -->
 		<b-container >
-			<h3><strong>民眾滿意度調查一覽表</strong></h3>
-			<br>
-			<b-form-row class="justify-content-start">
-				<h6><font color='red'>1.請先就民眾滿意度調查紀錄資料中，表示不滿意、很不滿意或非常不滿意之原因，填寫回應說明。</font></h6>
+			<b-form-row class="justify-content-end">
+				<b-button size="sm" variant="outline-secondary" @click="gotoParam('CloseCase')" >回上一頁</b-button>
 			</b-form-row>
 			<b-form-row class="justify-content-start">
-				<h6><font color='red'>2.本案件通報民眾將可檢視您填寫之回應說明，填寫內容務請審慎具體，以有效疏解民眾疑慮及提升滿意度。</font></h6>
+				<h6><font color='red'>本案件通報民眾將可檢視您填寫之回應說明，填寫內容務請審慎具體，以有效疏解民眾疑慮及提升滿意度。</font></h6>
 			</b-form-row>
 		</b-container>
 		<br>
 		<b-container >
-			<b-form-row class="justify-content-center text-light bg-dark"><h4><strong>民眾滿意度調查及機關回應明紀錄資料</strong></h4></b-form-row>
+			<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>民眾滿意度調查及機關回應明紀錄資料</strong></h4></b-form-row>
 			<b-form-row class="justify-content-center">
 				<b-table striped hover :items="items" :fields="fields" head-variant="dark">
 					<template #cell(action)="row" >

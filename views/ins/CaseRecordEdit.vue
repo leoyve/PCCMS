@@ -27,15 +27,15 @@
 				<b-col class="col-md-2 ">處理情形</b-col>
 				<b-col class="col-md-8 text-left"><b-form-textarea></b-form-textarea></b-col>
 			</b-row>
-			<br>
-			<b-row class="justify-content-center">
-				<!-- 有ID且撈出來有資料就進行修改，無ID也無資料直接新增 -->
-				<b-button size="sm" variant="success" @click="queryHandler" >儲存</b-button>&ensp; &ensp; &ensp; &ensp; 
-				<b-button size="sm" variant="secondary" @click="toSee">取消</b-button>
-			</b-row>
 		</b-container>
 		<br>
-		
+		<b-container>
+			<b-row class="row justify-content-end" >
+				<b-button size="sm" variant="success" @click="add" v-show="addFlag">新增</b-button>&ensp; 
+				<b-button size="sm" variant="success" @click="update" v-show="updateFlag">修改</b-button>&ensp; 
+				<b-button size="sm" variant="outline-secondary" @click="goBack()">取消</b-button>
+			</b-row>
+		</b-container>
 
 	</div>
 </template>
@@ -47,7 +47,8 @@
 export default {
  data(){
 	return{
-		
+		addFlag: this.$route.params.addFlag == null ? false:this.$route.params.addFlag,
+		updateFlag: this.$route.params.updateFlag == null ? false:this.$route.params.updateFlag,
 	}
  },
  methods: {
