@@ -85,6 +85,9 @@ export default {
   },
   components:{
     facilityListTemp
+  },
+  mounted(){
+    console.log( this.$route.params.id)
   }
 
 }

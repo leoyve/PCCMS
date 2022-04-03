@@ -7,7 +7,7 @@
 			<b-dropdown-item @click="gotoParam('RankReport',)">維管排名</b-dropdown-item>
 			<b-dropdown-item @click="gotoParam('PublicFacilityEdit', {addFlag:true})">建立機關關鍵公共設施</b-dropdown-item>
 			<b-dropdown-item @click="gotoParam('OurFacilityQuery')">維護機關關鍵公共設施</b-dropdown-item>
-			<b-dropdown-item @click="gotoParam('')">機關/類別報表</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('FacilityTypeReport',)">機關/類別報表</b-dropdown-item>
 			<b-dropdown-item @click="gotoParam('')">統計分析</b-dropdown-item>
 			<b-dropdown-item @click="gotoParam('')">查詢機關刪除資料</b-dropdown-item>
         </b-nav-item-dropdown>
@@ -22,6 +22,20 @@
 
 <script>
 
+
+export default {
+  data(){
+    return{
+
+
+
+  }
+ },
+ methods:  {
+   
+  },
+
+}
 
 </script>
 
