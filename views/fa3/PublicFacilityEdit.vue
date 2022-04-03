@@ -5,7 +5,7 @@
     <br>
     <b-container fluid>
       <b-form-row class="justify-content-end ">
-        <b-button size="xs" variant="info" @click="add">機關代碼</b-button>
+        <b-button size="xs" variant="info" @click="wkutHelp()">機關代碼</b-button>
       </b-form-row>
       <b-form-row class="justify-content-center "><h4><strong><font color="blue">維護設施資訊(流水號:)</font></strong></h4></b-form-row>
       <br>
@@ -198,7 +198,11 @@ export default {
  methods:  {
    download(){
      alert('下載檔案');
-   }
+   },
+   wkutHelp(){
+      let routeUrl = this.$router.resolve({name:'WkutHelp'})
+      window.open(routeUrl.href, '_blank'); 
+    },
   },
 
 }

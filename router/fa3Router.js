@@ -53,6 +53,21 @@ module.exports = [
         name: 'FacilityQuery',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa3/FacilityQuery.vue')
       },
+      {
+        path: 'wkutHelp',
+        name: 'WkutHelp',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa3/WkutHelp.vue')
+      },
+      {
+        path: 'deleteFacility',
+        name: 'DeleteFacility',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa3/DeleteFacility.vue')
+      },
+      {
+        path: 'deleteFacilityQuery',
+        name: 'DeleteFacilityQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa3/DeleteFacilityQuery.vue')
+      },
     ],
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route

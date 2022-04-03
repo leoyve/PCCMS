@@ -7,7 +7,7 @@
 				<template #cell(action)="row">
 					<!--中央主管機關以及工程會才有刪除的按鈕-->
 					<b-button size="sm" variant="success" @click="gotoParam('PublicFacilityEdit', {updateFlag:true})">編輯</b-button>&nbsp;
-					<b-button size="sm" variant="danger" @click="deleteCheck(row.item)">刪除</b-button>
+					<b-button size="sm" variant="danger" @click="gotoParam('DeleteFacility', row.item)">刪除</b-button>
 				</template>
 				<template #cell(mym)="row">
 					<b-container>
@@ -62,7 +62,7 @@ export default {
 		// 這邊有給KEY的話，items也要換成KEY，否則取值會是undefined，這邊是要顯示的欄位，不顯示的放在ITEMS裡面就好
 		fields: [
 			{
-				key:	'id',
+				key:	'serial',
 				label:	'流水號'
 			},
 			{
@@ -134,7 +134,7 @@ export default {
    
   },
   mounted(){
-	//this.$forceUpdate();
+	this.items.forEach((items, index) => { items.serial = index + 1; });
   }
 
 }

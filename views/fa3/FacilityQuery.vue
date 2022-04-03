@@ -26,15 +26,12 @@ export default {
   },
   //mounted時元件就已經傳進去了，所以要在beforeMount就修改好要傳入的元件
   beforeMount(){
-    this.items = [{id:4, mainType:'環保設施', subType:'污水處理廠', equName:'大發污水處理廠', BOSCODE:'經濟部工業局', EBOSOCDE:'高雄臨海林園大發工業區聯合污水理廠', UBOSCODE:'經濟部工業局工業區環境保護中心',
-			OBOSCODE:'經濟部',year:0,month:6,fileYM:'110-02', fileDesc:'檔案說明', lastDate:'2021/12/31', status:'已依規定維護正常使用',
-			lastStatus:'每年自行簡易保養或委託專業廠商依契約內容執行設施維護管理作業，維護管理狀況良好，使用正常。'},
-		{id:5, mainType:'交通設施', subType:'道路', equName:'4-1道路', BOSCODE:'交通部', EBOSOCDE:'墾丁國家公園管理處', UBOSCODE:'內政部營建署',
-			OBOSCODE:'內政部',year:0,month:1, lastDate:'2022/03/31', status:'已依規定維護正常使用',
-			lastStatus:'本處道路開口契約廠商隨時機動進行道路設施之維護'},
-		{id:6, mainType:'環保設施', subType:'污水處理廠', equName:'大發污水處理廠', BOSCODE:'經濟部工業局', EBOSOCDE:'高雄臨海林園大發工業區聯合污水理廠', UBOSCODE:'經濟部工業局工業區環境保護中心',
-			OBOSCODE:'經濟部',year:0,month:6,fileYM:'110-02', fileDesc:'檔案說明', lastDate:'2021/12/31', status:'已依規定維護正常使用',
-			lastStatus:'每年自行簡易保養或委託專業廠商依契約內容執行設施維護管理作業，維護管理狀況良好，使用正常。'}  
+    this.items = [{mainType:'交通設施', subType:'邊坡', equName:'北坑巷(北坑幹G6746AC64台電桿號)5周邊', BOSCODE:'內政部', EBOSOCDE:'臺中市建設局養護工程處北北屯工程隊', UBOSCODE:'臺中市政府建設局',
+			OBOSCODE:'臺中市政府',year:0,month:1,fileYM:'110-02', fileDesc:'檔案說明', lastDate:'2021/12/31', status:'已依規定維護正常使用',
+			lastStatus:'定期巡查'},
+		{mainType:'水利設施', subType:'滯洪池', equName:'三舍滯洪池', BOSCODE:'經濟部', EBOSOCDE:'臺南市政府水利局水門抽水站管理科', UBOSCODE:'臺南市政府水利局',
+			OBOSCODE:'臺南市政府',year:0,month:7, lastDate:'2022/03/31', status:'已依規定維護正常使用',
+			lastStatus:'依契約規定辦理維護'},
 		];
 
   }
