@@ -44,9 +44,14 @@ module.exports = [
         component: () => import(/* webpackChunkName: "about" */ '../views/fa3/FacilityTypeReport.vue')
       },
       {
-        path: 'facilityListTemp/:id',
-        name: 'FacilityListTemp',
-        component: () => import(/* webpackChunkName: "about" */ '../views/fa3/FacilityListTemp.vue')
+        path: 'OurFacilityQuery',
+        name: 'OurFacilityQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa3/OurFacilityQuery.vue')
+      },
+      {
+        path: 'facilityQuery',
+        name: 'FacilityQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa3/FacilityQuery.vue')
       },
     ],
     // route level code-splitting
