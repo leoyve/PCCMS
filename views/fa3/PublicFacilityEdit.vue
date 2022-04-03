@@ -98,10 +98,10 @@
       </b-container>
     </b-container>
     <br>
-    <b-container v-show="addFlag" fluid>
+    <b-container v-show="updateFlag" fluid>
       <b-form-row class="justify-content-center "><h2><strong><font color="blue">維護紀錄</font></strong></h2></b-form-row>
       <b-form-row class="justify-content-end ">
-        <b-button size="xs" variant="success" @click="add">新增</b-button>
+        <b-button size="xs" variant="success" @click="gotoParam('UploadMaintaceRecord')">新增</b-button>
       </b-form-row>
       <br>
       <b-form-row class="justify-content-center ">
@@ -114,10 +114,10 @@
       </b-form-row>
     </b-container>
     <br>
-    <b-container v-show="addFlag" fluid>
+    <b-container v-show="updateFlag" fluid>
       <b-form-row class="justify-content-center "><h2><strong><font color="blue">訪談紀錄</font></strong></h2></b-form-row>
       <b-form-row class="justify-content-end ">
-        <b-button size="xs" variant="success" @click="add">新增</b-button>
+        <b-button size="xs" variant="success" @click="gotoParam('UploadInterviewRecord')">新增</b-button>
       </b-form-row>
       <br>
       <b-form-row class="justify-content-center ">
@@ -206,6 +206,12 @@ export default {
 <style>
 .col-md-2 {
   background-color: rgb(0, 153, 255);
+  color: white;
+  text-align: left;
+}
+
+.col-md-4 {
+  background-color:white;
   color: white;
   text-align: left;
 }
