@@ -52,7 +52,7 @@
 
 
 export default {
-  props:['mountFlag', 'replaceField', 'replaceItems'],
+  //props:['replaceField', 'replaceItems'],
   data(){
 	
     return{
@@ -60,30 +60,16 @@ export default {
 		perPage: 1,
 		currentPage: 1,
 		// 這邊有給KEY的話，items也要換成KEY，否則取值會是undefined，這邊是要顯示的欄位，不顯示的放在ITEMS裡面就好
-		fields: this.replaceField,
-		items: this.replaceItems,
+		fields: this.$route.params.replaceField,
+		items: this.$route.params.replaceItems,
   }
  },
  methods:  {
    
   },
   mounted(){
-		
-	if(this.mountFlag){
-		this.items=[
-		{id:1, mainType:'環保設施', subType:'污水處理廠', equName:'大發污水處理廠', BOSCODE:'經濟部工業局', EBOSOCDE:'高雄臨海林園大發工業區聯合污水理廠', UBOSCODE:'經濟部工業局工業區環境保護中心',
-			OBOSCODE:'經濟部',year:0,month:6,fileYM:'110-02', fileDesc:'檔案說明', lastDate:'2021/12/31', status:'已依規定維護正常使用',
-			lastStatus:'每年自行簡易保養或委託專業廠商依契約內容執行設施維護管理作業，維護管理狀況良好，使用正常。'},
-		{id:2, mainType:'交通設施', subType:'道路', equName:'4-1道路', BOSCODE:'交通部', EBOSOCDE:'墾丁國家公園管理處', UBOSCODE:'內政部營建署',
-			OBOSCODE:'內政部',year:0,month:1, lastDate:'2022/03/31', status:'已依規定維護正常使用',
-			lastStatus:'本處道路開口契約廠商隨時機動進行道路設施之維護'},
-		{id:3, mainType:'環保設施', subType:'污水處理廠', equName:'大發污水處理廠', BOSCODE:'經濟部工業局', EBOSOCDE:'高雄臨海林園大發工業區聯合污水理廠', UBOSCODE:'經濟部工業局工業區環境保護中心',
-			OBOSCODE:'經濟部',year:0,month:6,fileYM:'110-02', fileDesc:'檔案說明', lastDate:'2021/12/31', status:'已依規定維護正常使用',
-			lastStatus:'每年自行簡易保養或委託專業廠商依契約內容執行設施維護管理作業，維護管理狀況良好，使用正常。'}, ];
-	}
-
-}
-	
+	this.$forceUpdate();
+  }
 
 }
 </script>

@@ -16,7 +16,7 @@
 
       </b-navbar-nav>
     </b-navbar>
-    <router-view/>
+    <router-view :key="$route.fullPath"/>
   </div>
 </template>
 
