@@ -3,7 +3,7 @@
     <br>
     <h3><strong>維護本機關關鍵公共設施</strong></h3>
     <br>
-    <facilityListTemp :replaceItems="items"/>
+    <facilityListTemp :replaceItems="items" :buttonFlag="true"/>
     <br>
   </div>
 </template>

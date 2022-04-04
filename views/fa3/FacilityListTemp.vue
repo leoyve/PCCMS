@@ -6,8 +6,8 @@
 			<b-table striped hover :items="items" :fields="fields" head-variant="dark">
 				<template #cell(action)="row">
 					<!--中央主管機關以及工程會才有刪除的按鈕-->
-					<b-button size="sm" variant="success" @click="gotoParam('PublicFacilityEdit', {updateFlag:true})">編輯</b-button>&nbsp;
-					<b-button size="sm" variant="danger" @click="gotoParam('DeleteFacility', row.item)">刪除</b-button>
+					<b-button size="sm" variant="success" @click="gotoParam('PublicFacilityEdit', {updateFlag:true})" v-show="buttonFlag">編輯</b-button>&nbsp;
+					<b-button size="sm" variant="danger" @click="gotoParam('DeleteFacility', row.item)"  v-show="buttonFlag">刪除</b-button>
 				</template>
 				<template #cell(mym)="row">
 					<b-container>
@@ -52,7 +52,7 @@
 
 
 export default {
-  props:['replaceItems'],
+  props:['replaceItems','buttonFlag'],
   data(){
 	
     return{
