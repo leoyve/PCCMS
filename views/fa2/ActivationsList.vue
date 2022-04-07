@@ -8,6 +8,49 @@
 				<template #cell(action)="row">
 					<b-button size="sm" variant="outline-secondary" @click="gotoParam('AgencyDetail', row.item)">明細</b-button>
 				</template>
+				<template #cell(beforeReview)="row">
+					<b-container>
+						<b-row>
+							<b-col><strong><font color="red">資料已有修改</font></strong></b-col>
+						</b-row>
+						<b-row>
+							<b-col><strong>主辦機關</strong></b-col>
+						</b-row>
+						<b-row  v-if="row.item.currentForm.a1 != null">
+							<b-col>{{row.item.currentForm.a1}}</b-col>
+						</b-row>
+						<b-row v-if="row.item.currentForm.a1 != null">
+							<b-col>{{row.item.currentForm.a2}}</b-col>
+						</b-row>
+						<b-row v-if="row.item.currentForm.a1 == null">
+							<b-col><strong><font color="red">未函報</font></strong></b-col>
+						</b-row>
+						<b-row>
+							<b-col><strong>主辦機關</strong></b-col>
+						</b-row>
+						<b-row>
+							<b-col>{{row.item.currentForm.b1}}</b-col>
+						</b-row>
+						<b-row>
+							<b-col>{{row.item.currentForm.b2}}</b-col>
+						</b-row>
+						<b-row v-if="row.item.currentForm.b1 == null">
+							<b-col><strong><font color="red">未核轉</font></strong></b-col>
+						</b-row>
+						<b-row>
+							<b-col><strong>中央目的事業主管機關：</strong></b-col>
+						</b-row>
+						<b-row>
+							<b-col>{{row.item.currentForm.c1}}</b-col>
+						</b-row>
+						<b-row>
+							<b-col>{{row.item.currentForm.c2}}</b-col>
+						</b-row>
+						<b-row v-if="row.item.currentForm.c1 == null">
+							<b-col><strong><font color="red">未核轉</font></strong></b-col>
+						</b-row>
+					</b-container>
+				</template>
 				<template #cell(currentReview)="row">
 					<b-container>
 						<b-row>

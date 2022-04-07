@@ -16,9 +16,6 @@
           <b-button size="md" variant="outline-secondary" @click="gotoParam('CaseInfoQuery')">回上一頁</b-button>&ensp;
         </b-form-row>
         <br>
-        <b-form-row class="justify-content-start">
-          
-        </b-form-row>
       </b-container>
       <br>
       <h2 class="text-left"><font color="red">通報案件基本資料</font></h2>

@@ -13,6 +13,16 @@ module.exports = [
         name: 'NewActivations',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa2/NewActivations.vue')
       },
+      {
+        path: 'SimplyCaseCreate',
+        name: 'SimplyCaseCreate',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/SimplyCaseCreate.vue')
+      },
+      {
+        path: 'activationsMoveIn',
+        name: 'ActivationsMoveIn',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/ActivationsMoveIn.vue')
+      },
      
     ],
     // route level code-splitting
