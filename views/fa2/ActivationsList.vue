@@ -8,8 +8,8 @@
 				<template #cell(action)="row">
 					<b-button size="sm" variant="outline-secondary" @click="gotoParam('ActivationsManager', row.item)">明細</b-button>
 				</template>
-				<template #cell(beforeReview)="row">
-					<b-container >
+				<template #cell(beforeReview)="row" >
+					<b-container v-if="row.item.beforeForm.a1 != null">
 						<b-row v-if="row.item.beforeForm.a1 != null">
 							<b-col><strong>主辦機關</strong></b-col>
 						</b-row>

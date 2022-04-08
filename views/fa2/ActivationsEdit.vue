@@ -94,7 +94,7 @@
         </b-row>
         <b-row class="border border-dark">
           <b-col class="col-md-2 ">核定之計畫基本資料是否一併修改工程會專用<font color="red">工程會專用</font></b-col>
-          <b-col class="col-md-10 text-left"><b-checkbox/></b-col>
+          <b-col class="col-md-10 text-left"><b-checkbox>確認一併修改核定之計畫活化工作基本資料</b-checkbox></b-col>
         </b-row>
         <br>
       </b-container>

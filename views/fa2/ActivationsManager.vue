@@ -25,7 +25,11 @@
       <activationsInfo :detailFlag="true"/>
       <br>
       <h2 class="text-left"><font color="blue">貳、活化工作基本資料</font></h2>
-      <workDataInfo/>
+		<b-form-row class="justify-content-end">
+			<b-button size="sm" variant="success"  @click="gotoParam('NewWorkData')" >新增活化工作</b-button>&nbsp;&nbsp;
+		</b-form-row>
+		<br>
+      <workDataInfo :modifyFlag="true"/>
       <br>
       <h2 class="text-left"><font color="blue">參、活化工作里程碑</font></h2>
       <workMilestoneInfo/>

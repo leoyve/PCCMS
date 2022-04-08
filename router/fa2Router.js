@@ -33,6 +33,16 @@ module.exports = [
         name: 'ActivationsEdit',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa2/ActivationsEdit.vue')
       },
+      {
+        path: 'newWorkData',
+        name: 'NewWorkData',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/NewWorkData.vue')
+      },
+      {
+        path: 'workDataEdit',
+        name: 'WorkDataEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/WorkDataEdit.vue')
+      },
      
     ],
     // route level code-splitting
