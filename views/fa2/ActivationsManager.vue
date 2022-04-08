@@ -32,7 +32,11 @@
       <workDataInfo :modifyFlag="true"/>
       <br>
       <h2 class="text-left"><font color="blue">參、活化工作里程碑</font></h2>
-      <workMilestoneInfo/>
+		<b-form-row class="justify-content-end">
+			<b-button size="sm" variant="success"  @click="gotoParam('WorkMilestoneEdit', {addFlag:true})" >新增工作里程碑</b-button>&nbsp;&nbsp;
+		</b-form-row>
+		<br>
+      <workMilestoneInfo :modifyFlag="true"/>
       <br>
       <h2 class="text-left"><font color="blue">肆、各月累計預定執行經費</font></h2>
       <workExpensesInfo/>

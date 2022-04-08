@@ -2,10 +2,6 @@
   <div>
     <br>
       <b-container fluid>
-        <b-form-row class="justify-content-end">
-          <b-button size="sm" variant="success"  @click="modify()" >修改</b-button>&nbsp;&nbsp;
-          <b-button size="sm" variant="outline-secondary"  @click="goBack()" >取消</b-button>&nbsp;&nbsp;
-        </b-form-row>
         <br>
         <b-row class="justify-content-start">
           <b-col class="text-left"><h5><font color="red">本項計畫活化經費為7600千元，目前已填報之活化工作經費為7600千元，可使用餘額為0千元。</font></h5></b-col>
@@ -75,6 +71,11 @@
           <b-col class="col-md-2 ">核定之計畫基本資料是否一併修改工程會專用<font color="red">工程會專用</font></b-col>
           <b-col class="col-md-10 text-left"><b-checkbox>確認一併修改核定之計畫活化工作基本資料</b-checkbox></b-col>
         </b-row>
+        <br>
+        <b-form-row class="justify-content-end">
+          <b-button size="sm" variant="success"  @click="modify()" >修改</b-button>&nbsp;&nbsp;
+          <b-button size="sm" variant="outline-secondary"  @click="goBack()" >取消</b-button>&nbsp;&nbsp;
+        </b-form-row>
       </b-container>
       <br>
   </div>

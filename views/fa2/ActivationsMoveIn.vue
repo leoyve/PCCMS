@@ -5,8 +5,10 @@
       <br>
       <b-container fluid>
         <b-form-row class="justify-content-end">
-          <b-button size="sm" variant="success"  @click="check()" >轉入</b-button>&nbsp;&nbsp;
           <b-button size="sm" variant="outline-secondary" @click="goBack()">回上一頁</b-button>
+        </b-form-row>
+        <b-form-row class="justify-content-start">
+          <b-button size="lg" variant="success"  @click="check()" >轉入</b-button>&nbsp;&nbsp;
         </b-form-row>
         <br>
       </b-container>

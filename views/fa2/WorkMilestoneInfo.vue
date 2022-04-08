@@ -4,6 +4,10 @@
         <b-form-row class="row justify-content-center bg-secondary text-light"><h3>活化工作里程碑一覽表</h3></b-form-row>
         <b-form-row class="row justify-content-end">
           <b-table striped hover :items="items" :fields="fields" >
+            <template #cell(action)="row" v-if="modifyFlag">
+              <b-button size="sm" variant="success" @click="gotoParam('WorkMilestoneList', row.item)">明細</b-button>&nbsp;
+              <b-button size="sm" variant="danger" @click="deleteCheck(row.item)">刪除</b-button>
+            </template>
             <template #cell(milestone)="row">
               <b-container >
                 <b-row v-for="(milestone, index) in row.item.mileList" :key="milestone.key">
@@ -22,6 +26,7 @@
 
 
 export default {
+  props:['modifyFlag'],
   data(){
     return{
       fields: [
@@ -58,6 +63,10 @@ export default {
 				label:	'工作說明資料',
         tdClass: 'text-left',
         thStyle: { width: "30%" },
+			},
+      {
+				key:	'action',
+				label:	''
 			},
 		],
 		items:[

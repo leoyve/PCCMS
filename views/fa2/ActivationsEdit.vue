@@ -2,10 +2,6 @@
   <div>
     <br>
       <b-container fluid>
-        <b-form-row class="justify-content-end">
-          <b-button size="sm" variant="success"  @click="modify()" >修改</b-button>&nbsp;&nbsp;
-          <b-button size="sm" variant="outline-secondary"  @click="goBack()" >取消</b-button>&nbsp;&nbsp;
-        </b-form-row>
         <br>
         <b-row class="border border-dark">
           <b-col class="col-md-12 bg-secondary text-light"><h3>活化補助工作計畫基本資料表</h3></b-col>
@@ -97,7 +93,12 @@
           <b-col class="col-md-10 text-left"><b-checkbox>確認一併修改核定之計畫活化工作基本資料</b-checkbox></b-col>
         </b-row>
         <br>
+        <b-form-row class="justify-content-end">
+          <b-button size="sm" variant="success"  @click="modify()" >修改</b-button>&nbsp;&nbsp;
+          <b-button size="sm" variant="outline-secondary"  @click="goBack()" >取消</b-button>&nbsp;&nbsp;
+        </b-form-row>
       </b-container>
+      <br>
   </div>
 </template>
 

@@ -2,11 +2,6 @@
   <div>
     <br>
       <b-container fluid>
-        <b-form-row class="justify-content-end">
-          <b-button size="sm" variant="success"  @click="modify()" >新增</b-button>&nbsp;&nbsp;
-          <b-button size="sm" variant="outline-secondary"  @click="goBack()" >取消</b-button>&nbsp;&nbsp;
-        </b-form-row>
-        <br>
         <b-row class="justify-content-start">
           <b-col class="text-left"><h5><font color="red">本項計畫活化經費為7600千元，目前已填報之活化工作經費為7600千元，可使用餘額為0千元。</font></h5></b-col>
         </b-row>
@@ -51,7 +46,12 @@
           </b-col>
         </b-row>
         <br>
+         <b-form-row class="justify-content-end">
+          <b-button size="sm" variant="success"  @click="modify()" >新增</b-button>&nbsp;&nbsp;
+          <b-button size="sm" variant="outline-secondary"  @click="goBack()" >取消</b-button>&nbsp;&nbsp;
+        </b-form-row>
       </b-container>
+      <br>
   </div>
 </template>
 
