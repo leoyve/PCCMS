@@ -84,6 +84,16 @@
           <b-col class="col-md-2 ">經費編列整體說明（含財務自償性分析）</b-col>
           <b-col class="col-md-10 text-left">1.本市停二立體停車場之拆除、基地整理及劃設停車格之工程費用擬由本市「停車場作業基金專戶」項下支應。 2.本市「停車場作業基金專戶」收入來源為路邊及路外停車場委託經營之權利金，107年預估收入為639萬元。 3.因本市尚有多項停車場租金及工程待執行，皆運用上開專戶基金辦理，故本案亟需補助款挹注，以利順利拆除、活化。</b-col>
         </b-row>
+        <b-row class="border border-dark" v-show="detailFlag">
+          <b-col class="col-md-2 ">計畫基本資料是否上鎖</b-col>
+          <b-col class="col-md-10 text-left">是</b-col>
+        </b-row>
+        <b-row class="border border-dark" v-show="detailFlag">
+          <b-col class="col-md-2 ">工程會計畫基本資料上鎖日期</b-col>
+          <b-col class="col-md-4 text-left">111/02/01</b-col>
+          <b-col class="col-md-2 ">工程會計畫執行資料上鎖日期</b-col>
+          <b-col class="col-md-4 text-left">111/03/01</b-col>
+        </b-row>
       </b-container>
   </div>
 </template>
@@ -91,8 +101,8 @@
 
 <script>
 
-
 export default {
+  props:["detailFlag"],
   data(){
     return{
      

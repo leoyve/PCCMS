@@ -6,7 +6,7 @@
 		<b-form-row>
 			<b-table striped hover :items="items" :fields="fields" head-variant="dark">
 				<template #cell(action)="row">
-					<b-button size="sm" variant="outline-secondary" @click="gotoParam('AgencyDetail', row.item)">明細</b-button>
+					<b-button size="sm" variant="outline-secondary" @click="gotoParam('ActivationsManager', row.item)">明細</b-button>
 				</template>
 				<template #cell(beforeReview)="row">
 					<b-container >

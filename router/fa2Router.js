@@ -23,6 +23,16 @@ module.exports = [
         name: 'ActivationsMoveIn',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa2/ActivationsMoveIn.vue')
       },
+      {
+        path: 'activationsManager',
+        name: 'ActivationsManager',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/ActivationsManager.vue')
+      },
+      {
+        path: 'activationsEdit',
+        name: 'ActivationsEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/ActivationsEdit.vue')
+      },
      
     ],
     // route level code-splitting
