@@ -7,12 +7,24 @@
 		<b-form-row class="justify-content-end">
 			<b-button size="sm" variant="outline-secondary" @click="gotoParam('ActivationsQuery')">回上一頁</b-button>
         </b-form-row>
+		<br>
         <b-form-row class="justify-content-start">
-			<b-button size="sm" variant="info"  @click="deleteCheck()" >檢視活化計畫資料表</b-button>&nbsp;&nbsp;
-			<b-button size="sm" variant="primary"  @click="deleteCheck()" >產生活化計畫Word檔案</b-button>&nbsp;&nbsp;
-			<b-button size="sm" variant="primary"  @click="deleteCheck()" >組合產生要點Word檔案(發函送審用)</b-button>&nbsp;&nbsp;
-			<b-button size="sm" variant="success"  @click="deleteCheck()" >提送本次填寫之計畫資料</b-button>&nbsp;&nbsp;
-			<b-button size="sm" variant="warning"  @click="deleteCheck()" >基本資料解鎖</b-button>&nbsp;&nbsp;
+			<b-col class="col-sm-8 text-left">
+				<!--有核定過後且資料有異動才會出現-->
+				<b-button size="sm" variant="info"  @click="reload()" >重新下載核定計畫資料並覆蓋</b-button>&nbsp;&nbsp;
+				<b-button size="sm" variant="success"  @click="gotoParam('WorkDataSubmit')" >提送本次填寫之計畫資料</b-button>&nbsp;&nbsp;
+				<!--審查主要是中央主管機關、工程會管理員也有(提送之後才有)-->
+				<b-button size="sm" variant="success"  @click="deleteCheck()" >審查</b-button>&nbsp;&nbsp;
+				<!--基本資料解鎖只有工程會有-->
+				<b-button size="sm" variant="warning"  @click="gotoParam('WorkDataLock')" >基本資料解鎖</b-button>&nbsp;&nbsp;
+			</b-col>
+			<b-col class="col-sm-4 text-right">
+				<!-- 這個感覺不需要
+				<b-button size="sm" variant="info"  @click="deleteCheck()" >檢視活化計畫資料表</b-button>&nbsp;&nbsp;
+				-->
+			<b-button size="sm" variant="primary"  @click="report()" >產生活化計畫Word檔案</b-button>&nbsp;&nbsp;
+			<b-button size="sm" variant="primary"  @click="report()" >組合產生要點Word檔案(發函送審用)</b-button>&nbsp;&nbsp;
+			</b-col>
         </b-form-row>
       <br>
       </b-container>
@@ -39,13 +51,19 @@
       <workMilestoneInfo :modifyFlag="true"/>
       <br>
       <h2 class="text-left"><font color="blue">肆、各月累計預定執行經費</font></h2>
-      <workExpensesInfo/>
+		<b-form-row class="justify-content-end">
+			<b-button size="sm" variant="success"  @click="gotoParam('WorkExpensesEdit', {addFlag:true})" >新增單月預定支用經費</b-button>&nbsp;&nbsp;
+		</b-form-row>
+		<br>
+      <workExpensesInfo :modifyFlag="true"/>
       <br>
       <h2 class="text-left"><font color="blue">伍、上傳相關照片</font></h2>
-      <workPhotoInfo/>
+		<b-form-row class="justify-content-end">
+			<b-button size="sm" variant="success"  @click="gotoParam('WorkPhotoEdit', {addFlag:true})" >上傳照片</b-button>&nbsp;&nbsp;
+		</b-form-row>
+		<br>
+      <workPhotoListInfo :modifyFlag="true"/>
       <br>
-      <h2 class="text-left"><font color="blue">陸、歷次送審及核定情形</font></h2>
-      <workSubmitInfo/>
     <br>
   </div>
 </template>
@@ -56,8 +74,8 @@ import activationsInfo from './ActivationsInfo.vue'
 import workDataInfo from './WorkDataInfo.vue'
 import workMilestoneInfo from './WorkMilestoneInfo.vue'
 import workExpensesInfo from './WorkExpensesInfo.vue'
-import workPhotoInfo from './WorkPhotoInfo.vue'
-import workSubmitInfo from './WorkSubmitInfo.vue'
+import workPhotoListInfo from './WorkPhotoListInfo.vue'
+
 
 
 
@@ -70,10 +88,16 @@ export default {
  methods:  {
    check(){
      confirm('確定是否轉入?');
+   },
+   report(){
+	alert('產生檔案下載');
+   },
+   reload(){
+	   confirm('如重行下載上次核定之計畫資料，目前已修改之資料將被覆蓋，無法恢復，是否重新載入?');
    }
   },
   components:{
-    activationsInfo,workDataInfo,workMilestoneInfo,workExpensesInfo,workPhotoInfo,workSubmitInfo
+    activationsInfo,workDataInfo,workMilestoneInfo,workExpensesInfo,workPhotoListInfo
   }
 
 }

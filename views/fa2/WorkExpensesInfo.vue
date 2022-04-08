@@ -4,6 +4,10 @@
         <b-form-row class="row justify-content-center bg-secondary text-light"><h3>各月預定支用經費一覽表</h3></b-form-row>
         <b-form-row class="row justify-content-end">
           <b-table striped hover :items="items" :fields="fields" >
+            <template #cell(action)="row" v-if="modifyFlag">
+              <b-button size="sm" variant="success" @click="gotoParam('WorkExpensesEdit', {updateFlag:true,...row.item})">修改</b-button>&nbsp;
+              <b-button size="sm" variant="danger" @click="deleteCheck(row.item)">刪除</b-button>
+            </template>
           </b-table>
         </b-form-row>
       </b-container>
@@ -15,6 +19,7 @@
 
 
 export default {
+  props:['modifyFlag'],
   data(){
     return{
       fields: [
@@ -35,7 +40,10 @@ export default {
 				label:	'當月執行經費用途說明',
         tdClass: 'text-left',
 			},
-			
+			{
+        key:	'action',
+				label:	'',
+      }
 		],
 		items:[
       { SYRMNTH:'10701',PEXP:'200',MEMO:'	辦理頭份鎮停二立體停車場拆除工程上網公開招標事宜'},

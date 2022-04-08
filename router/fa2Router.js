@@ -53,6 +53,26 @@ module.exports = [
         name: 'WorkMilestoneList',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa2/WorkMilestoneList.vue')
       },
+      {
+        path: 'workExpensesEdit',
+        name: 'WorkExpensesEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/WorkExpensesEdit.vue')
+      },
+      {
+        path: 'workPhotoEdit',
+        name: 'WorkPhotoEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/WorkPhotoEdit.vue')
+      },
+      {
+        path: 'workDataSubmit',
+        name: 'WorkDataSubmit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/WorkDataSubmit.vue')
+      },
+      {
+        path: 'workDataLock',
+        name: 'WorkDataLock',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/WorkDataLock.vue')
+      },
      
     ],
     // route level code-splitting
