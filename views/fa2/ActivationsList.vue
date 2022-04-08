@@ -9,7 +9,53 @@
 					<b-button size="sm" variant="outline-secondary" @click="gotoParam('AgencyDetail', row.item)">明細</b-button>
 				</template>
 				<template #cell(beforeReview)="row">
-					<b-container>
+					<b-container >
+						<b-row v-if="row.item.beforeForm.a1 != null">
+							<b-col><strong>主辦機關</strong></b-col>
+						</b-row>
+						<b-row>
+							<b-col>{{row.item.beforeForm.a1}}</b-col>
+						</b-row>
+						<b-row>
+							<b-col>{{row.item.beforeForm.a2}}</b-col>
+						</b-row>
+						<b-row v-if="row.item.beforeForm.b1 != null">
+							<b-col><strong>主管機關</strong></b-col>
+						</b-row>
+						<b-row>
+							<b-col>{{row.item.beforeForm.b1}}</b-col>
+						</b-row>
+						<b-row>
+							<b-col>{{row.item.beforeForm.b2}}</b-col>
+						</b-row>
+						<b-row v-if="row.item.beforeForm.c1 != null">
+							<b-col><strong>中央目的事業主管機關：</strong></b-col>
+						</b-row>
+						<b-row>
+							<b-col>{{row.item.beforeForm.c1}}</b-col>
+						</b-row>
+						<b-row>
+							<b-col>{{row.item.beforeForm.c2}}</b-col>
+						</b-row>
+						<b-row v-if="row.item.beforeForm.d1 != null">
+							<b-col><strong>工程會</strong></b-col>
+						</b-row>
+						<b-row>
+							<b-col>{{row.item.beforeForm.d1}}</b-col>
+						</b-row>
+						<b-row>
+							<b-col>{{row.item.beforeForm.d2}}</b-col>
+						</b-row>
+						<b-row v-if="row.item.beforeForm.agree">
+							<b-col><strong><font color="blue">核定同意</font></strong></b-col>
+						</b-row>
+						<b-row v-if="!row.item.beforeForm.agree">
+							<b-col><strong>核定不同意</strong></b-col>
+						</b-row>
+					</b-container>
+				</template>
+				<template #cell(currentReview)="row">
+					<b-container v-if="row.item.diff">
 						<b-row>
 							<b-col><strong><font color="red">資料已有修改</font></strong></b-col>
 						</b-row>
@@ -26,7 +72,7 @@
 							<b-col><strong><font color="red">未函報</font></strong></b-col>
 						</b-row>
 						<b-row>
-							<b-col><strong>主辦機關</strong></b-col>
+							<b-col><strong>主管機關</strong></b-col>
 						</b-row>
 						<b-row>
 							<b-col>{{row.item.currentForm.b1}}</b-col>
@@ -50,47 +96,9 @@
 							<b-col><strong><font color="red">未核轉</font></strong></b-col>
 						</b-row>
 					</b-container>
-				</template>
-				<template #cell(currentReview)="row">
-					<b-container>
+					<b-container v-if="!row.item.diff">
 						<b-row>
-							<b-col><strong><font color="red">資料已有修改</font></strong></b-col>
-						</b-row>
-						<b-row>
-							<b-col><strong>主辦機關</strong></b-col>
-						</b-row>
-						<b-row  v-if="row.item.currentForm.a1 != null">
-							<b-col>{{row.item.currentForm.a1}}</b-col>
-						</b-row>
-						<b-row v-if="row.item.currentForm.a1 != null">
-							<b-col>{{row.item.currentForm.a2}}</b-col>
-						</b-row>
-						<b-row v-if="row.item.currentForm.a1 == null">
-							<b-col><strong><font color="red">未函報</font></strong></b-col>
-						</b-row>
-						<b-row>
-							<b-col><strong>主辦機關</strong></b-col>
-						</b-row>
-						<b-row>
-							<b-col>{{row.item.currentForm.b1}}</b-col>
-						</b-row>
-						<b-row>
-							<b-col>{{row.item.currentForm.b2}}</b-col>
-						</b-row>
-						<b-row v-if="row.item.currentForm.b1 == null">
-							<b-col><strong><font color="red">未核轉</font></strong></b-col>
-						</b-row>
-						<b-row>
-							<b-col><strong>中央目的事業主管機關：</strong></b-col>
-						</b-row>
-						<b-row>
-							<b-col>{{row.item.currentForm.c1}}</b-col>
-						</b-row>
-						<b-row>
-							<b-col>{{row.item.currentForm.c2}}</b-col>
-						</b-row>
-						<b-row v-if="row.item.currentForm.c1 == null">
-							<b-col><strong><font color="red">未核轉</font></strong></b-col>
+							<b-col><font color="blue">資料未有修改</font></b-col>
 						</b-row>
 					</b-container>
 				</template>
