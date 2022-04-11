@@ -14,7 +14,7 @@
 				<b-button size="sm" variant="info"  @click="reload()" >重新下載核定計畫資料並覆蓋</b-button>&nbsp;&nbsp;
 				<b-button size="sm" variant="success"  @click="gotoParam('WorkDataSubmit')" >提送本次填寫之計畫資料</b-button>&nbsp;&nbsp;
 				<!--審查主要是中央主管機關、工程會管理員也有(提送之後才有)-->
-				<b-button size="sm" variant="success"  @click="deleteCheck()" >審查</b-button>&nbsp;&nbsp;
+				<b-button size="sm" variant="success"  @click="gotoParam('WorkDataBosSubmit')" >審查</b-button>&nbsp;&nbsp;
 				<!--基本資料解鎖只有工程會有-->
 				<b-button size="sm" variant="warning"  @click="gotoParam('WorkDataLock')" >基本資料解鎖</b-button>&nbsp;&nbsp;
 			</b-col>
@@ -64,6 +64,7 @@
 		<br>
       <workPhotoListInfo :modifyFlag="true"/>
       <br>
+      <reviewRecordInfo/>
     <br>
   </div>
 </template>
@@ -75,6 +76,8 @@ import workDataInfo from './WorkDataInfo.vue'
 import workMilestoneInfo from './WorkMilestoneInfo.vue'
 import workExpensesInfo from './WorkExpensesInfo.vue'
 import workPhotoListInfo from './WorkPhotoListInfo.vue'
+import reviewRecordInfo from './ReviewRecordInfo.vue'
+
 
 
 
@@ -97,7 +100,7 @@ export default {
    }
   },
   components:{
-    activationsInfo,workDataInfo,workMilestoneInfo,workExpensesInfo,workPhotoListInfo
+    activationsInfo,workDataInfo,workMilestoneInfo,workExpensesInfo,workPhotoListInfo,reviewRecordInfo
   }
 
 }

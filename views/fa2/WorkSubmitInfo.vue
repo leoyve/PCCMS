@@ -125,6 +125,7 @@ export default {
 				key:	'detail',
 				label:	'備註',
         tdClass: 'text-left',
+        thStyle: { width: "15%" },
 			},
 		],
 		items:[

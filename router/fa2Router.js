@@ -73,6 +73,16 @@ module.exports = [
         name: 'WorkDataLock',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa2/WorkDataLock.vue')
       },
+      {
+        path: 'activationsVersionDetail',
+        name: 'ActivationsVersionDetail',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/ActivationsVersionDetail.vue')
+      },
+      {
+        path: 'workDataBosSubmit',
+        name: 'WorkDataBosSubmit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/WorkDataBosSubmit.vue')
+      },
      
     ],
     // route level code-splitting

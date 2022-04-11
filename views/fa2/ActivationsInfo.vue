@@ -2,7 +2,7 @@
   <div>
       <b-container class="border border-dark" fluid>
         <b-row class="border border-dark">
-          <b-col class="col-md-12 ">活化補助工作計畫基本資料表</b-col>
+          <b-col class="col-md-12 bg-secondary text-light">活化補助工作計畫基本資料表</b-col>
         </b-row>
         <b-row class="border border-dark">
           <b-col class="col-md-2 text-dark">活化計畫編號</b-col>
