@@ -1,21 +1,21 @@
 <template>
 	<div>
-			<b-container >
-				<h3>通報案件上傳照片批次審查一覽表</h3>
-				<br>
-				<b-table striped hover :items="items" :fields="fields" head-variant="dark">
-					<template #cell(checkBar)="row">
-						<b-checkbox v-model="model"	@value="row.id"></b-checkbox>
-					</template>
-					<template #cell(photo)>
-						<b-img src="https://www.mdnkids.com/upload/images/20210703-06-09.jpg"	width='100'	height='100'></b-img>
-					</template>
-				</b-table>
-				<b-form-row class="justify-content-end">
-					<b-button size="sm" variant="success" @click="queryHandler" >送出批次審查結果</b-button>&nbsp;
-					<b-button size="sm" variant="outline-secondary" @click="goBack()" >取消</b-button>
-				</b-form-row>
-			</b-container>
+		<b-container fluid>
+			<h3>上傳照片批次審查一覽表</h3>
+			<br>
+			<b-table striped hover :items="items" :fields="fields" head-variant="dark">
+				<template #cell(checkBar)="row">
+					<b-checkbox v-model="model"	@value="row.id"></b-checkbox>
+				</template>
+				<template #cell(photo)>
+					<b-img src="https://www.mdnkids.com/upload/images/20210703-06-09.jpg"	width='100'	height='100'></b-img>
+				</template>
+			</b-table>
+			<b-form-row class="justify-content-end">
+				<b-button size="sm" variant="success" @click="queryHandler" >送出批次審查結果</b-button>&nbsp;
+				<b-button size="sm" variant="outline-secondary" @click="goBack()" >取消</b-button>
+			</b-form-row>
+		</b-container>
 	</div>
 </template>
 

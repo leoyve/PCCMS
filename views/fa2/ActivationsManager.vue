@@ -13,8 +13,8 @@
 				<!--有核定過後且資料有異動才會出現-->
 				<b-button size="sm" variant="info"  @click="reload()" >重新下載核定計畫資料並覆蓋</b-button>&nbsp;&nbsp;
 				<b-button size="sm" variant="success"  @click="gotoParam('WorkDataSubmit')" >提送本次填寫之計畫資料</b-button>&nbsp;&nbsp;
-				<!--審查主要是中央主管機關、工程會管理員也有(提送之後才有)-->
-				<b-button size="sm" variant="success"  @click="gotoParam('WorkDataBosSubmit')" >審查</b-button>&nbsp;&nbsp;
+				<!--審查主要是中央主管機關、工程會管理員也有(提送之後才有)，移到主管機關活化審核
+				<b-button size="sm" variant="success"  @click="gotoParam('WorkDataBosSubmit')" >審查</b-button>&nbsp;&nbsp;-->
 				<!--基本資料解鎖只有工程會有-->
 				<b-button size="sm" variant="warning"  @click="gotoParam('WorkDataLock')" >基本資料解鎖</b-button>&nbsp;&nbsp;
 			</b-col>
@@ -64,7 +64,8 @@
 		<br>
       <workPhotoListInfo :modifyFlag="true"/>
       <br>
-      <reviewRecordInfo/>
+      <!--核定後才會出現-->
+      <reviewRecordInfo />
     <br>
   </div>
 </template>
@@ -77,9 +78,6 @@ import workMilestoneInfo from './WorkMilestoneInfo.vue'
 import workExpensesInfo from './WorkExpensesInfo.vue'
 import workPhotoListInfo from './WorkPhotoListInfo.vue'
 import reviewRecordInfo from './ReviewRecordInfo.vue'
-
-
-
 
 
 export default {
@@ -101,6 +99,9 @@ export default {
   },
   components:{
     activationsInfo,workDataInfo,workMilestoneInfo,workExpensesInfo,workPhotoListInfo,reviewRecordInfo
+  },
+  mounted(){
+    alert("歷次核定版次一覽表核定後才會出現(修正已核定活化計畫)");
   }
 
 }

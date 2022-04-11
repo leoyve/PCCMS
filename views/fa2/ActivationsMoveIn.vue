@@ -40,9 +40,7 @@ import workDataInfo from './WorkDataInfo.vue'
 import workMilestoneInfo from './WorkMilestoneInfo.vue'
 import workExpensesInfo from './WorkExpensesInfo.vue'
 import workPhotoInfo from './WorkPhotoInfo.vue'
-import workSubmitInfo from './WorkSubmitInfo.vue'
-
-
+import workSubmitInfo from './WorkSubmitInfo'
 
 export default {
   data(){

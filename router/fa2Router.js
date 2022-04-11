@@ -83,6 +83,21 @@ module.exports = [
         name: 'WorkDataBosSubmit',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa2/WorkDataBosSubmit.vue')
       },
+      {
+        path: 'activationsReviseQuery',
+        name: 'ActivationsReviseQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/ActivationsReviseQuery.vue')
+      },
+      {
+        path: 'bosReviewList',
+        name: 'BosReviewList',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/BosReviewList.vue')
+      },
+      {
+        path: 'fa2PhotoReviewQuery',
+        name: 'Fa2PhotoReviewQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/Fa2PhotoReviewQuery.vue')
+      },
      
     ],
     // route level code-splitting

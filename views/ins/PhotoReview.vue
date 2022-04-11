@@ -17,7 +17,7 @@
           <b-col class="col-md"><b-form-input></b-form-input></b-col>
         </b-row>
         <b-row class="border border-dark">
-          <b-col class="col-md-2 ">督工照片審查結果</b-col>
+          <b-col class="col-md-2 ">上傳照片審查結果</b-col>
           <b-col class="col-md"><b-form-radio-group v-model="check2" :options="reviewResult" name="radio-validation-1"></b-form-radio-group></b-col>
         </b-row>
           <b-row class="border border-dark">
