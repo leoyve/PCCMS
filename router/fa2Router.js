@@ -98,6 +98,21 @@ module.exports = [
         name: 'Fa2PhotoReviewQuery',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa2/Fa2PhotoReviewQuery.vue')
       },
+      {
+        path: 'pccmReviewQuery',
+        name: 'PccmReviewQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/PccmReviewQuery.vue')
+      },
+      {
+        path: 'workDataPccmReview',
+        name: 'WorkDataPccmReview',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/WorkDataPccmReview.vue')
+      },
+      {
+        path: 'pccmReviewBatch',
+        name: 'PccmReviewBatch',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/PccmReviewBatch.vue')
+      },
      
     ],
     // route level code-splitting

@@ -8,7 +8,7 @@
           <b-button size="sm" variant="outline-secondary" @click="goBack()">回上一頁</b-button>
         </b-form-row>
       </b-container>
-      <h2 class="text-left"><font color="blue">壹、活化計畫基本資料 (核定版次:第2版)</font></h2>
+      <h2 class="text-left"><font color="blue">壹、活化計畫基本資料 <div v-if="this.$route.params.verFlag">(核定版次:第2版)</div></font></h2>
       <activationsInfo :detailFlag="false"/>
       <br>
       <h2 class="text-left"><font color="blue">貳、活化工作基本資料</font></h2>

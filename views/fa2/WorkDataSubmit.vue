@@ -60,8 +60,8 @@
 
 
 <script>
-import workSubmitInfo from './WorkSubmitInfo.vue'
 import workCompareInfo from './WorkCompareInfo.vue'
+import workSubmitInfo from './WorkSubmitInfo.vue'
 
 
 

@@ -5,7 +5,7 @@
         <b-form-row class="row justify-content-end">
           <b-table striped hover :items="items" :fields="fields" >
             <template #cell(action)="row">
-              <b-button size="sm" variant="info" @click="gotoParam('ActivationsVersionDetail', row.item)">查詢</b-button>&nbsp;
+              <b-button size="sm" variant="info" @click="gotoParam('ActivationsVersionDetail', {verFlag:true, ...row.item})">查詢</b-button>&nbsp;
             </template>
             <template #cell(pccm)="row">
               <b-container>
