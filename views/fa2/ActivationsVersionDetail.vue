@@ -1,13 +1,15 @@
 <template>
   <div>
       <br>
-      <b-form-row class="justify-content-center "><h2><strong>活化補助工作計畫核定版次資訊</strong></h2></b-form-row>
       <br>
       <b-container fluid>
         <b-form-row class="justify-content-end">
           <b-button size="sm" variant="outline-secondary" @click="goBack()">回上一頁</b-button>
         </b-form-row>
       </b-container>
+      <br>
+      <judgeInfo v-if="this.$route.params.judgeFlag"/>
+      <br>
       <h2 class="text-left"><font color="blue">壹、活化計畫基本資料 <div v-if="this.$route.params.verFlag">(核定版次:第2版)</div></font></h2>
       <activationsInfo :detailFlag="false"/>
       <br>
@@ -37,10 +39,7 @@ import workMilestoneInfo from './WorkMilestoneInfo.vue'
 import workExpensesInfo from './WorkExpensesInfo.vue'
 import workPhotoInfo from './WorkPhotoInfo.vue'
 import workSubmitInfo from './WorkSubmitInfo.vue'
-
-
-
-
+import judgeInfo from './JudgeInfo.vue'
 
 export default {
   data(){
@@ -60,7 +59,7 @@ export default {
    }
   },
   components:{
-    activationsInfo,workDataInfo,workMilestoneInfo,workExpensesInfo,workPhotoInfo,workSubmitInfo
+    activationsInfo,workDataInfo,workMilestoneInfo,workExpensesInfo,workPhotoInfo,workSubmitInfo,judgeInfo
   }
 
 }

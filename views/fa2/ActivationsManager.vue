@@ -4,12 +4,12 @@
       <b-form-row class="justify-content-center "><h2><strong>活化補助工作計畫管理畫面</strong></h2></b-form-row>
       <br>
       <b-container fluid>
-		<b-form-row class="justify-content-end">
-			<b-button size="sm" variant="outline-secondary" @click="gotoParam('ActivationsQuery')">回上一頁</b-button>
+        <b-form-row class="justify-content-end">
+          <b-button size="sm" variant="outline-secondary" @click="gotoParam('ActivationsQuery')">回上一頁</b-button>
         </b-form-row>
 		<br>
         <b-form-row class="justify-content-start">
-			<b-col class="col-sm-8 text-left">
+			<b-col class="col-sm-7 text-left">
 				<!--有核定過後且資料有異動才會出現-->
 				<b-button size="sm" variant="info"  @click="reload()" >重新下載核定計畫資料並覆蓋</b-button>&nbsp;&nbsp;
 				<b-button size="sm" variant="success"  @click="gotoParam('WorkDataSubmit')" >提送本次填寫之計畫資料</b-button>&nbsp;&nbsp;
@@ -18,10 +18,11 @@
 				<!--基本資料解鎖只有工程會有-->
 				<b-button size="sm" variant="warning"  @click="gotoParam('WorkDataLock')" >基本資料解鎖</b-button>&nbsp;&nbsp;
 			</b-col>
-			<b-col class="col-sm-4 text-right">
+			<b-col class="col-sm-5 text-right">
 				<!-- 這個感覺不需要
 				<b-button size="sm" variant="info"  @click="deleteCheck()" >檢視活化計畫資料表</b-button>&nbsp;&nbsp;
 				-->
+      <b-button size="sm" variant="primary"  @click="gotoParam('ActivationsVersionDetail')" >檢視活化計畫資料表</b-button>&nbsp;&nbsp;
 			<b-button size="sm" variant="primary"  @click="report()" >產生活化計畫Word檔案</b-button>&nbsp;&nbsp;
 			<b-button size="sm" variant="primary"  @click="report()" >組合產生要點Word檔案(發函送審用)</b-button>&nbsp;&nbsp;
 			</b-col>
@@ -58,9 +59,9 @@
       <workExpensesInfo :modifyFlag="true"/>
       <br>
       <h2 class="text-left"><font color="blue">伍、上傳相關照片</font></h2>
-		<b-form-row class="justify-content-end">
-			<b-button size="sm" variant="success"  @click="gotoParam('WorkPhotoEdit', {addFlag:true})" >上傳照片</b-button>&nbsp;&nbsp;
-		</b-form-row>
+      <b-form-row class="justify-content-end">
+        <b-button size="sm" variant="success"  @click="gotoParam('WorkPhotoEdit', {addFlag:true})" >上傳照片</b-button>&nbsp;&nbsp;
+      </b-form-row>
 		<br>
       <workPhotoListInfo :modifyFlag="true"/>
       <br>

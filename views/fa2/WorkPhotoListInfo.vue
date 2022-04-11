@@ -48,6 +48,10 @@ export default {
 				thStyle: { width: "20%" },
 			}, 
 			{
+				key:	'review',
+				label:	'審查狀態',
+			},
+			{
 				key:	'action',
 				label:	''
 			},
@@ -55,7 +59,7 @@ export default {
 		items:	[
 			//待分文要顯示紅字，結案日期逾期未結案也要顯示紅字，應結案日期小於SYSDATE也要
 			{ id: 1, number: '11000000001',	wkut: '行政院公共工程委員會',	photoComment:'施工人員未戴安全帽及穿著反光背心, 鋼筋裸露未加保護套, 土堆未覆蓋，造成揚塵.',
-			review:'(尚未審核)',	pk: 5566 },
+			review:'已審核',	pk: 5566 },
 			
 		],
 

@@ -6,7 +6,7 @@
         <b-nav-item-dropdown text="活化計劃管理" left fill>
           <b-dropdown-item @click="gotoParam('ActivationsQuery',)">填報及申請活化計畫</b-dropdown-item>
           <b-dropdown-item @click="gotoParam('ActivationsReviseQuery', )">修正已核定活化計畫</b-dropdown-item>
-          <b-dropdown-item @click="gotoParam('')">填報計畫每月執行情形</b-dropdown-item>
+          <b-dropdown-item @click="gotoParam('FillActivationsQuery')">填報計畫每月執行情形</b-dropdown-item>
           <b-dropdown-item @click="gotoParam('BosReviewList')">主管機關活化計畫審核</b-dropdown-item>
         </b-nav-item-dropdown>
 

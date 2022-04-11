@@ -113,6 +113,36 @@ module.exports = [
         name: 'PccmReviewBatch',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa2/PccmReviewBatch.vue')
       },
+      {
+        path: 'fillActivationsQuery',
+        name: 'FillActivationsQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/FillActivationsQuery.vue')
+      },
+      {
+        path: 'fillActivations',
+        name: 'FillActivations',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/FillActivations.vue')
+      },
+      {
+        path: 'fillMileStone',
+        name: 'FillMileStone',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/FillMileStone.vue')
+      },
+      {
+        path: 'fillPlnmnth',
+        name: 'FillPlnmnth',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/FillPlnmnth.vue')
+      },
+      {
+        path: 'fillYearUserCase',
+        name: 'FillYearUserCase',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/FillYearUserCase.vue')
+      },
+      {
+        path: 'uploadCheckRecord',
+        name: 'UploadCheckRecord',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/UploadCheckRecord.vue')
+      },
      
     ],
     // route level code-splitting

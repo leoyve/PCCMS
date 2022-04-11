@@ -6,21 +6,8 @@
     <b-container >
 		<br>
 		<b-form-row >
-			<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="計畫起始日期" label-align-md="right">
-				<b-container>
-					<b-row>
-						<b-col><b-form-datepicker id="example-datepicker3" v-model="value3" class="mb-2"></b-form-datepicker></b-col>~
-						<b-col><b-form-datepicker id="example-datepicker4" v-model="value4" class="mb-2"></b-form-datepicker></b-col>
-					</b-row>
-				</b-container>
-			</b-form-group>
-			<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="計畫結束日" label-align-md="right">
-				<b-container>
-					<b-row>
-						<b-col><b-form-datepicker id="example-datepicker3" v-model="value3" class="mb-2"></b-form-datepicker></b-col>~
-						<b-col><b-form-datepicker id="example-datepicker4" v-model="value4" class="mb-2"></b-form-datepicker></b-col>
-					</b-row>
-				</b-container>
+			<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="補助年度" label-align-md="right">
+				<b-form-input></b-form-input>
 			</b-form-group>
 		</b-form-row>
 		<b-form-row class="justify-content-end">
