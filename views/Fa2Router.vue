@@ -18,8 +18,8 @@
 
          <b-nav-item-dropdown text="報表資訊" left fill>
           <b-dropdown-item @click="gotoParam('',)">計畫執行情形分析統計</b-dropdown-item>
-          <b-dropdown-item @click="gotoParam('', )">閒置公共設施相關規定</b-dropdown-item>
-          <b-dropdown-item @click="gotoParam('')">自選欄位案件資料</b-dropdown-item>
+          <b-dropdown-item @click="gotoParam('PccmDoc', )">閒置公共設施相關規定</b-dropdown-item>
+          <b-dropdown-item @click="gotoParam('Fa2OptionalReport')">自選欄位案件資料</b-dropdown-item>
         </b-nav-item-dropdown>
         
       </b-navbar-nav>

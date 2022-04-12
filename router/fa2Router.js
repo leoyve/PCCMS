@@ -158,6 +158,16 @@ module.exports = [
         name: 'PccmJudgeReview',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa2/PccmJudgeReview.vue')
       },
+      {
+        path: 'pccmDoc',
+        name: 'PccmDoc',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/PccmDoc.vue')
+      },
+      {
+        path: 'fa2OptionalReport',
+        name: 'Fa2OptionalReport',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/Fa2OptionalReport.vue')
+      },
      
     ],
     // route level code-splitting
