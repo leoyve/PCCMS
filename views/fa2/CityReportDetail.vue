@@ -1,21 +1,7 @@
 <template>
   <div>
-    <br />
-    <h3><strong>活化補助工作計畫執行情形一覽表</strong></h3>
-    <br />
-    <b-container>
-      <b-form-row>
-        <b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="補助年度" label-align-md="right">
-          <b-form-input></b-form-input>
-        </b-form-group>
-      </b-form-row>
-      <b-form-row class="justify-content-end">
-        <b-button size="sm" variant="success" @click="queryHandler">查詢</b-button>&nbsp;
-        <b-button size="sm" variant="outline-secondary" @click="reset">清除</b-button>
-      </b-form-row>
-    </b-container>
-    <br/>
-    <fillActivationsListInfo :replaceItems="items" :fillFlag="true"/>
+    <br>
+    <fillActivationsListInfo :detailFlag="true" :replaceItems="items"/>
   </div>
 </template>
 
@@ -24,9 +10,9 @@
 import fillActivationsListInfo from './FillActivationsListInfo.vue'
 
 export default {
-  data() {
-    return {
-      items: [
+  data(){
+    return{
+		items: [
         {
           PLNNO: "1110000001",
           PLNNAME: "頭份鎮停二立體停車場拆除工程",
@@ -71,19 +57,22 @@ export default {
 			amnum:'3',
         },
       ],
-    };
+	
+  }
+ },
+ methods:  {
+   
   },
-  methods: {},
   components:{
 	fillActivationsListInfo
   },
 
-  mounted() {
-    this.items.forEach((items, index) => {
-      items.serial = index + 1;
-    });
+  mounted(){
+	this.items.forEach((items, index) => { items.serial = index + 1; });
   },
-};
+ 
+ 
+}
 </script>
 <style>
 .col-form-label {

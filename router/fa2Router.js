@@ -168,6 +168,16 @@ module.exports = [
         name: 'Fa2OptionalReport',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa2/Fa2OptionalReport.vue')
       },
+      {
+        path: 'cityReportQuery',
+        name: 'CityReportQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/CityReportQuery.vue')
+      },
+      {
+        path: 'cityReportDetail',
+        name: 'CityReportDetail',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/CityReportDetail.vue')
+      },
      
     ],
     // route level code-splitting
