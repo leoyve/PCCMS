@@ -41,7 +41,7 @@
         <br>
         <b-row><h2 class="text-left"><font color="red">三、結案申請補助款辦理成果報告</font></h2></b-row>
         <b-form-row class="justify-content-end">
-          <b-button size="sm" variant="success" @click="gotoParam('FillActivationsQuery')">填寫辦理成果報告</b-button>&nbsp;
+          <b-button size="sm" variant="success" @click="gotoParam('FillJudge')">填寫辦理成果報告</b-button>&nbsp;
           <b-button size="sm" variant="info" @click="gotoParam('ActivationsVersionDetail', {judgeFlag:true})">列印辦理成果報告</b-button>
           <font color="red">&nbsp; (結案申請撥款請檢附)</font>
         </b-form-row>

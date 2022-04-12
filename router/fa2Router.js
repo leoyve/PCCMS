@@ -143,6 +143,11 @@ module.exports = [
         name: 'UploadCheckRecord',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa2/UploadCheckRecord.vue')
       },
+      {
+        path: 'fillJudge',
+        name: 'FillJudge',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/FillJudge.vue')
+      },
      
     ],
     // route level code-splitting
