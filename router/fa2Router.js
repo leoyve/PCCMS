@@ -148,6 +148,16 @@ module.exports = [
         name: 'FillJudge',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa2/FillJudge.vue')
       },
+      {
+        path: 'pccmReviewJudgeQuery',
+        name: 'PccmReviewJudgeQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/PccmReviewJudgeQuery.vue')
+      },
+      {
+        path: 'pccmJudgeReview',
+        name: 'PccmJudgeReview',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/PccmJudgeReview.vue')
+      },
      
     ],
     // route level code-splitting
