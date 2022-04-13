@@ -10,6 +10,16 @@
 				<b-form-input></b-form-input>
 			</b-form-group>
 		</b-form-row>
+		<b-form-row >
+			<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="補助年度" label-align-md="right">
+				<b-form-radio-group
+					id="radio-group-1"
+					v-model="picked"
+					:options="options"
+					name="radio-options1"
+				></b-form-radio-group>
+			</b-form-group>
+		</b-form-row>
 		<b-form-row class="justify-content-end">
 			<b-button size="sm" variant="success" @click="queryHandler" >查詢</b-button>&nbsp;
 			<b-button size="sm" variant="outline-secondary" @click="reset">清除</b-button>
@@ -31,6 +41,25 @@
 					<b-th colspan="1"></b-th>
 				</b-tr>
 			</template>
+			<template #custom-foot >
+				<b-tr variant="secondary">
+					<b-th variant="secondary" colspan="2">合計</b-th>
+					<b-th >3</b-th>
+					<b-th >131,140</b-th>
+					<b-th >26,666</b-th>
+					<b-th >13,503</b-th>
+					<b-th >0</b-th>
+					<b-th >0</b-th>
+					<b-th >13,503</b-th>
+					<b-th >50.64</b-th>
+					<b-th >10.30</b-th>
+					<b-th >21</b-th>
+					<b-th >9</b-th>
+					<b-th >19</b-th>
+					<b-th >10</b-th>
+					<b-th ><b-button size="sm" variant="outline-secondary" @click="gotoParam('CityReportDetail', )">明細</b-button></b-th>
+				</b-tr>
+			</template>
         </b-table>
       </b-form-row>
       <b-pagination align="right" v-model="currentPage"  :total-rows="rows"  :per-page="perPage" first-number></b-pagination>
@@ -44,6 +73,10 @@
 export default {
   data(){
     return{
+		options:[
+			{text:'中央', value:1},
+			{text:'地方', value:1},
+		],
 
 		fields: [
 			{

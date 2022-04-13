@@ -169,9 +169,9 @@ module.exports = [
         component: () => import(/* webpackChunkName: "about" */ '../views/fa2/Fa2OptionalReport.vue')
       },
       {
-        path: 'cityReportQuery',
-        name: 'CityReportQuery',
-        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/CityReportQuery.vue')
+        path: 'fa2ReportQuery',
+        name: 'Fa2ReportQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/Fa2ReportQuery.vue')
       },
       {
         path: 'cityReportDetail',
