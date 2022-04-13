@@ -12,6 +12,7 @@ import insReportRouter from './insReportRouter.js'
 import quaRouter from './quaRouter.js'
 import fa3Router from './fa3Router.js'
 import fa2Router from './fa2Router.js'
+import fa1Router from './fa1Router.js'
 
 
 const routes = [
@@ -23,6 +24,7 @@ const routes = [
   ...quaRouter,
   ...fa3Router,
   ...fa2Router,
+  ...fa1Router
 ]
 
 const router = new VueRouter({

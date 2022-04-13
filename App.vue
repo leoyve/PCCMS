@@ -12,7 +12,9 @@
 
         <b-nav-item  @click="gotoParam('公共設施維護管理資訊')"><h3>公共設施維護管理資訊公開系統</h3></b-nav-item>
 
-         <b-nav-item  @click="gotoParam('閒置設施補助')"><h3>閒置設施補助</h3></b-nav-item>
+        <b-nav-item  @click="gotoParam('閒置設施補助')"><h3>閒置設施補助</h3></b-nav-item>
+
+        <b-nav-item  @click="gotoParam('閒置設施管理')"><h3>閒置設施管理</h3></b-nav-item>
 
         <b-nav-item  @click="gotoParam('重點防汛')"><h3>重點防汛</h3></b-nav-item>
 
