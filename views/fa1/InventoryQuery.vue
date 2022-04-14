@@ -4,6 +4,11 @@
 		<h3><strong><font color="brown">清查公共設施使用情形表</font></strong></h3>
 		<br>
 		<b-container >
+			<b-form-row class="justify-content-end">
+				<b-button size="md" variant="info" @click="goto('OpinionNewQuery')" >批次上傳</b-button>&nbsp;
+				<b-button size="md" variant="success" @click="goto('OpinionNewQuery')" >新增</b-button>&nbsp;
+			</b-form-row>
+			<br>
 			<b-form-row>
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="設施編號關鍵字" label-align-md="right">
 					<b-input type="search"></b-input>

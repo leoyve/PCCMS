@@ -3,7 +3,11 @@
     <br>
       <b-container fluid>
         <b-row>
-          <b-col class="text-right"><b-button size="sm" variant="outline-secondary" @click="goBack()">回上一頁</b-button></b-col>
+          <b-col class="text-right">
+            <b-button size="sm" variant="success" @click="goBack()">修改</b-button>&nbsp;
+            <b-button size="sm" variant="danger" @click="goBack()">刪除</b-button>&nbsp;
+            <b-button size="sm" variant="outline-secondary" @click="goBack()">回上一頁</b-button>
+          </b-col>
         </b-row>
         <b-row>
           <b-col class="text-left"><h3><strong><font color="red">清查公共設施基本資料表</font></strong></h3></b-col>

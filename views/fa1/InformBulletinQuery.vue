@@ -80,7 +80,8 @@ export default {
 			},
 			{
 				key:	'constName',
-				label:	'通報公共設施名稱'
+				label:	'通報公共設施名稱',
+				thStyle: { width: "12%" },
 			},
 			{
 				key:	'address',
@@ -92,7 +93,8 @@ export default {
 			},
 			{
 				key:	'category',
-				label:	'設施類別'
+				label:	'設施類別',
+				thStyle: { width: "8%" },
 			},
 			{
 				key:	'wkut',
