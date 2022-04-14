@@ -18,7 +18,26 @@ module.exports = [
         name: 'PeopleUnCase',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa1/PeopleUnCase.vue')
       },
-      
+      {
+        path: 'inventoryQuery',
+        name: 'InventoryQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/InventoryQuery.vue')
+      },
+      {
+        path: 'inventoryDetail1',
+        name: 'InventoryDetail1',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/InventoryDetail1.vue')
+      },
+      {
+        path: 'inventoryDetail2',
+        name: 'InventoryDetail2',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/InventoryDetail2.vue')
+      },
+      {
+        path: 'inventoryInfo',
+        name: 'InventoryInfo',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/InventoryInfo.vue')
+      },
      
     ],
     // route level code-splitting
