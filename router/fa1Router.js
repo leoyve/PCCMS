@@ -38,6 +38,11 @@ module.exports = [
         name: 'InventoryInfo',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa1/InventoryInfo.vue')
       },
+      {
+        path: 'informBulletinQuery',
+        name: 'InformBulletinQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/InformBulletinQuery.vue')
+      },
      
     ],
     // route level code-splitting
