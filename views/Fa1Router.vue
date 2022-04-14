@@ -4,8 +4,8 @@
 	<b-navbar type="dark" variant="info">
       <b-navbar-nav >
         <b-nav-item-dropdown text="通報案件來源" left fill>
-          <b-dropdown-item @click="gotoParam('',)">民眾尚未立案通報案件查詢</b-dropdown-item>
-          <b-dropdown-item @click="gotoParam('',)">機關主動通報閒置設施案件</b-dropdown-item>
+          <b-dropdown-item @click="gotoParam('PeopleUnCaseQuery',)">民眾尚未立案通報案件查詢</b-dropdown-item>
+          <b-dropdown-item @click="gotoParam('NewInformCase',)">機關主動通報閒置設施案件</b-dropdown-item>
           <b-dropdown-item @click="gotoParam('')">清查公共設施使用情形</b-dropdown-item>
         </b-nav-item-dropdown>
 

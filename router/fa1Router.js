@@ -4,9 +4,19 @@ module.exports = [
     name: '閒置設施管理',
     children:[
       {
-        path: 'activationsQuery',
-        name: 'ActivationsQuery',
-        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/ActivationsQuery.vue')
+        path: 'newInformCase',
+        name: 'NewInformCase',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/NewInformCase.vue')
+      },
+      {
+        path: 'peopleUnCaseQuery',
+        name: 'PeopleUnCaseQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/PeopleUnCaseQuery.vue')
+      },
+      {
+        path: 'peopleUnCase',
+        name: 'PeopleUnCase',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/PeopleUnCase.vue')
       },
       
      
