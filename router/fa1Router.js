@@ -108,6 +108,16 @@ module.exports = [
         name: 'Fa1OptionalReport',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa1/Fa1OptionalReport.vue')
       },
+      {
+        path: 'divisionCaseQuery',
+        name: 'DivisionCaseQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/DivisionCaseQuery.vue')
+      },
+      {
+        path: 'divisionManager',
+        name: 'DivisionManager',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/DivisionManager.vue')
+      },
      
     ],
     // route level code-splitting

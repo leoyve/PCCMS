@@ -10,7 +10,7 @@
         </b-nav-item-dropdown>
 
         <b-nav-item-dropdown text="通報案件管理" left fill>
-          <b-dropdown-item @click="gotoParam('',)">閒置設施通報案件分案/查處</b-dropdown-item>
+          <b-dropdown-item @click="gotoParam('DivisionCaseQuery',)">閒置設施通報案件分案/查處</b-dropdown-item>
           <b-dropdown-item @click="gotoParam('InformDocReviewQuery',)">審查通報案件上傳文件檔案</b-dropdown-item>
           <b-dropdown-item @click="gotoParam('InformBulletinQuery')">通報案件完成查處結果公告</b-dropdown-item>
         </b-nav-item-dropdown>
@@ -27,7 +27,7 @@
         <b-nav-item-dropdown text="資料查詢" left fill>
           <b-dropdown-item @click="gotoParam('Fa1OptionalReport',)">自選欄位查詢列管案件資料</b-dropdown-item>
           <b-dropdown-item @click="gotoParam('',)">閒置設施業務機關權責窗口(通用功能)</b-dropdown-item>
-          <b-dropdown-item @click="gotoParam('',)">檢視工程會相關公函及附件</b-dropdown-item>
+          <b-dropdown-item @click="gotoParam('PccmDoc',)">檢視工程會相關公函及附件</b-dropdown-item>
         </b-nav-item-dropdown>
         
       </b-navbar-nav>

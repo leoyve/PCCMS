@@ -6,30 +6,22 @@
 		<b-container fluid>
 			<b-form-row>
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="納入系統提供檢視" label-align-md="right">
-					<b-form-checkbox-group
-						v-model="selected"
+					<b-form-radio-group
+						id="radio-group-1"
+						v-model="picked"
 						:options="checkOptions"
-						class="mb-2"
-						value-field="item"
-						text-field="name"
-						disabled-field="notEnabled"
-						name="flavour-1a"
-						inline
-					></b-form-checkbox-group>
+						name="radio-options1"
+					></b-form-radio-group>
 				</b-form-group>
 			</b-form-row>
 			<b-form-row>
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="列管狀況" label-align-md="right">
-					<b-form-checkbox-group
-						v-model="selected"
+					<b-form-radio-group
+						id="radio-group-1"
+						v-model="picked"
 						:options="checkOptions2"
-						class="mb-2"
-						value-field="item"
-						text-field="name"
-						disabled-field="notEnabled"
-						name="flavour-2a"
-						inline
-					></b-form-checkbox-group>
+						name="radio-options1"
+					></b-form-radio-group>
 				</b-form-group>
 			</b-form-row>
 			<b-form-row>
@@ -90,14 +82,14 @@ export default {
  data(){
 	return{
 		checkOptions: [
-			{	name:	'全部',	item:	'1',  },
-			{	name:	'納入',	item:	'2',  },
-			{	name:	'不納入',	item:	'3',  },
+			{	text:	'全部',	value:	'1',  },
+			{	text:	'納入',	value:	'2',  },
+			{	text:	'不納入',	value:	'3',  },
 		],
 		checkOptions2:[
-			{	name:	'全部',	item:	'1',  },
-			{	name:	'繼續列管',	item:	'2',  },
-			{	name:	'解除列管',	item:	'3',  },
+			{	text:	'全部',	value:	'1',  },
+			{	text:	'繼續列管',	value:	'2',  },
+			{	text:	'解除列管',	value:	'3',  },
 		],
 		type: [
 			{ value: '', text: '全部類別' },
