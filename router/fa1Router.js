@@ -88,6 +88,26 @@ module.exports = [
         name: 'TubeDocReviewBatch',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa1/TubeDocReviewBatch.vue')
       },
+      {
+        path: 'spotCheckRecord',
+        name: 'SpotCheckRecord',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/SpotCheckRecord.vue')
+      },
+      {
+        path: 'mileStoneSetting',
+        name: 'MileStoneSetting',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/MileStoneSetting.vue')
+      },
+      {
+        path: 'mileStoneDetail',
+        name: 'MileStoneDetail',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/MileStoneDetail.vue')
+      },
+      {
+        path: 'fa1OptionalReport',
+        name: 'Fa1OptionalReport',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/Fa1OptionalReport.vue')
+      },
      
     ],
     // route level code-splitting

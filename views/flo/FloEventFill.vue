@@ -39,6 +39,13 @@
 			</b-row>
 		</b-container>
 		<br>
+		<b-container>
+			<b-row class="col-sm row justify-content-end"> 
+				<b-button size="sm" variant="success" @click="queryHandler">新增</b-button>&ensp;
+				<b-button size="sm" variant="outline-secondary" @click="reset">取消</b-button>
+			</b-row>
+		</b-container>
+		<br>
 		<div>
 			<b-container >
 				<br>
@@ -59,12 +66,7 @@
 			</b-container>
 		</div>
 		<br>
-		<b-container>
-			<b-row class="col-sm row justify-content-end"> 
-				<b-button size="sm" variant="success" @click="queryHandler">新增</b-button>&ensp;
-				<b-button size="sm" variant="outline-secondary" @click="reset">取消</b-button>
-			</b-row>
-		</b-container>
+		
 	</div>
 </template>
 

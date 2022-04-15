@@ -61,6 +61,21 @@
           <b-col class="col-md-10 text-left">是</b-col>
         </b-row>
       </b-container>
+      <br>
+      <b-container fluid>
+        <b-form-row class="justify-content-center "><h2><strong><font color="red">抽查紀錄</font></strong></h2></b-form-row>
+        <b-form-row class="justify-content-end ">
+          <b-button size="xs" variant="success" @click="gotoParam('SpotCheckRecord')">新增</b-button>
+        </b-form-row>
+        <br>
+        <b-form-row class="justify-content-center ">
+          <b-table striped hover :items="items" :fields="fields" head-variant="dark">
+            <template #cell(action)="row">
+              <b-button size="sm" variant="danger" @click="deleteCheck(row.item)">刪除</b-button>
+            </template>
+          </b-table>
+        </b-form-row>
+      </b-container>
   </div>
 </template>
 
@@ -71,12 +86,41 @@ export default {
   props:["detailFlag"],
   data(){
     return{
-     
+     fields: [
+			{
+				key:	'serial',
+				label:	'流水號'
+			},
+			{
+				key:	'record',
+				label:	'抽查紀錄'
+			},
+      {
+				key:	'recordDate',
+				label:	'抽查日期'
+			},
+			{
+				key:	'comment',
+				label:	'備註'
+			},
+      {
+				key:	'action',
+				label:	''
+			},
+		],
+		items:	[
+			{ record:'抽查紀錄1',recordDate: '110/02/03', comment:'110年抽查紀錄',	pk: 5566 },
+			{ record:'抽查紀錄2',recordDate: '109/11/12', comment:'109年抽查紀錄',	pk: 5566 },
+			{ record:'抽查紀錄3',recordDate: '108/10/09', comment:'108年抽查紀錄',	pk: 5566 },
+		],
   }
  },
  methods:  {
    
   },
+  mounted(){
+    this.items.forEach((items, index) => { items.serial = index + 1; });
+  }
 
 }
 </script>

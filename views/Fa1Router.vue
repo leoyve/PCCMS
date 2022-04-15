@@ -17,7 +17,7 @@
 
         <b-nav-item-dropdown text="列管案件管理" left fill>
           <b-dropdown-item @click="gotoParam('',)">未開放檢視之閒置設施資料</b-dropdown-item>
-          <b-dropdown-item @click="gotoParam('',)">設施作業里程碑整體上鎖</b-dropdown-item>
+          <b-dropdown-item @click="gotoParam('MileStoneSetting',)">設施作業里程碑整體上鎖</b-dropdown-item>
           <b-dropdown-item @click="gotoParam('',)">查詢填報列管設施活化情形</b-dropdown-item>
           <b-dropdown-item @click="gotoParam('')">設施活化情形(依目的、依上級)</b-dropdown-item>
           <b-dropdown-item @click="gotoParam('TubeDocReviewQuery')">審查列管上傳文件檔案</b-dropdown-item>
@@ -25,7 +25,7 @@
         </b-nav-item-dropdown>
 
         <b-nav-item-dropdown text="資料查詢" left fill>
-          <b-dropdown-item @click="gotoParam('',)">自選欄位查詢列管案件資料</b-dropdown-item>
+          <b-dropdown-item @click="gotoParam('Fa1OptionalReport',)">自選欄位查詢列管案件資料</b-dropdown-item>
           <b-dropdown-item @click="gotoParam('',)">閒置設施業務機關權責窗口(通用功能)</b-dropdown-item>
           <b-dropdown-item @click="gotoParam('',)">檢視工程會相關公函及附件</b-dropdown-item>
         </b-nav-item-dropdown>
