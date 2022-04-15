@@ -11,7 +11,7 @@
 
         <b-nav-item-dropdown text="通報案件管理" left fill>
           <b-dropdown-item @click="gotoParam('',)">閒置設施通報案件分案/查處</b-dropdown-item>
-          <b-dropdown-item @click="gotoParam('',)">審查通報案件上傳文件檔案</b-dropdown-item>
+          <b-dropdown-item @click="gotoParam('InformDocReviewQuery',)">審查通報案件上傳文件檔案</b-dropdown-item>
           <b-dropdown-item @click="gotoParam('InformBulletinQuery')">通報案件完成查處結果公告</b-dropdown-item>
         </b-nav-item-dropdown>
 

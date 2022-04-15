@@ -43,6 +43,31 @@ module.exports = [
         name: 'InformBulletinQuery',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa1/InformBulletinQuery.vue')
       },
+      {
+        path: 'inventoryEdit',
+        name: 'InventoryEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/InventoryEdit.vue')
+      },
+      {
+        path: 'informDocReviewQuery',
+        name: 'InformDocReviewQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/InformDocReviewQuery.vue')
+      },
+      {
+        path: 'informDocChange',
+        name: 'InformDocChange',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/InformDocChange.vue')
+      },
+      {
+        path: 'informDocReview',
+        name: 'InformDocReview',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/InformDocReview.vue')
+      },
+      {
+        path: 'informDocReviewBatch',
+        name: 'InformDocReviewBatch',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/InformDocReviewBatch.vue')
+      },
      
     ],
     // route level code-splitting

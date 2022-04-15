@@ -1,23 +1,21 @@
 <template>
   <div>
       <b-container>
-        <h3>上傳照片資料</h3>
+        <h3>審查文件檔案</h3>
         <b-row class="border border-dark">
           <b-col class="col-md-2 ">上傳機關</b-col>
           <b-col class="col-md ">民眾</b-col>
         </b-row>
         <b-row class="border border-dark">
-          <b-col class="col-md-2 ">照片</b-col>
-          <b-col class="col-md"><b-img src="https://www.mdnkids.com/upload/images/20210703-06-09.jpg" width="200"/>(點選可放大照片)
-          <input type="file"/>
-          </b-col>
+          <b-col class="col-md-2 ">文件檔案</b-col>
+          <b-col class="col-md"><b-img src="https://www.mdnkids.com/upload/images/20210703-06-09.jpg" width="200"/>(點選可放大照片)</b-col>
         </b-row>
         <b-row class="border border-dark">
-          <b-col class="col-md-2 ">照片說明</b-col>
+          <b-col class="col-md-2 ">文件檔案說明</b-col>
           <b-col class="col-md"><b-form-input></b-form-input></b-col>
         </b-row>
         <b-row class="border border-dark">
-          <b-col class="col-md-2 ">上傳照片審查結果</b-col>
+          <b-col class="col-md-2 ">上傳文件檔案審查結果</b-col>
           <b-col class="col-md text-left"><b-form-radio-group v-model="check2" :options="reviewResult" name="radio-validation-1"></b-form-radio-group></b-col>
         </b-row>
           <b-row class="border border-dark">
@@ -49,15 +47,14 @@ export default {
       {	value: 'N', text: '回復未審查狀態'	},
 		],
     reviewReason: [
-      {	value: '1', text: '照片說明未填寫'	},
-			{	value: '2', text: '照片說明未盡詳實'	},
-			{	value: '3', text: '照片說明未與照片內容相符'	},
-      {	value: '4', text: '照片說明不雅'	},
-      {	value: '5', text: '照片影像不清或模糊'	},
-      {	value: '6', text: '照片內容與通報案件無重大關聯'	},
-      {	value: '7', text: '照片內容無任何特色或代表意義'	},
-      {	value: '8', text: '照片內容不雅'	},
-      {	value: '9', text: '照片內容含有個資'	},
+      {	value: '1', text: '文件檔案說明未填寫'	},
+			{	value: '2', text: '文件檔案說明未盡詳實'	},
+			{	value: '3', text: '文件檔案說明未與文件檔案內容相符'	},
+      {	value: '4', text: '文件檔案說明不雅'	},
+      {	value: '5', text: '文件檔案影像不清或模糊'	},
+      {	value: '6', text: '文件檔案內容與通報案件無重大關聯'	},
+      {	value: '7', text: '文件檔案內容無任何特色或代表意義'	},
+      {	value: '8', text: '文件檔案內容不雅'	},
       {	value: '10', text: '其他'	},
     ]
   }
