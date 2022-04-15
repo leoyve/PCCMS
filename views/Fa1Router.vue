@@ -20,7 +20,7 @@
           <b-dropdown-item @click="gotoParam('',)">設施作業里程碑整體上鎖</b-dropdown-item>
           <b-dropdown-item @click="gotoParam('',)">查詢填報列管設施活化情形</b-dropdown-item>
           <b-dropdown-item @click="gotoParam('')">設施活化情形(依目的、依上級)</b-dropdown-item>
-          <b-dropdown-item @click="gotoParam('')">審查列管上傳文件檔案</b-dropdown-item>
+          <b-dropdown-item @click="gotoParam('TubeDocReviewQuery')">審查列管上傳文件檔案</b-dropdown-item>
           <b-dropdown-item @click="gotoParam('')">查詢填報解列設施使用情形</b-dropdown-item>
         </b-nav-item-dropdown>
 

@@ -68,6 +68,26 @@ module.exports = [
         name: 'InformDocReviewBatch',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa1/InformDocReviewBatch.vue')
       },
+      {
+        path: 'tbeDocReviewQuery',
+        name: 'TubeDocReviewQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/TubeDocReviewQuery.vue')
+      },
+      {
+        path: 'tubeDocChange',
+        name: 'TubeDocChange',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/TubeDocChange.vue')
+      },
+      {
+        path: 'tubeDocReview',
+        name: 'TubeDocReview',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/TubeDocReview.vue')
+      },
+      {
+        path: 'tubeDocReviewBatch',
+        name: 'TubeDocReviewBatch',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/TubeDocReviewBatch.vue')
+      },
      
     ],
     // route level code-splitting
