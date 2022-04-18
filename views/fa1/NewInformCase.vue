@@ -51,6 +51,7 @@
 export default {
   data(){
     return{
+
       status: [
         { value: '1', text: '姚教授專書1'},
         { value: '2', text: '媒體報導' },

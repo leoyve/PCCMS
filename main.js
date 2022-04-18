@@ -23,6 +23,12 @@ Vue.prototype.deleteCheck = function (param){
   confirm("是否刪除此筆資料?");
 }
 
+Vue.prototype.wkutHelp  = function (){
+  let routeUrl = this.$router.resolve({name:'WkutHelp'})
+  window.open(routeUrl.href, '_blank'); 
+},
+
+
 Vue.prototype.goBack = function (){
   this.$router.back(-1);
 }

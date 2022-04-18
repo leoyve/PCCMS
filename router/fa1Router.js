@@ -118,7 +118,51 @@ module.exports = [
         name: 'DivisionManager',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa1/DivisionManager.vue')
       },
-     
+      {
+        path: 'informCaseEdit',
+        name: 'InformCaseEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/InformCaseEdit.vue')
+      },
+      {
+        path: 'divisionCaseEdit',
+        name: 'DivisionCaseEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/DivisionCaseEdit.vue')
+      },
+      {
+        path: 'divisionDetail',
+        name: 'DivisionDetail',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/DivisionDetail.vue')
+      },
+      {
+        path: 'investigateCaseEdit',
+        name: 'InvestigateCaseEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/InvestigateCaseEdit.vue')
+      },
+      {
+        path: 'localReviewCaseEdit',
+        name: 'LocalReviewCaseEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/LocalReviewCaseEdit.vue')
+      },
+      {
+        path: 'centralReviewCaseEdit',
+        name: 'CentralReviewCaseEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/CentralReviewCaseEdit.vue')
+      },
+      {
+        path: 'pccmReviewCaseEdit',
+        name: 'PccmReviewCaseEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/PccmReviewCaseEdit.vue')
+      },
+      {
+        path: 'finalReivewCaseEdit',
+        name: 'FinalReivewCaseEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/FinalReivewCaseEdit.vue')
+      },
+      {
+        path: 'changeDivisionPhoto',
+        name: 'ChangeDivisionPhoto',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/ChangeDivisionPhoto.vue')
+      },
     ],
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
