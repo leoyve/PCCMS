@@ -45,40 +45,26 @@
         </b-form-row>
       </b-container>
       <br>
-      
   </div>
 </template>
-
 
 <script>
 export default {
   data(){
     return{
       reviewResult:	[
-			{	value: '', text: '審查合格'	},
-			{	value: 'Y', text: '審查不通過'	},
-			{	value: 'N', text: '刪除'	},
-      {	value: 'N', text: '回復未審查狀態'	},
-		],
-    reviewReason: [
-      {	value: 'Y', text: '同意免需上傳改善照片檔案'	},
-			{	value: 'N', text: '不同意免需上傳改善照片檔案'	},
-			{	value: 'W', text: '回復未審查狀態'	},
-    ]
+        {	value: '', text: '審查合格'	},
+        {	value: 'Y', text: '審查不通過'	},
+        {	value: 'N', text: '刪除'	},
+        {	value: 'N', text: '回復未審查狀態'	},
+      ],
+      reviewReason: [
+        {	value: 'Y', text: '同意免需上傳改善照片檔案'	},
+        {	value: 'N', text: '不同意免需上傳改善照片檔案'	},
+        {	value: 'W', text: '回復未審查狀態'	},
+      ]
   }
  },
- methods:  {
-    queryHandler(){
-
-    },
-    reset(){
-
-    }
-  },
-  mounted(){  //ready已經不被使用了
-    //  console.log(this.showFlag);
-   //   this.showFlag =  this.$route.params.showFlag;
-  }
 }
 </script>
 <style>

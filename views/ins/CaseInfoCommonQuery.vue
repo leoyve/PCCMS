@@ -31,7 +31,6 @@
 			</b-form-row>
 		</b-container>
 		<br>
-		
 		<div>
 			<b-container fluid>
 				<b-table striped hover :items="items" :fields="fields" head-variant="dark">
@@ -51,9 +50,7 @@
 	</div>
 </template>
 
-
 <script>
-
 
 export default {
  data(){
@@ -125,26 +122,8 @@ export default {
 		],
 		check2:	'N',
 		check3:	'',
-
 	}
  },
- methods: {
-	toSee(item){
-		//alert(item.pk);
-		console.log(item);
-
-		this.$router.push({name:'CaseInfoEdit'})
-
-		
-	},
-  queryHandler(){
-
-  },
-  reset(){
-
-  }
- },
-
 }
 
 

@@ -123,20 +123,10 @@ export default {
 
 	}
  },
- methods: {
-	toSee(item){
-		//alert(item.pk);
-		console.log(item);
-		
-	},
-
- },
  components: {
     caseInfo,	caseHandleInfo,	closeCaseRecordList,	caseSatisfactionInfo,	caseMapInfo,
   },
 }
-
-
 </script>
 
 <style>

@@ -12,12 +12,11 @@
   </div>
 </template>
 
-
 <script>
 export default {
   data(){
     return{
-      fields: [
+		fields: [
 			{
 				key:	'id',
 				label:	'流水號'
@@ -44,25 +43,10 @@ export default {
 			},
 			],
 		items:	[
-			//待分文要顯示紅字，結案日期逾期未結案也要顯示紅字，應結案日期小於SYSDATE也要
 			{ id: 1, number: '11000000001', date: '110/03/03', satisfaction: '非常滿意',  satisfactionComment: '督工系統管理者代為新增！',	dealWith:'已經盡快處理',  pk: 5566 },
-			
 		],
-    
   }
  },
- methods:  {
-    insertData(){
-      alert('InsertData1111');
-    },
-    reset(){
-
-    }
-  },
-  mounted(){  //ready已經不被使用了
-      console.log(this.showFlag);
-      this.showFlag =  this.$route.params.showFlag;
-  }
 }
 </script>
 <style>

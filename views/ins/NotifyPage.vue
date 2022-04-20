@@ -14,19 +14,12 @@
   </div>
 </template>
 
-
 <script>
 export default {
   data(){
     return{
   }
  },
- methods:  {
- 
- },
- mounted(){  //ready已經不被使用了
-    
-  }
 }
 </script>
 <style>

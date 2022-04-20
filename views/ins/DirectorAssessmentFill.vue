@@ -21,7 +21,7 @@
 					</b-row>
 				</b-col>
 				<b-col class="col-md-2 bg-primary">
-					<b-input size="sm"></b-input>
+					<b-input size="sm"/>
 				</b-col>
 			</b-row>
 			<b-row class="border  border-dark align-items-center bg-primary">
@@ -41,7 +41,7 @@
 					</b-row>
 				</b-col>
 				<b-col class="col-md-2 bg-primary">
-					<b-input size="sm"></b-input>
+					<b-input size="sm"/>
 				</b-col>
 			</b-row>
 			<b-row class="border  border-dark align-items-center bg-primary">
@@ -61,7 +61,7 @@
 					</b-row>
 				</b-col>
 				<b-col class="border  border-dark col-md-2 bg-primary">
-					<b-input size="sm"></b-input>
+					<b-input size="sm"/>
 				</b-col>
 			</b-row>
 			<b-row class="border  border-dark align-items-center bg-primary">
@@ -77,7 +77,7 @@
 					</b-row>
 				</b-col>
 				<b-col class="border  border-dark col-md-2 bg-primary">
-					<b-input size="sm"></b-input>
+					<b-input size="sm"/>
 				</b-col>
 			</b-row>
 			<b-row class="border border-dark">
@@ -130,33 +130,21 @@ import closeCaseRecordList from './CloseCaseRecordList.vue';
 import caseSatisfactionInfo from './CaseSatisfactionInfo.vue';
 import caseMapInfo from './CaseMapInfo.vue';
 
-
 export default {
- data(){
-	return{
-		options: [
-			{ value: 'N', text: '否' },
-			{ value: 'Y1', text: '是(未就通報內容完全改善)' },
-			{ value: 'Y2', text: '是(改善情形未盡確實)' },
-			{ value: 'Y4', text: '是(民眾滿意度調查意見未妥善處理)' },
-		],
-
-	}
- },
- methods: {
-	toSee(item){
-		//alert(item.pk);
-		console.log(item);
-		
+	data(){
+		return{
+			options: [
+				{ value: 'N', text: '否' },
+				{ value: 'Y1', text: '是(未就通報內容完全改善)' },
+				{ value: 'Y2', text: '是(改善情形未盡確實)' },
+				{ value: 'Y4', text: '是(民眾滿意度調查意見未妥善處理)' },
+			],
+		}
 	},
-
- },
- components: {
-    caseInfo,	caseHandleInfo,	closeCaseRecordList,	caseSatisfactionInfo,	caseMapInfo,
-  },
+	components: {
+		caseInfo,	caseHandleInfo,	closeCaseRecordList,	caseSatisfactionInfo,	caseMapInfo,
+	},
 }
-
-
 </script>
 
 <style>

@@ -30,7 +30,6 @@
 			</b-form-row>
 		</b-container>
 		<br>
-		
 		<div>
 			<b-container fluid>
 				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>主辦機關於通報案件所在縣市之施工中或2年內完工標案一覽表</strong></h4></b-form-row>
@@ -50,9 +49,7 @@
 	</div>
 </template>
 
-
 <script>
-
 
 export default {
  data(){
@@ -139,28 +136,7 @@ export default {
 
 	}
  },
- methods: {
-	toSee(item){
-		//alert(item.pk);
-		console.log(item);
-		if(item.wkut === '行政院工程會'){
-			this.$router.push({name:'AssignCasePcc'})
-		}else{
-			this.$router.push({name:'AssignCaseHost'})
-		}
-		
-	},
-  queryHandler(){
-
-  },
-  reset(){
-
-  }
- },
-
 }
-
-
 </script>
 
 <style>

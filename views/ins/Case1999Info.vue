@@ -55,18 +55,12 @@ export default {
       addFlag: this.$route.params.addFlag == null ? false:this.$route.params.addFlag,
       updateFlag: this.$route.params.updateFlag == null ? false:this.$route.params.updateFlag,
       caseNumber: '11000000001'
-
   }
  },
- methods:  {
-
-  },
-  mounted(){  //ready已經不被使用了
-
-      if(this.addFlag){
-        this.caseNumber = '新增'
-      }
-    
+  mounted(){  
+    if(this.addFlag){
+      this.caseNumber = '新增'
+    }
   }
 }
 </script>

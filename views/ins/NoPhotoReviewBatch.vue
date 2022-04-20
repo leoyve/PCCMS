@@ -88,15 +88,7 @@ export default {
 
 	}
  },
- methods: {
-  reset(){
-
-  }
- },
-
 }
-
-
 </script>
 
 <style>

@@ -18,7 +18,7 @@
 			<b-form-row class="justify-content-center">
 				<b-table striped hover :items="items" :fields="fields" head-variant="dark">
 					<template #cell(action)="row" >
-						<b-button size="sm" variant="success" @click="toSee(row.item)">填寫</b-button>
+						<b-button size="sm" variant="success" @click="gotoParam('SatisfactionResponse', row.item)">填寫</b-button>
 					</template>
 				</b-table>
 			</b-form-row>
@@ -26,9 +26,7 @@
 	</div>
 </template>
 
-
 <script>
-
 
 export default {
  data(){
@@ -72,17 +70,7 @@ export default {
 		
 	}
  },
- methods: {
-	toSee(item){
-		//alert(item.pk);
-		console.log(item);
-		this.$router.push({name:'SatisfactionResponse'})
-	},
- },
-
 }
-
-
 </script>
 
 <style>

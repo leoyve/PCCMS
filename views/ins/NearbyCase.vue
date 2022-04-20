@@ -5,12 +5,11 @@
 			<case-map-info-vue/>
 		</b-container>
 		<br>
-		
 		<div>
 			<b-container >
 				<b-table striped hover :items="items" :fields="fields" head-variant="dark">
 					<template #cell(action)="row">
-						<b-button size="sm" variant="outline-secondary" @click="toSee(row.item)">檢視</b-button>
+						<b-button size="sm" variant="outline-secondary" @click="gotoParam('ShowWorkSiteMap', row.item)">檢視</b-button>
 					</template>
 				</b-table>
 			</b-container>
@@ -18,7 +17,6 @@
 
 	</div>
 </template>
-
 
 <script>
 import caseMapInfoVue from './CaseMapInfo.vue'
@@ -96,27 +94,10 @@ export default {
 
 	}
  },
- methods: {
-	toSee(item){
-		//alert(item.pk);
-		console.log(item);
-		this.$router.push({name:'ShowWorkSiteMap'})
-
-	},
-  queryHandler(){
-
-  },
-  reset(){
-
-  }
- },
  components: {
     caseMapInfoVue,
   },
-
 }
-
-
 </script>
 
 <style>

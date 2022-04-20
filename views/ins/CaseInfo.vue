@@ -55,14 +55,15 @@
           <b-col class="col-md-2 bg-secondary"><font color="red">*</font>通報內容</b-col>
           <b-col class="col-md-10 text-left">
             <b-form-checkbox-group
-            v-model="selected"
-            :options="checkOptions"
-            class="mb-2"
-            text-field="name"
-            name="flavour-1a"
-            disabled="true"
-            inline
-          ></b-form-checkbox-group></b-col>
+              v-model="selected"
+              :options="checkOptions"
+              class="mb-2"
+              text-field="name"
+              name="flavour-1a"
+              disabled="true"
+              inline
+            ></b-form-checkbox-group>
+          </b-col>
         </b-row>
         <b-row class="border border-dark">
           <b-col class="col-md-2 bg-secondary"><font color="red">*</font>具體內容</b-col>
@@ -86,7 +87,6 @@
       <br>
   </div>
 </template>
-
 
 <script>
 export default {
@@ -146,12 +146,8 @@ export default {
     insertData(){
       alert('InsertData1111');
     },
-    reset(){
-
-    }
   },
-  mounted(){  //ready已經不被使用了
-      console.log(this.showFlag);
+  mounted(){
       this.showFlag =  this.$route.params.showFlag;
   }
 }

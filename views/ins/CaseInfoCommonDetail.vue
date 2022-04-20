@@ -24,21 +24,14 @@ import casePhotoInfo from './CasePhotoInfo.vue'
 
 
 export default {
- data(){
-	return{
-		
+	data(){
+		return{
+		}
+	},
+	components:{
+		caseInfoSimple,caseHandleInfo,casePhotoInfo
 	}
- },
- methods: {
-	
-
- },
- components:{
-	caseInfoSimple,caseHandleInfo,casePhotoInfo
- }
-
 }
-
 
 </script>
 

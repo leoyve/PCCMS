@@ -35,7 +35,6 @@
 			</b-form-row>
 		</b-container>
 		<br>
-		
 		<div>
 			<b-container fluid>
 				<h3>申請免需上傳改善照片檔案督工案件一覽表</h3>
@@ -45,7 +44,7 @@
 						<b-checkbox v-model="model"	@value="row.item.id"></b-checkbox>
 					</template>
 					<template #cell(action)="row">
-						<b-button size="sm" variant="success" @click="toSee(row.item)">審核</b-button>
+						<b-button size="sm" variant="success" @click="gotoParam('NoPhotoReview', row.item)">審核</b-button>
 					</template>
 					<template #cell(situation)="row">
 						<b-container>
@@ -59,7 +58,7 @@
 					</template>
 				</b-table>
 				<b-form-row class="justify-content-start">
-					<b-button size="sm" variant="success" @click="batchReview" >批次審核</b-button>
+					<b-button size="sm" variant="success" @click="gotoParam('NoPhotoReviewBatch',)" >批次審核</b-button>
 				</b-form-row>
 				<b-pagination align="right"
 					v-model="currentPage"
@@ -73,9 +72,7 @@
 	</div>
 </template>
 
-
 <script>
-
 
 export default {
  data(){
@@ -160,23 +157,7 @@ export default {
 
 	}
  },
- methods: {
-	toSee(item){
-		//alert(item.pk);
-		console.log(item);
-		this.$router.push({name:'NoPhotoReview'})
-	},
-	batchReview(){
-		this.$router.push({name:'NoPhotoReviewBatch'})
-  },
-  reset(){
-
-  }
- },
-
 }
-
-
 </script>
 
 <style>

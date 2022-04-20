@@ -42,28 +42,20 @@ import caseHandleInfo from './CaseHandleInfo.vue'
 import casePhotoInfo from './CasePhotoInfo.vue'
 import caseSatisfactionInfo from './CaseSatisfactionInfo.vue'
 
-
-
 export default {
  data(){
 	return{
 		formBean:this.$route.params.formBean
-		
 	}
  },
  methods: {
 	uploadPhoto(){
 		alert('上傳處理照片服務');
 	}
-
  },
  components:{
 	caseInfoSimple,caseHandleInfo,casePhotoInfo,caseSatisfactionInfo
  },
- mounted(){
-	console.log("test " + this.formBean.aa);
- }
-
 }
 
 

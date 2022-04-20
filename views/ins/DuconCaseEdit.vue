@@ -13,36 +13,35 @@
         </b-row>
         <b-row class="border border-dark">
           <b-col class="col-md-2 "><font color="red">*</font>民眾姓名</b-col>
-          <b-col class="col-md-4"><b-form-input v-model="test" :disabled="disabledFlag"></b-form-input></b-col>
+          <b-col class="col-md-4"><b-form-input v-model="test" :disabled="disabledFlag"/></b-col>
           <b-col class="col-md-2">民眾性別</b-col>
           <b-col class="col-md-4">
-            <b-form-radio-group  v-model="sex1" :options="sex" :disabled="disabledFlag">
-            </b-form-radio-group>
+            <b-form-radio-group  v-model="sex1" :options="sex" :disabled="disabledFlag"/>
           </b-col>
         </b-row>
         <b-row class="border border-dark">
           <b-col class="col-md-2 ">民眾住址</b-col>
-          <b-col class="col-md text-left"><b-form-input :disabled="disabledFlag"></b-form-input></b-col>
+          <b-col class="col-md text-left"><b-form-input :disabled="disabledFlag"/></b-col>
         </b-row>
         <b-row class="border border-dark">
           <b-col class="col-md-2 ">民眾電話</b-col>
-          <b-col class="col-md-4 text-left"><b-form-input :disabled="disabledFlag"></b-form-input></b-col>
+          <b-col class="col-md-4 text-left"><b-form-input :disabled="disabledFlag"/></b-col>
           <b-col class="col-md-2 ">民眾傳真</b-col>
-          <b-col class="col-md-4 text-left"><b-form-input :disabled="disabledFlag"></b-form-input></b-col>
+          <b-col class="col-md-4 text-left"><b-form-input :disabled="disabledFlag"/></b-col>
         </b-row>
           <b-row class="border border-dark">
           <b-col class="col-md-2 ">民眾電子郵件信箱</b-col>
-          <b-col class="col-md text-left"><b-form-input :disabled="disabledFlag"></b-form-input></b-col>
+          <b-col class="col-md text-left"><b-form-input :disabled="disabledFlag"/></b-col>
         </b-row>
         <b-row class="border border-dark">
           <b-col class="col-md-2 "><font color="red">*</font>缺失地點</b-col>
           <b-col class="col-md-3 text-left"><b-form-select v-model="statusPicked" :options="site" :disabled="disabledFlag"></b-form-select></b-col>
-          <b-col class="col-md-7 text-left"><b-form-input :disabled="disabledFlag"></b-form-input></b-col>
+          <b-col class="col-md-7 text-left"><b-form-input :disabled="disabledFlag"/></b-col>
         </b-row>
         <b-row class="border border-dark">
           <b-col class="col-md-2 ">通報之工程名稱</b-col>
           <!-- 不可編輯狀態下，如果有輸入標案管理系統工程名稱時，要紅字顯示在下面-->
-          <b-col class="col-md-10 text-left"><b-form-input :disabled="disabledFlag"></b-form-input></b-col>
+          <b-col class="col-md-10 text-left"><b-form-input :disabled="disabledFlag"/></b-col>
         </b-row>
         <b-row class="border border-dark">
           <b-col class="col-md-2 ">通報之主辦機關</b-col>
@@ -110,9 +109,7 @@
   </div>
 </template>
 
-
 <script>
-
 
 export default {
   data(){
@@ -172,13 +169,8 @@ export default {
     queryHandler(){
       //CALL 子元素的Method
       this.$refs.caseVue.insertData();
-
     },
-    reset(){
-
-    }
   },
-
 }
 </script>
 <style>

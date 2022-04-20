@@ -21,7 +21,6 @@
 			</b-form-row>
 		</b-container>
 		<br>
-		
 		<div>
 			<b-container >
 				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>全民督工通報案件[編號：111XXXXXX]上傳照片一覽表</strong></h4></b-form-row>
@@ -38,13 +37,10 @@
 				</b-form-row>
 			</b-container>
 		</div>
-
 	</div>
 </template>
 
-
 <script>
-
 
 export default {
  data(){
@@ -97,12 +93,8 @@ export default {
 	uploadPhoto(){
 		alert('上傳照片通用元件。');
 	}
-
  },
-
 }
-
-
 </script>
 
 <style>

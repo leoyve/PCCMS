@@ -65,7 +65,6 @@
 			</b-form-row>
 		</b-container>
 		<br>
-		
 		<div>
 			<b-container fluid>
 				<h3>民眾通報案件結案考核情形查詢結果表</h3>
@@ -73,9 +72,9 @@
 				<b-table striped hover :items="items" :fields="fields" head-variant="dark">
 					<template #cell(action)="row">
 						<!--民眾考核常駐顯示、主辦機關看的到主辦考核、主管機關與工程會看的到全部 -->
-						<b-button size="sm" variant="info" @click="toSee(row.item, 'DirectorAssessmentFill')">主管</b-button>&ensp; 
-						<b-button size="sm" variant="primary" @click="toSee(row.item, 'WkutAssessmentFill')">主辦</b-button>&ensp; 
-						<b-button size="sm" variant="success" @click="toSee(row.item, 'PeopleAssessmentFill')">民眾</b-button>
+						<b-button size="sm" variant="info" @click="gotoParam('DirectorAssessmentFill', row.item)">主管</b-button>&ensp; 
+						<b-button size="sm" variant="primary" @click="gotoParam('WkutAssessmentFill', row.item)">主辦</b-button>&ensp; 
+						<b-button size="sm" variant="success" @click="gotoParam('PeopleAssessmentFill', row.item)">民眾</b-button>
 					</template>
 				</b-table>
 				<b-pagination align="right"
@@ -90,9 +89,7 @@
 	</div>
 </template>
 
-
 <script>
-
 
 export default {
  data(){
@@ -167,19 +164,8 @@ export default {
 
 	}
  },
- methods: {
-	toSee(item, path){
-		//alert(item.pk);
-		console.log(item);
-
-		this.$router.push({name:path})
-		
-	},
-
- },
 
 }
-
 
 </script>
 

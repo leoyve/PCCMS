@@ -20,9 +20,7 @@
 						<b-col class="border border-dark col-md-3 bg-secondary text-light"><h5>15</h5></b-col>
 					</b-row>
 				</b-col>
-				<b-col class="col-md-2 bg-secondary">
-					24
-				</b-col>
+				<b-col class="col-md-2 bg-secondary">24</b-col>
 			</b-row>
 			<b-row class="border  border-dark align-items-center bg-secondary">
 				<b-col class=" col-md-2 bg-secondary"><h5>通報處理之完整性</h5></b-col>
@@ -44,9 +42,7 @@
 						<b-col class="border border-dark col-md-3 bg-secondary text-light"><h5>5</h5></b-col>
 					</b-row>
 				</b-col>
-				<b-col class="col-md-2 bg-secondary">
-					48
-				</b-col>
+				<b-col class="col-md-2 bg-secondary">48</b-col>
 			</b-row>
 			<b-row class="border  border-dark align-items-center bg-secondary">
 				<b-col class="border border-dark col-md-2 bg-secondary"><h5>其他</h5></b-col>
@@ -56,9 +52,7 @@
 						<b-col class="border border-dark col-md-3 bg-secondary text-light text-center"><h5>5</h5></b-col>
 					</b-row>
 				</b-col>
-				<b-col class="col-md-2 bg-secondary">
-					8
-				</b-col>
+				<b-col class="col-md-2 bg-secondary">8</b-col>
 			</b-row>
 			<b-row class="border border-dark">
 				<b-col class="border  border-dark col-md-10 bg-secondary text-light"><h5>總分<font color="red">(自動加總)</font></h5></b-col>
@@ -74,9 +68,7 @@
 			</b-row>
 			<b-row class="border border-dark">
 				<b-col class="border  border-dark col-md-2 bg-secondary text-light"><h5><strong>本案是否應繼續改善</strong></h5></b-col>
-				<b-col class="col-md-10 bg-secondary text-light">
-					否
-				</b-col>
+				<b-col class="col-md-10 bg-secondary text-light">否</b-col>
 			</b-row>
 		</b-container>
 	</div>
@@ -91,14 +83,7 @@ export default {
 	return{
 	}
  },
- methods: {
-
-
- },
- 
 }
-
-
 </script>
 
 <style>

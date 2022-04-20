@@ -7,7 +7,7 @@
         <b-row class="border border-dark">
           <b-col class="col-md-2 ">照片</b-col>
           <b-col class="col-md"><b-img src="https://www.mdnkids.com/upload/images/20210703-06-09.jpg" width="200"/>(點選可放大照片)
-          <input type="file"/>
+            <input type="file"/>
           </b-col>
         </b-row>
         <br>
@@ -17,7 +17,6 @@
         </b-form-row>
       </b-container>
       <br>
-      
   </div>
 </template>
 
@@ -46,18 +45,6 @@ export default {
     ]
   }
  },
- methods:  {
-    queryHandler(){
-
-    },
-    reset(){
-
-    }
-  },
-  mounted(){  //ready已經不被使用了
-    //  console.log(this.showFlag);
-   //   this.showFlag =  this.$route.params.showFlag;
-  }
 }
 </script>
 <style>

@@ -7,10 +7,10 @@
 			<b-row>
 				<b-col class="text-left">
 					<h4><font color="blue">
-					本作業僅供通報人線上追蹤通報案件執行狀況及填寫滿意度使用。
-					非通報人請使用『一般查詢』功能查閱相關資料。
-					通報人請填入通報時填報之電子郵件地址及相關驗證資料(通報的電話、傳真、地址、姓名或案件編號)後，
-					點選『查詢』鍵即可查詢曾通報全部案件。
+						本作業僅供通報人線上追蹤通報案件執行狀況及填寫滿意度使用。
+						非通報人請使用『一般查詢』功能查閱相關資料。
+						通報人請填入通報時填報之電子郵件地址及相關驗證資料(通報的電話、傳真、地址、姓名或案件編號)後，
+						點選『查詢』鍵即可查詢曾通報全部案件。
 					</font></h4>
 				</b-col>
 			</b-row>
@@ -32,14 +32,10 @@
 			</b-row>
 		</b-container>
 		<br>
-		
-
 	</div>
 </template>
 
-
 <script>
-
 
 export default {
  data(){
@@ -47,26 +43,7 @@ export default {
 		
 	}
  },
- methods: {
-	toSee(item){
-		//alert(item.pk);
-		console.log(item);
-
-		this.$router.push({name:'CaseRecord'})
-
-		
-	},
-  queryHandler(){
-
-  },
-  reset(){
-
-  }
- },
-
 }
-
-
 </script>
 
 <style>

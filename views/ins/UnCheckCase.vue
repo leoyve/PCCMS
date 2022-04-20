@@ -35,7 +35,6 @@
 			</b-form-row>
 		</b-container>
 		<br>
-		
 		<div>
 			<b-container >
 				<b-table striped hover :items="items" :fields="fields" head-variant="dark">
@@ -104,12 +103,7 @@ export default {
 
 	}
  },
- methods: {
-	
- }
 }
-
-
 </script>
 
 <style>

@@ -31,7 +31,6 @@
   </div>
 </template>
 
-
 <script>
 import caseVue from './CaseInfo.vue'
 import caseMapInfoVue from './CaseMapInfo.vue'
@@ -62,8 +61,6 @@ export default {
       ],
   }
  },
- methods:  {
-  },
   components: {
     caseVue,
     caseMapInfoVue,

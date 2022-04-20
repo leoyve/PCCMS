@@ -28,8 +28,7 @@
           <b-button size="sm" variant="outline-secondary" @click="goBack()" >取消</b-button>
         </b-form-row>
       </b-container>
-      <br>
-      
+      <br> 
   </div>
 </template>
 
@@ -41,18 +40,6 @@ export default {
      
   }
  },
- methods:  {
-    queryHandler(){
-
-    },
-    reset(){
-
-    }
-  },
-  mounted(){  //ready已經不被使用了
-    //  console.log(this.showFlag);
-   //   this.showFlag =  this.$route.params.showFlag;
-  }
 }
 </script>
 <style>

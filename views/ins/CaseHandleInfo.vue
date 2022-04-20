@@ -47,16 +47,12 @@ export default {
     
   }
  },
- methods:  {
+  methods:  {
     insertData(){
       alert('InsertData1111');
     },
-    reset(){
-
-    }
   },
-  mounted(){  //ready已經不被使用了
-      console.log(this.showFlag);
+  mounted(){ 
       this.showFlag =  this.$route.params.showFlag;
   }
 }

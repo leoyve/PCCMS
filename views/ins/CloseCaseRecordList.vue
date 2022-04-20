@@ -7,7 +7,7 @@
 				<b-table striped hover :items="items" :fields="fields" head-variant="light">
 					<template #cell(action)="row" >
 						<!-- 只有在申請結案 && 結案申請還未被審查的時候才會出現-->
-						<b-button size="sm" variant="danger" @click="toSee(row.item)" v-show="showFlag">撤回</b-button>
+						<b-button size="sm" variant="danger" @click="back(row.item)" v-show="showFlag">撤回</b-button>
 					</template>
 				</b-table>
 			</b-form-row>
@@ -15,9 +15,7 @@
 	</div>
 </template>
 
-
 <script>
-
 
 export default {
 	props:  ['showFlag'],
@@ -63,22 +61,16 @@ export default {
 			//待分文要顯示紅字，結案日期逾期未結案也要顯示紅字，應結案日期小於SYSDATE也要
 			{ id: 1, disWkut: '行政院公共工程委員會', closeDate: '110/03/03', backComment: '辦理進度嚴重落後，須檢討',	reviewWkut:'行政院公共工程委員會',	reviewDate: '110/03/03',	
 			disAgreeComment:'辦理進度嚴重落後，須檢討',	pk: 5566 },
-			
-		],
-		
+		],	
 	}
  },
  methods: {
-	toSee(item){
-		//alert(item.pk);
+	back(item){
 		console.log(item);
 		confirm('確認是否撤回?(只有在申請結案 && 結案申請還未被審查的時候才會出現)');
 	},
  },
-
 }
-
-
 </script>
 
 <style>

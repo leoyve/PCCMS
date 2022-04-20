@@ -13,7 +13,8 @@
 				<b-col class=" col-md-8 bg-primary">
 					<b-row class="border-0  border-dark">
 						<b-col class="border border-dark col-md-9 bg-primary text-left text-light"><h5>通報案件內容具體明確，對監督政府規劃設計不周，工程品質不良，安全措施
-							不足，環境衛生不佳，工程進度緩慢等缺失，有具體效益，具有實質公共利益。</h5></b-col>
+							不足，環境衛生不佳，工程進度緩慢等缺失，有具體效益，具有實質公共利益。</h5>
+						</b-col>
 						<b-col class="border border-dark col-md-3 bg-primary text-light"><h5>50</h5></b-col>
 					</b-row>
 				</b-col>
@@ -76,7 +77,6 @@ import closeCaseRecordList from './CloseCaseRecordList.vue';
 import caseSatisfactionInfo from './CaseSatisfactionInfo.vue';
 import caseMapInfo from './CaseMapInfo.vue';
 
-
 export default {
  data(){
 	return{
@@ -86,23 +86,12 @@ export default {
 			{ value: 'Y2', text: '是(改善情形未盡確實)' },
 			{ value: 'Y4', text: '是(民眾滿意度調查意見未妥善處理)' },
 		],
-
 	}
- },
- methods: {
-	toSee(item){
-		//alert(item.pk);
-		console.log(item);
-		
-	},
-
  },
  components: {
     caseInfo,	caseHandleInfo,	closeCaseRecordList,	caseSatisfactionInfo,	caseMapInfo,
   },
 }
-
-
 </script>
 
 <style>

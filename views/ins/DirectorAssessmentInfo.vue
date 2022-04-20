@@ -20,9 +20,7 @@
 						<b-col class="border border-dark col-md-3 bg-secondary text-light"><h5>10</h5></b-col>
 					</b-row>
 				</b-col>
-				<b-col class="col-md-2 bg-secondary">
-					22
-				</b-col>
+				<b-col class="col-md-2 bg-secondary">22</b-col>
 			</b-row>
 			<b-row class="border  border-dark align-items-center bg-secondary">
 				<b-col class=" col-md-2 bg-secondary"><h5>通報案件處理情形</h5></b-col>
@@ -40,9 +38,7 @@
 						<b-col class="border border-dark col-md-3 bg-secondary text-light"><h5>10</h5></b-col>
 					</b-row>
 				</b-col>
-				<b-col class="col-md-2 bg-secondary">
-					10
-				</b-col>
+				<b-col class="col-md-2 bg-secondary">10</b-col>
 			</b-row>
 			<b-row class="border  border-dark align-items-center bg-secondary">
 				<b-col class="col-md-2 bg-secondary"><h5>執行運作機制</h5></b-col>
@@ -60,9 +56,7 @@
 						<b-col class="border border-dark col-md-3 bg-secondary text-light"><h5>5</h5></b-col>
 					</b-row>
 				</b-col>
-				<b-col class="border  border-dark col-md-2 bg-secondary">
-					12
-				</b-col>
+				<b-col class="border  border-dark col-md-2 bg-secondary">12</b-col>
 			</b-row>
 			<b-row class="border  border-dark align-items-center bg-secondary">
 				<b-col class="col-md-2 bg-secondary"><h5>特殊績效</h5></b-col>
@@ -76,9 +70,7 @@
 						<b-col class="border border-dark col-md-3 bg-secondary text-light"><h5>5</h5></b-col>
 					</b-row>
 				</b-col>
-				<b-col class="border  border-dark col-md-2 bg-secondary">
-					6
-				</b-col>
+				<b-col class="border  border-dark col-md-2 bg-secondary">6</b-col>
 			</b-row>
 			<b-row class="border border-dark">
 				<b-col class="border  border-dark col-md-10 bg-secondary text-light"><h5>總分<font color="red">(自動加總)</font></h5></b-col>
@@ -100,7 +92,6 @@
 	</div>
 </template>
 
-
 <script>
 
 export default {
@@ -115,18 +106,7 @@ export default {
 
 	}
  },
- methods: {
-	toSee(item){
-		//alert(item.pk);
-		console.log(item);
-		
-	},
-
- },
-
 }
-
-
 </script>
 
 <style>

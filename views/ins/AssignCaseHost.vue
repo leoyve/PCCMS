@@ -83,9 +83,6 @@ export default {
       let routeUrl = this.$router.resolve({name:'NearbyCase'})
       window.open(routeUrl.href, '_blank'); 
     },
-    reset(){
-
-    }
   },
   components: {
     caseInfoVue,
@@ -93,7 +90,6 @@ export default {
     casePhotoInfoVue,
   },
 }
-
 
 </script>
 <style>

@@ -151,8 +151,7 @@ export default {
  },
  methods: {
 	toSee(item){
-		//alert(item.pk);
-		console.log(item);
+
 		if(item.wkut === '行政院工程會'){
 			this.$router.push({name:'AssignCasePcc'})
 		}else{

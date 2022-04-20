@@ -50,7 +50,7 @@
 				<!-- 有ID且撈出來有資料就進行修改，無ID也無資料直接新增 -->
 				<b-button size="sm" variant="info" @click="toPrint">處理情形列印畫面</b-button>&ensp; &ensp; 
 				<b-button size="sm" variant="success" @click="queryHandler">完成審查</b-button>&ensp; &ensp; 
-				<b-button size="sm" variant="outline-secondary" @click="toSee">取消</b-button>
+				<b-button size="sm" variant="outline-secondary" @click="goBack()">取消</b-button>
 			</b-row>
 		</b-container>
 		<br>
@@ -89,13 +89,6 @@ export default {
 	}
  },
  methods: {
-	toSee(item){
-		//alert(item.pk);
-		console.log(item);
-
-		this.$router.push({name:'CaseCloseQuery'})
-
-	},
 	toPrint(){
 		//新開視窗
 		let routeUrl = this.$router.resolve({name:'CaseRecordPrint'})

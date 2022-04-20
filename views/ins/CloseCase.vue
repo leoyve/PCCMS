@@ -58,7 +58,8 @@
 						v-model="picked2"
 						:options="options"
 						name="radio-options2"
-					></b-form-radio-group></b-col>
+					></b-form-radio-group>
+				</b-col>
 			</b-row>
 			<br>
 			<b-form-row class="justify-content-center">
@@ -73,11 +74,8 @@
 	</div>
 </template>
 
-
 <script>
 import closeCaseRecordList from './CloseCaseRecordList.vue';
-
-
 
 export default {
  components: { closeCaseRecordList },
@@ -115,30 +113,19 @@ export default {
 		items:	[
 			//待分文要顯示紅字，結案日期逾期未結案也要顯示紅字，應結案日期小於SYSDATE也要
 			{ id: 1, number: '11000000001', date: '110/03/03', wkut: '行政院公共工程委員會',	people:'吳XX',	record: '施工區域不明確，規劃新動線以及人流管制',	
-			tel:'02-12345678',	mail:'aaa@test.com',	pk: 5566 },
-			
+			tel:'02-12345678',	mail:'aaa@test.com',	pk: 5566 },	
 		],
 		
 	}
  },
  methods: {
-	toSee(item){
-		//alert(item.pk);
-		console.log(item);
-		this.$router.push({name:'CaseInfoEdit'})
-	},
 	aa(){
 		//新開視窗
 		let routeUrl = this.$router.resolve({name:'CmdCaseQuery'})
 		window.open(routeUrl.href, '_blank'); 
-
 	},
-  
  },
-
 }
-
-
 </script>
 
 <style>

@@ -20,37 +20,21 @@
 			<br>
 			<b-form-row class="justify-content-end">
 				<b-button size="sm" variant="success" @click="queryHandler" >確認展延</b-button>&ensp; &ensp; &ensp; &ensp; 
-				<b-button size="sm" variant="outline-secondary" @click="toSee">取消</b-button>
+				<b-button size="sm" variant="outline-secondary" @click="goBack()">取消</b-button>
 			</b-form-row>
 		</b-container>
 		<br>
 	</div>
 </template>
 
-
 <script>
 
 export default {
  data(){
-	return{
-		
-		
+	return{	
 	}
  },
- methods: {
-	toSee(item){
-		//alert(item.pk);
-		console.log(item);
-
-		this.$router.push({name:'CaseInfoEdit'})
-
-		
-	},
- },
-
 }
-
-
 </script>
 
 <style>

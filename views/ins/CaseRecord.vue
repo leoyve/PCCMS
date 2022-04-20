@@ -18,7 +18,6 @@
 			</b-form-row>
 		</b-container>
 		<br>
-		
 		<div>
 			<b-container >
 				<b-form-row class="justify-content-end">
@@ -52,13 +51,10 @@
 				</b-form-row>
 			</b-container>
 		</div>
-
 	</div>
 </template>
 
-
 <script>
-
 
 export default {
  data(){
@@ -123,25 +119,13 @@ export default {
 	}
  },
  methods: {
-	toSee(item){
-		//alert(item.pk);
-		console.log(item);
-
-		this.$router.push({name:'CaseRecordEdit'})
-
-		
-	},
 	toPrint(){
 		//新開視窗
 		let routeUrl = this.$router.resolve({name:'CaseRecordPrint'})
 		window.open(routeUrl.href, '_blank'); 
 	},
-
  },
-
 }
-
-
 </script>
 
 <style>

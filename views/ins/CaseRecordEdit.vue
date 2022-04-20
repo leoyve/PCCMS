@@ -36,13 +36,10 @@
 				<b-button size="sm" variant="outline-secondary" @click="goBack()">取消</b-button>
 			</b-row>
 		</b-container>
-
 	</div>
 </template>
 
-
 <script>
-
 
 export default {
  data(){
@@ -51,26 +48,7 @@ export default {
 		updateFlag: this.$route.params.updateFlag == null ? false:this.$route.params.updateFlag,
 	}
  },
- methods: {
-	toSee(item){
-		//alert(item.pk);
-		console.log(item);
-
-		this.$router.push({name:'CaseRecord'})
-
-		
-	},
-  queryHandler(){
-
-  },
-  reset(){
-
-  }
- },
-
 }
-
-
 </script>
 
 <style>

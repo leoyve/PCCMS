@@ -55,7 +55,6 @@
 			</b-form-row>
 		</b-container>
 		<br>
-		
 		<div>
 			<b-container fluid>
 				<h3>通報案件上傳照片審查情形一覽表</h3>
@@ -83,13 +82,10 @@
 				></b-pagination>
 			</b-container>
 		</div>
-
 	</div>
 </template>
 
-
 <script>
-
 
 export default {
  data(){
@@ -172,12 +168,7 @@ export default {
 
 	}
  },
- methods: {
- },
-
 }
-
-
 </script>
 
 <style>

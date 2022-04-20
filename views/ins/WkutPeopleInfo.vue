@@ -49,18 +49,6 @@ export default {
 
   }
  },
- methods:  {
-    insertData(){
-      alert('InsertData1111');
-    },
-    reset(){
-
-    }
-  },
-  mounted(){  //ready已經不被使用了
-      console.log(this.showFlag);
-      this.showFlag =  this.$route.params.showFlag;
-  }
 }
 </script>
 <style>
