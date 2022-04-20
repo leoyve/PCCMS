@@ -47,16 +47,16 @@ export default {
     
   }
  },
- methods:  {
-   check(){
-     confirm('確定是否轉入?');
-   },
-   report(){
-	alert('產生檔案下載');
-   },
-   reload(){
-	confirm('如重行下載上次核定之計畫資料，目前已修改之資料將被覆蓋，無法恢復，是否重新載入?');
-   }
+  methods:  {
+    check(){
+      confirm('確定是否轉入?');
+    },
+    report(){
+      alert('產生檔案下載');
+    },
+    reload(){
+      confirm('如重行下載上次核定之計畫資料，目前已修改之資料將被覆蓋，無法恢復，是否重新載入?');
+    }
   },
   components:{
     activationsInfo,workDataInfo,workMilestoneInfo,workExpensesInfo,workPhotoInfo,workSubmitInfo,judgeInfo

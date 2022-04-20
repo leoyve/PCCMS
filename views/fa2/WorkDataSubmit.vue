@@ -14,7 +14,6 @@
         </b-form-row>
         <workCompareInfo/>
         <br>
-        
         <b-form-row class="bg-primary">
           <b-col class="col-md-12 text-light"><h3>活化補助工作計畫提送管理</h3></b-col>
         </b-form-row>
@@ -63,23 +62,19 @@
 import workCompareInfo from './WorkCompareInfo.vue'
 import workSubmitInfo from './WorkSubmitInfo.vue'
 
-
-
 export default {
   data(){
     return{
-    
-  }
- },
- methods:  {
-   check(){
-     confirm('確定是否轉入?');
-   }
+    }
+  },
+  methods:  {
+    check(){
+      confirm('確定是否轉入?');
+    }
   },
   components:{
     workSubmitInfo,workCompareInfo
   }
-
 }
 </script>
 <style>

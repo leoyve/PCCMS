@@ -23,7 +23,7 @@
                 <b-th class="align-middle">10</b-th>
                 <b-th class="align-middle">8</b-th>
                 <b-td class="text-left align-middle">1.第一階段：於接獲核定補助函二個月內檢附領據及納入預算證明，函送財政部申請撥款
-                2.第二階段：核定之活化計畫辦竣後，於三個月內檢附經費實際支用情形表、補助款辦理成果報告書，函送工程會審核</b-td>
+                  2.第二階段：核定之活化計畫辦竣後，於三個月內檢附經費實際支用情形表、補助款辦理成果報告書，函送工程會審核</b-td>
                 <b-td class="text-left align-middle">1.提前15天（含）以上申請撥款且文件完備者，每次加0.5分 2.提前30天（含）以上申請撥款且文件完備者，每次加1分</b-td>
                 <b-td class="text-left align-middle">未於規定期限內申請，或因申請文件不完備致需補件者，逾期或自退件次日起至重行函送補件天數，每階段每逾1日減 0.1分</b-td>
                 <b-td class="text-left align-middle">
@@ -83,8 +83,8 @@
                 <b-td class="text-left align-middle">是否依核定計畫內容確實執行</b-td>
                 <b-td class="text-left align-middle"></b-td>
                 <b-td class="text-left align-middle">1.未完成工作之里程碑數占總里程碑數之比例，其未達20%者計列1點；達20%以上者每逾20%加計1點
-                2.有未依核定計畫內容執行之金額，其金額占核定補助款之百分比，每逾5%計列1點
-                3.本項至多計列20點
+                  2.有未依核定計畫內容執行之金額，其金額占核定補助款之百分比，每逾5%計列1點
+                  3.本項至多計列20點
                 </b-td>
                 <b-td class="text-left align-middle">
                   <b-container>
@@ -305,10 +305,6 @@ export default {
 		],
   }
  },
- methods:  {
-   
-  },
-
 }
 </script>
 <style>

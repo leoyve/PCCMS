@@ -80,17 +80,17 @@ export default {
         {
           key: "PLNNO",
           label: "計畫編號",
-			tdClass: 'text-left',
+          tdClass: 'text-left',
         },
         {
           key: "PLNNAME",
           label: "計畫名稱",
-			tdClass: 'text-left',
+          tdClass: 'text-left',
         },
         {
           key: "constName",
           label: "閒置設施",
-			tdClass: 'text-left',
+          tdClass: 'text-left',
         },
         {
           key: "wkut",
@@ -165,7 +165,6 @@ export default {
       ],
     };
   },
-  methods: {},
 };
 </script>
 

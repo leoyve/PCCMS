@@ -70,23 +70,18 @@ export default {
 			},
 		],
 		items:[
-      {PRJNO:'106000000400001', NAME:'頭份鎮停二機械式立體停車場拆除工程',TOTAMT:'5,000',BDATE:'1070101',EDATE:'1070531',
-      PRJKIND:'工程採購', mileList:[
+      { PRJNO:'106000000400001', NAME:'頭份鎮停二機械式立體停車場拆除工程',TOTAMT:'5,000',BDATE:'1070101',EDATE:'1070531',
+        PRJKIND:'工程採購', mileList:[
         {desc:'招標公告日期', date:'1070205'},{desc:'決標日期', date:'1070226'},{desc:'開工日期', date:'1070301'},
-        {desc:'完工日期', date:'1070529'},{desc:'驗收日期', date:'1070601'},
-      ]}
+        {desc:'完工日期', date:'1070529'},{desc:'驗收日期', date:'1070601'},]
+      }
     ]
      
   }
  },
- methods:  {
-   
-  },
   mounted(){
-	this.items.forEach((items, index) => { items.serial = index + 1; });
+    this.items.forEach((items, index) => { items.serial = index + 1; });
   },
-
-
 }
 </script>
 <style>

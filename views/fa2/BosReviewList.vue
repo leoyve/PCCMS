@@ -87,9 +87,9 @@ export default {
  methods: {
 	
  },
- mounted(){
-	this.items.forEach((items, index) => { items.serial = index + 1; });
-  },
+	mounted(){
+		this.items.forEach((items, index) => { items.serial = index + 1; });
+	},
 }
 
 

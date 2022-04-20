@@ -12,7 +12,7 @@
           <b-col class="col-md text-left">
             <b-img src="https://www.mdnkids.com/upload/images/20210703-06-09.jpg" width="200"/>
             <input type="file" class="form-control-file" id="exampleFormControlFile1">
-            </b-col>
+          </b-col>
         </b-row>
         <b-row class="border border-dark">
           <b-col class="col-md-2 ">照片說明</b-col>
@@ -26,7 +26,6 @@
         </b-form-row>
       </b-container>
       <br>
-      
   </div>
 </template>
 
@@ -50,12 +49,7 @@ export default {
     ]
   }
  },
- methods:  {
-    
-  },
-  mounted(){  //ready已經不被使用了
-    //  console.log(this.showFlag);
-   //   this.showFlag =  this.$route.params.showFlag;
+  mounted(){  
   }
 }
 </script>

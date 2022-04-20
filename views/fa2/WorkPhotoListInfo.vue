@@ -17,9 +17,7 @@
 	</div>
 </template>
 
-
 <script>
-
 
 export default {
 	props:['modifyFlag'],
@@ -69,12 +67,9 @@ export default {
 	uploadPhoto(){
 		alert('上傳照片通用元件。');
 	}
-
  },
 
 }
-
-
 </script>
 
 <style>

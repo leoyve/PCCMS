@@ -22,23 +22,22 @@
 export default {
   data() {
     return {
-
       // 這邊有給KEY的話，items也要換成KEY，否則取值會是undefined，這邊是要顯示的欄位，不顯示的放在ITEMS裡面就好
       fields: [
         {
           key: "PLNNO",
           label: "計畫編號",
-			tdClass: 'text-left',
+          tdClass: 'text-left',
         },
         {
           key: "PLNNAME",
           label: "計畫名稱",
-			tdClass: 'text-left',
+          tdClass: 'text-left',
         },
         {
           key: "constName",
           label: "閒置設施",
-			tdClass: 'text-left',
+          tdClass: 'text-left',
         },
         {
           key: "wkut",
@@ -113,7 +112,6 @@ export default {
       ],
     };
   },
-  methods: {},
 };
 </script>
 

@@ -14,9 +14,7 @@
   </div>
 </template>
 
-
 <script>
-
 
 export default {
   props:['modifyFlag'],
@@ -51,19 +49,13 @@ export default {
       { SYRMNTH:'10703',PEXP:'2,500',MEMO:'	辦理頭份鎮停二立體停車場拆除工程施工事宜'},
       { SYRMNTH:'10704',PEXP:'3,500',MEMO:'	辦理頭份鎮停二立體停車場拆除工程施工事宜'},
       { SYRMNTH:'10705',PEXP:'5,00',MEMO:'	辦理頭份鎮停二立體停車場拆除工程完工驗收事宜'},
-
     ]
      
   }
  },
- methods:  {
-   
-  },
   mounted(){
-	this.items.forEach((items, index) => { items.serial = index + 1; });
+    this.items.forEach((items, index) => { items.serial = index + 1; });
   },
-
-
 }
 </script>
 <style>

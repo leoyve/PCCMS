@@ -5,9 +5,7 @@
 			<h2>實地訪查文件</h2>
 			<b-row class="border border-dark">
 				<b-col class="col-md-2 ">上傳機關</b-col>
-				<b-col class="col-md-10 text-left">
-					行政院工程委員會
-				</b-col>
+				<b-col class="col-md-10 text-left">行政院工程委員會</b-col>
 			</b-row>
 			<b-row class="border border-dark">
 				<b-col class="col-md-2 ">選擇文件</b-col>
@@ -51,13 +49,8 @@ export default {
 	return{
 		addFlag: this.$route.params.addFlag == null ? false:this.$route.params.addFlag,
 		updateFlag: this.$route.params.updateFlag == null ? false:this.$route.params.updateFlag,
-	
 	}
  },
- methods: {
-	
- },
-
 }
 
 

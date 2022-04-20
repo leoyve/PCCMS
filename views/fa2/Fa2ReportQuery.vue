@@ -146,32 +146,22 @@ export default {
 			},
 	],
 	items:[ 
-			{
-				city:'新竹市',plnTotal:1,plnamt:'5,000',pcount:0,scount:0,scount1:0,scount2:0,scount3:0,
-				prate:'',arate:'0.00',mnum:5,mFinNum:0,pmnum:5,pnmnum:5,
-	
-			},
-			{
-				city:'內政部',plnTotal:1,plnamt:'5,566',pcount:0,scount:0,scount1:0,scount2:0,scount3:0,
-				prate:'0.00',arate:'0.00',mnum:6,mFinNum:6,pmnum:6,pnmnum:0,
-	
-			},
-			{
-				city:'桃園市',plnTotal:1,plnamt:'42,000',pcount:'21,100',scount:'13,502',scount1:0,scount2:0,scount3:'13,503',
-				prate:'63.99',arate:'32.15',mnum:5,mFinNum:3,pmnum:3,pnmnum:0,
-			}
+			{	city:'新竹市',plnTotal:1,plnamt:'5,000',pcount:0,scount:0,scount1:0,scount2:0,scount3:0,
+				prate:'',arate:'0.00',mnum:5,mFinNum:0,pmnum:5,pnmnum:5,},
+			{	city:'內政部',plnTotal:1,plnamt:'5,566',pcount:0,scount:0,scount1:0,scount2:0,scount3:0,
+				prate:'0.00',arate:'0.00',mnum:6,mFinNum:6,pmnum:6,pnmnum:0,},
+			{	city:'桃園市',plnTotal:1,plnamt:'42,000',pcount:'21,100',scount:'13,502',scount1:0,scount2:0,scount3:'13,503',
+				prate:'63.99',arate:'32.15',mnum:5,mFinNum:3,pmnum:3,pnmnum:0,}
 		],
   }
  },
- methods:  {
+	methods:  {
    
-  },
+	},
 
-  mounted(){
-	this.items.forEach((items, index) => { items.serial = index + 1; });
-  },
- 
- 
+	mounted(){
+		this.items.forEach((items, index) => { items.serial = index + 1; });
+	},
 }
 </script>
 <style>

@@ -25,7 +25,6 @@
 			</b-form-row>
 		</b-container>
 		<br>
-		
 		<div>
 			<b-container fluid>
 				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>活化補助工作計畫辦理成果報告考核一覽表</strong></h4></b-form-row>
@@ -56,9 +55,7 @@
 	</div>
 </template>
 
-
 <script>
-
 
 export default {
  data(){
@@ -150,12 +147,9 @@ export default {
 		]
 	}
  },
- methods: {
- },
    mounted(){
 	this.items.forEach((items, index) => { items.serial = index + 1; });
   },
-
 }
 
 

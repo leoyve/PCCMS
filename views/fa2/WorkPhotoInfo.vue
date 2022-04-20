@@ -36,12 +36,6 @@ export default {
       ]
   }
  },
- methods:  {
- 
-  },
-  mounted(){  
-   // this.items.forEach((items, index) => { items.serial = index + 1; });
-  }
 }
 </script>
 <style>

@@ -42,19 +42,17 @@
 export default {
   data(){
     return{
-    options:[
-      {text:'是', value:1},
-      {text:'否', value:1},
-    ]
-  }
- },
- methods:  {
-   check(){
-     confirm('確定解鎖/上鎖資訊是否正確?');
-   }
+      options:[
+        {text:'是', value:1},
+        {text:'否', value:1},
+      ]
+    }
   },
-
-
+  methods:  {
+    check(){
+      confirm('確定解鎖/上鎖資訊是否正確?');
+    }
+  },
 }
 </script>
 <style>

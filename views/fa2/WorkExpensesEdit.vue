@@ -43,21 +43,16 @@ export default {
   props:["detailFlag"],
   data(){
     return{
-    addFlag: this.$route.params.addFlag == null ? false:this.$route.params.addFlag,
-    updateFlag: this.$route.params.updateFlag == null ? false:this.$route.params.updateFlag,
-     type: [
+      addFlag: this.$route.params.addFlag == null ? false:this.$route.params.addFlag,
+      updateFlag: this.$route.params.updateFlag == null ? false:this.$route.params.updateFlag,
+      type: [
         { value: '', text: '' , disabled: true},
         { value: '0', text: '五權砲陣地舊營舍活化計畫' },
         { value: '1', text: 'XXX計畫' },
-
       ],
       se:this.$route.params.addFlag == true ? '':1
   }
  },
- methods:  {
-   
-  },
-
 }
 </script>
 <style>

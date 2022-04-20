@@ -92,8 +92,6 @@ export default {
       items: this.replaceItems,
     };
   },
-  methods: {},
-
   mounted() {
     this.items.forEach((items, index) => {
       items.serial = index + 1;

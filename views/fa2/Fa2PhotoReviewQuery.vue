@@ -30,7 +30,6 @@
 			</b-form-row>
 		</b-container>
 		<br>
-		
 		<div>
 			<b-container fluid>
 				<h3>上傳照片審查情形一覽表</h3>
@@ -64,7 +63,6 @@
 
 
 <script>
-
 
 export default {
  data(){
@@ -135,11 +133,11 @@ export default {
 		],
 	}
  },
- methods: {
- },
-   mounted(){
-	this.items.forEach((items, index) => { items.serial = index + 1; });
-  },
+	methods: {
+	},
+	mounted(){
+		this.items.forEach((items, index) => { items.serial = index + 1; });
+	},
 
 }
 

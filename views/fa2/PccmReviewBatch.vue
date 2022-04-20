@@ -75,15 +75,15 @@
         <b-col class="col-md-12 text-light"><h3>活化計畫審查</h3></b-col>
       </b-form-row>
       <b-form-row class="border border-dark">
-        <b-col class="col-md-2 text-dark"
-          ><font color="red">*</font>工程會審查日期</b-col
-        >
+        <b-col class="col-md-2 text-dark">
+          <font color="red">*</font>工程會審查日期
+        </b-col>
         <b-col class="col-md-10 text-left"><b-datepicker /></b-col>
       </b-form-row>
       <b-form-row class="border border-dark">
-        <b-col class="col-md-2 text-dark"
-          ><font color="red">*</font>工程會審查文號</b-col
-        >
+        <b-col class="col-md-2 text-dark">
+          <font color="red">*</font>工程會審查文號
+        </b-col>
         <b-col class="col-md-10 text-left"><b-form-input /></b-col>
       </b-form-row>
       <b-form-row class="border border-dark">
@@ -98,30 +98,27 @@
         </b-col>
       </b-form-row>
       <b-form-row class="border border-dark">
-        <b-col class="col-md-2 text-dark"
-          ><font color="red">*</font>計畫審核意見</b-col
-        >
+        <b-col class="col-md-2 text-dark">
+          <font color="red">*</font>計畫審核意見
+        </b-col>
         <b-col class="col-md-10 text-left"><b-form-textarea /></b-col>
       </b-form-row>
       <b-form-row class="border border-dark">
-        <b-col class="col-md-2 text-dark"
-          ><font color="red">*</font>行政院核定日期</b-col
-        >
+        <b-col class="col-md-2 text-dark">
+          <font color="red">*</font>行政院核定日期
+        </b-col>
         <b-col class="col-md-10 text-left"><b-datepicker /></b-col>
       </b-form-row>
       <b-form-row class="border border-dark">
-        <b-col class="col-md-2 text-dark"
-          ><font color="red">*</font>行政院核定文號</b-col
-        >
+        <b-col class="col-md-2 text-dark">
+          <font color="red">*</font>行政院核定文號
+        </b-col>
         <b-col class="col-md-10 text-left"><b-form-input /></b-col>
       </b-form-row>
       <br />
       <b-form-row class="justify-content-end">
-        <b-button size="sm" variant="success" @click="goBack()">審查</b-button
-        >&nbsp;
-        <b-button size="sm" variant="outline-secondary" @click="goBack()"
-          >取消</b-button
-        >
+        <b-button size="sm" variant="success" @click="goBack()">審查</b-button>&nbsp;
+        <b-button size="sm" variant="outline-secondary" @click="goBack()">取消</b-button>
       </b-form-row>
 		<br>
     </b-container>

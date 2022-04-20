@@ -60,10 +60,6 @@ export default {
     
   }
  },
- methods:  {
-   
-  },
-
 }
 </script>
 <style>

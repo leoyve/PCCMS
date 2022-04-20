@@ -51,23 +51,23 @@
 export default {
  data(){
 	return{
-	checkOptions: [
-      {	name:	'活化計畫編號',	item:	'1',  },
-      {	name:	'設施編號',	item:	'2',  },
-      {	name:	'設施管理機關',	item:	'3',  },
-      {	name:	'活化計畫名稱',	item:	'4',  },
-      {	name:	'活化計畫核定經費',	item:	'5',  },
-      {	name:	'活化計畫起始日',	item:	'6',   },
-      {	name:	'活化計畫結束日',	item:	'7',   },
-      {	name:	'設施內容及使用現況',	item:	'8',   },
-      {	name:	'活化計畫內容',	item:	'9',   },
-      {	name:	'活化計畫效益',	item:	'10',   },
-      {	name:	'活化經費編列說明',	item:	'11',   },
-      {	name:	'解除列管原因說明',	item:	'12',   },
-      {	name:	'設施活化類別',	item:	'13',   },
-      {	name:	'活化標準',	item:	'14',   },
-		{	name:	'...',	item:	'15',   },
-    ],
+		checkOptions: [
+			{	name:	'活化計畫編號',	item:	'1',  },
+			{	name:	'設施編號',	item:	'2',  },
+			{	name:	'設施管理機關',	item:	'3',  },
+			{	name:	'活化計畫名稱',	item:	'4',  },
+			{	name:	'活化計畫核定經費',	item:	'5',  },
+			{	name:	'活化計畫起始日',	item:	'6',   },
+			{	name:	'活化計畫結束日',	item:	'7',   },
+			{	name:	'設施內容及使用現況',	item:	'8',   },
+			{	name:	'活化計畫內容',	item:	'9',   },
+			{	name:	'活化計畫效益',	item:	'10',   },
+			{	name:	'活化經費編列說明',	item:	'11',   },
+			{	name:	'解除列管原因說明',	item:	'12',   },
+			{	name:	'設施活化類別',	item:	'13',   },
+			{	name:	'活化標準',	item:	'14',   },
+			{	name:	'...',	item:	'15',   },
+		],
 	}
  },
  methods: {

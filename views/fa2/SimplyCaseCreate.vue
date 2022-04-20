@@ -56,9 +56,7 @@
   </div>
 </template>
 
-
 <script>
-
 
 export default {
   data(){
@@ -75,14 +73,9 @@ export default {
         { value: '2', text: '交通建設-機場' },
         { value: '3', text: '體育場館-室內體育場館' },
         { value: '4', text: '社福設施-社福設施' },
-
       ],
   }
  },
- methods:  {
-   
-  },
-
 }
 </script>
 <style>

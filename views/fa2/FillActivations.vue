@@ -352,8 +352,8 @@ export default {
     judgeInfo,workPhotoListInfo
   },
   mounted(){
-	this.items2.forEach((items2, index) => { items2.serial = index + 1; });
-  this.items4.forEach((items4, index) => { items4.serial = index + 1; });
+    this.items2.forEach((items2, index) => { items2.serial = index + 1; });
+    this.items4.forEach((items4, index) => { items4.serial = index + 1; });
   },
 
 

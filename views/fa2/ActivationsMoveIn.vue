@@ -49,14 +49,13 @@ export default {
   }
  },
  methods:  {
-   check(){
+    check(){
      confirm('確定是否轉入?');
-   }
+    }
   },
   components:{
     activationsInfo,workDataInfo,workMilestoneInfo,workExpensesInfo,workPhotoInfo,workSubmitInfo
   }
-
 }
 </script>
 <style>

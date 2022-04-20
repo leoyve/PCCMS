@@ -275,12 +275,12 @@ export default {
   data(){
     return{
      options: [
-			{	text:	'是',	value:	'A'},
+      {	text:	'是',	value:	'A'},
 			{	text:	'否',	value:	'B'},
 		],
   }
  },
- methods:  {
+  methods:  {
    
   },
 

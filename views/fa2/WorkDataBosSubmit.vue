@@ -9,7 +9,6 @@
         </b-form-row>
         <workCompareInfo/>
         <br>
-        
         <b-form-row class="bg-primary">
           <b-col class="col-md-12 text-light"><h3>目的事業主管機關建議活化計畫補助審查</h3></b-col>
         </b-form-row>
@@ -51,13 +50,11 @@
 <script>
 import workCompareInfo from './WorkCompareInfo.vue'
 
-
-
 export default {
   data(){
     return{
     options: [
-			{	text:	'核轉工程會',	value:	'A'},
+      {	text:	'核轉工程會',	value:	'A'},
 			{	text:	'審查退件或不同意',	value:	'B'},
 			{	text:	'回復未審查',	value:	'C'},
 		],
@@ -71,7 +68,6 @@ export default {
   components:{
     workCompareInfo
   }
-
 }
 </script>
 <style>

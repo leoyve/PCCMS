@@ -75,7 +75,7 @@ export default {
   },
   methods: {},
   components:{
-	fillActivationsListInfo
+    fillActivationsListInfo
   },
 
   mounted() {

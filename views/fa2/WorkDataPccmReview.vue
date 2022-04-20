@@ -10,7 +10,6 @@
         </b-form-row>
         <workCompareInfo/>
         <br>
-        
         <b-form-row class="bg-primary">
           <b-col class="col-md-12 text-light"><h3>活化計畫審查</h3></b-col>
         </b-form-row>
@@ -61,28 +60,25 @@
 import workCompareInfo from './WorkCompareInfo.vue'
 import pccmReviewInfo from './PccmReviewInfo.vue'
 
-
-
 export default {
   data(){
     return{
-    options: [
-			{	text:	'審查同意',	value:	'A'},
-			{	text:	'審查不同意',	value:	'B'},
-			{	text:	'退回修正',	value:	'C'},
-      {	text:	'回復未審查',	value:	'C'},
-		],
-  }
- },
- methods:  {
-   check(){
-     confirm('確定是否轉入?');
-   }
+      options: [
+        {	text:	'審查同意',	value:	'A'},
+        {	text:	'審查不同意',	value:	'B'},
+        {	text:	'退回修正',	value:	'C'},
+        {	text:	'回復未審查',	value:	'C'},
+      ],
+    }
+  },
+  methods:  {
+    check(){
+      confirm('確定是否轉入?');
+    }
   },
   components:{
     workCompareInfo,pccmReviewInfo
   }
-
 }
 </script>
 <style>

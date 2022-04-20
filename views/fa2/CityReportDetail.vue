@@ -60,17 +60,16 @@ export default {
 	
   }
  },
- methods:  {
+  methods:  {
    
   },
   components:{
-	fillActivationsListInfo
+    fillActivationsListInfo
   },
 
   mounted(){
-	this.items.forEach((items, index) => { items.serial = index + 1; });
+    this.items.forEach((items, index) => { items.serial = index + 1; });
   },
- 
  
 }
 </script>
