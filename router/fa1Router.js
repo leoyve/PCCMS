@@ -203,6 +203,11 @@ module.exports = [
         name: 'Fa1MonthlyBosEdit',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa1/Fa1MonthlyBosEdit.vue')
       },
+      {
+        path: 'fa1CaseQuery',
+        name: 'Fa1CaseQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/Fa1CaseQuery.vue')
+      },
     ],
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route

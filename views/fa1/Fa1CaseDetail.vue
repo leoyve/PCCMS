@@ -16,7 +16,7 @@
 		</b-col>
         <b-col class="col-md-3">
 			<b-button size="sm" variant="success" @click="gotoParam('Fa1CaseEdit')">修改通報案件</b-button>&nbsp;          
-			<b-button size="sm" variant="danger" @click="deleteCheck()">刪除通報案件</b-button>
+			<b-button size="sm" variant="danger" @click="deleteCheck()" v-if="this.$route.params.deleteFlag">刪除通報案件</b-button>
         </b-col>
       </b-form-row>
       <br />
