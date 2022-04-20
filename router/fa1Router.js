@@ -163,6 +163,46 @@ module.exports = [
         name: 'ChangeDivisionPhoto',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa1/ChangeDivisionPhoto.vue')
       },
+      {
+        path: 'unOpingCaseQuery',
+        name: 'UnOpingCaseQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/UnOpingCaseQuery.vue')
+      },
+      {
+        path: 'fa1CaseList',
+        name: 'Fa1CaseList',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/Fa1CaseList.vue')
+      },
+      {
+        path: 'fa1CaseDetail',
+        name: 'Fa1CaseDetail',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/Fa1CaseDetail.vue')
+      },
+      {
+        path: 'fa1CaseEdit',
+        name: 'Fa1CaseEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/Fa1CaseEdit.vue')
+      },
+      {
+        path: 'fa1BudgetEdit',
+        name: 'Fa1BudgetEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/Fa1BudgetEdit.vue')
+      },
+      {
+        path: 'fa1MilestoneEdit',
+        name: 'Fa1MilestoneEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/Fa1MilestoneEdit.vue')
+      },
+      {
+        path: 'fa1MonthlyEdit',
+        name: 'Fa1MonthlyEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/Fa1MonthlyEdit.vue')
+      },
+      {
+        path: 'fa1MonthlyBosEdit',
+        name: 'Fa1MonthlyBosEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/Fa1MonthlyBosEdit.vue')
+      },
     ],
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
