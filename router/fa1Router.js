@@ -207,6 +207,11 @@ module.exports = [
         path: 'fa1CaseQuery',
         name: 'Fa1CaseQuery',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa1/Fa1CaseQuery.vue')
+      }, 
+      {
+        path: 'fa1CaseByWkutQuery',
+        name: 'Fa1CaseByWkutQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/Fa1CaseByWkutQuery.vue')
       },
     ],
     // route level code-splitting

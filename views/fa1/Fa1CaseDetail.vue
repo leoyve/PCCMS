@@ -7,7 +7,7 @@
     <br />
     <b-container fluid>
       <b-form-row class="justify-content-end">
-        <b-button size="sm" variant="outline-secondary" @click="gotoParam('DivisionCaseQuery')">回上一頁</b-button>
+        <b-button size="sm" variant="outline-secondary" @click="goBack()">回上一頁</b-button>
       </b-form-row>
       <br />
       <b-form-row class="justify-content-end">
