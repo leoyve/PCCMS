@@ -1,5 +1,6 @@
 <template>
 	<div>
+		<br>
 		<b-container>
 			<b-form-row >
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="工程類別" label-align-md="right">
@@ -20,27 +21,19 @@
 import caseInfo from '../CaseInfo.vue';
 
 export default {
- data(){
-	return{
+	data(){
+		return{
 		type: [
-		{ value: '', text: '' , disabled: true},
-        { value: '0', text: '建築新建工程' },
-        { value: '1', text: '機電工程' },
-        { value: '2', text: '水電工程' },
-        { value: '3', text: '空調工程' },
-		{ value: '4', text: '鐵路工程' },
-      ],
-	}
- },
- methods: {
-	queryHandler(){
+			{ value: '', text: '' , disabled: true},
+			{ value: '0', text: '建築新建工程' },
+			{ value: '1', text: '機電工程' },
+			{ value: '2', text: '水電工程' },
+			{ value: '3', text: '空調工程' },
+			{ value: '4', text: '鐵路工程' },
+		],
+		}
 	},
-	reset(){
-	},
-	toSee(){
-		this.$router.push({name:'ReportCommonList'})
-	},
- },
+
   components: {
 	caseInfo
   },

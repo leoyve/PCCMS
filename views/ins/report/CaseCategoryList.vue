@@ -1,23 +1,20 @@
 <template>
 	<div>
+		<br>
 		<b-container fluid>
 			<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>未填寫工程類別之通報案件一覽表</strong></h4></b-form-row>
 			<b-form-row class="justify-content-end">
 				<b-table striped hover :items="items" :fields="fields" head-variant="warning">
 					<template #cell(action)="row">
-						<b-button size="sm" variant="success" @click="toSee(row.item)">修改</b-button>
+						<b-button size="sm" variant="success" @click="gotoParam('CaseCategoryChange', row.item)">修改</b-button>
 					</template>
 				</b-table>
 			</b-form-row>
 		</b-container>
 	</div>
-
 </template>
 
-
 <script>
-
-
 export default {
  data(){
 	return{
@@ -79,19 +76,7 @@ export default {
 		],
 	}
  },
- methods: {
-	queryHandler(){
-	},
-	reset(){
-	},
-	toSee(){
-		this.$router.push({name:'CaseCategoryChange'})
-	},
- },
-
 }
-
-
 </script>
 
 <style>

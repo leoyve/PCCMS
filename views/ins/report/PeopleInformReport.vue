@@ -24,29 +24,29 @@
 			<b-container fluid>
 				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>民眾通報案件及滿意度調查統計表</strong></h4></b-form-row>
 				<b-form-row class="justify-content-end">
-				<b-table striped hover :items="items" :fields="fields" head-variant="warning">
-					<template #cell(caseNum)="row">
-						<a href="#" variant="primary" @click="toSee(row)" >{{row.item.caseNum}}</a>
-					</template>
-					<template #cell(satA)="row">
-						<a href="#" variant="primary" @click="toSee(row)" >{{row.item.satANum}}</a>
-					</template>
-					<template #cell(satB)="row">
-						<a href="#" variant="primary" @click="toSee(row)" >{{row.item.satBNum}}</a>
-					</template>
-					<template #cell(satC)="row">
-						<a href="#" variant="primary" @click="toSee(row)" >{{row.item.satCNum}}</a>
-					</template>
-					<template #cell(satD)="row">
-						<a href="#" variant="primary" @click="toSee(row)" >{{row.item.satDNum}}</a>
-					</template>
-					<template #cell(satE)="row">
-						<a href="#" variant="primary" @click="toSee(row)" >{{row.item.satENum}}</a>
-					</template>
-					<template #cell(satF)="row">
-						<a href="#" variant="primary" @click="toSee(row)" >{{row.item.satFNum}}</a>
-					</template>
-				</b-table>
+					<b-table striped hover :items="items" :fields="fields" head-variant="warning">
+						<template #cell(caseNum)="row">
+							<a href="#" variant="primary" @click="gotoParam('ReportCommonList',row)" >{{row.item.caseNum}}</a>
+						</template>
+						<template #cell(satA)="row">
+							<a href="#" variant="primary" @click="gotoParam('ReportCommonList',row)" >{{row.item.satANum}}</a>
+						</template>
+						<template #cell(satB)="row">
+							<a href="#" variant="primary" @click="gotoParam('ReportCommonList',row)" >{{row.item.satBNum}}</a>
+						</template>
+						<template #cell(satC)="row">
+							<a href="#" variant="primary" @click="gotoParam('ReportCommonList',row)" >{{row.item.satCNum}}</a>
+						</template>
+						<template #cell(satD)="row">
+							<a href="#" variant="primary" @click="gotoParam('ReportCommonList',row)" >{{row.item.satDNum}}</a>
+						</template>
+						<template #cell(satE)="row">
+							<a href="#" variant="primary" @click="gotoParam('ReportCommonList',row)" >{{row.item.satENum}}</a>
+						</template>
+						<template #cell(satF)="row">
+							<a href="#" variant="primary" @click="gotoParam('ReportCommonList',row)" >{{row.item.satFNum}}</a>
+						</template>
+					</b-table>
 				</b-form-row>
 				<b-pagination align="right"
 					v-model="currentPage"
@@ -60,9 +60,7 @@
 	</div>
 </template>
 
-
 <script>
-
 export default {
  data(){
 	return{
@@ -115,14 +113,12 @@ export default {
 		],
 		items:	[
 			//待分文要顯示紅字，結案日期也是
-			{ id: 1, people: '陳XX-0978XXXXXX-XXX@stust.edu.tw', caseNum:'10',	satANum: '5', satBNum: '2',	satCNum: '0',	satDNum: '0', satENum:	'0',	satFNum:'0',
+			{ id: 1, people: '陳XX', caseNum:'10',	satANum: '5', satBNum: '2',	satCNum: '0',	satDNum: '0', satENum:	'0',	satFNum:'0',
 				totalNum:'7',	rate:'100.00%',	pk: 5566 },
-			{ id: 2, people: '王XX-0978XXXXXX-XXX@stust.edu.tw', caseNum:'5',	satANum: '0', satBNum: '1',	satCNum: '0',	satDNum: '0', satENum:	'1',	satFNum:'1',
+			{ id: 2, people: '王XX', caseNum:'5',	satANum: '0', satBNum: '1',	satCNum: '0',	satDNum: '0', satENum:	'1',	satFNum:'1',
 				totalNum:'3',	rate:'33.33%',	pk: 5566 },
-			{ id: 3, people: '陳XX-0978XXXXXX-XXX@stust.edu.tw', caseNum:'6',	satANum: '2', satBNum: '0',	satCNum: '0',	satDNum: '0', satENum:	'0',	satFNum:'1',
+			{ id: 3, people: '陳XX', caseNum:'6',	satANum: '2', satBNum: '0',	satCNum: '0',	satDNum: '0', satENum:	'0',	satFNum:'1',
 				totalNum:'3',	rate:'66.67%',	pk: 5566 },
-
-
 		],
 		checkAssign:	[
 			{	value: '', text: '是'	},
@@ -136,24 +132,7 @@ export default {
 		],
 	}
  },
- methods: {
-	toSee(row){
-		//alert(item.pk);
-		console.log(row.item.wkut);
-		this.$router.push({name:'ReportCommonList',  params:{wkutName:	row.item.wkut}})
-		
-	},
-  queryHandler(){
-
-  },
-  reset(){
-
-  }
- },
-
 }
-
-
 </script>
 
 <style>

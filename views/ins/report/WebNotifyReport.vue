@@ -7,13 +7,10 @@
 				</b-table>
 			</b-form-row>
 		</b-container>
-
 	</div>
 </template>
 
-
 <script>
-
 
 export default {
  data(){
@@ -45,12 +42,7 @@ export default {
 		],
 	}
  },
- methods: {
-
- },
-
 }
-
 
 </script>
 

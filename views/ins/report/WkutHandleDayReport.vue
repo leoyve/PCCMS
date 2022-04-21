@@ -20,24 +20,23 @@
 			</b-form-row>
 		</b-container>
 		<br>
-		
 		<div>
 			<b-container fluid>
 				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>110年度各主管機關通報案件結案處理天數統計表</strong></h4></b-form-row>
 				<b-form-row class="justify-content-end">
-				<b-table striped hover :items="items" :fields="fields" head-variant="">
-					<template #thead-top>
-						<b-tr>
-							<b-th colspan="2"></b-th>
-							<b-th class="border " variant="secondary" colspan="2">第一季</b-th>
-							<b-th class="border border-light " variant="primary" colspan="2">第二季</b-th>
-							<b-th class="border border-light " variant="success" colspan="2">第三季</b-th>
-							<b-th class="border border-light " variant="info" colspan="2">第四季</b-th>
-							<!--平均天數超過兩天紅字?-->
-							<b-th class="border border-light " variant="secondary" colspan="5">全年累計</b-th>
-						</b-tr>
-					</template>
-				</b-table>
+					<b-table striped hover :items="items" :fields="fields" head-variant="">
+						<template #thead-top>
+							<b-tr>
+								<b-th colspan="2"></b-th>
+								<b-th class="border " variant="secondary" colspan="2">第一季</b-th>
+								<b-th class="border border-light " variant="primary" colspan="2">第二季</b-th>
+								<b-th class="border border-light " variant="success" colspan="2">第三季</b-th>
+								<b-th class="border border-light " variant="info" colspan="2">第四季</b-th>
+								<!--平均天數超過兩天紅字?-->
+								<b-th class="border border-light " variant="secondary" colspan="5">全年累計</b-th>
+							</b-tr>
+						</template>
+					</b-table>
 				</b-form-row>
 				<b-pagination align="right"
 					v-model="currentPage"
@@ -50,9 +49,7 @@
 	</div>
 </template>
 
-
 <script>
-
 
 export default {
  data(){
@@ -133,8 +130,6 @@ export default {
 				season4Num:	'',	season4Day:	'',	allNum:'3',	allDay:'1.00',	allStand:'0.00',	allMaxDay:'1.00', 	allMinDay:'1.00',	pk: 5566 },
 			{ id: 3, wkut: '屏東縣政府', season1Num: '9', season1Day: '2.0',	season2Num: '',	season2Day: '', season3Num:'',	season3Day:'',
 				season4Num:	'',	season4Day:	'',	allNum:'9',	allDay:'2.00',	allStand:'2.16',	allMaxDay:'8.00', 	allMinDay:'1.00',	pk: 5566 },
-	
-	
 		],
 		checkClosed:	[
 			{	value: '', text: '全部'	},
@@ -143,12 +138,7 @@ export default {
 		],
 	}
  },
- methods: {
-	
- },
-
 }
-
 
 </script>
 

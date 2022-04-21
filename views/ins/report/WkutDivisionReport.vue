@@ -39,13 +39,10 @@
 				</b-form-row>
 			</b-container>
 		</div>
-
 	</div>
 </template>
 
-
 <script>
-
 
 export default {
  data(){
@@ -81,16 +78,7 @@ export default {
 		totalNum:'239',
 	}
  },
- methods: {
-	queryHandler(){
-	},
-	reset(){
-	}
- },
-
 }
-
-
 </script>
 
 <style>

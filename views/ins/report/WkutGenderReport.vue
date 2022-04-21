@@ -30,8 +30,8 @@
 						<template #custom-foot>
 							<b-tr>
 								<b-th colspan="2">合計</b-th>
-								<b-th ><a href="#" variant="primary" @click="toSee()" >{{totalMen}}</a></b-th>
-								<b-th ><a href="#" variant="primary" @click="toSee()" >{{totalWomen}}</a></b-th>
+								<b-th ><a href="#" variant="primary" @click="gotoParam('ReportCommonList')" >{{totalMen}}</a></b-th>
+								<b-th ><a href="#" variant="primary" @click="gotoParam('ReportCommonList')" >{{totalWomen}}</a></b-th>
 								<b-th >{{totalUnfill}}</b-th>
 							</b-tr>
 						</template>
@@ -39,13 +39,10 @@
 				</b-form-row>
 			</b-container>
 		</div>
-
 	</div>
 </template>
 
-
 <script>
-
 
 export default {
  data(){
@@ -87,20 +84,7 @@ export default {
 		totalUnfill:'4',
 	}
  },
- methods: {
-	toSee(){
-
-		this.$router.push({name:'ReportCommonList'});
-		
-	},
-  reset(){
-
-  }
- },
-
 }
-
-
 </script>
 
 <style>

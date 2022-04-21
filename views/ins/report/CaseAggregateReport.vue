@@ -81,7 +81,6 @@
 		</b-container>
 		<br>
 		<reportCommonList/>
-
 	</div>
 </template>
 
@@ -90,52 +89,41 @@
 import reportCommonList from './ReportCommonList.vue'
 
 export default {
- data(){
-	return{
-		checkAssign:	[
-			{	value: '', text: '全部'	},
-			{	value: 'N', text: '未分案'	},
-			{	value: 'Y', text: '已分案'	},
-		],
-		checkClosed:	[
-			{	value: '', text: '全部'	},
-			{	value: 'N', text: '未結案'	},
-			{	value: 'E', text: '逾期未結案'	},
-			{	value: 'W', text: '待審查結案'	},
-			{	value: 'Y', text: '已結案'	},
-		],
-		checkAssign2:[
-			{	value: 'Y', text: '是'	},
-			{	value: 'N', text: '否'	},
-			{	value: '', text: '不限'	},
-		],
-		type: [
-			{ value: '', text: '' , disabled: true},
-			{ value: '0', text: '電話' },
-			{ value: '1', text: '傳真' },
-			{ value: '2', text: '線上網路' },
-			{ value: '3', text: '智慧型手機' },
-			{ value: '4', text: '行動版通報' },
-			{ value: '5', text: '信件' },
-			{ value: '6', text: '媒體' },
-		]
-	}
- },
- methods: {
-	toSee(row){
-		//alert(item.pk);
-		console.log(row.item.wkut);
-		this.$router.push({name:'ReportCommonList',  params:{wkutName:	row.item.wkut}})
-		
+	data(){
+		return{
+			checkAssign:	[
+				{	value: '', text: '全部'	},
+				{	value: 'N', text: '未分案'	},
+				{	value: 'Y', text: '已分案'	},
+			],
+			checkClosed:	[
+				{	value: '', text: '全部'	},
+				{	value: 'N', text: '未結案'	},
+				{	value: 'E', text: '逾期未結案'	},
+				{	value: 'W', text: '待審查結案'	},
+				{	value: 'Y', text: '已結案'	},
+			],
+			checkAssign2:[
+				{	value: 'Y', text: '是'	},
+				{	value: 'N', text: '否'	},
+				{	value: '', text: '不限'	},
+			],
+			type: [
+				{ value: '', text: '' , disabled: true},
+				{ value: '0', text: '電話' },
+				{ value: '1', text: '傳真' },
+				{ value: '2', text: '線上網路' },
+				{ value: '3', text: '智慧型手機' },
+				{ value: '4', text: '行動版通報' },
+				{ value: '5', text: '信件' },
+				{ value: '6', text: '媒體' },
+			]
+		}
 	},
- },
-components: {
-    reportCommonList,
+	components: {
+		reportCommonList,
+	}
 }
-
-}
-
-
 </script>
 
 <style>

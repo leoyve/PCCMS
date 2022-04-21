@@ -58,30 +58,27 @@
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="通報方式" label-align-md="right">
 					<b-form-select :options="type"></b-form-select>
 				</b-form-group>
-		
 			</b-form-row>
 			<b-form-row>
 				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="顯示項目" label-align-md="right">
-						<b-form-checkbox-group
-							v-model="selected"
-							:options="checkOptions"
-							class="mb-2"
-							value-field="item"
-							text-field="name"
-							disabled-field="notEnabled"
-							name="flavour-1a"
-							inline
-						></b-form-checkbox-group>
+					<b-form-checkbox-group
+						v-model="selected"
+						:options="checkOptions"
+						class="mb-2"
+						value-field="item"
+						text-field="name"
+						disabled-field="notEnabled"
+						name="flavour-1a"
+						inline
+					></b-form-checkbox-group>
 				</b-form-group>
 			</b-form-row>
 			<b-form-row class="justify-content-end">
-				<b-button size="sm" variant="success" @click="queryHandler" >產生報表</b-button>&nbsp;&nbsp;
+				<b-button size="sm" variant="success" @click="report()" >產生報表</b-button>&nbsp;&nbsp;
 				<b-button size="sm" variant="outline-secondary" @click="reset">清除</b-button>
 			</b-form-row>
 		</b-container>
 		<br>
-	
-
 	</div>
 </template>
 
@@ -138,16 +135,11 @@ export default {
 	}
  },
  methods: {
-	toSee(row){
-		//alert(item.pk);
-		console.log(row.item.wkut);
-		this.$router.push({name:'ReportCommonList',  params:{wkutName:	row.item.wkut}})
-		
-	},
+	report(){
+		alert("報表下載");
+	}
  },
-
 }
-
 
 </script>
 

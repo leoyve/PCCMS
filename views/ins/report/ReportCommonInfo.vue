@@ -39,28 +39,16 @@ import caseSatisfactionInfo from '../CaseSatisfactionInfo.vue';
 import wkutAssessmentInfo from '../WkutAssessmentInfo.vue';
 import directorAssessmentInfo from '../DirectorAssessmentInfo.vue';
 
-
 export default {
- data(){
-	return{
-	}
- },
- methods: {
-	toSee(item){
-		//alert(item.pk);
-		console.log(item);
-		//this.$router.push({name:'WkutCloseReportLine'})
+	data(){
+		return{
+		}
 	},
- },
-
-  components: {
-	caseInfo,	caseMapInfo,	casePhotoInfo,	caseHandleInfo,	closeCaseRecordList,	caseSatisfactionInfo,	wkutAssessmentInfo,	directorAssessmentInfo
-  },
-
-
+	components: {
+		caseInfo,	caseMapInfo,	casePhotoInfo,	caseHandleInfo,	
+		closeCaseRecordList,	caseSatisfactionInfo,	wkutAssessmentInfo,	directorAssessmentInfo
+	},
 }
-
-
 </script>
 
 <style>

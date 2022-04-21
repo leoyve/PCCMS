@@ -72,9 +72,7 @@
 	</div>
 </template>
 
-
 <script>
-
 
 export default {
  data(){
@@ -143,8 +141,6 @@ export default {
 				nonClose:	'',	nonCloseRate:	'',	delayNum2:'',	pk: 5566 },
 			{ id: 3, wkut: '新北市政府', caseTotalA: '5', closeCaseB: '5',	closeCaseRate: '100.00',	avgDay: '3.76', avgStandDay:	'5.23',	delayNum:'2',
 				nonClose:	'',	nonCloseRate:	'',	delayNum2:'',	pk: 5566 },
-
-
 		],
 		checkAssign:	[
 			{	value: '', text: '是'	},
@@ -167,23 +163,7 @@ export default {
 		total9:'',
 	}
  },
- methods: {
-	toSee(row){
-		//alert(item.pk);
-		console.log(row.item.wkut);
-		this.$router.push({name:'ReportCommonList',  params:{wkutName:	row.item.wkut}})
-		
-	},
-  queryHandler(){
-
-  },
-  reset(){
-
-  }
- },
-
 }
-
 
 </script>
 

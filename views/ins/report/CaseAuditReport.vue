@@ -41,26 +41,26 @@
 				<!-- 通報後XXX天 是從上面的查詢條件帶下來-->
 				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>各主管機關通報案件於通報後60天內辦理查核統計表</strong></h4></b-form-row>
 				<b-form-row class="justify-content-end">
-				<b-table striped hover :items="items" :fields="fields" head-variant="warning">
-					<template #cell(submitCase)="row">
-						<a href="#" variant="primary" @click="gotoParam('ReportAuditList', {classFlag:false, ...row.item})" >{{row.item.submitCaseNum}}</a>
-					</template>
-					<template #cell(auditTotal)="row">
-						<a href="#" variant="primary" @click="gotoParam('ReportAuditList', {classFlag:true, ...row.item})" >{{row.item.auditNum}}</a>
-					</template>
-					<template #cell(auditA)="row">
-						<a href="#" variant="primary" @click="gotoParam('ReportAuditList', {classFlag:true, ...row.item})" >{{row.item.auditANum}}</a>
-					</template>
-					<template #cell(auditB)="row">
-						<a href="#" variant="primary" @click="gotoParam('ReportAuditList', {classFlag:true, ...row.item})" >{{row.item.auditBNum}}</a>
-					</template>
-					<template #cell(auditC)="row">
-						<a href="#" variant="primary" @click="gotoParam('ReportAuditList', {classFlag:true, ...row.item})" >{{row.item.auditCNum}}</a>
-					</template>
-					<template #cell(auditD)="row">
-						<a href="#" variant="primary" @click="gotoParam('ReportAuditList', {classFlag:true, ...row.item})" >{{row.item.auditDNum}}</a>
-					</template>
-				</b-table>
+					<b-table striped hover :items="items" :fields="fields" head-variant="warning">
+						<template #cell(submitCase)="row">
+							<a href="#" variant="primary" @click="gotoParam('ReportAuditList', {classFlag:false, ...row.item})" >{{row.item.submitCaseNum}}</a>
+						</template>
+						<template #cell(auditTotal)="row">
+							<a href="#" variant="primary" @click="gotoParam('ReportAuditList', {classFlag:true, ...row.item})" >{{row.item.auditNum}}</a>
+						</template>
+						<template #cell(auditA)="row">
+							<a href="#" variant="primary" @click="gotoParam('ReportAuditList', {classFlag:true, ...row.item})" >{{row.item.auditANum}}</a>
+						</template>
+						<template #cell(auditB)="row">
+							<a href="#" variant="primary" @click="gotoParam('ReportAuditList', {classFlag:true, ...row.item})" >{{row.item.auditBNum}}</a>
+						</template>
+						<template #cell(auditC)="row">
+							<a href="#" variant="primary" @click="gotoParam('ReportAuditList', {classFlag:true, ...row.item})" >{{row.item.auditCNum}}</a>
+						</template>
+						<template #cell(auditD)="row">
+							<a href="#" variant="primary" @click="gotoParam('ReportAuditList', {classFlag:true, ...row.item})" >{{row.item.auditDNum}}</a>
+						</template>
+					</b-table>
 				</b-form-row>
 				<b-pagination align="right"
 					v-model="currentPage"
@@ -70,14 +70,10 @@
 				></b-pagination>
 			</b-container>
 		</div>
-
 	</div>
 </template>
 
-
 <script>
-
-
 export default {
  data(){
 	return{
@@ -148,12 +144,7 @@ export default {
 		],
 	}
  },
- methods: {
- },
-
 }
-
-
 </script>
 
 <style>

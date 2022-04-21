@@ -5,22 +5,22 @@
 			<b-form-row class="justify-content-center text-light bg-primary" v-show="this.$route.params.wkut != null"><h4><strong>{{ this.$route.params.wkut }}所屬通報案件辦理查核一覽表</strong></h4></b-form-row>
 			<b-form-row class="justify-content-center text-light bg-primary" v-show="this.$route.params.wkut == null"><h4><strong>各主管機關通報案件辦理查核一覽表</strong></h4></b-form-row>
 			<b-form-row class="justify-content-end">
-			<b-table striped hover :items="items" :fields="fields" head-variant="warning">
-				<template #cell(action)="row">
-					<b-button size="sm" variant="success" @click="gotoParam('ReportCommonInfo', row.item)" >檢視</b-button>&nbsp;
-					<b-button size="sm" variant="warning" @click="result()" v-show="classFlag" >考核結果</b-button>
-				</template>
-				<template #cell(assessment)="row">
-					<b-container>
-						<b-row>
-							<b-col>{{row.item.score}}</b-col>
-						</b-row>
-						<b-row>
-							<b-col>{{row.item.class}}</b-col>
-						</b-row>
-					</b-container>
-				</template>
-			</b-table>
+				<b-table striped hover :items="items" :fields="fields" head-variant="warning">
+					<template #cell(action)="row">
+						<b-button size="sm" variant="success" @click="gotoParam('ReportCommonInfo', row.item)" >檢視</b-button>&nbsp;
+						<b-button size="sm" variant="warning" @click="result()" v-show="classFlag" >考核結果</b-button>
+					</template>
+					<template #cell(assessment)="row">
+						<b-container>
+							<b-row>
+								<b-col>{{row.item.score}}</b-col>
+							</b-row>
+							<b-row>
+								<b-col>{{row.item.class}}</b-col>
+							</b-row>
+						</b-container>
+					</template>
+				</b-table>
 			</b-form-row>
 			<b-pagination align="right"
 				v-model="currentPage"
@@ -32,10 +32,7 @@
 	</div>
 </template>
 
-
 <script>
-
-
 export default {
  data(){
 	return{
@@ -98,7 +95,6 @@ export default {
 				label:	'',
 				thStyle: { width: "10%" },
 			},
-
 		],
 		items:	[
 			//待分文要顯示紅字，結案日期也是
@@ -113,10 +109,7 @@ export default {
 		alert('考核結果請參考標管查核紀錄!');
 	}
  },
-
 }
-
-
 </script>
 
 <style>

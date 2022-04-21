@@ -36,14 +36,10 @@
 				</b-form-row>
 			</b-container>
 		</div>
-
 	</div>
 </template>
 
-
 <script>
-
-
 export default {
  data(){
 	return{
@@ -78,15 +74,7 @@ export default {
 		totalRate:'100',
 	}
  },
- methods: {
-	queryHandler(){
-	},
-	reset(){
-	}
- },
-
 }
-
 
 </script>
 

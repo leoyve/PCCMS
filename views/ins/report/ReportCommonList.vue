@@ -20,71 +20,71 @@
 	<div>
 		<br>
 		<b-container fluid>
-			<b-form-row class="justify-content-center text-light bg-primary" v-show="this.$route.params.wkutName != null"><h4><strong>{{ this.$route.params.wkutName }}所屬通報案件處理結案情形一覽表</strong></h4></b-form-row>
+			<b-form-row class="justify-content-center text-light bg-primary" v-show="this.$route.params.wkutName != null"><h4><strong>{{ this.$route.params.wkut }}所屬通報案件處理結案情形一覽表</strong></h4></b-form-row>
 			<b-form-row class="justify-content-center text-light bg-primary" v-show="this.$route.params.wkutName == null"><h4><strong>各主管機關通報案件處理結案情形一覽表</strong></h4></b-form-row>
 			<b-form-row class="justify-content-end">
-			<b-table striped hover :items="items" :fields="fields" head-variant="warning">
-				<template #cell(action)="row">
-					<!-- 傳遞的參數應該是機關代碼和查詢條件-->
-					<!-- 最下面那一列應該為合計，技術上還未研究 -->
-					<b-button size="sm" variant="success" @click="gotoParam('ReportCommonInfo', row.item)" >檢視</b-button>
-				</template>
-				<template #cell(informInfo)="row">
-					<b-container>
-						<b-row>
-							<b-col><strong>通報人:</strong> {{ row.item.informName	}} </b-col>
-						</b-row>
-						<b-row>
-							<b-col><strong>通報方式:</strong> {{ row.item.informMethod	}} </b-col>
-						</b-row>
-						<b-row>
-							<b-col><strong>通報日期:</strong> {{ row.item.informDate	}} </b-col>
-						</b-row>
-					</b-container>
-				</template>
-				<template #cell(handleProcess)="row">
-					<b-container>
-						<b-row>
-							<b-col><strong>分案日期:</strong> {{ row.item.disDate	}} </b-col>
-						</b-row>
-						<b-row>
-							<b-col><strong>限辦日期:</strong> {{ row.item.limiteDate	}} </b-col>
-						</b-row>
-						<b-row>
-							<b-col><strong>結案日期:</strong> {{ row.item.closeDate	}} </b-col>
-						</b-row>
-						<b-row>
-							<b-col><strong>處理天數:</strong> {{ row.item.handleDay	}} </b-col>
-						</b-row>
-						<b-row>
-							<b-col ><strong>逾期天數:</strong> {{ row.item.delayDay	}} </b-col>
-						</b-row>
-					</b-container>
-				</template>
-				<template #cell(latestHandle)="row">
-					<b-container>
-						<b-row>
-							<b-col><strong>處理日期:</strong> {{ row.item.handleDate	}} </b-col>
-						</b-row>
-						<b-row>
-							<b-col><strong>處理情形:</strong> {{ row.item.situation	}} </b-col>
-						</b-row>
-					</b-container>
-				</template>
-				<template #cell(saticfaction)="row">
-					<b-container>
-						<b-row>
-							<b-col><strong>滿意度填寫日期：:</strong> {{ row.item.satDate	}} </b-col>
-						</b-row>
-						<b-row>
-							<b-col><strong>滿意度:</strong> {{ row.item.satDegree	}} </b-col>
-						</b-row>
-						<b-row>
-							<b-col><strong>滿意度意見:</strong> {{ row.item.satComment	}} </b-col>
-						</b-row>
-					</b-container>
-				</template>
-			</b-table>
+				<b-table striped hover :items="items" :fields="fields" head-variant="warning">
+					<template #cell(action)="row">
+						<!-- 傳遞的參數應該是機關代碼和查詢條件-->
+						<!-- 最下面那一列應該為合計，技術上還未研究 -->
+						<b-button size="sm" variant="success" @click="gotoParam('ReportCommonInfo', row.item)" >檢視</b-button>
+					</template>
+					<template #cell(informInfo)="row">
+						<b-container>
+							<b-row>
+								<b-col><strong>通報人:</strong> {{ row.item.informName	}} </b-col>
+							</b-row>
+							<b-row>
+								<b-col><strong>通報方式:</strong> {{ row.item.informMethod	}} </b-col>
+							</b-row>
+							<b-row>
+								<b-col><strong>通報日期:</strong> {{ row.item.informDate	}} </b-col>
+							</b-row>
+						</b-container>
+					</template>
+					<template #cell(handleProcess)="row">
+						<b-container>
+							<b-row>
+								<b-col><strong>分案日期:</strong> {{ row.item.disDate	}} </b-col>
+							</b-row>
+							<b-row>
+								<b-col><strong>限辦日期:</strong> {{ row.item.limiteDate	}} </b-col>
+							</b-row>
+							<b-row>
+								<b-col><strong>結案日期:</strong> {{ row.item.closeDate	}} </b-col>
+							</b-row>
+							<b-row>
+								<b-col><strong>處理天數:</strong> {{ row.item.handleDay	}} </b-col>
+							</b-row>
+							<b-row>
+								<b-col ><strong>逾期天數:</strong> {{ row.item.delayDay	}} </b-col>
+							</b-row>
+						</b-container>
+					</template>
+					<template #cell(latestHandle)="row">
+						<b-container>
+							<b-row>
+								<b-col><strong>處理日期:</strong> {{ row.item.handleDate	}} </b-col>
+							</b-row>
+							<b-row>
+								<b-col><strong>處理情形:</strong> {{ row.item.situation	}} </b-col>
+							</b-row>
+						</b-container>
+					</template>
+					<template #cell(saticfaction)="row">
+						<b-container>
+							<b-row>
+								<b-col><strong>滿意度填寫日期：:</strong> {{ row.item.satDate	}} </b-col>
+							</b-row>
+							<b-row>
+								<b-col><strong>滿意度:</strong> {{ row.item.satDegree	}} </b-col>
+							</b-row>
+							<b-row>
+								<b-col><strong>滿意度意見:</strong> {{ row.item.satComment	}} </b-col>
+							</b-row>
+						</b-container>
+					</template>
+				</b-table>
 			</b-form-row>
 			<b-pagination align="right"
 				v-model="currentPage"
@@ -96,9 +96,7 @@
 	</div>
 </template>
 
-
 <script>
-
 
 export default {
  data(){
@@ -181,22 +179,7 @@ export default {
 		],
 	}
  },
- methods: {
-	toSee(item){
-		//alert(item.pk);
-		console.log(item);
-		this.$router.push({name:'ReportCommonInfo'})
-	},
-  queryHandler(){
-
-  },
-  reset(){
-
-  }
- },
-
 }
-
 
 </script>
 

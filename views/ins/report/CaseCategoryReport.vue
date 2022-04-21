@@ -42,7 +42,7 @@
 								<b-th >{{totalcategory5}}</b-th>
 								<b-th >{{totalcategory6}}</b-th>
 								<b-th >{{totalcategory7}}</b-th>
-								<b-th ><a href="#" variant="primary" @click="toSee()" >{{totalOther}}</a></b-th>
+								<b-th ><a href="#" variant="primary" @click="gotoParam('CaseCategoryList')" >{{totalOther}}</a></b-th>
 								<b-th >{{totalSum}}</b-th>
 							</b-tr>
 						</template>
@@ -54,10 +54,7 @@
 	</div>
 </template>
 
-
 <script>
-
-
 export default {
  data(){
 	return{
@@ -135,19 +132,7 @@ export default {
 		],
 	}
  },
- methods: {
-	queryHandler(){
-	},
-	reset(){
-	},
-	toSee(){
-		this.$router.push({name:'CaseCategoryList'})
-	},
- },
-
 }
-
-
 </script>
 
 <style>

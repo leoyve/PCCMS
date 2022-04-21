@@ -39,13 +39,10 @@
 				</b-form-row>
 			</b-container>
 		</div>
-
 	</div>
 </template>
 
-
 <script>
-
 
 export default {
  data(){
@@ -69,7 +66,6 @@ export default {
 				key:	'rate',
 				label:	'比例(%)'
 			},
-			
 		],
 		items:	[
 			//待分文要顯示紅字，結案日期也是
@@ -81,15 +77,7 @@ export default {
 		totalNum:'239',
 	}
  },
- methods: {
-	queryHandler(){
-	},
-	reset(){
-	}
- },
-
 }
-
 
 </script>
 

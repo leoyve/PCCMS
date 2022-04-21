@@ -9,11 +9,6 @@ module.exports = [
         component: () => import(/* webpackChunkName: "about" */ '../views/ins/report/WkutCloseReport.vue')
       },
       {
-        path: 'wkutCloseReportLine',
-        name: 'WkutCloseReportLine',
-        component: () => import(/* webpackChunkName: "about" */ '../views/ins/report/WkutCloseReportLine.vue')
-      },
-      {
         path: 'reportCommonInfo',
         name: 'ReportCommonInfo',
         component: () => import(/* webpackChunkName: "about" */ '../views/ins/report/ReportCommonInfo.vue')

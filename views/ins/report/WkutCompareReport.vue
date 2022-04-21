@@ -25,17 +25,16 @@
 			</b-form-row>
 		</b-container>
 		<br>
-		
 		<div>
 			<b-container fluid>
 				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>機關案件考核自評填寫統計表</strong></h4></b-form-row>
 				<b-form-row class="justify-content-end">
 				<b-table striped hover :items="items" :fields="fields" head-variant="warning">
 					<template #cell(finish)="row">
-						<a href="#" variant="primary" @click="toSee(row)" >{{row.item.finishNum}}</a>
+						<a href="#" variant="primary" @click="gotoParam('ReportCommonList', row.item)" >{{row.item.finishNum}}</a>
 					</template>
 					<template #cell(unFinish)="row">
-						<a href="#" variant="primary" @click="toSee(row)" >{{row.item.unFinishNum}}</a>
+						<a href="#" variant="primary" @click="gotoParam('ReportCommonList', row.item)" >{{row.item.unFinishNum}}</a>
 					</template>
 				</b-table>
 				</b-form-row>
@@ -51,9 +50,7 @@
 	</div>
 </template>
 
-
 <script>
-
 
 export default {
  data(){
@@ -108,23 +105,7 @@ export default {
 		],
 	}
  },
- methods: {
-	toSee(row){
-		//alert(item.pk);
-		console.log(row.item.wkut);
-		this.$router.push({name:'ReportCommonList',  params:{wkutName:	row.item.wkut}})
-		
-	},
-  queryHandler(){
-
-  },
-  reset(){
-
-  }
- },
-
 }
-
 
 </script>
 

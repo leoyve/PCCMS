@@ -30,7 +30,6 @@
 			</b-form-row>
 		</b-container>
 		<br>
-		
 		<div>
 			<b-container fluid>
 				<b-form-row>
@@ -38,29 +37,29 @@
 				</b-form-row>
 				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>各主管機關通報案件民眾通知結案後滿意度調查統計表</strong></h4></b-form-row>
 				<b-form-row class="justify-content-end">
-				<b-table striped hover :items="items" :fields="fields" head-variant="light">
-					<template #cell(satA)="row">
-						<a href="#" variant="primary" @click="toSee(row)" >{{row.item.satANum}}</a>
-					</template>
-					<template #cell(satB)="row">
-						<a href="#" variant="primary" @click="toSee(row)" >{{row.item.satBNum}}</a>
-					</template>
-					<template #cell(satC)="row">
-						<a href="#" variant="primary" @click="toSee(row)" >{{row.item.satCNum}}</a>
-					</template>
-					<template #cell(satD)="row">
-						<a href="#" variant="primary" @click="toSee(row)" >{{row.item.satDNum}}</a>
-					</template>
-					<template #cell(satE)="row">
-						<a href="#" variant="primary" @click="toSee(row)" >{{row.item.satENum}}</a>
-					</template>
-					<template #cell(satF)="row">
-						<a href="#" variant="primary" @click="toSee(row)" >{{row.item.satFNum}}</a>
-					</template>
-					<template #cell(total)="row">
-						<a href="#" variant="primary" @click="toSee(row)" >{{row.item.totalNum}}</a>
-					</template>
-				</b-table>
+					<b-table striped hover :items="items" :fields="fields" head-variant="light">
+						<template #cell(satA)="row">
+							<a href="#" variant="primary" @click="gotoParam('ReportCommonList', row.item)" >{{row.item.satANum}}</a>
+						</template>
+						<template #cell(satB)="row">
+							<a href="#" variant="primary" @click="gotoParam('ReportCommonList', row.item)" >{{row.item.satBNum}}</a>
+						</template>
+						<template #cell(satC)="row">
+							<a href="#" variant="primary" @click="gotoParam('ReportCommonList', row.item)" >{{row.item.satCNum}}</a>
+						</template>
+						<template #cell(satD)="row">
+							<a href="#" variant="primary" @click="gotoParam('ReportCommonList', row.item)" >{{row.item.satDNum}}</a>
+						</template>
+						<template #cell(satE)="row">
+							<a href="#" variant="primary" @click="gotoParam('ReportCommonList', row.item)" >{{row.item.satENum}}</a>
+						</template>
+						<template #cell(satF)="row">
+							<a href="#" variant="primary" @click="gotoParam('ReportCommonList', row.item)" >{{row.item.satFNum}}</a>
+						</template>
+						<template #cell(total)="row">
+							<a href="#" variant="primary" @click="gotoParam('ReportCommonList', row.item)" >{{row.item.totalNum}}</a>
+						</template>
+					</b-table>
 				</b-form-row>
 				<b-pagination align="right"
 					v-model="currentPage"
@@ -70,13 +69,10 @@
 				></b-pagination>
 			</b-container>
 		</div>
-
 	</div>
 </template>
 
-
 <script>
-
 
 export default {
  data(){
@@ -130,7 +126,6 @@ export default {
 				key:	'rate',
 				label:	'滿意件數比例(A+B+C)/(D)'
 			},
-
 		],
 		items:	[
 			//待分文要顯示紅字，結案日期也是
@@ -140,8 +135,6 @@ export default {
 				totalNum:'3',	rate:'33.33%',	pk: 5566 },
 			{ id: 3, wkut: '新北市政府', caseNum:'6',	satANum: '2', satBNum: '0',	satCNum: '0',	satDNum: '0', satENum:	'0',	satFNum:'1',
 				totalNum:'3',	rate:'66.67%',	pk: 5566 },
-
-
 		],
 		checkAssign:	[
 			{	value: '', text: '是'	},
@@ -155,24 +148,7 @@ export default {
 		],
 	}
  },
- methods: {
-	toSee(row){
-		//alert(item.pk);
-		console.log(row.item.wkut);
-		this.$router.push({name:'ReportCommonList',  params:{wkutName:	row.item.wkut}})
-		
-	},
-  queryHandler(){
-
-  },
-  reset(){
-
-  }
- },
-
 }
-
-
 </script>
 
 <style>

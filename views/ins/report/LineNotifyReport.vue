@@ -13,10 +13,7 @@
 	</div>
 </template>
 
-
 <script>
-
-
 export default {
  data(){
 	return{
@@ -50,17 +47,10 @@ export default {
 			{ id: 1, wkut: '宜蘭縣政府', efficientAccountNum: '5', enableLineNum: '0',	enableRate: '0.00',	pk: 5566 },
 			{ id: 2, wkut: '台中市政府', efficientAccountNum: '20', enableLineNum: '10',	enableRate: '50.00',	pk: 5566 },
 			{ id: 3, wkut: '新北市政府', efficientAccountNum: '17', enableLineNum: '5',	enableRate: '29.41',	pk: 5566 },
-
-
 		],
 	}
  },
- methods: {
-
- },
-
 }
-
 
 </script>
 
