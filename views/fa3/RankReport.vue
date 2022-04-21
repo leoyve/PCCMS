@@ -14,9 +14,7 @@
   </div>
 </template>
 
-
 <script>
-
 
 export default {
   data(){
@@ -27,21 +25,8 @@ export default {
       ],
       addFlag: this.$route.params.addFlag == null ? false:this.$route.params.addFlag,
       updateFlag: this.$route.params.updateFlag == null ? false:this.$route.params.updateFlag,
-      
   }
  },
- methods:  {
-    reset(){
-
-    },
-    add(){
-
-    },
-    update(){
-
-    }
-  },
-
 }
 </script>
 <style>

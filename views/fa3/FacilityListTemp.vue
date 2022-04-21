@@ -11,9 +11,9 @@
 				</template>
 				<template #cell(mym)="row">
 					<b-container>
-					<b-row>
-					<b-col>{{row.item.year}}年</b-col><b-col>{{row.item.month}}月</b-col>
-					</b-row>
+						<b-row>
+							<b-col>{{row.item.year}}年</b-col><b-col>{{row.item.month}}月</b-col>
+						</b-row>
 					</b-container>
 				</template>
 				<template #cell(file)="row">
@@ -29,7 +29,7 @@
 						</b-row>
 						<b-row v-if="row.item.fileYM == null">
 							<b-col class="bg-warning">沒有維護紀錄</b-col>
-							</b-row>
+						</b-row>
 					</b-container>
 				</template>
 			</b-table>
@@ -47,14 +47,11 @@
   </div>
 </template>
 
-
 <script>
-
 
 export default {
   props:['replaceItems','buttonFlag'],
   data(){
-	
     return{
         rows: 100,
 		perPage: 1,
@@ -130,13 +127,9 @@ export default {
 		items: this.replaceItems,
   }
  },
- methods:  {
-   
-  },
   mounted(){
 	this.items.forEach((items, index) => { items.serial = index + 1; });
   }
-
 }
 </script>
 <style>

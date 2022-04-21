@@ -30,13 +30,10 @@
 				<b-button size="sm" variant="outline-secondary" @click="gotoParam('PublicFacilityEdit', {updateFlag:true})">取消</b-button>
 			</b-row>
 		</b-container>
-
 	</div>
 </template>
 
-
 <script>
-
 
 export default {
  data(){
@@ -65,10 +62,6 @@ export default {
 		]
 	}
  },
- methods: {
-	
- },
-
 }
 
 

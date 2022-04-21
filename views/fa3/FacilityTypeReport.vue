@@ -111,13 +111,10 @@
   </div>
 </template>
 
-
 <script>
-
 
 export default {
   data(){
-	
     return{
         rows: 100,
 		perPage: 1,
@@ -226,11 +223,7 @@ export default {
 		//利用那個ROW的資料(這邊是wkut.name)去即時查詢，將回傳的物件(replaceItems)替換掉
 		this.items=this.replaceItems;
 	},
-
   },
-
-	
-
 }
 </script>
 <style>

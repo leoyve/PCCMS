@@ -57,88 +57,87 @@
   </div>
 </template>
 
-
 <script>
 
 export default {
-  data(){
-    return{
-      wkut:[
-        {text:'內政部', value:1},
-        {text:'交通部', value:2},
-        {text:'行政院農業委員會', value:4},
-		{text:'經濟部', value:3},
-      ],
-	name:'',
-	main:[
-        {text:'水利設施', value:1},
-        {text:'交通設施', value:2},
-        {text:'能源設施', value:4},
-		{text:'環保設施', value:3},
-      ],
-	sub:[
-		{text:'水庫', value:1},
-        {text:'軌道', value:2},
-        {text:'抽水站', value:4},
-		{text:'汙水處理廠', value:3},
-	],
-	fields: [
-		{
-			key:	'serial',
-			label:	'流水號'
-		},
-		{
-			key:	'BOSCODE',
-			label:	'主管法規之中央目的事業主管機關'
-		},
-		{
-			key:	'EBOSOCDE',
-			label: '養護機關',
-			thStyle: { width: "10%" },
-		}, 
-		{
-			key:	'UBOSCODE',
-			label:	'上一級養護管理機關',
-			thStyle: { width: "20%" },
-		}, 
-		{
-			key:	'OBOSCODE',
-			label:	'中央部會及地方政府'
-		},
-		{
-			key:	'mainType',
-			label:	'主類別'
-		},
-		{
-			key:	'subType',
-			label:	'次類別'
-		},
-		{
-			key:	'equName',
-			label:	'施備名稱'
-		},
-		{
-			key:	'deleteReason',
-			label:	'刪除原因'
-		},
-		{
-			key:	'deleteComment',
-			label:	'刪除理由'
-		},
-		{
-			key:	'deleteDate',
-			label:	'刪除時間'
-		},
-	],
-	items:	[{mainType:'環保設施', subType:'污水處理廠', equName:'大發污水處理廠', BOSCODE:'經濟部工業局', EBOSOCDE:'高雄臨海林園大發工業區聯合污水理廠', UBOSCODE:'經濟部工業局工業區環境保護中心',
-			OBOSCODE:'經濟部',deleteReason:'有重複案件',deleteComment:'測試',deleteDate:'110/05/06/12.00'},
-		{mainType:'交通設施', subType:'道路', equName:'4-1道路', BOSCODE:'交通部', EBOSOCDE:'墾丁國家公園管理處', UBOSCODE:'內政部營建署',
-			OBOSCODE:'內政部',deleteReason:'有重複案件',deleteComment:'測試',deleteDate:'110/05/06/12.00'},
-		{mainType:'環保設施', subType:'污水處理廠', equName:'大發污水處理廠', BOSCODE:'經濟部工業局', EBOSOCDE:'高雄臨海林園大發工業區聯合污水理廠', UBOSCODE:'經濟部工業局工業區環境保護中心',
-			OBOSCODE:'經濟部',deleteReason:'有重複案件',deleteComment:'測試',deleteDate:'110/05/06/12.00'}  
-		],
-  }
- },
+	data(){
+		return{
+			wkut:[
+				{text:'內政部', value:1},
+				{text:'交通部', value:2},
+				{text:'行政院農業委員會', value:4},
+				{text:'經濟部', value:3},
+			],
+			name:'',
+			main:[
+				{text:'水利設施', value:1},
+				{text:'交通設施', value:2},
+				{text:'能源設施', value:4},
+				{text:'環保設施', value:3},
+			],
+			sub:[
+				{text:'水庫', value:1},
+				{text:'軌道', value:2},
+				{text:'抽水站', value:4},
+				{text:'汙水處理廠', value:3},
+			],
+			fields: [
+				{
+					key:	'serial',
+					label:	'流水號'
+				},
+				{
+					key:	'BOSCODE',
+					label:	'主管法規之中央目的事業主管機關'
+				},
+				{
+					key:	'EBOSOCDE',
+					label: '養護機關',
+					thStyle: { width: "10%" },
+				}, 
+				{
+					key:	'UBOSCODE',
+					label:	'上一級養護管理機關',
+					thStyle: { width: "20%" },
+				}, 
+				{
+					key:	'OBOSCODE',
+					label:	'中央部會及地方政府'
+				},
+				{
+					key:	'mainType',
+					label:	'主類別'
+				},
+				{
+					key:	'subType',
+					label:	'次類別'
+				},
+				{
+					key:	'equName',
+					label:	'施備名稱'
+				},
+				{
+					key:	'deleteReason',
+					label:	'刪除原因'
+				},
+				{
+					key:	'deleteComment',
+					label:	'刪除理由'
+				},
+				{
+					key:	'deleteDate',
+					label:	'刪除時間'
+				},
+			],
+			items:	[{mainType:'環保設施', subType:'污水處理廠', equName:'大發污水處理廠', BOSCODE:'經濟部工業局', EBOSOCDE:'高雄臨海林園大發工業區聯合污水理廠', UBOSCODE:'經濟部工業局工業區環境保護中心',
+					OBOSCODE:'經濟部',deleteReason:'有重複案件',deleteComment:'測試',deleteDate:'110/05/06/12.00'},
+				{mainType:'交通設施', subType:'道路', equName:'4-1道路', BOSCODE:'交通部', EBOSOCDE:'墾丁國家公園管理處', UBOSCODE:'內政部營建署',
+					OBOSCODE:'內政部',deleteReason:'有重複案件',deleteComment:'測試',deleteDate:'110/05/06/12.00'},
+				{mainType:'環保設施', subType:'污水處理廠', equName:'大發污水處理廠', BOSCODE:'經濟部工業局', EBOSOCDE:'高雄臨海林園大發工業區聯合污水理廠', UBOSCODE:'經濟部工業局工業區環境保護中心',
+					OBOSCODE:'經濟部',deleteReason:'有重複案件',deleteComment:'測試',deleteDate:'110/05/06/12.00'}  
+				],
+		}
+	},
  methods:  {
    checkChange(value){
 	console.log(value);
@@ -147,7 +146,6 @@ export default {
   mounted(){
 	this.items.forEach((items, index) => { items.serial = index + 1; });
   }
- 
 }
 </script>
 <style>

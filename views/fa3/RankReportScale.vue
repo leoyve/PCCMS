@@ -24,9 +24,7 @@
   </div>
 </template>
 
-
 <script>
-
 
 export default {
   data(){
@@ -75,18 +73,6 @@ export default {
       
   }
  },
- methods:  {
-    reset(){
-
-    },
-    add(){
-
-    },
-    update(){
-
-    }
-  },
-
 }
 </script>
 <style>
