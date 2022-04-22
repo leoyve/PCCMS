@@ -21,7 +21,7 @@
           <b-dropdown-item @click="gotoParam('Fa1CaseQuery',)">查詢填報列管設施活化情形</b-dropdown-item>
           <b-dropdown-item @click="gotoParam('Fa1CaseByWkutQuery')">設施活化情形(依目的、依上級)</b-dropdown-item>
           <b-dropdown-item @click="gotoParam('TubeDocReviewQuery')">審查列管上傳文件檔案</b-dropdown-item>
-          <b-dropdown-item @click="gotoParam('')">查詢填報解列設施使用情形</b-dropdown-item>
+          <b-dropdown-item @click="gotoParam('Fa1CaseLiftQuery')">查詢填報解列設施使用情形</b-dropdown-item>
         </b-nav-item-dropdown>
 
         <b-nav-item-dropdown text="資料查詢" left fill>
@@ -30,6 +30,12 @@
           <b-dropdown-item @click="gotoParam('PccmDoc',)">檢視工程會相關公函及附件</b-dropdown-item>
         </b-nav-item-dropdown>
         
+        <b-nav-item-dropdown text="民眾端" left fill>
+          <b-dropdown-item @click="gotoParam('',)">通報平台</b-dropdown-item>
+          <b-dropdown-item @click="gotoParam('',)">重新寄發驗證立案郵件</b-dropdown-item>
+          <b-dropdown-item @click="gotoParam('InformPublicQuery',)">查詢通報案件之處理情形</b-dropdown-item>
+        </b-nav-item-dropdown>
+
       </b-navbar-nav>
     </b-navbar>
     <router-view/>

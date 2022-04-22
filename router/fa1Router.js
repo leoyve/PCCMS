@@ -213,6 +213,16 @@ module.exports = [
         name: 'Fa1CaseByWkutQuery',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa1/Fa1CaseByWkutQuery.vue')
       },
+      {
+        path: 'fa1CaseLiftQuery',
+        name: 'Fa1CaseLiftQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/Fa1CaseLiftQuery.vue')
+      },
+      {
+        path: 'informPublicQuery',
+        name: 'InformPublicQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/InformPublicQuery.vue')
+      },
     ],
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
