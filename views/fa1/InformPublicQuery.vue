@@ -97,7 +97,8 @@ export default {
 		fields: [
 			{
 				key:	'serial',
-				label:	'流水號'
+				label:	'流水號',
+				thStyle: { width: "5%" },
 			},
 			{
 				key:	'caseNum',

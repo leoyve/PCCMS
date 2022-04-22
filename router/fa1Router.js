@@ -223,6 +223,27 @@ module.exports = [
         name: 'InformPublicQuery',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa1/InformPublicQuery.vue')
       },
+      {
+        path: 'reSendMail',
+        name: 'ReSendMail',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/ReSendMail.vue')
+      },
+      {
+        path: 'infoInedx',
+        name: 'InfoInedx',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/InfoInedx.vue')
+      },
+      {
+        path: 'informFill',
+        name: 'InformFill',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/InformFill.vue')
+      },
+      {
+        path: 'informFillDeatil',
+        name: 'InformFillDeatil',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa1/InformFillDeatil.vue')
+      },
+
     ],
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route

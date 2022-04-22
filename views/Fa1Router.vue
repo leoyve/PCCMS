@@ -26,13 +26,12 @@
 
         <b-nav-item-dropdown text="資料查詢" left fill>
           <b-dropdown-item @click="gotoParam('Fa1OptionalReport',)">自選欄位查詢列管案件資料</b-dropdown-item>
-          <b-dropdown-item @click="gotoParam('',)">閒置設施業務機關權責窗口(通用功能)</b-dropdown-item>
           <b-dropdown-item @click="gotoParam('PccmDoc',)">檢視工程會相關公函及附件</b-dropdown-item>
         </b-nav-item-dropdown>
         
         <b-nav-item-dropdown text="民眾端" left fill>
-          <b-dropdown-item @click="gotoParam('',)">通報平台</b-dropdown-item>
-          <b-dropdown-item @click="gotoParam('',)">重新寄發驗證立案郵件</b-dropdown-item>
+          <b-dropdown-item @click="gotoParam('InfoInedx',)">通報平台</b-dropdown-item>
+          <b-dropdown-item @click="gotoParam('ReSendMail',)">重新寄發驗證立案郵件</b-dropdown-item>
           <b-dropdown-item @click="gotoParam('InformPublicQuery',)">查詢通報案件之處理情形</b-dropdown-item>
         </b-nav-item-dropdown>
 
