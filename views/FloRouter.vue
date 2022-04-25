@@ -1,12 +1,28 @@
 <template>
 	<div>
 	<h1>重點防汛工程</h1>
-	<nav>
-		<router-link :to="{name:'FloPrjQuery'}">查詢年度重點防汛工程清單</router-link>	||
-		<router-link :to="{name:'FloEventQuery'}">建立/查詢年度事件</router-link> ||
-		<router-link :to="{name:'FloYearEventQuery'}">年度事件查詢/填報</router-link>  ||
-		<router-link :to="{name:'BIAS'}">大宗資材</router-link> 
-	</nav>
+	<b-navbar type="dark" variant="info">
+      <b-navbar-nav >
+        <b-nav-item-dropdown text="重點防汛工程" left fill>
+			<b-dropdown-item @click="gotoParam('FloPrjQuery',)">建置及調整所屬本年度重點防汛工程名單</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('FloWarningQuery', )">重點防汛工程標案啟用災示警服務清單</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('FloEventQuery', )">建立/查詢年度事件</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('FloYearEventQuery')">年度事件查詢/填報</b-dropdown-item>
+        </b-nav-item-dropdown>
+
+        <b-nav-item-dropdown text="示警通知" left fill>
+			<b-dropdown-item @click="gotoParam('FloInfoQuery',)">重點防汛工程之災害趨勢及示警地理資訊</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('', )">查詢NCDR目前生效中整體之災害示警總覽</b-dropdown-item>
+        </b-nav-item-dropdown>
+
+        <b-nav-item-dropdown text="報表資訊" left fill>
+			<b-dropdown-item @click="gotoParam('Fa2ReportQuery',)">重點防汛工程標案施工進度及查核情形統計</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('',)">各機關1千萬元以上水利類工程落後達5%案件</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('', )">件式搜尋重點防汛工程標案及其GIS圖資</b-dropdown-item>
+        </b-nav-item-dropdown>
+
+      </b-navbar-nav>
+    </b-navbar>
 	<router-view/>
 	</div>
 </template>

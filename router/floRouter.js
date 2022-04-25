@@ -29,9 +29,29 @@ module.exports = [
         component: () => import(/* webpackChunkName: "about" */ '../views/flo/FloEventFill.vue')
       },
       {
-        path: 'BIAS',
-        name: 'BIAS',
-        component: () => import(/* webpackChunkName: "about" */ '../views/flo/BIAS.vue')
+        path: 'floCmdQuery',
+        name: 'FloCmdQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/flo/FloCmdQuery.vue')
+      },
+      {
+        path: 'floWarningQuery',
+        name: 'FloWarningQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/flo/FloWarningQuery.vue')
+      },
+      {
+        path: 'floWarnEdit',
+        name: 'FloWarnEdit',
+        component: () => import(/* webpackChunkName: "about" */ '../views/flo/FloWarnEdit.vue')
+      },
+      {
+        path: 'floInfoQuery',
+        name: 'FloInfoQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/flo/FloInfoQuery.vue')
+      },
+      {
+        path: 'floWarnDetail',
+        name: 'FloWarnDetail',
+        component: () => import(/* webpackChunkName: "about" */ '../views/flo/FloWarnDetail.vue')
       },
       
     ],
