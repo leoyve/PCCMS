@@ -78,6 +78,16 @@ module.exports = [
         name: 'FloWaterBehind',
         component: () => import(/* webpackChunkName: "about" */ '../views/flo/FloWaterBehind.vue')
       },
+      {
+        path: 'floCmdMapQuery',
+        name: 'FloCmdMapQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/flo/FloCmdMapQuery.vue')
+      },
+      {
+        path: 'floNcdrInfo',
+        name: 'FloNcdrInfo',
+        component: () => import(/* webpackChunkName: "about" */ '../views/flo/FloNcdrInfo.vue')
+      },
       
     ],
     // route level code-splitting

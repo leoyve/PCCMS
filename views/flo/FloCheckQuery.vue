@@ -210,6 +210,7 @@ export default {
  },
 	mounted(){
 		this.items.forEach((items, index) => { items.serial = index + 1; });
+		alert("施工中與查核統計數字導至不同頁面");
 	}
 }
 
