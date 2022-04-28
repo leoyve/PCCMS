@@ -113,6 +113,11 @@ module.exports = [
         name: 'ReportAuditList',
         component: () => import(/* webpackChunkName: "about" */ '../views/ins/report/ReportAuditList.vue')
       },
+      {
+        path: 'insKpiReport',
+        name: 'InsKpiReport',
+        component: () => import(/* webpackChunkName: "about" */ '../views/ins/report/InsKpiReport.vue')
+      },
     ],
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route

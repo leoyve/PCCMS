@@ -43,6 +43,7 @@
 			<b-dropdown-item @click="gotoParam('WebNotifyReport')">啟用行動推播服務人數統計表(X)</b-dropdown-item>-->
 			<b-dropdown-item @click="gotoParam('WkutCompareReport')">機關案件考核自評填寫統計表</b-dropdown-item>
 			<b-dropdown-item @click="gotoParam('InsOptionalReport')">督工通報案件自選欄位報表</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('InsKpiReport')">督工案件履約計分總表</b-dropdown-item>
         </b-nav-item-dropdown>
 
 		<b-nav-item-dropdown text="其他功能" left fill>
