@@ -11,7 +11,7 @@
                 <b-th width="15%">考核項目</b-th>
                 <b-th width="5%">配分</b-th>
                 <b-th width="15%">考核標準</b-th>
-                <b-th width="15%">工程會計點</b-th>
+                <b-th width="15%">工程會評分標準</b-th>
                 <b-th width="50%">辦理成果內容填寫欄位</b-th>
               </b-tr>
           </b-thead>
@@ -172,7 +172,7 @@
                 </b-td>
               </b-tr>
               <b-tr>
-                <b-th class="align-middle" rowspan="2">特殊績效</b-th>
+                <b-th class="align-middle" rowspan="2">其他</b-th>
                 <b-th class="align-middle" rowspan="2">10</b-th>
                 <b-td class="align-middle text-left ">施工查核情形：於計畫執行期間之施工查核分數</b-td>
                 <b-td class="align-middle text-left ">每次查核丙等計列5點，至多計列10點</b-td>
@@ -252,9 +252,6 @@
                     </b-row>
                   </b-container>
                 </b-td>
-              </b-tr>
-              <b-tr>
-                <b-th class="align-middle text-left" colspan="5">計點數合計達3點（含）以上，不得考核為優等； 達10點（含）以上，不得考核為甲等或優等； 達20點（含）以上，得考核為丙等</b-th>
               </b-tr>
           </b-tbody>
         </b-table-simple>

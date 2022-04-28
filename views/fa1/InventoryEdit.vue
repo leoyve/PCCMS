@@ -46,6 +46,17 @@
           <b-col class="col-md-2 ">備註</b-col>
           <b-col class="col-md-10 text-left"><b-form-input></b-form-input></b-col>
         </b-row>
+        <b-row class="border border-dark">
+          <b-col class="col-md-2 ">是否曾被列管</b-col>
+          <b-col class="col-md-8 text-left">
+            <b-form-radio-group
+              id="radio-group-2"
+              v-model="itemPicked"
+              :options="check"
+              name="radio-options2"
+            ></b-form-radio-group>
+          </b-col>
+			</b-row>
       </b-container>
     </b-container>
     <br>

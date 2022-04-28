@@ -71,124 +71,124 @@
 						</b-thead>
 						<b-tbody>
 							<b-tr>
-								<b-th class="align-middle">提前竣工加分</b-th>
-								<b-th class="align-middle">.686	</b-th>
-								<b-th class="align-middle">.689	</b-th>
-								<b-th class="align-middle text-left" rowspan="2">工期</b-th>
-								<b-th class="align-middle" rowspan="2">.513</b-th>
-								<b-th class="align-middle" rowspan="2">.548</b-th>
+								<b-th class="align-middle" variant="warning">提前竣工加分</b-th>
+								<b-th class="align-middle" variant="warning">.686	</b-th>
+								<b-th class="align-middle" variant="warning">.689	</b-th>
+								<b-th class="align-middle text-left" rowspan="2" variant="warning">工期</b-th>
+								<b-th class="align-middle" rowspan="2" variant="warning">.513</b-th>
+								<b-th class="align-middle" rowspan="2" variant="warning">.548</b-th>
 							</b-tr>
 							<b-tr>
-								<b-th class="align-middle">逾期竣工減分</b-th>
-								<b-th class="align-middle">-.173</b-th>
-								<b-th class="align-middle">-.141</b-th>
+								<b-th class="align-middle" variant="warning">逾期竣工減分</b-th>
+								<b-th class="align-middle" variant="warning">-.173</b-th>
+								<b-th class="align-middle" variant="warning">-.141</b-th>
 							</b-tr>
 							<b-tr>
-								<b-th class="align-middle">替代方案加分</b-th>
-								<b-th class="align-middle">.032</b-th>
-								<b-th class="align-middle">.034</b-th>
-								<b-th class="align-middle text-left" rowspan="2">履約成本及違約金</b-th>
-								<b-th class="align-middle" rowspan="2">-.046</b-th>
-								<b-th class="align-middle" rowspan="2">-3.15</b-th>
+								<b-th class="align-middle" variant="warning">替代方案加分</b-th>
+								<b-th class="align-middle" variant="warning">.032</b-th>
+								<b-th class="align-middle" variant="warning">.034</b-th>
+								<b-th class="align-middle text-left" rowspan="2" variant="warning">履約成本及違約金</b-th>
+								<b-th class="align-middle" rowspan="2" variant="warning">-.046</b-th>
+								<b-th class="align-middle" rowspan="2" variant="warning">-3.15</b-th>
 							</b-tr>
 							<b-tr>
-								<b-th class="align-middle">違約金減分</b-th>
-								<b-th class="align-middle">-.078</b-th>
-								<b-th class="align-middle">-.349</b-th>
+								<b-th class="align-middle" variant="warning">違約金減分</b-th>
+								<b-th class="align-middle" variant="warning">-.078</b-th>
+								<b-th class="align-middle" variant="warning">-.349</b-th>
 							</b-tr>
 							<b-tr>
-								<b-th class="align-middle">驗收加分</b-th>
-								<b-th class="align-middle">1.513</b-th>
-								<b-th class="align-middle">1.18</b-th>
-								<b-th class="align-middle text-left" rowspan="9">施工品質</b-th>
-								<b-th class="align-middle" rowspan="9">1.472</b-th>
-								<b-th class="align-middle" rowspan="9">1.527</b-th>
+								<b-th class="align-middle" variant="warning">驗收加分</b-th>
+								<b-th class="align-middle" variant="warning">1.513</b-th>
+								<b-th class="align-middle" variant="warning">1.18</b-th>
+								<b-th class="align-middle text-left" rowspan="9" variant="warning">施工品質</b-th>
+								<b-th class="align-middle" rowspan="9" variant="warning">1.472</b-th>
+								<b-th class="align-middle" rowspan="9" variant="warning">1.527</b-th>
 							</b-tr>
 							<b-tr>
-								<b-th class="align-middle">驗收減分</b-th>
-								<b-th class="align-middle">-.06</b-th>
-								<b-th class="align-middle">-.18</b-th>
+								<b-th class="align-middle" variant="warning">驗收減分</b-th>
+								<b-th class="align-middle" variant="warning">-.06</b-th>
+								<b-th class="align-middle" variant="warning">-.18</b-th>
 							</b-tr>
 							<b-tr>
-								<b-th class="align-middle">施工作業減分</b-th>
-								<b-th class="align-middle">-.102</b-th>
-								<b-th class="align-middle">-.269</b-th>
+								<b-th class="align-middle" variant="warning">施工作業減分</b-th>
+								<b-th class="align-middle" variant="warning">-.102</b-th>
+								<b-th class="align-middle" variant="warning">-.269</b-th>
 							</b-tr>
 							<b-tr>
-								<b-th class="align-middle">施工查核加分</b-th>
-								<b-th class="align-middle">.13</b-th>
-								<b-th class="align-middle">.763</b-th>
+								<b-th class="align-middle" variant="warning">施工查核加分</b-th>
+								<b-th class="align-middle" variant="warning">.13</b-th>
+								<b-th class="align-middle" variant="warning">.763</b-th>
 							</b-tr>
 							<b-tr>
-								<b-th class="align-middle">施工查核減分</b-th>
-								<b-th class="align-middle">-.001</b-th>
-								<b-th class="align-middle">-.006</b-th>
+								<b-th class="align-middle" variant="warning">施工查核減分</b-th>
+								<b-th class="align-middle" variant="warning">-.001</b-th>
+								<b-th class="align-middle" variant="warning">-.006</b-th>
 							</b-tr>
 							<b-tr>
-								<b-th class="align-middle">專任工程人員加分</b-th>
-								<b-th class="align-middle">-.076</b-th>
-								<b-th class="align-middle">.103</b-th>
+								<b-th class="align-middle" variant="warning">專任工程人員加分</b-th>
+								<b-th class="align-middle" variant="warning">-.076</b-th>
+								<b-th class="align-middle" variant="warning">.103</b-th>
 							</b-tr>
 							<b-tr>
-								<b-th class="align-middle">專任工程人員減分</b-th>
-								<b-th class="align-middle">-.105</b-th>
-								<b-th class="align-middle">-.201</b-th>
+								<b-th class="align-middle" variant="warning">專任工程人員減分</b-th>
+								<b-th class="align-middle" variant="warning">-.105</b-th>
+								<b-th class="align-middle" variant="warning">-.201</b-th>
 							</b-tr>
 							<b-tr>
-								<b-th class="align-middle">技術士加分</b-th>
-								<b-th class="align-middle">.011</b-th>
-								<b-th class="align-middle">.066</b-th>
+								<b-th class="align-middle" variant="warning">技術士加分</b-th>
+								<b-th class="align-middle" variant="warning">.011</b-th>
+								<b-th class="align-middle" variant="warning">.066</b-th>
 							</b-tr>
 							<b-tr>
-								<b-th class="align-middle">品質獲獎加分</b-th>
-								<b-th class="align-middle">.01</b-th>
-								<b-th class="align-middle">.08</b-th>
+								<b-th class="align-middle" variant="warning">品質獲獎加分</b-th>
+								<b-th class="align-middle" variant="warning">.01</b-th>
+								<b-th class="align-middle" variant="warning">.08</b-th>
 							</b-tr>
 							<b-tr>
-								<b-th class="align-middle">勞安獲獎加分</b-th>
-								<b-th class="align-middle">.003</b-th>
-								<b-th class="align-middle">.014</b-th>
-								<b-th class="align-middle text-left" rowspan="4">安衛環保</b-th>
-								<b-th class="align-middle" rowspan="4">2.22</b-th>
-								<b-th class="align-middle" rowspan="4">4.606</b-th>
+								<b-th class="align-middle" variant="warning">勞安獲獎加分</b-th>
+								<b-th class="align-middle" variant="warning">.003</b-th>
+								<b-th class="align-middle" variant="warning">.014</b-th>
+								<b-th class="align-middle text-left" rowspan="4" variant="warning">安衛環保</b-th>
+								<b-th class="align-middle" rowspan="4" variant="warning">2.22</b-th>
+								<b-th class="align-middle" rowspan="4" variant="warning">4.606</b-th>
 							</b-tr>
 							<b-tr>
-								<b-th class="align-middle">無職災加分</b-th>
-								<b-th class="align-middle">1.111</b-th>
-								<b-th class="align-middle">2.323</b-th>
+								<b-th class="align-middle" variant="warning">無職災加分</b-th>
+								<b-th class="align-middle" variant="warning">1.111</b-th>
+								<b-th class="align-middle" variant="warning">2.323</b-th>
 							</b-tr>
 							<b-tr>
-								<b-th class="align-middle">發生職災減分</b-th>
-								<b-th class="align-middle">-.004</b-th>
-								<b-th class="align-middle">-.031</b-th>
+								<b-th class="align-middle" variant="warning">發生職災減分</b-th>
+								<b-th class="align-middle" variant="warning">-.004</b-th>
+								<b-th class="align-middle" variant="warning">-.031</b-th>
 							</b-tr>
 							<b-tr>
-								<b-th class="align-middle">環保加分</b-th>
-								<b-th class="align-middle">1.11</b-th>
-								<b-th class="align-middle">2.3</b-th>
+								<b-th class="align-middle" variant="warning">環保加分</b-th>
+								<b-th class="align-middle" variant="warning">1.11</b-th>
+								<b-th class="align-middle" variant="warning">2.3</b-th>
 							</b-tr>
 							<b-tr>
-								<b-th class="align-middle">民眾通報加分</b-th>
-								<b-th class="align-middle">.796</b-th>
-								<b-th class="align-middle">.862</b-th>
-								<b-th class="align-middle text-left" rowspan="2">反映及停權</b-th>
-								<b-th class="align-middle" rowspan="2">.781</b-th>
-								<b-th class="align-middle" rowspan="2">.835</b-th>
+								<b-th class="align-middle" variant="warning">民眾通報加分</b-th>
+								<b-th class="align-middle" variant="warning">.796</b-th>
+								<b-th class="align-middle" variant="warning">.862</b-th>
+								<b-th class="align-middle text-left" rowspan="2" variant="warning">反映及停權</b-th>
+								<b-th class="align-middle" rowspan="2" variant="warning">.781</b-th>
+								<b-th class="align-middle" rowspan="2" variant="warning">.835</b-th>
 							</b-tr>
 							<b-tr>
-								<b-th class="align-middle">停權減分</b-th>
-								<b-th class="align-middle">-.015</b-th>
-								<b-th class="align-middle">-.027</b-th>
+								<b-th class="align-middle" variant="warning">停權減分</b-th>
+								<b-th class="align-middle" variant="warning">-.015</b-th>
+								<b-th class="align-middle" variant="warning">-.027</b-th>
 							</b-tr>
 							<b-tr>
-								<b-th class="align-middle" colspan="4">停權減分</b-th>
-								<b-th class="align-middle">81.887</b-th>
-								<b-th class="align-middle">84.054</b-th>
+								<b-th class="align-middle" colspan="4" variant="warning">停權減分</b-th>
+								<b-th class="align-middle" variant="warning">81.887</b-th>
+								<b-th class="align-middle" variant="warning">84.054</b-th>
 							</b-tr>
 							<b-tr>
-								<b-th class="align-middle" colspan="4">件數</b-th>
-								<b-th class="align-middle">51594</b-th>
-								<b-th class="align-middle">268</b-th>
+								<b-th class="align-middle" colspan="4" variant="warning">件數</b-th>
+								<b-th class="align-middle" variant="warning">51594</b-th>
+								<b-th class="align-middle" variant="warning">268</b-th>
 							</b-tr>
 						</b-tbody>
 					</b-table-simple>

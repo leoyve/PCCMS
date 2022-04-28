@@ -69,7 +69,8 @@ export default {
 		],
 		options3:[
 			{	text:	'全部',	value:	'A'},
-			{	text:	'品管',	value:	'B'},
+			{	text:	'土建',	value:	'B'},
+			{	text:	'機電',	value:	'B'},
 			{	text:	'回訓',	value:	'C'},
 		],
 		type: [

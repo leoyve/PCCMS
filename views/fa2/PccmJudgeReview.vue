@@ -182,7 +182,7 @@
                 </b-td>
               </b-tr>
               <b-tr>
-                <b-th class="align-middle" rowspan="2">特殊績效</b-th>
+                <b-th class="align-middle" rowspan="2">其他</b-th>
                 <b-th class="align-middle" rowspan="2">10</b-th>
                 <b-th class="align-middle" rowspan="2">6</b-th>
                 <b-td class="align-middle text-left ">施工查核情形：於計畫執行期間之施工查核分數</b-td>
@@ -274,8 +274,22 @@
                 </b-td>
               </b-tr>
               <b-tr>
+                <b-th class="align-middle text-left" colspan="6"><font color="red">評分等第</font></b-th>
+                <b-td class="align-middle text-left ">
+                  <b-container fluid>
+                    <b-row>
+                      <b-col><b-input/></b-col><b-col>等</b-col>
+                    </b-row>
+                  </b-container>
+                </b-td>
+              </b-tr>
+              <b-tr>
                 <b-th class="align-middle text-left" colspan="6"><font color="red">工程會考核總意見</font></b-th>
                 <b-td class="align-middle text-left "><b-textarea/></b-td>
+              </b-tr>
+              <b-tr>
+                <b-th class="align-middle text-left" colspan="6"><font color="red">評分紀錄檔案上傳</font></b-th>
+                <b-td class="align-middle text-left "><b-file/></b-td>
               </b-tr>
               <b-tr>
                 <b-th class="align-middle text-left" colspan="6"><font color="red">是否鎖定辦理成果報告資料(不允許修改)</font></b-th>
