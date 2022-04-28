@@ -60,11 +60,11 @@
                   <template v-for="tempData in arryaData" >
                     <b-row :key="tempData.id" class="border border-dark">
                       <b-col class="col-sm-3">
-                        <b-checkbox v-model="checkSchool" :value="tempData.checkValue" :disabled="tempData.checkDisable"><h6>{{ tempData.checkName }}</h6></b-checkbox>
+                        <b-checkbox v-model="checkSchool" :value="tempData.checkValue" :disabled="!tempData.checkDisable"><h6>{{ tempData.checkName }}</h6></b-checkbox>
                       </b-col>
-                      <b-col class="col-sm-3"><b-input type="text" /></b-col>
+                      <b-col class="col-sm-3"><b-input type="text" :disabled="true"/></b-col>
                       <b-col class="col-sm-2"><h6>職稱:</h6></b-col>
-                      <b-col class="col-sm-4"><b-input type="text" /></b-col>
+                      <b-col class="col-sm-4"><b-input type="text" :disabled="true" /></b-col>
                     </b-row>
                   </template>
                 </b-col>

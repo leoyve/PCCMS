@@ -12,12 +12,13 @@
 
         <b-nav-item-dropdown text="示警通知" left fill>
 			<b-dropdown-item @click="gotoParam('FloInfoQuery',)">重點防汛工程之災害趨勢及示警地理資訊</b-dropdown-item>
-			<b-dropdown-item @click="gotoParam('', )">查詢NCDR目前生效中整體之災害示警總覽</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('', )">查詢NCDR目前生效中之整體災害示警總覽</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('FloWarnActualQuery', )">查詢目前生效中之整體災害示警總覽</b-dropdown-item>
         </b-nav-item-dropdown>
 
         <b-nav-item-dropdown text="報表資訊" left fill>
-			<b-dropdown-item @click="gotoParam('Fa2ReportQuery',)">重點防汛工程標案施工進度及查核情形統計</b-dropdown-item>
-			<b-dropdown-item @click="gotoParam('',)">各機關1千萬元以上水利類工程落後達5%案件</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('FloCheckQuery',)">重點防汛工程標案施工進度及查核情形統計</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('FloWaterBehind',)">各機關1千萬元以上水利類工程落後達5%案件</b-dropdown-item>
 			<b-dropdown-item @click="gotoParam('', )">件式搜尋重點防汛工程標案及其GIS圖資</b-dropdown-item>
         </b-nav-item-dropdown>
 

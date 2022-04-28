@@ -53,6 +53,31 @@ module.exports = [
         name: 'FloWarnDetail',
         component: () => import(/* webpackChunkName: "about" */ '../views/flo/FloWarnDetail.vue')
       },
+      {
+        path: 'floWarnActualQuery',
+        name: 'FloWarnActualQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/flo/FloWarnActualQuery.vue')
+      },
+      {
+        path: 'floCheckQuery',
+        name: 'FloCheckQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/flo/FloCheckQuery.vue')
+      },
+      {
+        path: 'floCheckDetail',
+        name: 'FloCheckDetail',
+        component: () => import(/* webpackChunkName: "about" */ '../views/flo/FloCheckDetail.vue')
+      },
+      {
+        path: 'floCheckRateDetail',
+        name: 'FloCheckRateDetail',
+        component: () => import(/* webpackChunkName: "about" */ '../views/flo/FloCheckRateDetail.vue')
+      },
+      {
+        path: 'floWaterBehind',
+        name: 'FloWaterBehind',
+        component: () => import(/* webpackChunkName: "about" */ '../views/flo/FloWaterBehind.vue')
+      },
       
     ],
     // route level code-splitting
