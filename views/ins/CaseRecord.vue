@@ -7,7 +7,7 @@
 			</b-form-row>
 			<b-form-row class="justify-content-start">
 				<b-button size="sm" variant="info" @click="toPrint" >處理情形資料列印畫面</b-button>&ensp;
-				<b-button size="sm" variant="success" @click="test">產生處理情形資料檔案</b-button>
+				<b-button size="sm" variant="success" @click="downloadDetail()">產生處理情形資料檔案</b-button>
 			</b-form-row>
 			<br>
 			<b-form-row class="justify-content-start">
@@ -124,6 +124,9 @@ export default {
 		let routeUrl = this.$router.resolve({name:'CaseRecordPrint'})
 		window.open(routeUrl.href, '_blank'); 
 	},
+	downloadDetail(){
+		alert("匯出明細檔案。");
+	}
  },
 }
 </script>

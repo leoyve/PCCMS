@@ -6,7 +6,7 @@
 		<b-container >
 			<b-form-row class="justify-content-end">
 				<b-button size="sm" variant="success" @click="gotoParam('Case1999Info',{addFlag:true})" >新增</b-button> &nbsp; &nbsp;
-				<b-button size="sm" variant="success" @click="batchReview" >上傳案件</b-button>
+				<b-button size="sm" variant="success" @click="batchReview()" >上傳案件</b-button>
 			</b-form-row>
 			<br>
 			<b-form-row >
@@ -79,6 +79,11 @@ export default {
 		],
 	}
  },
+ methods:{
+	batchReview(){
+		alert("檔案批次匯入。");
+	}
+ }
 }
 </script>
 

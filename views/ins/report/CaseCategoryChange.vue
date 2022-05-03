@@ -8,7 +8,8 @@
 				</b-form-group>
 			</b-form-row>
 			<b-form-row class="justify-content-end">
-				<b-button size="sm" variant="success" @click="queryHandler" >補正類別</b-button>
+				<b-button size="sm" variant="success" @click="queryHandler" >補正類別</b-button>&nbsp;
+				<b-button size="sm" variant="outline-secondary" @click="goBack()" >取消</b-button>
 			</b-form-row>
 		</b-container>
 		<br>

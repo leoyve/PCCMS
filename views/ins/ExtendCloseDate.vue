@@ -19,7 +19,7 @@
 			</b-row>
 			<br>
 			<b-form-row class="justify-content-end">
-				<b-button size="sm" variant="success" @click="queryHandler" >確認展延</b-button>&ensp; &ensp; &ensp; &ensp; 
+				<b-button size="sm" variant="success" @click="queryHandler" >確認展延</b-button>&ensp;
 				<b-button size="sm" variant="outline-secondary" @click="goBack()">取消</b-button>
 			</b-form-row>
 		</b-container>

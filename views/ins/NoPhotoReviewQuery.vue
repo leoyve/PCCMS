@@ -120,7 +120,8 @@ export default {
 			}, 
 			{
 				key:	'action',
-				label:	''
+				label:	'',
+				thStyle: { width: "8%" },
 			},
 			],
 		items:	[

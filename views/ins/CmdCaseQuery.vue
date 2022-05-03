@@ -136,6 +136,9 @@ export default {
 
 	}
  },
+ mounted(){
+	alert("查詢標案管理系統資訊。")
+}
 }
 </script>
 

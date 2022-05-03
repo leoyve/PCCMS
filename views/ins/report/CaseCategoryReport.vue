@@ -132,6 +132,9 @@ export default {
 		],
 	}
  },
+ mounted(){
+	alert("合計中的其他可導至另外頁面。");
+ }
 }
 </script>
 

@@ -17,6 +17,9 @@
 			<b-row >
 				<font color='red'><strong>(注意：結案時系統將同時寄送結案郵件通知民眾填寫滿意度，務請審慎確認案件已妥處改善)</strong></font>
 			</b-row>	
+			<b-row class="justify-content-end">
+				<b-button size="sm" variant="info" @click="toPrint">處理情形列印畫面</b-button>&ensp; &ensp; 
+			</b-row>
 		</b-container>
 		<br>
 		<b-container fluid>
@@ -47,8 +50,6 @@
 			</b-row>
 			<br>
 			<b-row class="justify-content-end">
-				<!-- 有ID且撈出來有資料就進行修改，無ID也無資料直接新增 -->
-				<b-button size="sm" variant="info" @click="toPrint">處理情形列印畫面</b-button>&ensp; &ensp; 
 				<b-button size="sm" variant="success" @click="queryHandler">完成審查</b-button>&ensp; &ensp; 
 				<b-button size="sm" variant="outline-secondary" @click="goBack()">取消</b-button>
 			</b-row>

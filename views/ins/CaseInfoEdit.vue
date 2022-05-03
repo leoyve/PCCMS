@@ -3,6 +3,9 @@
     <br>
     <b-container fluid>
       <b-container fluid>
+        <b-form-row class="justify-content-end">
+          <b-button size="md" variant="outline-secondary" @click="gotoParam('CaseInfoQuery')">回上一頁</b-button>&ensp;
+        </b-form-row>
         <b-form-row class="justify-content-start">
           <b-button size="md" variant="success" @click="gotoParam('DuconCaseEdit', {updateFlag:true})">修改通報案件</b-button>&ensp; 
           <b-button size="md" variant="success" @click="gotoParam('CaseRecord')">登錄處理情況</b-button>&ensp;
@@ -13,7 +16,6 @@
           <b-button size="md" variant="success" @click="gotoParam('ExtendCloseDate')">展延結案日期</b-button>&ensp; 
           <b-button size="md" variant="success" @click="gotoParam('AddSatisfaction',{defaultText:'督工系統管理者代為新增！'})">補新增滿意度</b-button>&ensp;
           <b-button size="md" variant="danger" @click="deleteCheck()">刪除通報案件</b-button>&ensp;
-          <b-button size="md" variant="outline-secondary" @click="gotoParam('CaseInfoQuery')">回上一頁</b-button>&ensp;
         </b-form-row>
         <br>
       </b-container>
