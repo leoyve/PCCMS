@@ -54,6 +54,7 @@
 				<b-col class="col-md-2 text-dark">具體內容</b-col>
 				<b-col class="col-md-10 text-left ">從沒有營業過的蚊子市場，閒置至少20年以上。</b-col>
 			</b-row>
+			<br>
 			<b-form-row class="justify-content-end">
 				<b-button size="sm" variant="success"  @click="queryHandler" >立案</b-button>&nbsp;
                 <b-button size="sm" variant="outline-secondary" @click="goBack()">取消</b-button>

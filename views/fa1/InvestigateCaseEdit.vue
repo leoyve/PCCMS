@@ -1,7 +1,7 @@
 <template>
   <div>
       <br>
-      <b-container class="border border-dark" fluid>
+      <b-container  fluid>
         <b-row class="border border-dark">
           <b-col class="col-md-12 bg-secondary text-light">閒置設施通報案件--查處資料</b-col>
         </b-row>
@@ -87,7 +87,7 @@
         </b-row>
         <br />
         <b-row class="row justify-content-end">
-          <b-button size="sm" variant="success" @click="update">編輯</b-button>&ensp;
+          <b-button size="sm" variant="success" @click="update">儲存</b-button>&ensp;
           <b-button size="sm" variant="outline-secondary" @click="goBack()" >取消</b-button>
         </b-row>
       </b-container>

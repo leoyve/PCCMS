@@ -8,7 +8,7 @@
         <b-button size="xs" variant="info" @click="wkutHelp()">機關代碼</b-button>
       </b-form-row>
       <br>
-      <b-container class="border border-dark">
+      <b-container>
         <b-row class="border border-dark">
           <b-col class="col-md-2"><font color="red">*</font>分案原因:</b-col>
           <b-col class="col-md-10 text-left">

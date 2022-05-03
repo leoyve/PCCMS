@@ -26,8 +26,8 @@
 			<br>
 			<b-row>
 				<b-col class="text-right">
-					<b-button size="sm" variant="success" @click="gotoParam('InventoryEdit', {updateFlag:true})">編輯</b-button>&nbsp;
-					<b-button size="sm" variant="outline-secondary" @click="goBack()">回上一頁</b-button>
+					<b-button size="sm" variant="success" @click="gotoParam('InventoryEdit', {updateFlag:true})">儲存</b-button>&nbsp;
+					<b-button size="sm" variant="outline-secondary" @click="goBack()">取消</b-button>
 				</b-col>
 			</b-row>
 		</b-container>

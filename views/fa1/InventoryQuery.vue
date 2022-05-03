@@ -5,7 +5,7 @@
 		<br>
 		<b-container >
 			<b-form-row class="justify-content-end">
-				<b-button size="md" variant="info" @click="goto('OpinionNewQuery')" >批次上傳</b-button>&nbsp;
+				<b-button size="md" variant="info" @click="upload" >批次上傳</b-button>&nbsp;
 				<b-button size="md" variant="success" @click="gotoParam('InventoryEdit',{addFlag:true})" >新增</b-button>&nbsp;
 			</b-form-row>
 			<br>
