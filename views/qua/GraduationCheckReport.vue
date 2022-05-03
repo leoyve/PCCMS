@@ -32,7 +32,7 @@
 		<br>
 		
 		<div>
-			<b-container >
+			<b-container fluid>
 				<!--帶入選項值-->
 				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>{{picked}}結業學員工程查核統計表</strong></h4></b-form-row>
 				<b-form-row class="justify-content-end">

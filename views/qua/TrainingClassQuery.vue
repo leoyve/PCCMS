@@ -156,7 +156,7 @@ export default {
 			} ,
 			{
 				key:	'action1',
-				label: '編輯',
+				label: '檢視',
 				thStyle: { width: "8%" },
 			},
 			{
@@ -171,7 +171,7 @@ export default {
 			},
 			{
 				key:	'action2',
-				label:	'編輯',
+				label:	'檢視',
 				thStyle: { width: "8%" },
 			},
 			{
@@ -186,7 +186,7 @@ export default {
 			},
 			{
 				key:	'action3',
-				label:	'編輯',
+				label:	'檢視',
 				thStyle: { width: "8%" },
 			},
 			{
@@ -201,7 +201,7 @@ export default {
 			},
 			{
 				key:	'action4',
-				label:	'編輯',
+				label:	'檢視',
 				thStyle: { width: "8%" },
 			},
 			{
@@ -216,7 +216,7 @@ export default {
 			},
 			{
 				key:	'action5',
-				label:	'編輯',
+				label:	'檢視',
 				thStyle: { width: "8%" },
 			},
 

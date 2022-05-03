@@ -168,7 +168,7 @@ export default {
 	},
 	checkOut(row){
 		confirm("確定是否移出教師名冊?" + row.pk);
-	}
+	},
  }
 }
 

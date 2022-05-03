@@ -59,7 +59,7 @@
 			<b-form-row >
 				<b-col class="col-md-8 text-left"><h2><strong>貳、課程明細</strong></h2></b-col>
 				<b-col class="col-md-4">
-					<b-button size="sm" variant="success" @click="gotoParam('', {updateFlag:true})">上傳EXCEL</b-button>&nbsp;
+					<b-button size="sm" variant="success" @click="upload()">上傳EXCEL</b-button>&nbsp;
 					<b-button size="sm" variant="success" @click="gotoParam('CourseEdit', {addFlag:true})">新增課程</b-button>
 				</b-col>
 			</b-form-row>

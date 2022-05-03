@@ -4,7 +4,7 @@
 		<h3><strong><font color="brown">學員結訓明細</font></strong></h3>
 		<b-container fluid>
 			<b-form-row class="justify-content-end">
-				<b-button size="sm" variant="success" @click="gotoParam('',)">上傳EXCEL</b-button>&ensp; 
+				<b-button size="sm" variant="success" @click="upload()">上傳EXCEL</b-button>&ensp; 
 				<b-button size="xs" variant="outline-secondary" @click="goBack()">回上一頁</b-button>
 			</b-form-row>
 		</b-container>

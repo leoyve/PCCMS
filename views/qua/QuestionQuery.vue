@@ -8,7 +8,7 @@
 				<b-button size="l" variant="success"  @click="gotoParam('QuestionEdit', {addFlag:true})" >新增</b-button>&nbsp;
 				<!--點下查詢之後才有匯出的按鈕-->
 				<b-button size="l" variant="info"  @click="exportData()" >匯出</b-button>&nbsp;
-				<b-button size="l" variant="warning"  @click="gotoParam('', {addFlag:true})" >匯入</b-button>
+				<b-button size="l" variant="warning"  @click="upload" >匯入</b-button>
 			</b-form-row>
 			<br>
 			<b-form-row>

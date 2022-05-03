@@ -28,6 +28,11 @@ Vue.prototype.wkutHelp  = function (){
   window.open(routeUrl.href, '_blank'); 
 },
 
+Vue.prototype.upload  = function (){
+  alert("上傳批次匯入檔案");
+},
+
+
 
 Vue.prototype.goBack = function (){
   this.$router.back(-1);

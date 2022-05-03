@@ -38,7 +38,7 @@
 			</b-container>
 			<br>
 			<b-row class="col-sm row justify-content-end" >
-				<b-button size="sm" variant="success" @click="add">確定</b-button>&ensp; 
+				<b-button size="sm" variant="success" @click="add">儲存</b-button>&ensp; 
 				<b-button size="sm" variant="outline-secondary" @click="goBack()">取消</b-button>
 			</b-row>
 		</b-container>

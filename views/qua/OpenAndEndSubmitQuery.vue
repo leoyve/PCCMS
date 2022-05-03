@@ -180,7 +180,9 @@ export default {
 	}
  },
  methods: {
-
+	queryHandler(){
+		alert("匯出一覽表清單。");
+	}
  }
 }
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-container>
+    <b-container fluid>
       <b-row class="border border-dark">  
         <b-col class="col-md-2 ">代訓機構:</b-col>
         <b-col class="col-md-10 text-left">經濟部國營事業委員會</b-col>

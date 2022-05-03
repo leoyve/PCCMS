@@ -17,7 +17,7 @@
 		<br>
 		
 		<div>
-			<b-container >
+			<b-container fluid>
 				<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>歷年結業學員回訓情形統計</strong></h4></b-form-row>
 				<b-form-row class="justify-content-end">
 					<b-table striped hover :items="items" :fields="fields" >

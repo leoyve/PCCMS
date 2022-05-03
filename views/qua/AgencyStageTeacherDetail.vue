@@ -1,9 +1,9 @@
 <template>
   <div>
     <br>
-    <b-container>
+    <b-container fluid>
       <b-row class="col-sm row justify-content-end" >     
-        <b-button size="sm" variant="success" @click="gotoParam('',)">上傳EXCEL</b-button>&ensp;  
+        <b-button size="sm" variant="success" @click="upload">上傳EXCEL</b-button>&ensp;  
         <b-button size="sm" variant="outline-secondary" @click="gotoParam('OpenPeriodDetail',)">回上一頁</b-button>
       </b-row>
     </b-container>

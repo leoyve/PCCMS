@@ -6,7 +6,7 @@
     <b-container fluid>
       <b-row class="col-sm row justify-content-end" >     
         <b-button size="sm" variant="success" @click="gotoParam('TeacherCourseEdit', {addFlag:true})">新增</b-button>&ensp; 
-        <b-button size="sm" variant="warning" @click="add">上傳EXCEL</b-button>&ensp; 
+        <b-button size="sm" variant="warning" @click="upload">上傳EXCEL</b-button>&ensp; 
         <b-button size="sm" variant="outline-secondary" @click="gotoParam('TrainingClassQuery',)">回上一頁</b-button>
       </b-row>
       <br>

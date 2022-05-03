@@ -1,10 +1,10 @@
 <template>
   <div>
     <br>
-    <b-container>
+    <b-container fluid>
       <b-row class="col-sm row justify-content-end" >     
         <b-button size="sm" variant="success" @click="gotoParam('StageStudentEdit',{addFlag:true})">新增</b-button>&ensp;  
-        <b-button size="sm" variant="info" @click="gotoParam('',)">上傳EXCEL</b-button>&ensp;  
+        <b-button size="sm" variant="info" @click="upload()">上傳EXCEL</b-button>&ensp;  
         <b-button size="sm" variant="outline-secondary" @click="goBack()">回上一頁</b-button>
       </b-row>
     </b-container>
