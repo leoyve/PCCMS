@@ -5,7 +5,7 @@
         <b-form-row class="row justify-content-end">
           <b-table striped hover :items="items" :fields="fields" >
             <template #cell(action)="row" v-if="modifyFlag">
-              <b-button size="sm" variant="success" @click="gotoParam('WorkMilestoneList', row.item)">檢視</b-button>&nbsp;
+              <b-button size="sm" variant="outline-secondary" @click="gotoParam('WorkMilestoneList', row.item)">檢視</b-button>&nbsp;
               <b-button size="sm" variant="danger" @click="deleteCheck(row.item)">刪除</b-button>
             </template>
             <template #cell(milestone)="row">

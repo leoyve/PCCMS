@@ -73,7 +73,7 @@
         </b-row>
         <br>
         <b-form-row class="justify-content-end">
-          <b-button size="sm" variant="success"  @click="modify()" >編輯</b-button>&nbsp;&nbsp;
+          <b-button size="sm" variant="success"  @click="modify()" >儲存</b-button>&nbsp;&nbsp;
           <b-button size="sm" variant="outline-secondary"  @click="goBack()" >取消</b-button>&nbsp;&nbsp;
         </b-form-row>
       </b-container>
