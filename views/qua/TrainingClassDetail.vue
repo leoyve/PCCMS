@@ -8,7 +8,7 @@
 		<b-container fluid>
 			<b-form-row >
 				<b-col class="col-md-10 text-left"><h2><strong>壹、基本資料</strong></h2></b-col>
-				<b-col class="col-md-1"><b-button size="xs" variant="success" @click="gotoParam('TrainingClassEdit', {updateFlag:true})">修改</b-button></b-col>
+				<b-col class="col-md-1"><b-button size="xs" variant="success" @click="gotoParam('TrainingClassEdit', {updateFlag:true})">編輯</b-button></b-col>
 			</b-form-row>
 			<br>
 			<b-container fluid class="border border-dark">
@@ -68,7 +68,7 @@
 				<b-form-row class="justify-content-end">
 					<b-table striped hover :items="items" :fields="fields" >
 						<template #cell(action)="row">
-							<b-button size="sm" variant="success" @click="gotoParam('CourseEdit', {updateFlag:true, ...row.item})">修改</b-button>&nbsp;
+							<b-button size="sm" variant="success" @click="gotoParam('CourseEdit', {updateFlag:true, ...row.item})">編輯</b-button>&nbsp;
 							<b-button size="sm" variant="danger" @click="deleteCheck(row.item)">刪除</b-button>
 						</template>
 					</b-table>

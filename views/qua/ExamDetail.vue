@@ -25,7 +25,7 @@
 					<b-table striped hover :items="items" :fields="fields" head-variant="light">
 						<template #cell(action)="row">
 							<b-button size="sm" variant="success" @click="gotoParam('ExamChange', row.item)">更換</b-button>&nbsp;
-							<b-button size="sm" variant="warning" @click="gotoParam('QuestionEdit', {updateFlag:true,...row.item})">修改</b-button>
+							<b-button size="sm" variant="warning" @click="gotoParam('QuestionEdit', {updateFlag:true,...row.item})">編輯</b-button>
 						</template>
 					</b-table>
 					<b-pagination align="right"

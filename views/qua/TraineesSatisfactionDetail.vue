@@ -26,7 +26,7 @@
 		<b-container fluid>
 			<b-table striped hover :items="items2" :fields="fields2" head-variant="dark">
 				<template #cell(action)="row">
-					<b-button size="sm" variant="success" @click="gotoParam('OpinionEdit', {updateFlag:true, ...row.item})">修改</b-button>
+					<b-button size="sm" variant="success" @click="gotoParam('OpinionEdit', {updateFlag:true, ...row.item})">編輯</b-button>
 				</template>
 			</b-table>
 		</b-container>

@@ -7,7 +7,7 @@
 				<b-form-row class="justify-content-end">
 					<b-table striped hover :items="items" :fields="fields" head-variant="dark">
 						<template #cell(action)="row">
-							<b-button size="sm" variant="success" @click="gotoParam('Case1999Info',{updateFlag:true, ...row.item})">修改</b-button>&nbsp;
+							<b-button size="sm" variant="success" @click="gotoParam('Case1999Info',{updateFlag:true, ...row.item})">編輯</b-button>&nbsp;
 							<b-button size="sm" variant="danger" @click="deleteCheck(row.item)">刪除</b-button>
 						</template>
 					</b-table>

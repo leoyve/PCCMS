@@ -3,7 +3,7 @@
     <b-container>
       <b-form-row class="justify-content-center "><h2><strong>通報表單</strong></h2></b-form-row>
       <br>
-      <h5 class="text-left"><font color="red">機關代民眾登錄之通報案件，於未展延之應結案日期7天前得修改通報資料。</font></h5>
+      <h5 class="text-left"><font color="red">機關代民眾登錄之通報案件，於未展延之應結案日期7天前得編輯通報資料。</font></h5>
       <b-container class="border border-dark">
         <b-row class="border border-dark">
           <b-col class="col-md-2 ">通報日期</b-col>
@@ -90,7 +90,7 @@
             </b-form-radio-group>
           </b-col>
         </b-row>
-        <!-- 可編輯狀態的的時候(新增、修改)不用顯示-->
+        <!-- 可編輯狀態的的時候(新增、編輯)不用顯示-->
         <b-row class="border border-dark" v-show="disabledFlag">
           <b-col class="col-md-2 ">分案歷程記錄</b-col>
           <b-col class="col-md-10 text-left">	[1100710(011406)行政院公共工程委員會-Lulu Huang]</b-col>
@@ -101,7 +101,7 @@
     <b-container>
       <b-row class="row justify-content-end" >
         <b-button size="sm" variant="success" @click="add" v-show="addFlag">新增</b-button>&ensp; 
-        <b-button size="sm" variant="success" @click="update" v-show="updateFlag">修改</b-button>&ensp; 
+        <b-button size="sm" variant="success" @click="update" v-show="updateFlag">編輯</b-button>&ensp; 
         <b-button size="sm" variant="outline-secondary" @click="goBack()">取消</b-button>
       </b-row>
     </b-container>

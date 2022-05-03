@@ -6,7 +6,7 @@
 			<b-form-row >
 				<b-col class="col-md-8 text-left"><h2><strong>壹、基本資料</strong></h2></b-col>
 				<b-col class="col-md-4">
-					<b-button size="sm" variant="success" @click="gotoParam('AgencyStageEdit',{updateFlag:true})">修改</b-button>&ensp; 
+					<b-button size="sm" variant="success" @click="gotoParam('AgencyStageEdit',{updateFlag:true})">編輯</b-button>&ensp; 
 					<b-button size="sm" variant="danger" @click="deleteCheck()">刪除</b-button>&ensp; 
 					<b-button size="xs" variant="outline-secondary" @click="goBack()">回上一頁</b-button>
 				</b-col>

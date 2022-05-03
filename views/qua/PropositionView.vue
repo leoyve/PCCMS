@@ -9,7 +9,7 @@
 		<b-container fluid>
 			<b-form-row >
 				<b-col class="col-md-10 text-left"><h2><strong>壹、測驗命題條件基本資料表</strong></h2></b-col>
-				<b-col class="col-md-1"><b-button size="xs" variant="success" @click="gotoParam('ExamConditionEdit', {version:'1090001', updateFlag:true})">修改</b-button></b-col>
+				<b-col class="col-md-1"><b-button size="xs" variant="success" @click="gotoParam('ExamConditionEdit', {version:'1090001', updateFlag:true})">編輯</b-button></b-col>
 			</b-form-row>
 			<br>
 		<b-container fluid class="border border-dark">
@@ -92,7 +92,7 @@
 		<br>
 		<b-form-row >
 			<b-col class="col-md-10 text-left"><h2><strong>貳、課程科目命題數資料</strong></h2></b-col>
-			<b-col class="col-md-1"><b-button size="xs" variant="success" @click="gotoParam('ExamEventEdit', )">修改</b-button></b-col>
+			<b-col class="col-md-1"><b-button size="xs" variant="success" @click="gotoParam('ExamEventEdit', )">編輯</b-button></b-col>
 		</b-form-row>
 		<br>
 		<b-container fluid>

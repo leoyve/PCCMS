@@ -12,7 +12,7 @@
       <b-form-row class="row justify-content-end">
         <b-table striped hover :items="items" :fields="fields">
           <template #cell(action)="row">
-            <b-button size="sm" variant="success" @click="gotoParam('WorkMilestoneEdit', {updateFlag: true,...row.item,})">修改</b-button>&nbsp;
+            <b-button size="sm" variant="success" @click="gotoParam('WorkMilestoneEdit', {updateFlag: true,...row.item,})">編輯</b-button>&nbsp;
             <b-button size="sm" variant="danger"  @click="deleteCheck(row.item)" v-if="!row.item.defaultFlag">刪除</b-button>
           </template>
         </b-table>

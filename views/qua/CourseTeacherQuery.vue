@@ -38,7 +38,7 @@
 			<b-table striped hover :items="items" :fields="fields" head-variant="light">
 				<template #cell(action)="row">
 					<!--工程會管理員才有審查按鈕，且其他按鈕常駐可編輯-->
-					<b-button size="sm" variant="success"  @click="gotoParam('TeacherCourseEdit', {updateFlag:true, ...row.item})" >修改</b-button>&nbsp;
+					<b-button size="sm" variant="success"  @click="gotoParam('TeacherCourseEdit', {updateFlag:true, ...row.item})" >編輯</b-button>&nbsp;
 					<b-button size="sm" variant="danger"  @click="deleteCheck(row.item)" >刪除</b-button>&nbsp;
 					<b-button size="sm" variant="warning"  @click="gotoParam('TeacherCourseReview',row.item)" >審查</b-button>&nbsp;
 				</template>

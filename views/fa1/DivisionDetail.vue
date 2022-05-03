@@ -16,37 +16,37 @@
       <h2 class="text-left"><font color="red">查處機關:雲林縣北港鎮公所</font></h2>
       <b-form-row class="justify-content-Start">
         <b-col class="col-md-11"><h4 class="text-left"><font color="red">◎分案資料</font><font color="blue">(工程會填報)</font></h4></b-col>
-        <b-col class="col-md-1"><b-button size="sm" variant="success" @click="gotoParam('DivisionCaseEdit', {updateFlag:true})">修改</b-button></b-col>
+        <b-col class="col-md-1"><b-button size="sm" variant="success" @click="gotoParam('DivisionCaseEdit', {updateFlag:true})">編輯</b-button></b-col>
       </b-form-row>
       <divisionCaseInfo/>
       <br>
       <b-form-row class="justify-content-Start">
         <b-col class="col-md-11"><h4 class="text-left"><font color="red">◎查處資料</font><font color="blue">(查處機關填報)</font></h4></b-col>
-        <b-col class="col-md-1"><b-button size="sm" variant="success" @click="gotoParam('InvestigateCaseEdit', )">修改</b-button></b-col>
+        <b-col class="col-md-1"><b-button size="sm" variant="success" @click="gotoParam('InvestigateCaseEdit', )">編輯</b-button></b-col>
       </b-form-row>
       <investigateCaseInfo/>
       <br>
       <b-form-row class="justify-content-Start">
         <b-col class="col-md-11"><h4 class="text-left"><font color="red">◎地方主管機關審查資料</font><font color="blue">(地方主管機關填報)</font></h4></b-col>
-        <b-col class="col-md-1"><b-button size="sm" variant="success" @click="gotoParam('LocalReviewCaseEdit', )">修改</b-button></b-col>
+        <b-col class="col-md-1"><b-button size="sm" variant="success" @click="gotoParam('LocalReviewCaseEdit', )">編輯</b-button></b-col>
       </b-form-row>
       <localReviewCaseInfo/>
       <br>
       <b-form-row class="justify-content-Start">
         <b-col class="col-md-11"><h4 class="text-left"><font color="red">◎中央目的事業主管機關審查資料</font><font color="blue">(中央目的事業主管機關填報)</font></h4></b-col>
-        <b-col class="col-md-1"><b-button size="sm" variant="success" @click="gotoParam('CentralReviewCaseEdit', )">修改</b-button></b-col>
+        <b-col class="col-md-1"><b-button size="sm" variant="success" @click="gotoParam('CentralReviewCaseEdit', )">編輯</b-button></b-col>
       </b-form-row>
       <centerReviewCaseInfo/>
       <br>
       <b-form-row class="justify-content-Start">
         <b-col class="col-md-11"><h4 class="text-left"><font color="red">◎工程會審查意見資料</font><font color="blue">(查處機關依工程會意見填報)</font></h4></b-col>
-        <b-col class="col-md-1"><b-button size="sm" variant="success" @click="gotoParam('PccmReviewCaseEdit', )">修改</b-button></b-col>
+        <b-col class="col-md-1"><b-button size="sm" variant="success" @click="gotoParam('PccmReviewCaseEdit', )">編輯</b-button></b-col>
       </b-form-row>
       <pccmReviewCaseInfo/>
       <br>
       <b-form-row class="justify-content-Start">
         <b-col class="col-md-11"><h4 class="text-left"><font color="red">◎是否納入閒置系統列管資料</font><font color="blue">(工程會填報)</font></h4></b-col>
-        <b-col class="col-md-1"><b-button size="sm" variant="success" @click="gotoParam('FinalReivewCaseEdit', )">修改</b-button></b-col>
+        <b-col class="col-md-1"><b-button size="sm" variant="success" @click="gotoParam('FinalReivewCaseEdit', )">編輯</b-button></b-col>
       </b-form-row>
       <finalReviewCaseInfo/>
     <br>

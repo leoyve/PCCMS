@@ -292,7 +292,7 @@
                 <b-td class="align-middle text-left "><b-file/></b-td>
               </b-tr>
               <b-tr>
-                <b-th class="align-middle text-left" colspan="6"><font color="red">是否鎖定辦理成果報告資料(不允許修改)</font></b-th>
+                <b-th class="align-middle text-left" colspan="6"><font color="red">是否鎖定辦理成果報告資料(不允許編輯)</font></b-th>
                 <b-td class="align-middle text-left "><b-checkbox>是</b-checkbox></b-td>
               </b-tr>
           </b-tbody>

@@ -11,7 +11,7 @@
       
       <h4 class="text-left"><font color="red">壹、通報案件基本資料</font></h4>
       <b-form-row class="justify-content-end">
-        <b-button size="sm" variant="success"  @click="gotoParam('InformCaseEdit')" >修改通報案件</b-button>&nbsp;&nbsp;
+        <b-button size="sm" variant="success"  @click="gotoParam('InformCaseEdit')" >編輯通報案件</b-button>&nbsp;&nbsp;
         <b-button size="sm" variant="danger"  @click="deleteCheck()" >刪除通報案件</b-button>&nbsp;&nbsp;
       </b-form-row>
       <br>
@@ -28,7 +28,7 @@
         <b-form-row class="justify-content-center ">
           <b-table striped hover :items="items" :fields="fields" head-variant="dark">
             <template #cell(action)="row">
-              <b-button size="sm" variant="success" @click="gotoParam('DivisionDetail')">修改</b-button>&nbsp;
+              <b-button size="sm" variant="success" @click="gotoParam('DivisionDetail')">編輯</b-button>&nbsp;
               <b-button size="sm" variant="danger" @click="deleteCheck(row.item)">刪除</b-button>
             </template>
           </b-table>
@@ -58,7 +58,7 @@
 				<b-form-row class="justify-content-center">
 					<b-table striped hover :items="items2" :fields="fields2" head-variant="dark">
 						<template #cell(action)="row">
-							<b-button size="sm" variant="success" @click="gotoParam('ChangeDivisionPhoto', {updateFlag:true, ...row.item})">修改</b-button>&nbsp;
+							<b-button size="sm" variant="success" @click="gotoParam('ChangeDivisionPhoto', {updateFlag:true, ...row.item})">編輯</b-button>&nbsp;
 							<b-button size="sm" variant="danger" @click="deleteCheck(row.item)">刪除</b-button>
 						</template>
 						<template #cell(photo)>

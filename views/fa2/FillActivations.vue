@@ -15,7 +15,7 @@
         <b-row>
           <b-table striped hover :items="items" :fields="fields" head-variant="dark">
             <template #cell(action)="row">
-              <b-button size="sm" variant="success" @click="gotoParam('FillMileStone', row.item)" >修改</b-button>
+              <b-button size="sm" variant="success" @click="gotoParam('FillMileStone', row.item)" >編輯</b-button>
             </template>
             <template #cell(workPeriod)="row">
               <b-container>
@@ -29,7 +29,7 @@
         <b-row>
           <b-table striped hover :items="items2" :fields="fields2" head-variant="dark">
             <template #cell(action)="row">
-              <b-button size="sm" variant="success" @click="gotoParam('FillPlnmnth', row.item)" >修改</b-button>
+              <b-button size="sm" variant="success" @click="gotoParam('FillPlnmnth', row.item)" >編輯</b-button>
             </template>
             <template #cell(workPeriod)="row">
               <b-container>
@@ -56,7 +56,7 @@
         <br>
         <b-table striped hover :items="items3" :fields="fields3" head-variant="dark">
             <template #cell(action)="row">
-              <b-button size="sm" variant="success" @click="gotoParam('FillYearUserCase', row.item)" >修改</b-button>
+              <b-button size="sm" variant="success" @click="gotoParam('FillYearUserCase', row.item)" >編輯</b-button>
             </template>
             <template #cell(workPeriod)="row">
               <b-container>
@@ -72,7 +72,7 @@
         <br>
         <b-table striped hover :items="items4" :fields="fields4" head-variant="dark">
             <template #cell(action)="row">
-              <b-button size="sm" variant="success" @click="gotoParam('UploadCheckRecord', {updateFlag:true, ...row.item})" >修改</b-button>&nbsp;
+              <b-button size="sm" variant="success" @click="gotoParam('UploadCheckRecord', {updateFlag:true, ...row.item})" >編輯</b-button>&nbsp;
               <b-button size="sm" variant="danger" @click="deleteCheck()" >刪除</b-button>
             </template>
             <template #cell(docDownload)="row">

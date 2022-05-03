@@ -11,10 +11,10 @@
 			</b-form-row>
 			<br>
 			<b-form-row class="justify-content-start">
-				<h6><font color='red'>1.通報案件如經審查同意結案，機關先前已上傳之照片檔案及相關資料即予鎖定，無法修改、更換或刪除！</font></h6>
+				<h6><font color='red'>1.通報案件如經審查同意結案，機關先前已上傳之照片檔案及相關資料即予鎖定，無法編輯、更換或刪除！</font></h6>
 			</b-form-row>
 			<b-form-row class="justify-content-start">
-				<h6><font color='red'>2.自結案之次日起120天以內(不含結案當日)，仍可新增上傳後續之改善處理照片；但照片經審查後即無法修改、更換或刪除！</font></h6>
+				<h6><font color='red'>2.自結案之次日起120天以內(不含結案當日)，仍可新增上傳後續之改善處理照片；但照片經審查後即無法編輯、更換或刪除！</font></h6>
 			</b-form-row>
 			<b-form-row class="justify-content-start">
 				<h6><font color='red'>3.請注意上傳的照片請勿含有任何個資內容！</font></h6>
@@ -27,7 +27,7 @@
 				<b-form-row class="justify-content-center">
 					<b-table striped hover :items="items" :fields="fields" head-variant="dark">
 						<template #cell(action)="row">
-							<b-button size="sm" variant="success" @click="gotoParam('ChangePhotoReview', {updateFlag:true, ...row.item})">修改</b-button>&nbsp;
+							<b-button size="sm" variant="success" @click="gotoParam('ChangePhotoReview', {updateFlag:true, ...row.item})">編輯</b-button>&nbsp;
 							<b-button size="sm" variant="danger" @click="deleteCheck(row.item)">刪除</b-button>
 						</template>
 						<template #cell(photo)>

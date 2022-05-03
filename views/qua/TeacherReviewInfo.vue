@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-container>
-      <b-form-row class="justify-content-center "><h2><strong>修改教師教授課程審查資料</strong></h2></b-form-row>
+      <b-form-row class="justify-content-center "><h2><strong>編輯教師教授課程審查資料</strong></h2></b-form-row>
       <b-container class="border border-dark">
         <b-row class="border border-dark">
           <b-col class="col-md-2 ">姓名</b-col>
@@ -58,7 +58,7 @@
     <br>
     <b-container>
       <b-row class="col-sm row justify-content-end" >
-        <b-button size="sm" variant="success" @click="update">修改</b-button>&ensp; 
+        <b-button size="sm" variant="success" @click="update">編輯</b-button>&ensp; 
         <b-button size="sm" variant="outline-secondary" @click="goBack()">取消</b-button>
       </b-row>
     </b-container>

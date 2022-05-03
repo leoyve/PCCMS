@@ -15,7 +15,7 @@
 			<h4 class="text-left"><font color="red">閒置公共設施基本資料</font></h4>
 		</b-col>
         <b-col class="col-md-3">
-			<b-button size="sm" variant="success" @click="gotoParam('Fa1CaseEdit')">修改通報案件</b-button>&nbsp;          
+			<b-button size="sm" variant="success" @click="gotoParam('Fa1CaseEdit')">編輯通報案件</b-button>&nbsp;          
 			<b-button size="sm" variant="danger" @click="deleteCheck()" v-if="this.$route.params.deleteFlag">刪除通報案件</b-button>
         </b-col>
       </b-form-row>
@@ -63,7 +63,7 @@
 		<b-form-row class="justify-content-center">
 			<b-table striped hover :items="items2" :fields="fields2" head-variant="dark">
 				<template #cell(action)="row">
-					<b-button size="sm" variant="success" @click="gotoParam('ChangeDivisionPhoto', {updateFlag: true,...row.item})">修改</b-button>&nbsp;
+					<b-button size="sm" variant="success" @click="gotoParam('ChangeDivisionPhoto', {updateFlag: true,...row.item})">編輯</b-button>&nbsp;
 					<b-button size="sm" variant="danger" @click="deleteCheck(row.item)">刪除</b-button>
 				</template>
 				<template #cell(photo)>

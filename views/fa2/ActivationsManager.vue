@@ -31,7 +31,7 @@
       </b-container>
       <h2 class="text-left"><font color="blue">壹、活化計畫基本資料</font></h2>
       <b-form-row class="justify-content-end">
-        <b-button size="sm" variant="success"  @click="gotoParam('ActivationsEdit')" >修改活化計畫</b-button>&nbsp;&nbsp;
+        <b-button size="sm" variant="success"  @click="gotoParam('ActivationsEdit')" >編輯活化計畫</b-button>&nbsp;&nbsp;
         <b-button size="sm" variant="danger"  @click="deleteCheck()" >刪除活化計畫</b-button>&nbsp;&nbsp;
       </b-form-row>
       <br>
@@ -95,7 +95,7 @@ export default {
       alert('產生檔案下載');
     },
     reload(){
-      confirm('如重行下載上次核定之計畫資料，目前已修改之資料將被覆蓋，無法恢復，是否重新載入?');
+      confirm('如重行下載上次核定之計畫資料，目前已編輯之資料將被覆蓋，無法恢復，是否重新載入?');
     }
   },
   components:{

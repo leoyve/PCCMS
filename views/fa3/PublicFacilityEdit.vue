@@ -133,7 +133,7 @@
     <b-container fluid>
       <b-row class="row justify-content-end" >
         <b-button size="lg" variant="success" @click="add" v-show="addFlag">新增</b-button>&ensp; 
-        <b-button size="lg" variant="success" @click="update" v-show="updateFlag">修改</b-button>&ensp; 
+        <b-button size="lg" variant="success" @click="update" v-show="updateFlag">編輯</b-button>&ensp; 
         <b-button size="lg" variant="outline-secondary" @click="goBack()">取消</b-button>
       </b-row>
     </b-container>

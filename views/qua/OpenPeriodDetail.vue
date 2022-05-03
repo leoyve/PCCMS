@@ -14,7 +14,7 @@
 						<b-tr>
 							<b-th>作業階段</b-th>
 							<b-th>項目</b-th>
-							<b-th>填報/修改	</b-th>
+							<b-th>填報/編輯	</b-th>
 							<b-th>主要填報內容</b-th>
 							<b-th>申辦及審查</b-th>
 						</b-tr>

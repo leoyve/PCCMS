@@ -11,7 +11,7 @@
 			</b-form-row>
 			<br>
 			<b-form-row class="justify-content-start">
-				<h6><font color='red'>1.請點按下表之「新增處理情形」、「修改」或「刪除」鍵，填報通報案件之完整處理及改善情形。</font></h6>
+				<h6><font color='red'>1.請點按下表之「新增處理情形」、「編輯」或「刪除」鍵，填報通報案件之完整處理及改善情形。</font></h6>
 			</b-form-row>
 			<b-form-row class="justify-content-start">
 				<h6><font color='red'>2.確認完成改善及上傳相關改善照片後，主辦機關應先申請結案作業，並由主管機關審查確認方可結案</font></h6>
@@ -28,7 +28,7 @@
 				<b-form-row class="justify-content-center">
 					<b-table striped hover :items="items" :fields="fields" head-variant="dark">
 						<template #cell(action)="row">
-							<b-button size="sm" variant="success" @click="gotoParam('CaseRecordEdit', {updateFlag:true, ...row.item})">修改</b-button> &ensp; 
+							<b-button size="sm" variant="success" @click="gotoParam('CaseRecordEdit', {updateFlag:true, ...row.item})">編輯</b-button> &ensp; 
 							<b-button size="sm" variant="danger" @click="deleteCheck(row.item)">刪除</b-button>
 						</template>
 						<template #cell(situation)="row">

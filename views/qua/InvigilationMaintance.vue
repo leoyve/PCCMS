@@ -9,7 +9,7 @@
 			<b-form-row class="justify-content-end">
 				<b-table striped hover :items="items" :fields="fields" >
 					<template #cell(action)="row">
-						<b-button size="sm" variant="success" @click="gotoParam('InvigilationEdit', {updateFlag:true, ...row.item})">修改</b-button>
+						<b-button size="sm" variant="success" @click="gotoParam('InvigilationEdit', {updateFlag:true, ...row.item})">編輯</b-button>
 					</template>
 				</b-table>
 			</b-form-row>

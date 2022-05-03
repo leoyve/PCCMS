@@ -8,7 +8,7 @@
 						<b-img src="https://www.mdnkids.com/upload/images/20210703-06-09.jpg"	width='100'	height='100'></b-img>
 					</template>
 					<template #cell(action)="row" v-if="modifyFlag">
-						<b-button size="sm" variant="success" @click="gotoParam('WorkPhotoEdit', {updateFlag:true,...row.item})">修改</b-button>&nbsp;
+						<b-button size="sm" variant="success" @click="gotoParam('WorkPhotoEdit', {updateFlag:true,...row.item})">編輯</b-button>&nbsp;
 						<b-button size="sm" variant="danger" @click="deleteCheck(row.item)">刪除</b-button>
 					</template>
 				</b-table>
