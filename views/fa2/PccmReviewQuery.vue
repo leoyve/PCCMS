@@ -39,7 +39,7 @@
 					</template>
 					<template #cell(action)="row">
 						<b-button size="sm" variant="success" @click="gotoParam('WorkDataPccmReview', row.item)">審核</b-button>&nbsp;
-						<b-button size="sm" variant="outline-secondary" @click="gotoParam('ActivationsVersionDetail', {verFlag:false, ...row.item})">明細</b-button>
+						<b-button size="sm" variant="outline-secondary" @click="gotoParam('ActivationsVersionDetail', {verFlag:false, ...row.item})">檢視</b-button>
 					</template>
 					<template #cell(period)="row">
 						<b-container >

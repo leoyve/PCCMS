@@ -58,7 +58,7 @@
 				<b-form-row class="justify-content-end">
 					<b-table striped hover :items="items" :fields="fields" head-variant="light">
 						<template #cell(detail)="row">
-							<b-button size="sm" variant="outline-secondary" @click="gotoParam('TeacherInfo', row.item)">明細</b-button>
+							<b-button size="sm" variant="outline-secondary" @click="gotoParam('TeacherInfo', row.item)">檢視</b-button>
 						</template>
 						<template #cell(register)="row">
 							<b-button size="sm" variant="success" @click="checkIn(row.item)">移入</b-button>&nbsp;

@@ -6,7 +6,7 @@
         <b-table striped hover :items="items" :fields="fields">
 			<template #cell(action)="row">
 				<b-button size="sm" variant="success" @click="gotoParam('FillActivations', row.item)" v-if="fillFlag">填報</b-button>&nbsp;
-				<b-button size="sm" variant="outline-secondary" @click="gotoParam('ActivationsVersionDetail', row.item)" v-if="detailFlag">明細</b-button>
+				<b-button size="sm" variant="outline-secondary" @click="gotoParam('ActivationsVersionDetail', row.item)" v-if="detailFlag">檢視</b-button>
 			</template>
 			<template #thead-top>
 				<b-tr>

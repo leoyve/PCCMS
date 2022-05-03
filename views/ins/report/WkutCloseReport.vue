@@ -41,7 +41,7 @@
 						<template #cell(action)="row">
 							<!-- 傳遞的參數應該是機關代碼和查詢條件-->
 							<!-- 最下面那一列為合計-->
-							<b-button size="sm" variant="outline-secondary" @click="gotoParam('ReportCommonList',{wkutName:	row.item.wkut})" >明細</b-button>
+							<b-button size="sm" variant="outline-secondary" @click="gotoParam('ReportCommonList',{wkutName:	row.item.wkut})" >檢視</b-button>
 						</template>
 						<template #custom-foot>
 							<b-tr>
@@ -55,7 +55,7 @@
 								<b-th >{{total7}}</b-th>
 								<b-th >{{total8}}</b-th>
 								<b-th >{{total9}}</b-th>
-								<b-th><b-button size="sm" variant="outline-secondary" @click="gotoParam('ReportCommonList',{wkutName:'全部'})" >明細</b-button></b-th>
+								<b-th><b-button size="sm" variant="outline-secondary" @click="gotoParam('ReportCommonList',{wkutName:'全部'})" >檢視</b-button></b-th>
 							</b-tr>
 						</template>
 					</b-table>

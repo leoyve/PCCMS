@@ -8,7 +8,7 @@
 			<b-form-row class="justify-content-end">
 				<b-table striped hover :items="items" :fields="fields" >
 					<template #cell(action)="row">
-						<b-button size="sm" variant="outline-secondary" @click="gotoParam('TraineesSatisfactionDetail', row.item)">明細</b-button>
+						<b-button size="sm" variant="outline-secondary" @click="gotoParam('TraineesSatisfactionDetail', row.item)">檢視</b-button>
 					</template>
 				</b-table>
 				<b-pagination align="right"

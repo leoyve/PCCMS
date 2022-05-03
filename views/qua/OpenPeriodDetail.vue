@@ -23,7 +23,7 @@
 						<b-tr>
 							<b-th rowspan="3" class="align-middle" variant="success">壹、申報開訓</b-th>
 							<b-th class="text-left align-middle">1.期別基本資料</b-th>
-							<b-td class="align-middle"><b-button size="sm" variant="primary" @click="gotoParam('AgencyStageDetail', )">明細</b-button></b-td>
+							<b-td class="align-middle"><b-button size="sm" variant="primary" @click="gotoParam('AgencyStageDetail', )">檢視</b-button></b-td>
 							<b-td class="text-left align-middle">	訓練主題班別：<br>
 									課程時數：84<br>
 									班別類別：<br>
@@ -41,7 +41,7 @@
 						</b-tr>
 						<b-tr>
 							<b-th class="text-left align-middle">2.授課教師資料</b-th>
-							<b-td class="align-middle"><b-button size="sm" variant="primary" @click="gotoParam('AgencyStageTeacherDetail', )">明細</b-button></b-td>
+							<b-td class="align-middle"><b-button size="sm" variant="primary" @click="gotoParam('AgencyStageTeacherDetail', )">檢視</b-button></b-td>
 							<b-td class="text-left">	課程數：23課<br>
 									應填報授課教師：18課<br>
 									已填報授課教師：0課
@@ -49,13 +49,13 @@
 						</b-tr>
 						<b-tr>
 							<b-th class="text-left">3.學員名單資料</b-th>
-							<b-td class="align-middle"><b-button size="sm" variant="primary" @click="gotoParam('AgencyStageStudentDetail', )">明細</b-button></b-td>
+							<b-td class="align-middle"><b-button size="sm" variant="primary" @click="gotoParam('AgencyStageStudentDetail', )">檢視</b-button></b-td>
 							<b-td class="text-left">已填報參訓學員：1人</b-td>
 						</b-tr>
 						<b-tr>
 							<b-th class="align-middle" variant="info">貳、申報結訓成果</b-th>
 							<b-th class="text-left align-middle">結訓成果</b-th>
-							<b-td class="align-middle"><b-button size="sm" variant="primary" @click="gotoParam('AgencyStageScoreDetail', )">明細</b-button></b-td>
+							<b-td class="align-middle"><b-button size="sm" variant="primary" @click="gotoParam('AgencyStageScoreDetail', )">檢視</b-button></b-td>
 							<b-td class="text-left"> 	
 								已填報結訓成果：0人<br>
 								退訓：0人
@@ -69,7 +69,7 @@
 						<b-tr>
 							<b-th class="align-middle" variant="danger">參、申報補考成績</b-th>
 							<b-th class="text-left align-middle">補考情形</b-th>
-							<b-td class="align-middle"><b-button size="sm" variant="primary" @click="gotoParam('AgencyStageMakeUpDetail', )">明細</b-button></b-td>
+							<b-td class="align-middle"><b-button size="sm" variant="primary" @click="gotoParam('AgencyStageMakeUpDetail', )">檢視</b-button></b-td>
 							<b-td class="text-left">總補考學員：0人<br>
 								已補考通過：0人<br>
 								已補考2次未通過：0人<br>

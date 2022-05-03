@@ -42,7 +42,7 @@
 				<b-form-row class="justify-content-end">
 					<b-table striped hover :items="items" :fields="fields" head-variant="light">
 						<template #cell(action)="row">
-							<b-button size="sm" variant="outline-secondary" @click="gotoParam('OpeningInfoPublicDetail', row.item)">明細</b-button>&nbsp;
+							<b-button size="sm" variant="outline-secondary" @click="gotoParam('OpeningInfoPublicDetail', row.item)">檢視</b-button>&nbsp;
 						</template>
 					</b-table>
 					<b-pagination align="right"

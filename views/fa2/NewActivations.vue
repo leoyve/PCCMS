@@ -21,7 +21,7 @@
 		<b-form-row class="justify-content-start">
 			<b-table striped hover :items="items" :fields="fields" head-variant="dark">
 				<template #cell(action)="row">
-					<b-button size="sm" variant="outline-secondary" @click="gotoParam('ActivationsMoveIn', row.item)">明細</b-button>
+					<b-button size="sm" variant="outline-secondary" @click="gotoParam('ActivationsMoveIn', row.item)">檢視</b-button>
 				</template>
 				<template #cell(beforeReview)="row">
 					<b-container >

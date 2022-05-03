@@ -4,7 +4,7 @@
     <b-container>
 		<b-table striped hover :items="items" :fields="fields" head-variant="dark" :per-page="perPage" :current-page="currentPage">
 			<template #cell(action)="row" >
-				<b-button size="sm" variant="secondary" @click="gotoParam('ClassDetailInfo', row.item)" v-show="detailFlag||detailPflag">明細</b-button>
+				<b-button size="sm" variant="secondary" @click="gotoParam('ClassDetailInfo', row.item)" v-show="detailFlag||detailPflag">檢視</b-button>
 			</template>
 		</b-table>
       <b-pagination align="right"	v-model="currentPage"	:total-rows="rows" :per-page="perPage"	first-number></b-pagination>

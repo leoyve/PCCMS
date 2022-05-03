@@ -31,7 +31,7 @@
 						<b-checkbox v-model="model"	@value="row.item.id"></b-checkbox>
 					</template>
 					<template #cell(action)="row">
-						<b-button size="sm" variant="outline-secondary" @click="gotoParam('TraineesSatisfactionList', row.item)">明細</b-button>
+						<b-button size="sm" variant="outline-secondary" @click="gotoParam('TraineesSatisfactionList', row.item)">檢視</b-button>
 					</template>
 				</b-table>
 			<b-pagination align="right"

@@ -30,7 +30,7 @@
       <b-form-row>
         <b-table striped hover :items="items" :fields="fields">
 			<template #cell(action)="row">
-				<b-button size="sm" variant="outline-secondary" @click="gotoParam('CityReportDetail', row.item)">明細</b-button>
+				<b-button size="sm" variant="outline-secondary" @click="gotoParam('CityReportDetail', row.item)">檢視</b-button>
 			</template>
 			<template #thead-top>
 				<b-tr>
@@ -57,7 +57,7 @@
 					<b-th >9</b-th>
 					<b-th >19</b-th>
 					<b-th >10</b-th>
-					<b-th ><b-button size="sm" variant="outline-secondary" @click="gotoParam('CityReportDetail', )">明細</b-button></b-th>
+					<b-th ><b-button size="sm" variant="outline-secondary" @click="gotoParam('CityReportDetail', )">檢視</b-button></b-th>
 				</b-tr>
 			</template>
         </b-table>

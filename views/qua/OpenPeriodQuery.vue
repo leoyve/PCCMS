@@ -80,7 +80,7 @@
 				<b-form-row class="justify-content-end">
 					<b-table striped hover :items="items" :fields="fields" head-variant="light">
 						<template #cell(action)="row">
-							<b-button size="sm" variant="outline-secondary" @click="gotoParam('OpenPeriodDetail', row.item)">明細</b-button>&nbsp;
+							<b-button size="sm" variant="outline-secondary" @click="gotoParam('OpenPeriodDetail', row.item)">檢視</b-button>&nbsp;
 							<!--工程會管理員才有此按鈕、已歸檔不顯示此按鈕-->
 							<b-button size="sm" variant="warning" @click="checkIn(row.item)">歸檔</b-button>&nbsp;
 						</template>

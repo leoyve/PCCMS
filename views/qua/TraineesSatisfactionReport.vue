@@ -43,7 +43,7 @@
 				<b-form-row class="justify-content-end">
 					<b-table striped hover :items="items" :fields="fields" >
 						<template #cell(action)="row">
-							<b-button size="sm" variant="outline-secondary" @click="gotoParam('TraineesSatisfactionList', row.item)">明細</b-button>
+							<b-button size="sm" variant="outline-secondary" @click="gotoParam('TraineesSatisfactionList', row.item)">檢視</b-button>
 						</template>
 						<template #custom-foot>
 							<b-tr>
@@ -57,7 +57,7 @@
 								<b-th >18.41</b-th>
 								<b-th >18.43</b-th>
 								<b-th >92.27</b-th>
-								<b-th ><b-button size="sm" variant="outline-secondary" @click="gotoParam('TraineesSatisfactionList', '')">明細</b-button></b-th>
+								<b-th ><b-button size="sm" variant="outline-secondary" @click="gotoParam('TraineesSatisfactionList', '')">檢視</b-button></b-th>
 							</b-tr>
 						</template>
 					</b-table>
