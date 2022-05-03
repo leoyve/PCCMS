@@ -23,7 +23,7 @@
           <b-button size="sm" variant="info" @click="queryNearby()" >檢視鄰近通報地點標案位置圖</b-button>&ensp; 
         </b-row>
         <b-row class="col-sm row justify-content-center">
-          <b-button size="sm" variant="success" @click="queryHandler" >進行分文</b-button>&ensp; 
+          <b-button size="sm" variant="success" @click="queryHandler" >分文</b-button>&ensp; 
           <b-button size="sm" variant="outline-secondary" @click="gotoParam('CaseAssignQuery')">取消</b-button>
         </b-row>
       </b-container>

@@ -50,7 +50,7 @@
 		<br>
 		
 		<div>
-			<b-container >
+			<b-container fluid>
 				<br>
 				<b-form-row class="row justify-content-end">
 					<b-table striped hover :items="items" :fields="fields" head-variant="dark">
@@ -132,16 +132,7 @@ export default {
 				label:	''
 			},
 		],
-		items:	undefined,
-	}
- },
- methods: {
-	toSee(item){
-		console.log(item);
-		this.$router.push({name:'FloEventFill'})
-	},
-	queryHandler(){
-		this.items = 	[
+		items:	[
 			{	id: 1, plan: '災害準備金', prjno: '1100219', name: '蘇澳鎮運動公園停車場擋土牆改善工程',	wkut: '工程會', site:'宜蘭縣',	
 				event:'颱風',releaseDate:'110/12/09',pk: 5566, 
 				Data:[
@@ -158,7 +149,13 @@ export default {
 				Data:[
 						{event:'納莉颱風',id:'2',releaseDate:'110/11/11',checkRecordFile:'堤防巡查.xls'}
 					] },
-		]
+		],
+	}
+ },
+ methods: {
+	toSee(item){
+		console.log(item);
+		this.$router.push({name:'FloEventFill'})
 	},
 	goto(){
 		this.$router.push({name:'FloEventCreate'})

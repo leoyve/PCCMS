@@ -28,6 +28,7 @@
 				<b-button size="sm" variant="success"  @click="queryHandler" >查詢</b-button>&nbsp;
                 <b-button size="sm" variant="outline-secondary" @click="reset">清除</b-button>
 			</b-form-row>
+			<br>
 			<b-row class="justify-content-center text-light bg-primary">
 				<h3>公共工程整體災害示警一覽表</h3>
 			</b-row>

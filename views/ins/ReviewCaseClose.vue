@@ -25,15 +25,15 @@
 		<b-container fluid>
 			<b-row class="border border-dark">
 				<b-col class="col-md-2 ">處理機關</b-col>
-				<b-col class="col-md-8 text-left">桃園市政府</b-col>
+				<b-col class="col-md-10 text-left">桃園市政府</b-col>
 			</b-row>
 			<b-row class="border border-dark">
 				<b-col class="col-md-2 ">結案日期</b-col>
-				<b-col class="col-md-8 text-left">110/03/31</b-col>
+				<b-col class="col-md-10 text-left">110/03/31</b-col>
 			</b-row>
 			<b-row class="border border-dark">
 				<b-col class="col-md-2 ">審查機關</b-col>
-				<b-col class="col-md-8 text-left">行政院公共工程委員會</b-col>
+				<b-col class="col-md-10 text-left">行政院公共工程委員會</b-col>
 			</b-row>
 			<b-row class="border border-dark">
 				<b-col class="col-md-2 ">工程名稱<font color='red'> (請填寫標案管理系統登載之名稱)</font></b-col>
@@ -42,11 +42,11 @@
 			</b-row>
 			<b-row class="border border-dark">
 				<b-col class="col-md-2 ">是否同意結案<font color='red'>*</font></b-col>
-				<b-col class="col-md-8 text-left"><b-form-radio-group v-model="check2" :options="checkAssign" name="radio-validation-1"></b-form-radio-group></b-col>
+				<b-col class="col-md-10 text-left"><b-form-radio-group v-model="check2" :options="checkAssign" name="radio-validation-1"></b-form-radio-group></b-col>
 			</b-row>
 			<b-row class="border border-dark">
 				<b-col class="col-md-2 ">不同意結案理由之說明:<font color='red'>不同意結案時必填</font></b-col>
-				<b-col class="col-md-8 text-left"><b-form-textarea></b-form-textarea></b-col>
+				<b-col class="col-md-10 text-left"><b-form-textarea></b-form-textarea></b-col>
 			</b-row>
 			<br>
 			<b-row class="justify-content-end">

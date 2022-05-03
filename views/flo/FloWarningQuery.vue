@@ -27,7 +27,7 @@
 				<b-form-row class="row justify-content-end">
 					<b-table striped hover :items="items" :fields="fields" head-variant="dark">
 						<template #cell(action)="row">
-							<b-button size="sm" variant="success" @click="gotoParam('FloWarnEdit', row.item)">編輯</b-button>&nbsp;
+							<b-button size="sm" variant="outline-secondary" @click="gotoParam('FloWarnEdit', row.item)">檢視</b-button>&nbsp;
 						</template>
 					</b-table>
 				</b-form-row>

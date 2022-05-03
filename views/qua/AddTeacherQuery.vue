@@ -164,10 +164,12 @@ export default {
  },
  methods: {
 	checkIn(row){
-		confirm("確定是否移入教師名冊? " + row.pk);
+		console.log(row);
+		confirm("確定是否移入教師名冊?");
 	},
 	checkOut(row){
-		confirm("確定是否移出教師名冊?" + row.pk);
+		console.log(row);
+		confirm("確定是否移出教師名冊?");
 	},
  }
 }
