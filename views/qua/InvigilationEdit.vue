@@ -27,7 +27,7 @@
     <b-container>
       <b-row class="col-sm row justify-content-end" >
         <b-button size="sm" variant="success" @click="add" v-show="addFlag">新增</b-button>&ensp; 
-        <b-button size="sm" variant="success" @click="update" v-show="updateFlag">編輯</b-button>&ensp; 
+        <b-button size="sm" variant="success" @click="update" v-show="updateFlag">儲存</b-button>&ensp; 
         <b-button size="sm" variant="outline-secondary" @click="goBack()">取消</b-button>
       </b-row>
     </b-container>
