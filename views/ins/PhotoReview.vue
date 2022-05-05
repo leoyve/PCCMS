@@ -9,7 +9,6 @@
         <b-row class="border border-dark">
           <b-col class="col-md-2 ">照片</b-col>
           <b-col class="col-md"><b-img src="https://www.mdnkids.com/upload/images/20210703-06-09.jpg" width="200"/>(點選可放大照片)
-            <input type="file"/>
           </b-col>
         </b-row>
         <b-row class="border border-dark">

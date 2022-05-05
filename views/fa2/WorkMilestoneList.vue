@@ -1,6 +1,8 @@
 <template>
   <div>
     <br />
+    <h3>活化工作里程碑管理</h3>
+    <br>
     <b-container fluid>
       <b-form-row class="justify-content-end">
         <b-button size="sm" variant="outline-secondary" @click="gotoParam('ActivationsManager')">回上一頁</b-button>

@@ -3,7 +3,7 @@
     <br>
       <b-container fluid>
         <b-row class="border border-dark">
-          <b-col class="col-md-12 bg-secondary text-light"><h3>活化工作里程碑基本資料填報表單</h3></b-col>
+          <b-col class="col-md-12 bg-secondary text-light"><h3>活化補助工作計畫各月預定支用經費資料表單</h3></b-col>
         </b-row>
         <b-row class="border border-dark">
           <b-col class="col-md-2 text-dark">活化計畫編號</b-col>

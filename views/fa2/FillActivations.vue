@@ -50,7 +50,7 @@
         <br>
         <b-row><h2 class="text-left"><font color="red">四、上傳相關照片</font></h2></b-row>
         <br>
-        <workPhotoListInfo/>
+        <workPhotoListInfo :modifyFlag="true"/>
         <br>
         <b-row><h2 class="text-left"><font color="red">五、執行完畢後三年內使用情形</font></h2></b-row>
         <br>

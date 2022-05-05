@@ -117,16 +117,12 @@ export default {
 				label:	'流水號'
 			},
 			{
-				key:	'submitNum',
-				label:	'申請單號',
-			},
-			{
-				key:	'submitDate',
-				label: '申請日期'
-			},
-			{
 				key:	'stage',
 				label:	'期別',
+			},
+			{
+				key:	'class',
+				label: '訓練主題班別'
 			},
 			{
 				key:	'classType',
@@ -134,12 +130,16 @@ export default {
 				thStyle: { width: "10%"},
 			},
 			{
-				key:	'submitType',
-				label: '申請種類',	
+				key:	'classHour',
+				label:	'課程時數',
 			},
 			{
-				key:	'status',
-				label: '狀態',
+				key:	'openDate',
+				label:	'開班日期',
+			},
+			{
+				key:	'endDate',
+				label:	'結訓日期',
 			},
 			{
 				key:	'action',
@@ -148,16 +148,16 @@ export default {
 		],
 		items:	[
 			{
-				id: 1, submitNum: 'E11000000001', submitDate: '110/01/03',stage:'FE11001',classType:'品管',
-				submitType:'開訓',status:'未完成',pk: 5566, 
+				id: 1, class: '公共工程品質管理訓練班(機電) 【109年4月起適用】',stage:'FE11001',classType:'品管',
+				classHour:'84',openDate:'110/05/01',endDate:'110/11/30',pk: 5566, 
 			},
 			{
-				id: 2,submitNum: 'E11000000002',submitDate: '110/02/09',stage:'FE11002',classType:'品管',
-				submitType:'結訓',status:'送審中',pk: 5566
+				id: 2,class: '基礎開挖與品管【109年5月起適用】',stage:'FE11002',classType:'品管',
+				classHour:'60',openDate:'110/08/01',endDate:'110/12/31',pk: 5566
 			},
 			{
-				id: 3, submitNum: 'E11100000002', submitDate: '111/03/06', stage:'LR11101',classType:'回訓',
-				submitType:'結訓',status:'已核准',pk: 5566
+				id: 3,class: '公共工程品質管理訓練班(土建) 【109年4月起適用】', stage:'LR11101',classType:'回訓',
+				classHour:'48',openDate:'111/01/01',endDate:'111/05/30',pk: 5566
 			}
 		]
 	}

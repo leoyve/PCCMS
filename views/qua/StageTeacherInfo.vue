@@ -66,8 +66,8 @@ export default {
         serviceUnit:'行政院客家委員會', title:'主任',pk: 5566,assignFlag:false,
 			},
 			{
-				id: 2, className: '基礎開挖與品管', course: '	最新政策與法規',	classHours:4,	teacher:'陳XX',	
-        serviceUnit:'淡江大學推廣教育處', title:'教授',pk: 5566,assignFlag:false,
+				id: 2, className: '基礎開挖與品管', course: '	最新政策與法規',	classHours:4,	teacher:'',	
+        serviceUnit:'', title:'',pk: 5566,assignFlag:false,
 			},
 			{
 				id: 3, className: '基礎開挖與品管', course: '擋土樁工程',	classHours:6,	teacher:'林XX',	
