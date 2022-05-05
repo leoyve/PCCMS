@@ -147,7 +147,7 @@ export default {
 			{
 				key:	'action',
 				label:	'',
-				thStyle: { width: "8%" },
+				thStyle: { width: "10%" },
 			},
 
 		],

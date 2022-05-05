@@ -70,6 +70,10 @@
           <b-col class="col-md-2 "><font color="red">*</font>預定訓練人數</b-col>
           <b-col class="col-md-10 text-left"><b-form-input></b-form-input></b-col>
         </b-row>
+        <b-row class="border border-dark">
+          <b-col class="col-md-2 "><font color="red">*</font>及格分數</b-col>
+          <b-col class="col-md-10 text-left"><b-form-input placeholder="帶入系統預設值，例:60"></b-form-input></b-col>
+        </b-row>
       </b-container>
     </b-container>
     <br>
