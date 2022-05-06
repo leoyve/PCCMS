@@ -28,15 +28,15 @@
           <b-col class="col-md-10 text-left ">工程設施</b-col>
         </b-row>
         <b-row class="border border-dark">
-          <b-col class="col-md-2 ">設施管理機關</b-col>
+          <b-col class="col-md-2 text-light">設施管理機關</b-col>
           <b-col class="col-md-10 text-left">苗栗縣頭份市公所</b-col>
         </b-row>
         <b-row class="border border-dark">
-          <b-col class="col-md-2 ">主管機關</b-col>
+          <b-col class="col-md-2 text-light">主管機關</b-col>
           <b-col class="col-md-10 text-left">內政部</b-col>
         </b-row>
         <b-row class="border border-dark">
-          <b-col class="col-md-2 ">目的事業主管機關</b-col>
+          <b-col class="col-md-2 text-light">目的事業主管機關</b-col>
           <b-col class="col-md-10 text-left">內政部</b-col>
         </b-row>
         <b-row class="border border-dark">
@@ -49,19 +49,19 @@
         </b-row>
         
         <b-row class="border border-dark">
-          <b-col class="col-md-2 ">設施使用情形概述</b-col>
+          <b-col class="col-md-2 text-light">設施使用情形概述</b-col>
           <b-col class="col-md-10 text-left">處理生活污水或截流污水水量達設計水量 97.7%。</b-col>
         </b-row>
         <b-row class="border border-dark">
-          <b-col class="col-md-2 ">備註</b-col>
+          <b-col class="col-md-2 text-light">備註</b-col>
           <b-col class="col-md-10 text-left"></b-col>
         </b-row>
         <b-row class="border border-dark">
-          <b-col class="col-md-2 ">是否曾被列管</b-col>
+          <b-col class="col-md-2 text-light">是否曾被列管</b-col>
           <b-col class="col-md-10 text-left">是</b-col>
         </b-row>
         <b-row class="border border-dark" v-show="detailFlag">
-          <b-col class="col-md-2 ">計畫基本資料是否上鎖</b-col>
+          <b-col class="col-md-2 text-light">計畫基本資料是否上鎖</b-col>
           <b-col class="col-md-10 text-left">是</b-col>
         </b-row>
       </b-container>

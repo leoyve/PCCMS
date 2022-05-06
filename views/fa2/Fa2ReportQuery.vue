@@ -1,7 +1,7 @@
 <template>
   <div>
     <br>
-    <h3><strong>顯示地方縣市政府活化補助教化執行情形統計表</strong></h3>
+    <h3><strong>活化補助計畫執行情形統計表</strong></h3>
     <br>
     <b-container >
 		<br>
@@ -11,7 +11,7 @@
 			</b-form-group>
 		</b-form-row>
 		<b-form-row >
-			<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="補助年度" label-align-md="right">
+			<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="統計機關" label-align-md="right">
 				<b-form-radio-group
 					id="radio-group-1"
 					v-model="picked"
@@ -62,7 +62,6 @@
 			</template>
         </b-table>
       </b-form-row>
-      <b-pagination align="right" v-model="currentPage"  :total-rows="rows"  :per-page="perPage" first-number></b-pagination>
     </b-container>
   </div>
 </template>
