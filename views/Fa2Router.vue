@@ -18,7 +18,7 @@
 
          <b-nav-item-dropdown text="報表資訊" left fill>
           <b-dropdown-item @click="gotoParam('Fa2ReportQuery',)">活化補助計畫執行情形統計表</b-dropdown-item>
-          <b-dropdown-item @click="gotoParam('',)">顯示活化閒置公共設施年度績效與補助型計畫補助款扣除處理統計總表</b-dropdown-item>
+          <b-dropdown-item @click="gotoParam('OtherQuery',)">顯示活化閒置公共設施年度績效與補助型計畫補助款扣除處理統計總表</b-dropdown-item>
           <b-dropdown-item @click="gotoParam('PccmDoc', )">閒置公共設施相關規定</b-dropdown-item>
           <b-dropdown-item @click="gotoParam('Fa2OptionalReport')">自選欄位案件資料</b-dropdown-item>
         </b-nav-item-dropdown>

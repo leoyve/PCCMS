@@ -178,6 +178,26 @@ module.exports = [
         name: 'CityReportDetail',
         component: () => import(/* webpackChunkName: "about" */ '../views/fa2/CityReportDetail.vue')
       },
+      {
+        path: 'otherQuery',
+        name: 'OtherQuery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/OtherQuery.vue')
+      },
+      {
+        path: 'otherQueryCity',
+        name: 'OtherQueryCity',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/OtherQueryCity.vue')
+      },
+      {
+        path: 'otherQueryIndex',
+        name: 'OtherQueryIndex',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/OtherQueryIndex.vue')
+      },
+      {
+        path: 'otherQueryBehind',
+        name: 'OtherQueryBehind',
+        component: () => import(/* webpackChunkName: "about" */ '../views/fa2/OtherQueryBehind.vue')
+      },
      
     ],
     // route level code-splitting
