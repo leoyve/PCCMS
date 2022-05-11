@@ -1,7 +1,7 @@
 <template>
   <div>
     <br>
-      <b-container class="border border-dark" fluid>
+      <b-container fluid>
         <b-row class="border border-dark">
           <b-col class="col-md-12 bg-secondary text-light">閒置設施通報案件--審查意見資料</b-col>
         </b-row>

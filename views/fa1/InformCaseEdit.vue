@@ -8,7 +8,7 @@
         <b-button size="xs" variant="info" @click="wkutHelp()">機關代碼</b-button>
       </b-form-row>
       <br>
-      <b-container class="border border-dark">
+      <b-container>
         <b-row class="border border-dark">
           <b-col class="col-md-2">通報案件編號:</b-col>
           <b-col class="col-md-10 text-left">11000000006</b-col>

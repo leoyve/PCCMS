@@ -19,7 +19,7 @@
         <b-nav-item-dropdown text="報表資訊" left fill>
 			<b-dropdown-item @click="gotoParam('FloCheckQuery',)">重點防汛工程標案施工進度及查核情形統計</b-dropdown-item>
 			<b-dropdown-item @click="gotoParam('FloWaterBehind',)">各機關1千萬元以上水利類工程落後達5%案件</b-dropdown-item>
-			<b-dropdown-item @click="gotoParam('FloCmdMapQuery', )">件式搜尋重點防汛工程標案及其GIS圖資</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('FloCmdMapQuery', )">條件式搜尋重點防汛工程標案及其GIS圖資</b-dropdown-item>
         </b-nav-item-dropdown>
 
       </b-navbar-nav>

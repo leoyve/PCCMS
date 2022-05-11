@@ -40,6 +40,12 @@
 							<b-button size="sm" variant="outline-secondary" @click="gotoParam('Fa1CaseDetail', row.item)">檢視</b-button>
 						</template>
 					</b-table>
+					<b-pagination align="right"
+						v-model="currentPage"
+						:total-rows="rows"
+						:per-page="perPage"
+						first-number
+					></b-pagination>
 				</b-form-row>
 			</b-container>
 		</div>
@@ -54,6 +60,9 @@ export default {
  data(){
 	return{
 
+		rows: 100,
+		perPage: 1,
+		currentPage: 1,
 		itemOptions: [
 			{	text:	'設施管理機關未填報',	value:	'A'},
 			{	text:	'中央目的事業主管關未確認(含未填報) ',	value:	'B'},

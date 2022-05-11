@@ -8,7 +8,7 @@
 				<b-button size="l" variant="success"  @click="gotoParam('AgencyEdit', {addFlag:true})" >新增</b-button>
 			</b-form-row>
 			<b-form-row>
-				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="交流狀態" label-align-md="right">
+				<b-form-group class="col-md-12" label-cols-md="3" content-cols-md="9" label="代訓機構是否仍在運作" label-align-md="right">
 					<b-form-radio-group
 						id="radio-group-1"
 						v-model="picked"
