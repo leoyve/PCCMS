@@ -131,6 +131,10 @@ export default {
 				label: '課程名稱'
 			},
 			{
+				key:	'courseType',
+				label: '課程種類'
+			},
+			{
 				key:	'summary',
 				label:	'課程摘要',
 				thStyle: { width: "30%" },
@@ -155,17 +159,17 @@ export default {
 			{
 				id: 1,unitName: '基礎開挖與品管', course:'政府採購全生命週期概論',
 				summary:'	(1)現階段政策方向 (2)辦理採購之重點理念 (3)計畫撰擬、規劃設計、採購招標、決標、履約、施工驗收作業及維護管理等各階段重點事項 (4)採購法使用手冊重點內容 (5)各階段案例',
-				classHour:1, isValid:'是',pk: 5566
+				classHour:1, isValid:'是',pk: 5566,courseType:'開訓'
 			},
 			{
 				id: 2,unitName:'基礎開挖與品管', course: '最新政策與法規', 
 				summary:'就回訓期間每年更新說明工程會近期之政策與法規',
-				classHour:4,isValid:'是',pk: 5566
+				classHour:4,isValid:'是',pk: 5566,courseType:'課程'
 			},
 			{
 				id: 3, unitName:'基礎開挖與品管', course: '擋土樁工程', 
 				summary:'本課程之教學內容針對擋土樁工程之施工概要、施工要領、施工作業流程圖及檢驗要點、施工品質管理標準與施工自主檢查表詳細討論，並且依照三級品管制度制訂施工品質管理標準表與施工自主檢查，提供現場監造人員查核及承商施工時依循的標準，以利工地主管經由標準的程序，統一管理各分項工程施工，藉以達到防止施工災害並且確保施工品質之目的。',
-				classHour:6, isValid:'是',pk: 5566
+				classHour:6, isValid:'是',pk: 5566,courseType:'課程'
 			}
 		],
 		fields2: [

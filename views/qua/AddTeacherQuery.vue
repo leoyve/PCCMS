@@ -61,7 +61,6 @@
 							<b-button size="sm" variant="outline-secondary" @click="gotoParam('TeacherInfo', row.item)">檢視</b-button>
 						</template>
 						<template #cell(register)="row">
-							<b-button size="sm" variant="success" @click="checkIn(row.item)">移入</b-button>&nbsp;
 							<b-button size="sm" variant="warning" @click="checkOut(row.item)">移出</b-button>
 						</template>
 					</b-table>

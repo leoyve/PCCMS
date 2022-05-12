@@ -15,7 +15,7 @@
 			<agencyStageDetailInfo/>
 			<br>
 			<b-form-row >
-				<b-col class="col-md-8 text-left"><h2><strong>貳、課程明細</strong></h2></b-col>
+				<b-col class="col-md-8 text-left"><h2><strong>貳、授課教師</strong></h2></b-col>
 				<b-col class="col-md-4">
 					<b-button size="sm" variant="success" @click="upload()">上傳EXCEL</b-button>&nbsp;
 				</b-col>

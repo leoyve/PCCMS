@@ -7,7 +7,7 @@
 				<b-button size="sm" variant="outline-secondary" @click="goBack()">回上一頁</b-button>
 			</b-row>
 			<br>
-			<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>代訓機構聘用師資名冊表</strong></h4></b-form-row>
+			<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>工程會提供師資名單</strong></h4></b-form-row>
 			<b-form-row class="justify-content-end">
 				<b-table striped hover :items="items" :fields="fields" head-variant="light">
 					<template #cell(detail)="row">

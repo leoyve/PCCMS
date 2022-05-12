@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<br>
-		<h3><strong><font color="brown">開班期別審核申辦資料</font></strong></h3>
+		<h3><strong><font color="brown">代訓機構開班申辦資料</font></strong></h3>
 		<br>
 		<b-form-row class="justify-content-end">
 			<b-button size="l" variant="success"  @click="gotoParam('AgencyStageEdit', {addFlag:true})" >新增</b-button>&nbsp;&nbsp;
