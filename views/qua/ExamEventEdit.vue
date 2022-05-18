@@ -13,6 +13,13 @@
              <template #cell(nonCore)="row">
                <b-input v-model="row.item.nonCoreNum" type="number" placeholder="可配10題"></b-input>
              </template>
+             <template #custom-foot >
+							<b-tr variant="secondary">
+								<b-th variant="secondary" colspan="3">合計</b-th>
+								<b-th >10</b-th>
+								<b-th >50</b-th>
+							</b-tr>
+						</template>
            </b-table>
 			</b-form-row>
     </b-container>

@@ -6,7 +6,7 @@
 	<div>
 		<br>
 		<b-container fluid>
-			<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>品管班開班及人數統計表</strong></h4></b-form-row>
+			<b-form-row class="justify-content-center text-light bg-primary"><h4><strong>開班及人數統計表</strong></h4></b-form-row>
 			<b-form-row class="justify-content-end">
 				<b-table striped hover :items="items" :fields="fields" head-variant="light">
 					<template #cell(action)="row">
