@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<b-container >
-			<h3>工程主管機關案件處理情形考核表</h3>
+			<h3>工程主辦機關案件處理情形考核表</h3>
 			<b-row class="border border-dark">
 				<b-col class="border  border-dark col-md-2 bg-info text-dark"><h5><strong>考核項目及權重</strong></h5></b-col>
 				<b-col class="border  border-dark col-md-6 bg-info text-dark"><h5><strong>考核細項</strong></h5></b-col>

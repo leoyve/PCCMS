@@ -25,7 +25,7 @@
         </b-nav-item-dropdown>
 		
 		<b-nav-item-dropdown text="統計報表" left fill>
-			<b-dropdown-item @click="gotoParam('WkutCloseReport')">各機關統報案件統計表</b-dropdown-item>
+			<b-dropdown-item @click="gotoParam('WkutCloseReport')">各機關通報案件統計表</b-dropdown-item>
 			<b-dropdown-item @click="gotoParam('WkutHandleDayReport')">通報處理天數統計總表</b-dropdown-item>
 			<b-dropdown-item @click="gotoParam('WkutSatisfactionReport')">通報案件滿意度統計表</b-dropdown-item>
 			<b-dropdown-item @click="gotoParam('CaseAggregateReport')">通報案件查詢彙整總表</b-dropdown-item>
